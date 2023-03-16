@@ -12,3 +12,6 @@ inside the repository directory.
 ```bash
 python3 new-tr.py <problem-id> <language-code> <username>
 ```
+
+A file will be generated as `src/<problem-id>/<language-code>-<username>.html`.
+You can translate the file and send a pull request.
