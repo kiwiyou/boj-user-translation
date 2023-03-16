@@ -27,8 +27,10 @@ try:
     headers = {'User-Agent': 'Mozilla/5.0'}
     req = get(f'https://www.acmicpc.net/problem/{args.id}', headers=headers)
     text = req.text
+    title_index = text.index('"problem_title"')
+    title, _, text = text[title_index+16:].partition("</span>")
     match = None
-    sections = {}
+    sections = {"title": title}
     while (match := regex.search(text)):
         elem_id = match.group(1)
         content, text = find_tag_end(text[match.end(0):])
