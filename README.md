@@ -13,5 +13,5 @@ inside the repository directory.
 python3 new-tr.py <problem-id> <language-code> <username>
 ```
 
-A file will be generated as `src/<problem-id>/<language-code>-<username>.html`.
+A file will be generated as `src/<problem-id>/<language-code>-<username>.json`.
 You can translate the file and send a pull request.

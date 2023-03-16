@@ -37,7 +37,7 @@ try:
         sections[elem_id] = content
     directory = f'src/{args.id}'
     realname = f'{args.language}-{args.author}'
-    filename = f'{realname}.html'
+    filename = f'{realname}.json'
     os.makedirs(directory, exist_ok=True)
     if os.access(f'{directory}/{filename}', os.F_OK):
         print(repr(filename), 'already exists.')
