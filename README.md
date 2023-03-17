@@ -2,6 +2,8 @@
 
 User translation repository for Baekjoon Online Judge.
 
+To view translations on the problem page, see [o-ey.](https://github.com/kiwiyou/o-ey)
+
 ## How to Contribute
 
 Requires git and python 3.
