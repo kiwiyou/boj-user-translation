@@ -1,6 +1,6 @@
 {
   "title": "대각선을 따라!",
   "description": "\n\t\t\t\t<div class=\"headline\">\n\t\t\t\t<h2>문제</h2>\n\t\t\t\t</div>\n\t\t\t\t<div id=\"problem_description\" class=\"problem-text\">\n\t\t\t\t<p>정사각형 행렬 $B_{ij}$의 대각합은 행렬의 주대각선에 있는 요소 $B_{ii}$의 합입니다.</p>\r\n\r\n<p>정수로 이루어진 수열 $a_i$가 주어집니다. 숫자를 잘 배열해 대각합이 최대인 공백이 아닌 행렬 $B_{ij}$를 만듭시다. 숫자 $x$가 수열 $a_i$에 정확히 $k$ 번 나올 경우, 행렬 $B_{ij}$에도 최대 $k$ 번까지만 등장할 수 있습니다.</p>\r\n\n\t\t\t\t</div>\n\t\t\t\t",
-  "input": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>입력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_input\" class=\"problem-text\">\n\t\t\t\t\t<p>첫 줄에 수열 $a_i$의 길이를 나타내는 하나의 정수 $n$이 주어집니다. ($1 \\le n \\le 10^5$).</p>\r\n\r\n<p>다음 $n$ 개의 줄에 각각 하나의 정수가 주어지는데, $i$ 번째 줄에는 수열 $a$의 $i$ 번째 원소인 $a_i$가 주어집니다. ($-10^9 \\le a_i \\le 10^9$).</p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t",
+  "input": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>입력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_input\" class=\"problem-text\">\n\t\t\t\t\t<p>첫 줄에 수열 $a_i$의 길이를 나타내는 하나의 정수 $n$이 주어집니다. ($1 \\le n \\le 10^5$)</p>\r\n\r\n<p>다음 $n$ 개의 줄에 각각 하나의 정수가 주어지는데, $i$ 번째 줄에는 수열 $a$의 $i$ 번째 원소인 $a_i$가 주어집니다. ($-10^9 \\le a_i \\le 10^9$)</p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t",
   "output": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>출력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_output\" class=\"problem-text\">\n\t\t\t\t\t<p>행렬의 대각합의 최댓값을 나타내는 하나의 정수를 출력합니다.</p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t"
 }
