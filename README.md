@@ -13,5 +13,7 @@ inside the repository directory.
 python3 new-tr.py <problem-id> <language-code> <username>
 ```
 
+- `<language-code>` should be a valid [IETF language tag](https://www.wikiwand.com/en/IETF_language_tag), with `-` replaced by `_` (as in `ko_KR`).
+
 A file will be generated as `src/<problem-id>/<language-code>-<username>.json`.
 You can translate the file and send a pull request.
