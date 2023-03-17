@@ -1,0 +1,6 @@
+{
+  "title": "엘리베이터",
+  "description": "\n\t\t\t\t<div class=\"headline\">\n\t\t\t\t<h2>문제</h2>\n\t\t\t\t</div>\n\t\t\t\t<div id=\"problem_description\" class=\"problem-text\">\n\t\t\t\t<p>미샤는 $n$ 층에 삽니다. 입구에 서면, 미샤는 엘리베이터가 몇 층에 있는지 보고 엘리베이터를 부를지 계단으로 걸어 올라갈지 결정합니다.</p>\r\n\r\n<p>오늘 엘리베이터는 $k$ 층에 있습니다. 미샤가 서 있는 입구는 $1$ 층입니다. 한 층을 걸어 올라가는 데 걸리는 시간은 $a$ 초입니다. 엘리베이터는 한 층 당 $b$ 초의 속도로 움직입니다. 엘리베이터에 들어가는 시간과 엘리베이터를 나가는 시간, 계단으로 갔다가 계단에서 오는 시간은 무시합니다.</p>\r\n\r\n<p>계단을 활용할 때와 엘리베이터를 사용할 때 미샤가 자기가 사는 층까지 가는 데 걸리는 시간을 각각 출력해 미샤의 결정을 도와줍시다.</p>\r\n\n\t\t\t\t</div>\n\t\t\t\t",
+  "input": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>입력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_input\" class=\"problem-text\">\n\t\t\t\t\t<p>정수가 입력으로 주어집니다: $n$, $k$, $a$, $b$.</p>\r\n\r\n<p>$2 \\le n \\le 100$, $1 \\le k \\le 100$, $1 \\le a, b \\le 1000$.</p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t",
+  "output": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>출력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_output\" class=\"problem-text\">\n\t\t\t\t\t<p>두 정수를 출력합니다: 미샤가 층까지 엘리베이터로 갈 때 걸리는 시간과 계단을 사용할 때 걸리는 시간입니다.</p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t"
+}
