@@ -1,6 +1,6 @@
 {
   "title": "로빈슨 크루소",
-  "description": "\n\t\t\t\t<div class=\"headline\">\n\t\t\t\t<h2>문제</h2>\n\t\t\t\t</div>\n\t\t\t\t<div id=\"problem_description\" class=\"problem-text\">\n\t\t\t\t<p>로빈슨 크루소는 무인도에서 오두막 벽을 이용해 날짜를 기념합니다.</p>\r\n\r\n<p>크루소는 매일 날짜를 표시하는데, 이 문제에서는 영문자 &lt;<code>I</code>&gt; 로 표기합니다. 또 $5$ 일마다 기존 $4$ 개의 표시를 지우는데, 이 문제에서는 영문자 &lt;<code>V</code>&gt; 로 표기합니다.</p>\r\n\r\n<p>$n$ 번째 날에 로빈슨 오두막 벽에는 어떤 표시가 있을까요?</p>\r\n\n\t\t\t\t</div>\n\t\t\t\t",
-  "input": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>입력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_input\" class=\"problem-text\">\n\t\t\t\t\t<p>하나의 수 $n$ 이 주어집니다. ($1 \\le n \\le 10\\,000$).</p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t",
-  "output": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>출력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_output\" class=\"problem-text\">\n\t\t\t\t\t<p>$n$ 번째 날 로빈슨의 오두막에 있는 표시를 출력합니다. </p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t"
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>로빈슨 크루소는 무인도에서 오두막 벽을 이용해 날짜를 기념합니다.</p> <p>크루소는 매일 날짜를 표시하는데, 이 문제에서는 영문자 &lt;<code>I</code>&gt; 로 표기합니다. 또 $5$ 일마다 기존 $4$ 개의 표시를 지우는데, 이 문제에서는 영문자 &lt;<code>V</code>&gt; 로 표기합니다.</p> <p>$n$ 번째 날에 로빈슨 오두막 벽에는 어떤 표시가 있을까요?</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>하나의 수 $n$ 이 주어집니다. ($1 \\le n \\le 10\\,000$).</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>$n$ 번째 날 로빈슨의 오두막에 있는 표시를 출력합니다. </p> </div> "
 }

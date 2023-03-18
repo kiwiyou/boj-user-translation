@@ -1,6 +1,6 @@
 {
   "title": "Hello World",
-  "description": "\n\t\t\t\t<div class=\"headline\">\n\t\t\t\t<h2>Statement</h2>\n\t\t\t\t</div>\n\t\t\t\t<div id=\"problem_description\" class=\"problem-text\">\n\t\t\t\t<p>\r\n\tPrint <code>Hello World!</code></p>\r\n\n\t\t\t\t</div>\n\t\t\t\t",
-  "input": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>Input</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_input\" class=\"problem-text\">\n\t\t\t\t\t<p>\r\n\tNone</p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t",
-  "output": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>Output</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_output\" class=\"problem-text\">\n\t\t\t\t\t<p>\r\n\tPrint <code>Hello World!</code></p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t"
+  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>\r\n\tPrint <code>Hello World!</code></p> </div> ",
+  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>\r\n\tNone</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>\r\n\tPrint <code>Hello World!</code></p> </div> "
 }

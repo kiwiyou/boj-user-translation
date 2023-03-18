@@ -1,0 +1,6 @@
+{
+  "title": "A-B",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Write a program that reads A and B, and print the value of A-B.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>Two integers A, B are given on the first line. (0 &lt; A, B &lt; 10)</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print an integer whose value is equal to A-B.</p> </div> "
+}

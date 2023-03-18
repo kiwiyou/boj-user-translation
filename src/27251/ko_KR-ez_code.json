@@ -1,6 +1,6 @@
 {
   "title": "별표",
-  "description": "\n\t\t\t\t<div class=\"headline\">\n\t\t\t\t<h2>문제</h2>\n\t\t\t\t</div>\n\t\t\t\t<div id=\"problem_description\" class=\"problem-text\">\n\t\t\t\t<p>콜랴는 별표로 그림 그리기를 좋아합니다. 오늘 콜랴는 $k$ 번째 줄이 $k^2$ 개의 별로 이루어진, 총 $n$ 개 줄로 된 그림을 그리려 합니다. </p>\r\n\r\n<p>하지만 머지않아 콜랴는 별이 너무 많으면 보기 좋지 않다고 느꼈습니다. 따라서 다음 줄에 $100$ 개보다 많은 별표를 출력해야 한다면, $100$ 개의 별과 점 $3$ 개를 출력하기로 했습니다.</p>\r\n\r\n<p>콜랴가 계획을 실현하도록 도와줍시다.</p>\r\n\n\t\t\t\t</div>\n\t\t\t\t",
-  "input": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>입력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_input\" class=\"problem-text\">\n\t\t\t\t\t<p>하나의 정수 $n$ 이 주어집니다. ($1 \\le n \\le 100$).</p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t",
-  "output": "\n\t\t\t\t\t<div class=\"headline\">\n\t\t\t\t\t<h2>출력</h2>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div id=\"problem_output\" class=\"problem-text\">\n\t\t\t\t\t<p>콜랴의 계획에 따라 $n$ 개 줄을 출력합니다. 공백은 출력하지 않습니다. </p>\r\n\n\t\t\t\t\t</div>\n\t\t\t\t\t"
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>콜랴는 별표로 그림 그리기를 좋아합니다. 오늘 콜랴는 $k$ 번째 줄이 $k^2$ 개의 별로 이루어진, 총 $n$ 개 줄로 된 그림을 그리려 합니다. </p> <p>하지만 머지않아 콜랴는 별이 너무 많으면 보기 좋지 않다고 느꼈습니다. 따라서 다음 줄에 $100$ 개보다 많은 별표를 출력해야 한다면, $100$ 개의 별과 점 $3$ 개를 출력하기로 했습니다.</p> <p>콜랴가 계획을 실현하도록 도와줍시다.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>하나의 정수 $n$ 이 주어집니다. ($1 \\le n \\le 100$).</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>콜랴의 계획에 따라 $n$ 개 줄을 출력합니다. 공백은 출력하지 않습니다. </p> </div> "
 }
