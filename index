@@ -5,8 +5,14 @@
   "1001": [
     "en_US-kiwiyou"
   ],
+  "1008": [
+    "en_US-kiwiyou"
+  ],
   "10771": [
     "ko_KR-ez_code"
+  ],
+  "10869": [
+    "en_US-kiwiyou"
   ],
   "11257": [
     "ko_KR-bubbler"
@@ -106,6 +112,9 @@
   ],
   "27864": [
     "ko_KR-kiwiyou"
+  ],
+  "27866": [
+    "en_US-kiwiyou"
   ],
   "27908": [
     "ko_KR-kiwiyou"
