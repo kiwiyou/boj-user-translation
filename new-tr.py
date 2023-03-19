@@ -17,6 +17,8 @@ def find_tag_end(s):
             if t == 0:
                 return s[:i], s[i:]
             t -= 1
+        if s[i] == '<' and s[i+1] == 'i' and s[i+2] == 'm' and s[i+3] == 'g':
+            pass
         elif s[i] == '<':
             t += 1
     raise AssertionError("unreachable")
