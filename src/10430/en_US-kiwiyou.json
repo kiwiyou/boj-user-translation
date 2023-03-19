@@ -1,0 +1,6 @@
+{
+  "title": "Remainder",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Does (A+B)%C equal to ((A%C) + (B%C))%C?</p> <p>Does (A&times;B)%C equal to ((A%C) &times; (B%C))%C?</p> <p>Given three integers A, B, and C, calculate the four values above.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>Three integers A, B, and C are given on the first line. (2 &le; A, B, C &le; 10000)</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print four lines, each containing (A+B)%C, ((A%C) + (B%C))%C, (A&times;B)%C, and ((A%C) &times; (B%C))%C, respectively.</p> </div> "
+}

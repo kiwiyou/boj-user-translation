@@ -1,0 +1,6 @@
+{
+  "title": "??!",
+  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Junas was surprised to see that his username <code>joonas</code> had already taken. Joonas expresses his surprise as <code>??!</code> following the username. Given a username that exists on the site, print his expression of surprise.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>A username is given on the first line. It consists only of alphabet lowercases and its length does not exceed 50.</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print his expression of surprise on the first line.</p> </div> "
+}
