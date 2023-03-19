@@ -1,7 +1,7 @@
 {
   "title": "Character",
   "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Given a word $S$ and an integer $i$, print the $i$-th character of $S$.</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>A string cosisting of only alphabet lower and upper case characters, $S$ is given on the first line. The length of $S$ does not exceed $1\\,000$.</p> <p>An integer $i$ is given on the second line. ($1 \\le i \\le \\left|S\\right|$)</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>A string consisting of only alphabet lower and upper case letters, $S$ is given on the first line. The length of $S$ does not exceed $1\\,000$.</p> <p>An integer $i$ is given on the second line. ($1 \\le i \\le \\left|S\\right|$)</p> </div> ",
   "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print the $i$-th character of $S$.</p> </div> ",
   "hint": " <div class=\"headline\"> <h2>Note</h2> </div> <div id=\"problem_hint\" class=\"problem-text\"> <p>$\\left|S\\right|$ denotes the length of $S$.</p> </div> "
 }
