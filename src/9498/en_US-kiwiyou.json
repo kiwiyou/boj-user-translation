@@ -1,0 +1,6 @@
+{
+  "title": "Grade",
+  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Given your point on the exam (integer, in percentage), print the grade you are in. A: 90% ~ 100%, B: 80% ~ 89%, C: 70% ~ 79%, D: 60% ~ 69%, F: otherwise.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>An integer p, denoting the point on the exam, is given on the first line. (0 &le; p &le; 100)</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print the grade you are in.</p> </div> "
+}
