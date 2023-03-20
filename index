@@ -11,6 +11,12 @@
   "10171": [
     "en_US-kiwiyou"
   ],
+  "10189": [
+    "ko_KR-kiwiyou"
+  ],
+  "10350": [
+    "ko_KR-kiwiyou"
+  ],
   "10430": [
     "en_US-kiwiyou"
   ],
@@ -56,8 +62,20 @@
   "14210": [
     "ko_KR-ez_code"
   ],
+  "14337": [
+    "ko_KR-kiwiyou"
+  ],
   "15235": [
     "ko_KR-ez_code"
+  ],
+  "16099": [
+    "ko_KR-kiwiyou"
+  ],
+  "1809": [
+    "ko_KR-kiwiyou"
+  ],
+  "18096": [
+    "ko_KR-kiwiyou"
   ],
   "18100": [
     "ko_KR-ez_code"
@@ -65,28 +83,67 @@
   "18108": [
     "en_US-kiwiyou"
   ],
+  "18301": [
+    "ko_KR-kiwiyou"
+  ],
   "18412": [
     "ko_KR-ez_code"
   ],
   "19499": [
     "ko_KR-kiwiyou"
   ],
+  "21300": [
+    "ko_KR-kiwiyou"
+  ],
   "21324": [
     "ko_KR-ez_code"
+  ],
+  "22193": [
+    "ko_KR-kiwiyou"
+  ],
+  "23234": [
+    "ko_KR-kiwiyou"
   ],
   "23235": [
     "ko_KR-kiwiyou"
   ],
+  "2372": [
+    "ko_KR-kiwiyou"
+  ],
+  "2377": [
+    "ko_KR-kiwiyou"
+  ],
+  "24078": [
+    "ko_KR-kiwiyou"
+  ],
+  "24082": [
+    "ko_KR-ez_code"
+  ],
   "24084": [
     "ko_KR-ez_code"
+  ],
+  "24086": [
+    "ko_KR-kiwiyou"
   ],
   "24302": [
     "ko_KR-bubbler"
   ],
+  "24309": [
+    "ko_KR-ez_code"
+  ],
+  "24568": [
+    "ko_KR-ez_code"
+  ],
   "24625": [
     "ko_KR-ez_code"
   ],
+  "24736": [
+    "ko_KR-ez_code"
+  ],
   "24758": [
+    "ko_KR-w8385"
+  ],
+  "24786": [
     "ko_KR-w8385"
   ],
   "2557": [
@@ -94,6 +151,30 @@
   ],
   "2588": [
     "en_US-kiwiyou"
+  ],
+  "26209": [
+    "ko_KR-kiwiyou"
+  ],
+  "26307": [
+    "ko_KR-kiwiyou"
+  ],
+  "26489": [
+    "ko_KR-kiwiyou"
+  ],
+  "26545": [
+    "ko_KR-kiwiyou"
+  ],
+  "26574": [
+    "ko_KR-kiwiyou"
+  ],
+  "26575": [
+    "ko_KR-kiwiyou"
+  ],
+  "26711": [
+    "ko_KR-kiwiyou"
+  ],
+  "26766": [
+    "ko_KR-kiwiyou"
   ],
   "27219": [
     "ko_KR-ez_code"
@@ -109,6 +190,21 @@
   ],
   "27267": [
     "ko_KR-ez_code"
+  ],
+  "27324": [
+    "ko_KR-kiwiyou"
+  ],
+  "27327": [
+    "ko_KR-kiwiyou"
+  ],
+  "27328": [
+    "ko_KR-kiwiyou"
+  ],
+  "27331": [
+    "ko_KR-kiwiyou"
+  ],
+  "27389": [
+    "ko_KR-kiwiyou"
   ],
   "27512": [
     "en_US-hjroh0315"
@@ -161,11 +257,32 @@
   "27912": [
     "ko_KR-kiwiyou"
   ],
+  "3733": [
+    "ko_KR-ez_code"
+  ],
+  "5341": [
+    "ko_KR-kiwiyou"
+  ],
+  "6840": [
+    "ko_KR-kiwiyou"
+  ],
   "6872": [
     "ko_KR-w8385"
   ],
+  "7891": [
+    "ko_KR-kiwiyou"
+  ],
   "8370": [
     "ko_KR-kiwiyou"
+  ],
+  "8437": [
+    "ko_KR-kiwiyou"
+  ],
+  "8545": [
+    "ko_KR-ez_code"
+  ],
+  "8871": [
+    "ko_KR-ez_code"
   ],
   "9498": [
     "en_US-kiwiyou"

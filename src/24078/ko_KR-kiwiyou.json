@@ -1,0 +1,10 @@
+{
+  "title": "나머지",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>양의 정수 <var>X</var>가 주어질 때 <var>X</var>를 <var>21</var>로 나눈 나머지를 출력하여라.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>입력은 아래 형식으로 주어진다.</p> <pre> <var>X</var></pre> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p><var>X</var>를 <var>21</var>로 나눈 나머지를 출력한다.</p> </div> ",
+  "limit": " <div class=\"headline\"> <h2>제한</h2> </div> <div id=\"problem_limit\" class=\"problem-text\"> <ul> <li><var>1 ≦ X ≦ 100</var></li> <li><var>X</var>는 정수이다.</li> </ul> </div> ",
+  "sample_explain_1": " <div id=\"problem_sample_explain_1\" class=\"problem-text\"> <ul> <li><var>50</var>을 <var>21</var>로 나눈 나머지는 <var>8</var>이므로 <var>8</var>을 출력한다.</li> </ul> </div> ",
+  "sample_explain_2": " <div id=\"problem_sample_explain_2\" class=\"problem-text\"> <ul> <li><var>X</var>가 <var>21</var>로 나누어떨어지는 경우도 있다. 이때는 나머지가 <var>0</var>이므로, <var>0</var>을 출력한다.</li> </ul> </div> ",
+  "sample_explain_3": " <div id=\"problem_sample_explain_3\" class=\"problem-text\"> <ul> <li><var>5</var>를 <var>21</var>로 나눈 나머지는 <var>5</var>이므로 <var>5</var>를 출력한다.</li> </ul> </div> "
+}

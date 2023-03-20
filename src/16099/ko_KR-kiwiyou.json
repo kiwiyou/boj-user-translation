@@ -1,0 +1,6 @@
+{
+  "title": "신촌과 안암",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>세계에서 많은 대학교들은 서로 깊은 관계를 맺고 실력을 다투는 일이 있다. 잉글랜드에서는 옥스포드와 캠브릿지가 매년 보트 경주를 하는 것으로 유명하다. 대한민국에서는 연세대와 고려대가 매년 연고전을 여는 것으로 유명하다.</p> <p>고려대학교와 연세대학교는 여러 운동 경기를 개최하려고 한다. 이미 어떤 경기를 할지, 규칙은 어떻게 할지 등은 모두 정했지만 어디서 대회가 열릴지는 항상 의견이 맞지 않는다. 당연히 서로의 학교가 더 좋은 시설을 갖추고 있다고 주장하고 있다.</p> <p>결국 경기는 더 큰 직사각형 운동장을 가진 쪽에서 열기로 했다. 남은 일은 각 학교의 운동장 크기의 정보가 주어졌을 때 어느 쪽이 더 큰 운동장을 가지고 있는지 결정하는 일이다.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>입력은 여러 테스트 케이스로 이루어져 있다. 각 테스트 케이스의 첫째 줄에는 네 개의 정수 1 &le; w<sub>y</sub>, h<sub>y</sub>, w<sub>k</sub>, h<sub>k</sub> &le; 10<sup>9</sup>이 주어진다. w<sub>y</sub>과 h<sub>y</sub>은 연세대학교 운동장의 너비와 높이를, w<sub>k</sub>와 h<sub>k</sub>는 고려대학교 운동장의 너비와 높이를 나타낸다.</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>각 테스트 케이스마다 운동장이 더 큰 쪽의 이름을 출력한다. 고려대학교 운동장이 더 크면 <code>Eurecom</code>을, 연세대학교 운동장이 더 크면 <code>TelecomParisTech</code>를, 동률이면 <code>Tie</code>를 출력한다. 출력에는 빈 줄이 있으면 안 된다.</p> </div> "
+}

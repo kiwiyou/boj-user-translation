@@ -1,4 +1,4 @@
-from requests import get
+from http.client import HTTPSConnection
 from argparse import ArgumentParser
 from json import dump, load
 import re
@@ -28,8 +28,10 @@ regex = re.compile(r'<section\s+id="(\w+)"\s+class="problem-section">')
 meaningless = re.compile(r'[\n\r\t]+(<|$)')
 try:
     headers = {'User-Agent': 'Mozilla/5.0'}
-    req = get(f'https://www.acmicpc.net/problem/{args.id}', headers=headers)
-    text = req.text
+    req = HTTPSConnection('www.acmicpc.net')
+    req.request('GET', f'/problem/{args.id}', headers=headers)
+    res = req.getresponse()
+    text = res.read().decode()
     title_index = text.index('"problem_title"')
     title, _, text = text[title_index+16:].partition("</span>")
     match = None
@@ -47,15 +49,15 @@ try:
         print(repr(filename), 'already exists.')
         exit(1)
     dump(sections, open(f'{directory}/{filename}',
-         'w+t'), indent=2, sort_keys=False, ensure_ascii=False)
+         'w+t', encoding='utf-8'), indent=2, sort_keys=False, ensure_ascii=False)
     print(f'Generated {directory}/{filename}.')
-    index = load(open('index', 'rt'))
+    index = load(open('index', 'rt', encoding='utf-8'))
     key = str(args.id)
     if key not in index:
         index[key] = []
     if realname not in index[key]:
         index[key].append(realname)
-        dump(index, open('index', 'wt'), indent=2, sort_keys=True)
+        dump(index, open('index', 'wt', encoding='utf-8'), indent=2, sort_keys=True)
     print('Saved index.')
 except Exception as e:
     print("Error:", e)

@@ -1,0 +1,6 @@
+{
+  "title": "은행",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>뉴질랜드 키위마을에는 n 개의 은행이 있다. (0 &lt; n &lt; 10000) 각 은행은 원형으로 배치되어 있어 한 은행의 왼쪽과 오른쪽에는 다른 은행이 있고, 0 번 은행부터 시계방향으로 n-1 번 은행까지 존재한다. i 번 은행의 자본금 k<sub>i</sub>는 -32000 &lt; k<sub>i</sub> &lt; 32000을 만족한다. 모든 은행의 자본금의 합은 양수임이 알려져 있다. 어떤 은행의 자본금 k<sub>i</sub>가 음수라면, 은행 요정이 요술을 부려 자본금의 부호를 바꿀 수 있다. 예를 들어 k<sub>i</sub> = -7이라면 요술을 부리고 나서 k<sub>i</sub> = 7이 된다. 안타깝지만 이 요술은 이웃한 두 은행에 불행을 가져온다. i 번 은행 양 옆의 은행은 |k<sub>i</sub>|만큼 자본금이 줄어든다! 예를 들어 왼쪽 은행의 자본금 k<sub>L</sub> = 5, 오른쪽 은행의 자본금 k<sub>R</sub> = 11이라면, i 번 은행에 요술을 부린 이후에 k<sub>L</sub> = -2, k<sub>R</sub> = 4가 된다.</p> <p>은행 요정이 모든 은행의 자본금을 0 이상으로 만들기 위해서는 요술을 최소한 몇 번 부려야 할까?</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>첫째 줄에 은행의 수 n이 주어진다. 둘째 줄에 0 번 은행부터 n-1 번 은행까지, i 번 은행의 자본금 k<sub>i</sub>가 주어진다. 각 자본금은 공백 하나로 구분되어 있다.</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>첫째 줄에 문제의 답을 출력한다.</p> </div> "
+}

@@ -1,0 +1,6 @@
+{
+  "title": "메트로놈",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>메트로놈은 박자를 맞추기 위해 쓰이는 기계 장치이다. 스프링, 역진자, 그리고 탈진기로 구성되어 있다. 키위새는 실로폰을 박자에 맞춰 연주하는 법을 배우기 위해 메트로놈을 샀다. 메트로놈의 태엽을 한 바퀴 감으면 메트로놈이 네 번 똑딱인다고 한다. 키위새의 음악 연주가 끝나는 동시에 메트로놈이 멈추도록 하고 싶을 때, 태엽을 몇 번 감아야 할까?</p> <p>For a given song, how many revolutions must he wind the key?</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>첫째 줄에 음악의 길이 $n$이 똑딱이는 횟수를 단위로 주어진다. $(1 \\le n \\le 10^5)$</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>키위새의 음악 연주가 끝남과 동시에 메트로놈이 멈추기 위해서 메트로놈의 태엽을 감아야 하는 바퀴 수를 출력한다. 정답은 소수점 아래 두 자리까지 정확해야 한다.</p> </div> "
+}
