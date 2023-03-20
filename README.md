@@ -1,4 +1,7 @@
-# boj-user-translation
+<div align="center">
+    <h1>boj-user-translation</h1>
+    <p>English / <a href="https://github.com/kiwiyou/boj-user-translation/blob/main/README-ko.md">한국어</a></p>
+</div>
 
 User translation repository for Baekjoon Online Judge.
 
@@ -15,7 +18,9 @@ inside the repository directory.
 python3 new-tr.py <problem-id> <language-code> <username>
 ```
 
-- `<language-code>` should be a valid [IETF language tag](https://www.wikiwand.com/en/IETF_language_tag), with `-` replaced by `_` (as in `ko_KR`).
+- `<language-code>` should be a valid [IETF language tag](https://www.wikiwand.com/en/IETF_language_tag), with `-` replaced by `_` (as in `en_US`, `ko_KR`).
 
-A file will be generated as `src/<problem-id>/<language-code>-<username>.json`.
-You can translate the file and send a pull request.
+A file will be generated as `src/<problem-id>/<language-code>-<username>.json`,
+and The file `index` will be updated accordingly.
+
+You can translate the generated file, push to your repository, and send a pull request.
