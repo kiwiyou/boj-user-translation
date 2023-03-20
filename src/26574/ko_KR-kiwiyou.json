@@ -1,0 +1,6 @@
+{
+  "title": "복사기",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>여러분의 복사기가 지난 주에 고장났지만 내일 숙제로 수 목록을 복사해 가야 한다! 다행히 컴퓨터가 수를 복사하는 일을 대신 해 줄 것이다. 수가 주어지면 각 줄에 주어진 수를 두 번 공백으로 구분하여 출력한다.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>첫째 줄에 수의 개수 n이 주어진다. 다음 n개 줄에 복사할 정수가 주어진다.</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>각 줄마다 원래 수와 복사한 수를 출력한다.</p> </div> "
+}
