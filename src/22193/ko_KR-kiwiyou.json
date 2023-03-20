@@ -1,0 +1,8 @@
+{
+  "title": "큰? 수 곱셈",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>두 음이 아닌 정수 A와 B의 곱을 계산하는 프로그램을 작성하여라. 두 수는 각각 N, M 자리 수이다.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>첫째 줄에 두 수의 길이 N과 M이 주어진다. 그다음 두 줄에 각각 A와 B가 주어진다. 0을 제외한 수는 0으로 시작하지 않는다.</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>두 수의 곱을 출력한다. 0이 아닌 수는 0으로 시작하면 안 된다.</p> </div> ",
+  "limit": " <div class=\"headline\"> <h2>제한</h2> </div> <div id=\"problem_limit\" class=\"problem-text\"> <ul> <li>1 &le; N, M &le; 50 000</li> </ul> </div> ",
+  "subtask": "<div class=\"headline\"><h2>서브태스크</h2></div><div id=\"problem_subtask\" class=\"problem-text\"><div class=\"table-responsive\"><table class=\"table table-bordered td-middle subtask-table\" style=\"width: 100%;\"><thead><th style=\"width: 5%;\">번호</th><th style=\"width: 5%;\">배점</th><th style=\"width: 90%;\">제한</th></thead><tbody><tr data-subtask-id=\"1\"><td>1</td><td>20</td><td class=\"subtask-body\"><p>N, M &le; 4</p> </td></tr><tr data-subtask-id=\"2\"><td>2</td><td>20</td><td class=\"subtask-body\"><p>N, M &le; 9</p> </td></tr><tr data-subtask-id=\"3\"><td>3</td><td>30</td><td class=\"subtask-body\"><p>N, M &le; 5 000</p> </td></tr><tr data-subtask-id=\"4\"><td>4</td><td>30</td><td class=\"subtask-body\"><p>추가적인 제약 조건이 없다.</p> </td></tr></tbody></table></div></div>"
+}
