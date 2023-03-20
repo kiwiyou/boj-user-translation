@@ -51,13 +51,13 @@ try:
     dump(sections, open(f'{directory}/{filename}',
          'w+t'), indent=2, sort_keys=False, ensure_ascii=False)
     print(f'Generated {directory}/{filename}.')
-    index = load(open('index', 'rt'))
+    index = load(open('index', 'rt', encoding='utf-8'))
     key = str(args.id)
     if key not in index:
         index[key] = []
     if realname not in index[key]:
         index[key].append(realname)
-        dump(index, open('index', 'wt'), indent=2, sort_keys=True)
+        dump(index, open('index', 'wt', encoding='utf-8'), indent=2, sort_keys=True)
     print('Saved index.')
 except Exception as e:
     print("Error:", e)
