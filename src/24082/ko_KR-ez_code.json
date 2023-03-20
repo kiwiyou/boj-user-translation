@@ -1,0 +1,7 @@
+{
+  "title": "정육면체",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>한 변의 길이가 <var>X</var> cm인 정육면체의 부피는 <var>X</var> cm<sup>3</sup>입니다.</p> <p>정수 <var>X</var>가 주어집니다. 한 변의 길이가 <var>X</var> cm인 정육면체의 부피는 몇 cm<sup>3</sup>인지 구하시오.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>아래의 형식으로 표준 입력이 주어집니다.</p> <pre> <var>X</var></pre> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>한 변의 길이가 <var>X</var> cm인 정육면체의 부피가 몇 cm<sup>3</sup>일지, 단위를 빼고 출력합니다.</p> </div> ",
+  "limit": " <div class=\"headline\"> <h2>제한</h2> </div> <div id=\"problem_limit\" class=\"problem-text\"> <ul> <li><var>1 ≦ X ≦ 1000</var></li> <li><var>X</var>는 정수</li> </ul> </div> "
+}
