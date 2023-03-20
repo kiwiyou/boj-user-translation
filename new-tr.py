@@ -1,4 +1,4 @@
-from requests import get
+from http.client import HTTPSConnection
 from argparse import ArgumentParser
 from json import dump, load
 import re
@@ -28,8 +28,10 @@ regex = re.compile(r'<section\s+id="(\w+)"\s+class="problem-section">')
 meaningless = re.compile(r'[\n\r\t]+(<|$)')
 try:
     headers = {'User-Agent': 'Mozilla/5.0'}
-    req = get(f'https://www.acmicpc.net/problem/{args.id}', headers=headers)
-    text = req.text
+    req = HTTPSConnection('www.acmicpc.net')
+    req.request('GET', f'/problem/{args.id}', headers=headers)
+    res = req.getresponse()
+    text = res.read().decode()
     title_index = text.index('"problem_title"')
     title, _, text = text[title_index+16:].partition("</span>")
     match = None
