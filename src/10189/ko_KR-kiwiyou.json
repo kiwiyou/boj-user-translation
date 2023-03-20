@@ -1,0 +1,5 @@
+{
+  "title": "HOOK",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>예제처럼 <code>HOOK</code>을 출력한다.</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>예제처럼 <code>HOOK</code>을 출력한다.</p> </div> "
+}
