@@ -49,7 +49,7 @@ try:
         print(repr(filename), 'already exists.')
         exit(1)
     dump(sections, open(f'{directory}/{filename}',
-         'w+t'), indent=2, sort_keys=False, ensure_ascii=False)
+         'w+t', encoding='utf-8'), indent=2, sort_keys=False, ensure_ascii=False)
     print(f'Generated {directory}/{filename}.')
     index = load(open('index', 'rt', encoding='utf-8'))
     key = str(args.id)
