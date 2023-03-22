@@ -1,0 +1,54 @@
+<section id="title">세탁기</section>
+<section id="description">
+  <div class="headline"><h2>문제</h2></div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      세탁기에 <em>n</em> 벌의 옷이 있다. 세탁기는 모든 옷을 한 번에 담을 만큼
+      크지만 옷의 색이 서로 섞인다는 단점이 있다. <em>r<sub>i</sub></em
+      >, <em>g<sub>i</sub></em
+      >, <em>b<sub>i</sub></em
+      >를 <em>i</em> 번째 옷의 빨강, 초록, 파랑의 양이라고 하자. <em>n</em> 벌의
+      옷을 한 번에 세탁하면 색의 <em>섞임</em> <em>c</em>는
+    </p>
+    <p>\[c = \sum_{i=1}^{n}{(r_i - r)^2 + (g_i - g)^2 + (b_i - b)^2}\]</p>
+    <p>
+      로 정의된다. 여기서 <em>r</em>, <em>g</em>, and <em>b</em>는 각각
+      <em>r<sub>i</sub></em
+      >, <em>g<sub>i</sub></em
+      >, <em>b<sub>i</sub></em
+      >의 산술평균이다. <em>i</em> 번째 옷은 삼차원 RGB 공간에서 점 (<em
+        >r<sub>i</sub></em
+      >, <em>g<sub>i</sub></em
+      >, <em>b<sub>i</sub></em
+      >)로 표현된다. RGB 공간에서 어떤 세 점도 한 직선 위에 있지 않으며, 어떤 네
+      점도 한 평면 위에 있지 않음이 보장된다.
+    </p>
+    <p>
+      세탁기가 전기를 많이 쓰기 때문에 <em>n</em> 벌의 옷을 최대 <em>k</em> 개의
+      그룹으로 나누어 세탁하려고 한다. 전체 색의 섞임은 각 세탁에서 발생한
+      섞임의 합이다. <em>n</em> 벌의 옷의 색 정보와 <em>k</em>가 주어질 때
+      섞임을 최소화하는 프로그램을 작성하여라.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline"><h2>입력</h2></div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 두 정수 <em>n</em>과 <em>k</em>가 주어진다. (1 &le;
+      <em>n</em> &le; 100; 1 &le; <em>k</em> &le; 2) 다음 <em>n</em> 개 줄의
+      <em>i</em>째 줄에는 세 정수 <em>r<sub>i</sub></em
+      >, <em>g<sub>i</sub></em
+      >, <em>b<sub>i</sub></em
+      >가 주어진다. (0 &le; <em>r<sub>i</sub></em
+      >, <em>g<sub>i</sub></em
+      >, <em>b<sub>i</sub></em> &le; 1,000)
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline"><h2>출력</h2></div>
+  <div id="problem_output" class="problem-text">
+    <p>최소 섞임을 소수점 아래 여섯째 자리까지 반올림하여 출력한다.</p>
+  </div>
+</section>
