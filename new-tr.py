@@ -13,14 +13,17 @@ args = parser.parse_args()
 def find_tag_end(s):
     t = 0
     for i, c in enumerate(s):
-        if s[i] == '<' and s[i+1] == '/':
-            if t == 0:
-                return s[:i], s[i:]
-            t -= 1
-        elif s[i] == '<' and s[i+1] == 'i' and s[i+2] == 'm' and s[i+3] == 'g':
-            pass
-        elif s[i] == '<':
-            t += 1
+        if s[i] == '<':
+            if s[i+1] == '/':
+                if t == 0:
+                    return s[:i], s[i:]
+                t -= 1
+            elif s[i+1] == 'i' and s[i+2] == 'm' and s[i+3] == 'g':
+                pass
+            elif s[i+1] == 'b' and s[i+2] == 'r':
+                pass
+            else:
+                t += 1
     raise AssertionError("unreachable")
 
 
