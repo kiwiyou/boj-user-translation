@@ -1,0 +1,66 @@
+<section id="title">Slot Machines</section>
+<section id="description">
+  <div class="headline"><h2>문제</h2></div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      슬롯머신은 화면의 각 칸(슬롯)에 표시된 그림에 따라 돈을 받을 수 있는
+      기계이다. 명일이의 슬롯머신은 슬롯이 총 여섯 개이다. 슬롯에 나타나는
+      그림은 열 가지가 있고, 각각 0부터 9까지의 수로 나타내자.
+      <em>i</em> 번 슬롯에 쓰인 수를 <em>w<sub>i</sub></em
+      >라 하면, 슬롯머신의 결과를 나타내는 수 <em>w</em> = <em>w</em><sub>1</sub
+      ><em>w</em><sub>2</sub><em>w</em><sub>3</sub><em>w</em><sub>4</sub
+      ><em>w</em><sub>5</sub><em>w</em><sub>6</sub>를 정의할 수 있다.
+    </p>
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/14959/1.png"
+        style="height: 140px; width: 175px"
+      />
+    </p>
+    <p style="text-align: center">그림 I.1. 슬롯머신의 구조</p>
+    <p>
+      슬롯머신이 오래돈 기계식에서 컴퓨터 기반으로 바뀌면서 유사난수 생성기를
+      사용하게 되었고, 이는 난수가 일정한 주기를 가지고 반복된다는 문제를
+      낳았다.
+      <em>T</em>[<em>i</em>]를 슬롯머신의 <em>i</em> 번째 결과라고 하자. 처음
+      <em>k</em> 개의 수 <em>T</em>[<em>1</em>], <em>T</em>[<em>2</em>], ⋯,
+      <em>T</em>[<em>k</em>]는 완전히 무작위한 결과가 만들어진다. 그러나 가능한
+      모든 <em>i</em>(&gt;<em>k</em>)에 대해서,
+      <em>T</em>[<em>i</em>+<em>p</em>] = <em>T</em>[<em>i</em>]를 만족하는
+      <em>p</em>가 존재하게 된다. 공격자가 <em>k</em>와 <em>p</em>의 값을 알 수
+      있다면, 슬롯머신에서 언제 좋은 결과가 나올지 알 수 있을 것이다.
+    </p>
+    <p>
+      예를 들어 처음에 슬롯머신의 결과가 612534, 3157, 423, 3157, 423, 3157
+      순으로 나왔다고 하자. (수의 앞에서 0은 제거한다) 만약 <em>k</em>와
+      <em>p</em>를 알고 있다면 열 번째 수를 예측할 수 있을 것이다. 하지만 가능한
+      <em>k</em>와 <em>p</em>는 여러 가지이다. 극단적인 예시로 <em>k</em>=5 이고
+      <em>p</em>=1이거나, <em>k</em>=0 이고 <em>p</em>=6일 수 있다. <em>k</em>와
+      <em>p</em>가 작을수록 더 맞을 확률이 높으므로 <em>k</em>+<em>p</em>가
+      가능한 작도록 하려고 한다. 그래도 후보가 여럿이라면, <em>p</em>가 가장
+      작은 것을 택한다. 이 경우는 <em>k</em>=1, <em>p</em>=2가 선택된다.
+    </p>
+    <p>
+      슬롯머신의 연속된 <em>n</em> 개의 결과 <em>T</em>[1], <em>T</em>[2], ⋯,
+      <em>T</em>[<em>n</em>]가 주어질 때 위 조건을 만족하는 <em>k</em>와
+      <em>p</em>를 찾아라.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline"><h2>입력</h2></div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 슬롯머신의 결과의 수 <em>n</em>이 주어진다. (1 &le;
+      <em>n</em> &le; 1,000,000) 다음 줄에 <em>n</em> 개의 수가 주어진다. 각
+      수는 0 이상 999,999 이하이다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline"><h2>출력</h2></div>
+  <div id="problem_output" class="problem-text">
+    <p>첫째 줄에 <em>k</em>와 <em>p</em>를 출력한다.</p>
+  </div>
+</section>
