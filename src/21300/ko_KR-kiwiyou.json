@@ -1,6 +1,0 @@
-{
-  "title": "공병 수거",
-  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>어떤 가게에서는 재활용을 장려하기 위해 공병 수거제를 실시한다. 다 마신 빈 병을 가져오면, 몇백 원 정도의 현금을 돌려주는 방식이다. 여러분은 뉴욕에서 주어진 공병을 갖다주었을 때 얼마나 돈을 받을 수 있는지 계산해야 한다. 키위 편의점에서는 500 ml 정도의 콜라, 사이다, 맥주, 우유, 와인, 물, 주스 병에 대해서 5 백 원을 지급한다.</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>첫째 줄에 500 ml 정도의 콜라, 사이다, 맥주, 우유, 와인, 물, 주스 병의 개수를 나타내는 정수 여섯 개가 입력된다. 모든 정수는 구간 [0, 100]에 속한다.</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>받을 수 있는 돈을 백 원 단위로 출력한다.</p> </div> "
-}

@@ -1,6 +1,0 @@
-{
-  "title": "다음 문자",
-  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>길이 <var>N</var>의 문자열 <var>S</var> 가 주어집니다.<var>S</var> 의 각 문자는 <code>J</code>, <code>O</code>, <code>I</code> 중 한 가지입니다.</p> <p>비버 비타로는 <var>N - 1</var>번 어떤 행동을 합니다. <var>i</var> 번째 (<var>1 ≦ i ≦ N - 1</var>) 행동은 다음과 같습니다.</p> <ul> <li><var>S</var> 의 <var>i + 1</var> 번째 문자를 확인합니다. 만약 <var>S</var> 의 <var>i + 1</var> 번째 문자가 <code>J</code> 일 경우, <var>S</var> 의 <var>i</var> 번째 문자를 칠판에 적습니다. </li> </ul> <p><var>N - 1</var> 번의 행동에서 비타로가 칠판에 적은 모든 문자를, 비타로가 적은 순서대로 개행으로 단락을 지어 출력합시다.</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>다음과 같이 표준 입력이 주어집니다.</p> <pre> <var>N</var> <var>S</var></pre> </div> ",
-  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p><var>N - 1</var> 번의 행동에서 비타로가 칠판에 적은 모든 문자를, 비타로가 적은 순서대로 개행으로 단락을 지어 출력합니다.</p> </div> "
-}

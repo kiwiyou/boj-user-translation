@@ -1,6 +1,0 @@
-{
-  "title": "Little Jeongmin",
-  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Little Jeongmin now can easliy calculate A + B. It's time to try A + B + C!</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>On the first line, three integers A, B, C is given. (1 &le; A, B, C, &le; 10<sup>12</sup>)</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print the value of A + B + C.</p> </div> "
-}

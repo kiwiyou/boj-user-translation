@@ -1,9 +1,0 @@
-{
-  "title": "시간 계산",
-  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p><var>1</var> 일은 <var>24</var> 시간이다.</p> <p>정수 <var>X</var>가 주어진다. <var>X</var> 일은 몇 시간일까?</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>입력은 아래 형식으로 표준 입력을 통해 주어진다.</p> <pre> <var>X</var></pre> </div> ",
-  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p><var>X</var>는 몇 시간인지 단위(시간)는 제거하고 출력한다.</p> </div> ",
-  "limit": " <div class=\"headline\"> <h2>제한</h2> </div> <div id=\"problem_limit\" class=\"problem-text\"> <ul> <li><var>1 &le; X &le; 365</var></li> <li><var>X</var>는 정수이다.</li> </ul> </div> ",
-  "sample_explain_1": " <div id=\"problem_sample_explain_1\" class=\"problem-text\"> <p><var>3</var> 일은 <var>72</var> 시간이므로 <var>72</var>를 출력한다.</p> </div> ",
-  "sample_explain_2": " <div id=\"problem_sample_explain_2\" class=\"problem-text\"> <p><var>100</var> 일은 <var>2400</var> 시간이므로 <var>2400</var>을 출력한다.</p> </div> "
-}

@@ -1,6 +1,0 @@
-{
-  "title": "Long Multiplication",
-  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>(Three digit number) &times; (Three digit number) can be calculated as such:</p> <p style=\"text-align: center;\"><img alt=\"\" src=\"/upload/images/f5NhGHVLM4Ix74DtJrwfC97KepPl27s%20(1).png\" style=\"width: 306px; height: 183px; \" /></p> <p>Given the integers for the place (1) and (2), find the values in places of (3) to (6).</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>Two three-digit integers, the values of (1) and (2) each, are given on each line.</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print four integers on each line, each denoting the value for (3) to (6).</p> </div> "
-}

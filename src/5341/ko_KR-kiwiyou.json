@@ -1,6 +1,0 @@
-{
-  "title": "피라미드",
-  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>피라미드를 만들기 위해서는 가장 밑에 n 개의 블록을 깔고, 그 위에 바로 아래 칸보다 하나 적은 개수의 블록을 쌓는 일을 한 블록만이 남을 때까지 반복한다.</p> <p style=\"text-align: center;\"><img alt=\"\" src=\"https://upload.acmicpc.net/48ff31aa-5aeb-4608-b36d-88ce8d638750/-/preview/\" style=\"width: 292px; height: 161px;\" /></p> <p>가장 밑에 깔린 블록의 개수가 주어졌을 때, 피라미드를 구성하기 위해 몇 개의 블록이 필요한지 구하여라.</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>한 줄에 하나씩, 피라미드 맨 아래 층의 블록 개수를 나타내는 양의 정수 하나가 주어진다. 입력의 마지막 줄에는 0이 하나 주어지며, 이는 입력의 끝을 나타낸다.</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>각 양수마다 피라미드를 구성하기 위해 필요한 블록의 수를 출력한다.</p> </div> "
-}

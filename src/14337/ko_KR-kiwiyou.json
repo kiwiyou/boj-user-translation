@@ -1,5 +1,0 @@
-{
-  "title": "헬리콥터",
-  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>아래 예시처럼 헬리콥터를 출력하는 프로그램을 작성하여라.</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>헬리콥터를 출력한다. 앞뒤에 빈 줄이 없어야 하며, 줄 끝에는 공백이 있으면 안 된다.</p> </div> "
-}

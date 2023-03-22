@@ -1,7 +1,0 @@
-{
-  "title": "A/B",
-  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Given two integers A and B, calculate A/B.</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>On the first line, two integers A and B are given. (0 &lt; A, B &lt; 10)</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print a single real number A/B.</p> <p>The answer will be considered correct if the absolute or relative error doesn't exceed 10<sup>-9</sup>.</p> </div> ",
-  "sample_explain_1": " <div id=\"problem_sample_explain_1\" class=\"problem-text\"> You don't have to print exactly nine decimal digits.</div> "
-}

@@ -1,4 +1,0 @@
-{
-  "title": "곰 세 마리",
-  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>곰 세 마리 노래를 아시나요? 아빠 곰과 엄마 곰, 아기 곰은 각각 가장 큰 그릇, 중간 크기 그릇, 작은 크기 그릇을 사용합니다. 세 개의 그릇의 크기가 주어졌을 때, 엄마 곰이 쓰는 그릇의 크기를 출력하세요. 모든 크기는 100 이하의 양의 정수입니다.</p> </div> "
-}

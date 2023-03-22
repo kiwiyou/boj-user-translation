@@ -1,6 +1,0 @@
-{
-  "title": "The World Responds",
-  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>많은 컴퓨터 프로그래밍 기초 강좌에서 수강생들이 배우는 첫 프로그램은 &ldquo;<code>Hello, World!</code>&rdquo;를 출력하는 프로그램이다. 출력을 볼 수 있는 가장 간단한 프로그램이기 때문이다. 이 프로그램의 역사를 거슬러 올라가면 1974 년 브라이언 커니건이 C 프로그래밍 강좌에서 예시로 든 것이 처음으로, 이때부터 오랫동안 사용되며 널리 알려지기 시작했다. 루이지애나 공과대학의 컴퓨터 동아리에는 200여 개에 달하는 프로그래밍 언어로 작성된 헬로 월드 프로젝트가 있다.</p> <p>헬로 월드는 쉽고 간단한 프로그램이지만 단점이 하나 있다. 세상에 인사를 하는데 어째서 세상이 답하지 않는가? 이런 단방향 의사소통은 35 년이나 지난 지금 너무나도 어색하다. 세계에서 프로그램에 인사를 건네는 프로그램을 작성하자.</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>입력은 없다.</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>&ldquo;<code>The world says hello!</code>&rdquo;를 출력한다.</p> </div> "
-}

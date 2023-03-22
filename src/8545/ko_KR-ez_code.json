@@ -1,6 +1,0 @@
-{
-  "title": "시범 문제",
-  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>주어진 세 글자 단어를 뒤집는 프로그램을 작성합시다.</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>유일한 줄에 하나의 세 글자 단어가 주어집니다.</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>유일한 줄에 입력 단어를 뒤집은 결과를 출력합니다.</p> </div> "
-}

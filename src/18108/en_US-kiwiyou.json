@@ -1,6 +1,0 @@
-{
-  "title": "C.E. 1998? Nah, Nirvana 2541",
-  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Arriving at Suvarnabhumi Airport to participate in ICPC Bangkok Regional, Team Redshift was surprised to see the large screen indicating the year as 2562.</p> <p>Thai uses Buddhist calendar, which is based on the year Buddha entered Nirvana. Given the Buddhist year, convert into the Common Era year.</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>An integer <em>y</em>, denotes the Buddhist year, is given on the first line. (1000 &le; <em>y</em> &le; 3000)</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>Print an integer indicating the year in the Common Era.</p> </div> "
-}

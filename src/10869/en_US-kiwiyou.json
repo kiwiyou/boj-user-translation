@@ -1,6 +1,0 @@
-{
-  "title": "Basic Arithmetics",
-  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>Given two integers A and B, print A+B, A-B, A×B, A/B (quotient), A%B (remainder).</p> </div> ",
-  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>Two integers are given on the first line. (1 &le; A, B &le; 10,000)</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>For each five lines, print A+B, A-B, A×B, A/B, A%B, respectively.</p> </div> "
-}

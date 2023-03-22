@@ -1,6 +1,0 @@
-{
-  "title": "Hello World",
-  "description": " <div class=\"headline\"> <h2>Statement</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <p>\r\n\tPrint <code>Hello World!</code></p> </div> ",
-  "input": " <div class=\"headline\"> <h2>Input</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>\r\n\tNone</p> </div> ",
-  "output": " <div class=\"headline\"> <h2>Output</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>\r\n\tPrint <code>Hello World!</code></p> </div> "
-}
