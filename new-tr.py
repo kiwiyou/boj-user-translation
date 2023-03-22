@@ -35,21 +35,22 @@ try:
     title_index = text.index('"problem_title"')
     title, _, text = text[title_index+16:].partition("</span>")
     match = None
-    sections = {"title": title}
+    sections = []
     while (match := regex.search(text)):
         elem_id = match.group(1)
         content, text = find_tag_end(text[match.end(0):])
-        sections[elem_id] = re.sub(
-            meaningless, lambda match: f' {match.group(1)}', content)
+        sections.append({"id": elem_id, "content": re.sub(
+            meaningless, lambda match: f' {match.group(1)}', content)})
     directory = f'src/{args.id}'
     realname = f'{args.language}-{args.author}'
-    filename = f'{realname}.json'
+    filename = f'{realname}.html'
     os.makedirs(directory, exist_ok=True)
     if os.access(f'{directory}/{filename}', os.F_OK):
         print(repr(filename), 'already exists.')
         exit(1)
-    dump(sections, open(f'{directory}/{filename}',
-         'w+t', encoding='utf-8'), indent=2, sort_keys=False, ensure_ascii=False)
+    with open(f'{directory}/{filename}', 'wt') as f:
+        f.writelines(
+            f"<section id=\"{section['id']}\">{section['content']}</section>\n" for section in sections)
     print(f'Generated {directory}/{filename}.')
     index = load(open('index', 'rt', encoding='utf-8'))
     key = str(args.id)
