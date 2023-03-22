@@ -20,7 +20,7 @@ python3 new-tr.py <problem-id> <language-code> <username>
 
 - `<language-code>` should be a valid [IETF language tag](https://www.wikiwand.com/en/IETF_language_tag), with `-` replaced by `_` (as in `en_US`, `ko_KR`).
 
-A file will be generated as `src/<problem-id>/<language-code>-<username>.json`,
+A file will be generated as `src/<problem-id>/<language-code>-<username>.html`,
 and The file `index` will be updated accordingly.
 
 You can translate the generated file, push to your repository, and send a pull request.

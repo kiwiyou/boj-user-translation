@@ -20,7 +20,7 @@ python3 new-tr.py <문제 번호> <언어 코드> <번역자명>
 
 - `<언어 코드>` 자리에는 [IETF language tag](https://www.wikiwand.com/en/IETF_language_tag)를 삽입하되, `-`는 `_`로 바꿔 주세요. (예: 한국어라면 `ko_KR`, 영어라면 `en_US`).
 
-`src/<문제번호>/<언어 코드>-<번역자명>.json` 파일이 생성되고, `index` 파일이 수정됩니다.
+`src/<문제번호>/<언어 코드>-<번역자명>.html` 파일이 생성되고, `index` 파일이 수정됩니다.
 
 생성된 파일을 번역하시고 푸시하신 뒤에 Pull Request를 보내 주세요.
 
