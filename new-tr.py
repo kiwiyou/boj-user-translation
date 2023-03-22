@@ -35,7 +35,7 @@ try:
     title_index = text.index('"problem_title"')
     title, _, text = text[title_index+16:].partition("</span>")
     match = None
-    sections = []
+    sections = [{"id": "title", "content": title}]
     while (match := regex.search(text)):
         elem_id = match.group(1)
         content, text = find_tag_end(text[match.end(0):])
