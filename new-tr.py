@@ -51,7 +51,7 @@ try:
     if os.access(f'{directory}/{filename}', os.F_OK):
         print(repr(filename), 'already exists.')
         exit(1)
-    with open(f'{directory}/{filename}', 'wt') as f:
+    with open(f'{directory}/{filename}', 'wt', encoding='utf-8') as f:
         f.writelines(
             f"<section id=\"{section['id']}\">{section['content']}</section>\n" for section in sections)
     print(f'Generated {directory}/{filename}.')

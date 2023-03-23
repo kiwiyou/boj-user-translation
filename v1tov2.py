@@ -10,9 +10,9 @@ for filename in args.filename:
     name, ext = splitext(filename)
     if ext != ".json":
         continue
-    with open(filename, 'rt') as f:
+    with open(filename, 'rt', encoding='utf-8') as f:
         json = load(f)
     if json:
-        with open(name + ".html", 'wt') as f:
+        with open(name + ".html", 'wt', encoding='utf-8') as f:
             f.writelines(
                 f"<section id=\"{key}\">{json[key]}</section>\n" for key in json)
