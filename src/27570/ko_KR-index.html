@@ -1,10 +1,10 @@
 <section id="title">초코칩 쿠키 만들기</section>
-<section id="description"> <div class="headline"> <h2>문제</h2> </div> <div id="problem_description" class="problem-text"> <p>격자형 팬을 이용해 초코칩 쿠키를 만드려고 합니다. 원하는 모양의 쿠키를 만들기 위해서는 쿠키가 있어야 하는 모든 칸에 굳은 반죽이 있어야 합니다.</p> <p>쿠키를 만드는 과정은 다음과 같습니다.</p> <ol> <li>쿠키 반죽을 임의의 칸들에 올려놓습니다.</li> <li>시간이 지나면 상하좌우가 전부 쿠키 반죽으로 둘러싸인 칸이 아니라면 놓인 반죽이 굳습니다.</li> </ol> <p>이 과정을 나타내면 아래와 같습니다. (s)는 원하는 모양입니다. C는 굳은 반죽, D는 굳지 않은 반죽에 해당합니다.</p> <pre>
-    (s)      (a1)     (a2)     (b1)     (b2) 
-    -X-X-    -D-D-    -C-C-    -C-C-    -C-C-
-    XXXXX    -D-D-    -C-C-    DCDCD    CCCCC
-    XXXXX    -DDD-    -CCC-    DCCCD    CCCCC
-    -XXX-    --D--    --C--    -DCD-    -CCC-
+<section id="description"> <div class="headline"> <h2>문제</h2> </div> <div id="problem_description" class="problem-text"> <p>격자형 팬을 이용해 초코칩 쿠키를 만드려고 합니다. 원하는 모양의 쿠키를 만들기 위해서는 쿠키가 있어야 하는 모든 칸에 굳은 반죽이 있어야 합니다.</p> <p>쿠키를 만드는 과정은 다음과 같습니다.</p> <ol> <li>쿠키 반죽을 임의의 칸들에 올려놓습니다.</li> <li>시간이 지나면 상하좌우가 전부 쿠키 반죽으로 둘러싸인 칸이 아니라면 놓인 반죽이 굳습니다.</li> </ol> <p>이 과정을 나타내면 아래와 같습니다. (s)는 원하는 모양입니다. C는 굳은 반죽, D는 굳지 않은 반죽에 해당합니다.</p> <pre>
+    (s)      (a1)     (a2)     (b1)     (b2) 
+    -X-X-    -D-D-    -C-C-    -C-C-    -C-C-
+    XXXXX    -D-D-    -C-C-    DCDCD    CCCCC
+    XXXXX    -DDD-    -CCC-    DCCCD    CCCCC
+    -XXX-    --D--    --C--    -DCD-    -CCC-
     --X--    -----    -----    --D--    --C-- </pre> <p>우선 쿠키 반죽을 8개 칸에 놓습니다(a1). 그러면 모든 반죽이 굳게 됩니다(a2). 다시 반죽을 8개 칸에 추가로 놓습니다(b1). 다시 놓은 반죽이 굳으면 원하는 모양이 됩니다(b2).</p> <p>이 과정은 매우 번거롭기 때문에 반죽을 굳히기 위해 기다리는 횟수를 최소한으로 하려고 합니다. 쿠키의 모양이 주어질 때, 반죽을 굳히기 위해 기다려야 하는 최소 횟수를 구합시다.</p> </div> </section>
 <section id="input"> <div class="headline"> <h2>입력</h2> </div> <div id="problem_input" class="problem-text"> <p>첫 번째 줄에는 팬의 행 수인 $n$과 열 수인 $m$ ($1 \leq n, m \leq 1\,000$)이 주어진다.</p> <p>다음 $n$개의 줄에는 쿠키를 뜻하는 &quot;<code>X</code>&quot;나 빈 칸을 뜻하는 &quot;<code>-</code>&quot;로 이루어진 $m$자의 문자열이 주어진다.</p> <p>모든 칸 중 적어도 하나는 &quot;<code>X</code>&quot;이고, 원하는 모양이 여러 조각으로 나뉜 형태일 수 있다.</p> </div> </section>
 <section id="output"> <div class="headline"> <h2>출력</h2> </div> <div id="problem_output" class="problem-text"> <p>원하는 모양대로 반죽을 굳히기 위해 기다려야 하는 횟수의 최솟값을 출력한다.</p> </div> </section>
