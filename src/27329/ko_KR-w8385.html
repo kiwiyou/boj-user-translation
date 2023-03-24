@@ -1,0 +1,43 @@
+<section id="title">문자열 반복</section>
+<section id="description">
+    <div class="headline"><h2>문제</h2></div>
+    <div id="problem_description" class="problem-text"><p><i>두 개의 동일한</i> 문자열을 연결하여 얻은 문자열을 <strong>반복 문자열</strong>이라고
+        합니다.</p>
+        <p>예를 들어 <code>OIOI</code>, <code>JJJJJJ</code>, <code>JOIOIJOIOI</code>는 반복 문자열이지만, <code>IOOI</code>,
+            <code>JOIIOI</code>는 반복 문자열이 아닙니다.</p>
+        <p>길이 <var>N</var> 의 문자열 <var>S</var> 가 주어집니다. <var>N</var> 은 짝수이고, <var>S</var> 의 각 문자는
+            <code>J</code>, <code>O</code>, <code>I</code> 로 이루어져 있습니다.</p>
+        <p><var>S</var> 가 반복 문자열이라면 <code>Yes</code> 를, 그렇지 않다면 <code>No</code> 를 출력해야 합니다. </p></div>
+</section>
+<section id="input">
+    <div class="headline"><h2>입력</h2></div>
+    <div id="problem_input" class="problem-text"><p>입력은 다음과 같이 주어집니다.</p>
+        <pre>
+<var>N</var>
+<var>S</var></pre>
+    </div>
+</section>
+<section id="output">
+    <div class="headline"><h2>출력</h2></div>
+    <div id="problem_output" class="problem-text"><p><var>S</var> 가 반복 문자열이라면 <code>Yes</code> 를, 그렇지 않다면
+        <code>No</code> 를 출력해야 합니다. </p></div>
+</section>
+<section id="limit">
+    <div class="headline"><h2>제한</h2></div>
+    <div id="problem_limit" class="problem-text">
+        <ul>
+            <li><var>2 ≦ N ≦ 100</var>.</li>
+            <li><var>N</var> 은 짝수입니다.</li>
+            <li><var>S</var> 는 길이가 <var>N</var> 입니다.</li>
+            <li><var>S</var> 의 각 문자는 <code>J</code>, <code>O</code>, <code>I</code> 중 하나입니다.</li>
+        </ul>
+    </div>
+</section>
+<section id="sample_explain_1">
+    <div id="problem_sample_explain_1" class="problem-text"><p><code>JOIJOI</code> 는 <code>JOI</code> 를 <var>2</var>
+        개 연결하여 만들 수 있으므로, 반복 문자열입니다. 따라서 <code>Yes</code> 를 출력합니다. </p></div>
+</section>
+<section id="sample_explain_2">
+    <div id="problem_sample_explain_2" class="problem-text"><p><code>IOIOIO</code> 는 <var>2</var>
+        개의 동일한 문자열로 만들 수 없으므로, 반복 문자열이 아닙니다. 따라서 <code>No</code> 를 출력합니다. </p></div>
+</section>
