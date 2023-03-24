@@ -1,0 +1,76 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문제</title>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<section id="title">머핀 게임</section>
+<section id="description">
+    <div class="headline"><h2>문제</h2></div>
+    <div id="problem_description" class="problem-text"><p>승욱이와 예찬이는 프로그래밍이 존재하기 아주 오래 전에 살았던 친구들입니다. 그들의 삶은 오늘날 개발자들의
+        삶보다 훨씬 지루했습니다. 컴퓨터 없이 어떻게 살아갈 수 있었을까요? 답은 간단합니다. 머핀을 굽는 것입니다!</p>
+        <p>우리 두 친구들은 머핀 굽는 것을 좋아했고, 감당할 수 없는 크기의 머핀을 굽기도 했습니다. 부엌을 머핀으로 가득 채우지 않기 위해 예찬이는 승욱이에게 <i>머핀 게임</i> 도전장을
+            내밀었습니다.</p>
+        <p>머핀 게임은 두 플레이어가 $N$개의 머핀을 두고 플레이합니다. 각 플레이어는 매 턴마다 번갈아 가며 역할을 수행합니다. $A$는 머핀을 둘로 나눕니다(둘 중 하나가 비어있을 수 있음). 그런
+            다음 $B$는 둘 중 하나를 선택하고 모두 먹어치웁니다. 다음 턴에는 역할을 서로 바꿔서, $B$가 머핀을 나누고 $A$가 하나를 골라 모두 먹어치웁니다. 머핀이 모두 없어질 때까지 이런 식으로
+            번갈아 가며 진행합니다.</p>
+        <p>승욱이가 $A$(머핀 나누기)로 시작하고, 예찬이는 $B$(머핀 먹기)로 시작합니다. 승욱이와 예찬이가 최선을 다해 플레이한다면(각자 최대한 많이 먹기 위해) 각자 게임 중에 얼마나 많은 머핀을
+            먹을 수 있을까요?</p>
+        <p><em>참고: 머핀을 나누는 플레이어는 가능한 머핀을 비슷하게 나누는 것이 유리합니다(예시 설명 참고)</em></p></div>
+</section>
+<section id="input">
+    <div class="headline"><h2>입력</h2></div>
+    <div id="problem_input" class="problem-text"><p>첫 번째 줄에는 머핀의 개수인 정수 $N$이 주어집니다.</p></div>
+</section>
+<section id="output">
+    <div class="headline"><h2>출력</h2></div>
+    <div id="problem_output" class="problem-text"><p>승욱이와 예찬이가 먹을 머핀의 수를 각각 출력해야 합니다. 각자 최선을 다해 플레이 했을 때 먹을 수 있는 머핀의
+        수입니다.</p></div>
+</section>
+<section id="limit">
+    <div class="headline"><h2>제한</h2></div>
+    <div id="problem_limit" class="problem-text">
+        <ul>
+            <li>$N \le 10\,000$</li>
+        </ul>
+    </div>
+</section>
+<section id="sample_explain_1">
+    <div id="problem_sample_explain_1" class="problem-text"><p>머핀이 하나뿐이므로 승욱이가 나눌 수 있는 유일한 방법은 0개와 1개입니다. 그런 다음 예찬이는 머핀
+        한 개를 먹을 것입니다.</p></div>
+</section>
+<section id="sample_explain_2">
+    <div id="problem_sample_explain_2" class="problem-text"><p>첫 번째 턴에서 승욱이는 머핀을 2개씩 나눕니다. 예찬이는 2개의 머핀을 먹고, 남은 2개를 1개씩
+        나눕니다. 승욱이는 하나를 먹고, 예찬이가 마지막 머핀을 먹습니다.</p></div>
+</section>
