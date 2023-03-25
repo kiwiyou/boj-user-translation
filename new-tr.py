@@ -28,7 +28,6 @@ def find_tag_end(s):
 
 
 regex = re.compile(r'<section\s+id="(\w+)"\s+class="problem-section">')
-meaningless = re.compile(r'[\n\r\t]+(<|$)')
 try:
     headers = {'User-Agent': 'Mozilla/5.0'}
     req = HTTPSConnection('www.acmicpc.net')
@@ -42,8 +41,7 @@ try:
     while (match := regex.search(text)):
         elem_id = match.group(1)
         content, text = find_tag_end(text[match.end(0):])
-        sections.append({"id": elem_id, "content": re.sub(
-            meaningless, lambda match: f' {match.group(1)}', content)})
+        sections.append({"id": elem_id, "content": content})
     directory = f'src/{args.id}'
     realname = f'{args.language}-{args.author}'
     filename = f'{realname}.html'
