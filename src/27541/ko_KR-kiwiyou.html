@@ -1,0 +1,81 @@
+<section id="title">아오이와 G</section>
+<section id="description">
+  <div class="headline"><h2>문제</h2></div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      JOI 고등학교의 학생 아오이는 문자열 <code>JOIG</code>가 문자열
+      <code>JOI</code>의 끝에 문자 <code>G</code>를 붙인 거라는 사실을 깨달았다.
+    </p>
+    <p>
+      아오이는 여러 가지 뭍자열의 끝에
+      <code>G</code>를 붙였다 뗐다 하면서 놀기 시작했다.
+    </p>
+    <p>아오이가 놀이를 하는 규칙은 다음과 같다.</p>
+    <ul>
+      <li>
+        문자열의 맨 끝 문자가 <code>G</code>인 경우에는 끝에서 문자
+        <code>G</code>를 떼어낸 문자열을 생각한다. 마지막 한 문자만 떼어낸다.
+      </li>
+      <li>
+        문자열의 맨 끝 문자가 <code>G</code>가 아닌 경우 끝에 문자
+        <code>G</code>를 하나 붙인 문자열을 생각한다.
+      </li>
+    </ul>
+    <p>
+      길이 <var>N</var>인 문자열 <var>S</var>가 주어질 때, 아오이가
+      <var>S</var>를 보고 생각한 문자열을 출력하자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline"><h2>입력</h2></div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 아래와 같이 주어진다.</p>
+    <pre><var>N</var>
+<var>S</var></pre>
+  </div>
+</section>
+<section id="output">
+  <div class="headline"><h2>출력</h2></div>
+  <div id="problem_output" class="problem-text">
+    <p>아오이가 <var>S</var>를 보고 생각한 문자열을 출력한다.</p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline"><h2>제한</h2></div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li><var>2 &le; N &le; 100</var></li>
+      <li><var>S</var>의 길이는 <var>N</var>이다.</li>
+      <li><var>S</var>는 영어 알파벳 대문자로만 이루어져 있다.</li>
+      <li><var>N</var>은 정수이다.</li>
+    </ul>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      문자열 <code>JOIG</code>의 끝 문자는 <code>G</code>이므로, 아오이는
+      문자열의 끝에서 <code>G</code>를 하나 뗀 문자열 <code>JOI</code>를
+      생각한다. 따라서 <code>JOI</code>를 출력한다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>
+      문자열 <code>JOI</code>의 끝 문자는 <code>G</code>가 아니므로, 아오이는
+      문자열의 끝에서 <code>G</code>를 하나 붙인 문자열 <code>JOIG</code>를
+      생각한다. 따라서 <code>JOIG</code>를 출력한다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_3">
+  <div id="problem_sample_explain_3" class="problem-text">
+    <p>
+      문자열 <code>EGG</code>의 끝 문자는 <code>G</code>이므로, 아오이는
+      문자열의 끝에서 <code>G</code>를 하나 뗀 문자열 <code>EG</code>를
+      생각한다. 따라서 <code>EG</code>를 출력한다.
+    </p>
+  </div>
+</section>

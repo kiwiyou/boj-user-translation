@@ -28,7 +28,9 @@ You can translate the generated file, push to your repository, and send a pull r
 ## Translation Rules
 
 - No new sections can be used now.
-- No XSS (or any malicious HTML injection) is allowed.
-- Please keep the shown and unshown.
+- **No XSS (or any malicious HTML injection) is allowed.**
+- You can rearrange paragraphs, rewrite sentences, or change character names **if you keep the shown and unshown.**
+- If the problem has defects that should be resolved, you can write it but please **mark that it is inserted by the translator.**
+- Regarding formats, please refer to [formatting guide.](https://github.com/kiwiyou/boj-user-translation/blob/main/formatting.md)
 - Under constraints above, translate freely.
 - For languages not in my fluent zone, approval for pull requests can be delayed.
