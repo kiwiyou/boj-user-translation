@@ -8,7 +8,7 @@ This guideline is largely based on [BOJ formatting guide.](https://stack.acmicpc
 - Don't change font family. Monospaced tags `<pre>` and `<code>` is OK.
 - Don't use CSS styles `margin` and `padding`
 - Don't use `^` and `_` for superscript and subscript, respectively. Use `<sup>` and `<sub>`. e.g. Don't use `10^3` but `10<sup>3</sup>`.
-- Don't use `l` as a symbol. Use `ℓ`.
+- Don't use `l` as a symbol. Use `ℓ` (LaTeX `\ell`).
 - Don't write listings as `1.`, or `- `. Use `<ul>` and `<ol>`.
 - Use `<pre>` (block) and `<code>` (inline) for texts directly related to input and output formats.
   e.g. Don't use `Print "a"` but `Print "<code>a</code>"`.
