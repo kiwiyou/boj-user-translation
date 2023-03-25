@@ -29,6 +29,6 @@ You can translate the generated file, push to your repository, and send a pull r
 
 - No new sections can be used now.
 - No XSS (or any malicious HTML injection) is allowed.
-- Please keep the shown and unshown.
+- You can rearrange paragraphs, change sentences, or change character names **if you keep the shown and unshown.**
 - Under constraints above, translate freely.
 - For languages not in my fluent zone, approval for pull requests can be delayed.
