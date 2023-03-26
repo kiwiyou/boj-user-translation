@@ -1,0 +1,38 @@
+<section id="title">최소공배수</section>
+<section id="description">
+  <div class="headline"> <h2>문제</h2> </div>
+  <div id="problem_description" class="problem-text">
+    <p>Byteasar는 수학 시험을 준비하고 있다. 이번 시험범위는 "최소공배수" 이다. 어떤 수열 $a_1, a_2, \cdots ,a_k$의 최소공배수란, $a_1, a_2, \cdots ,a_k$ 모두를 약수로 갖는 가장 작은 정수를 의미한다. 예를 들어, $8, 12$의 최소공배수는 $24$이고, $2, 3, 4$의 최소공배수는 $12$이다.</p>
+    <p>Byteasar는 최소공배수 공부가 너무 재밌는 나머지 당신에게 자신이 만든 최소공배수 문제를 내기 시작했다. 그 문제는 아래와 같다.</p>
+    <ul><li>주어진 자연수 $M$에 대하여, 최소공배수가 정확히 $M$이 되는 자연수 구간 $[a, b]$를 찾으시오. $[a, b]$는 적어도 두 개의 자연수를 포함해야 한다. 이를 만족하는 구간이 여러개일 경우 그 중 $a$가 가장 작은 구간을 찾고, 이러한 구간도 여러 개일 경우 그 중 $b$가 가장 작은 구간을 찾으시오.</li></ul>
+    <p>Byteasar는 위 질문을 $Q$회나 하였다. 그를 실망시키지 않도록 모든 질문에 대한 답을 해주자!</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline"> <h2>입력</h2> </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫 번째 줄에 질의의 수 $Q$가 주어진다.</p>
+    <p>이후 $Q$개의 줄에 걸쳐 질의가 주어진다. 질의는 하나의 정수 $M$으로 이루어져 있다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline"> <h2>출력</h2> </div>
+  <div id="problem_output" class="problem-text">
+    <p>$Q$개의 줄에 걸쳐 질의에 대한 답을 출력한다. 답이 존재할 경우, 해당 구간의 시작과 끝을 나타내는 정수 $a$와 $b$를 공백을 사이에 두고 출력한다. 답이 존재하지 않을 경우 <code>NIE</code>를 출력한다.</p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline"> <h2>제한</h2> </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>$1 \le Q \le 10\;000$</li>
+      <li>$1 \le M \le 10^{18}$</li>
+    </ul>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline"> <h2>힌트</h2> </div>
+  <div id="problem_hint" class="problem-text">
+    <p>첫 번째 쿼리에 대한 설명: 구간 $[2, 4]$와 $[1, 4]$는 모두 최소공배수가 $12$이지만, 후자의 $a$가 더 작다.</p>
+  </div>
+</section>

@@ -1,0 +1,60 @@
+<section id="title">통신 채널</section>
+<section id="description">
+  <div class="headline"><h2>문제</h2></div>
+  <div id="problem_description" class="problem-text">
+    <p>고전 정보 이론은 통신 채널 개념을 기반으로 합니다.</p>
+    <blockquote>
+      <p>
+        정보 이론은 1948년 클로드 섀넌의 걸작 《통신의 수학 이론》에서
+        시작됐다고 여겨집니다. 고전 정보 이론의 핵심 주제는 번잡한 채널에서의
+        정보 전송에 관한 공학적 문제입니다.
+      </p>
+      <p style="text-align: right">
+        <a href="http://en.wikipedia.org/wiki/Information theory"
+          >http://en.wikipedia.org/wiki/Information theory</a
+        >
+      </p>
+    </blockquote>
+    <p>
+      이 문제는 번잡한 채널 중 가장 단순한 채널 중 하나, 즉 이진 대칭
+      채널(BSC)을 다룹니다. BSC는 비트 값을 전송하는데, 각 비트는 p의 확률로
+      잘못된 비트로 전송될 가능성이 있습니다. 이를 교차 확률이라 합니다. 서로
+      다른 비트의 전송은 독립 시행으로 가정하며, 따라서 소통 중 I개의 비트가
+      올바르게 전송될 확률은 (1 - p)<sup>I</sup>입니다. p = 1/2인 채널은 아무
+      의미가 없고, p > 1/2인 채널은 출력의 모든 비트를 거꾸로 함으로써 교차
+      확률이 1 - p인 새 채널로 쉽게 변형할 수 있으므로 p < 1/2라 가정해도
+      무방합니다.
+    </p>
+    <p>
+      물론 번잡한 채널에서의 소통은 언제나 가능합니다. (실제로 항상 이용하고
+      있고요!) 보통 소통을 위해서는, 수신자가 오류를 탐지하고 잡아낼 수 있도록
+      메시지에 추가 비트를 더합니다. 패리티 비트, 순환 중복 검사 (CRC), 골레
+      부호 등이 그 예시입니다. 하지만 이는 문제와 무관하므로 여기서 다루지는
+      않겠습니다.
+    </p>
+    <p>이 문제에서 당신은 이진 대칭 채널의 상태를 점검해야 합니다.</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline"><h2>입력</h2></div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫 줄에 전송 수 T가 주어집니다. 이후 T개의 줄에 이진 문자열인 각 전송의
+      입력 값과 출력 값이 하나의 공백으로 구분되어 주어집니다.
+    </p>
+    <ul>
+      <li>0 &lt; T &le; 100</li>
+      <li>모든 입력 값과 출력 값의 길이는 120보다 작습니다.</li>
+      <li>T는 십진수입니다.</li>
+    </ul>
+  </div>
+</section>
+<section id="output">
+  <div class="headline"><h2>출력</h2></div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 전송에 대해 소통이 정확했으면 <code>OK</code>를, 부정확했으면
+      <code>ERROR</code>를 출력합니다.
+    </p>
+  </div>
+</section>

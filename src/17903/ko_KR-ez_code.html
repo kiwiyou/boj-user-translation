@@ -1,0 +1,70 @@
+<section id="title">절의 수 세기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      참가자가 제한 시간 안에 최대한 많은 3-SAT 문제를 푸는 3-SAT 문제 대회가
+      돌아왔습니다. 3-SAT 문제는 대표적인 NP 문제로, 불 논리식이 각
+      <em>절</em>이 정확히 세 개의 <em>리터럴</em>로 이루어진
+      <em>논리곱 표준형</em>으로 주어집니다. 각 리터럴은 참 또는 거짓을 값으로
+      갖는 <em>변수</em>를 긍정하거나 부정함으로써 형성됩니다. 모든 절이 참이
+      되도록 변수를 설정할 수 있는지 여부를 판단하는 것이 문제입니다. 그 어떤
+      절도 똑같은 리터럴을 중복해 포함하지는 않습니다 (다만 절이
+      ¬x<sub>i</sub>와 x<sub>i</sub>를 동시에 포함할 수는 있습니다). 아래는
+      3-SAT 문제의 예시입니다 (샘플 입력 1이기도 합니다.):
+    </p>
+
+    <p style="text-align: center">
+      (&not;x<sub>1</sub> &or; x<sub>2</sub> &or; x<sub>3</sub>) &and;
+      (&not;x<sub>1</sub> &or; &not;x<sub>2</sub> &or; x<sub>3</sub>) &and;
+      (x<sub>1</sub> &or; &not;x<sub>2</sub> &or; x<sub>3</sub>) &and; (x<sub
+        >1</sub
+      >
+      &or; &not;x<sub>2</sub> &or; &not;x<sub>3</sub>) &and; (x<sub>1</sub> &or;
+      x<sub>2</sub> &or; &not;x<sub>3</sub>)
+    </p>
+
+    <p>
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/a3287a2c-330e-41f6-9284-9e278278511d/-/preview/"
+        style="width: 136px; height: 114px; float: right"
+      />오이빈드는 대회의 심판으로, 대회가 시작하기 전 다른 심판이 만든 문제의
+      질을 검사할 책임이 있습니다. 오이빈드는 절이 8개 미만인 3-SAT 문제를
+      싫어합니다 - 대회 참가자에게 큰 어려움이 되지 않기 때문입니다. 그러므로
+      그는 이러한 문제에 만족하지 못할 것입니다. 오이빈드는 절이 8개 이상인
+      문제는 문제의 답을 구하는 것이 어려움을 알고 있으므로 - 이러한 문제에는
+      만족할 것입니다. 3-SAT 문제의 예시가 주어질 때, 오이빈드가 어떤 판단을
+      할지 찾아줄 수 있나요?
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      입력은 3-SAT 문제의 예시입니다. 첫 줄에는 공백으로 나뉜 두 정수가
+      들어옵니다: 절의 수를 나타내는 m (1 &le; m &le; 20)과 변수의 수를 나타내는
+      n (3 &le; n &le; 20)입니다. 그리고 m개의 절이 줄마다 하나 입력됩니다. 각
+      절은 공백으로 나누어진 [-n, n] ∖ {0} 범위의 3개의 정수로 구성됩니다. 각
+      절에서, 세 정수는 절의 세 리터럴에 대응됩니다. 만약 리터럴 값이 음수이면
+      상응하는 변수가 거짓일 때 참이 됨을 의미하며, 양수이면 상응하는 변수가
+      참일 때 참이 됨을 의미합니다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      만약 오이빈드가 3-SAT 문제 예시에 만족하면 "<code>satisfactory</code>"를,
+      아니면 "<code>unsatisfactory</code>"를 출력합니다.
+    </p>
+  </div>
+</section>

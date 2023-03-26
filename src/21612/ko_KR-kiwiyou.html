@@ -1,0 +1,68 @@
+<section id="title">끓는점</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      해발고도 0에서는 대기압이 100 kPa이고 물의 끓는점이 100 &deg;C이다.
+      해발고도가 높아질수록 대기압은 낮아지고 물의 끓는점도 낮아진다. 해발고도가
+      낮아질수록 대기압은 높아지고 물의 끓는점도 높아진다. 대기압이 주어졌을 때
+      끓는점을 계산하는 공식은 P가 kPa 단위로 잰 대기압, B가 &deg;C 단위로 잰
+      끓는 점일 때
+    </p>
+
+    <p style="text-align: center">P = 5 &times; B &minus; 400</p>
+
+    <p>이다.</p>
+
+    <p>
+      물의 끓는점이 주어졌을 때, 대기압을 구하여라. 또한 해발고도가 양수인지,
+      0인지, 음수인지도 알아내어라.
+    </p>
+
+    <p>
+      참고로, 이 문제에서 설명한 과학 원리는 어느 정도 들어맞지만 제시한 수 100
+      &deg;C와 100 kPa는 근삿값이며, 제시한 공식은 실제 관계를 간략화한 것이다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 물의 끓는점을 나타내는 정수 B가 &deg;C 단위로 주어진다. (80 &le;
+      B &le; 200)
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      첫째 줄에 대기압을 kPa 단위로 출력한다. 둘째 줄에 <code>1</code>,
+      <code>0</code>, <code>-1</code> 중 하나를 출력한다. 이는 각각 해발 고도가
+      양수, 0, 음수임을 나타낸다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      B = 99일 때, P = 5 &times; 99 &minus; 400 = 95이다. 95 kPa는 100 kPa보다
+      낮으므로 해발고도는 양수이다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>
+      B = 102일 때, P = 5 &times; 102 &minus; 400 = 110이다. 110 kPa는 100
+      kPa보다 높으므로 해발고도는 음수이다.
+    </p>
+  </div>
+</section>
