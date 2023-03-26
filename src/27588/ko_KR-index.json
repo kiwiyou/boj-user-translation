@@ -1,0 +1,6 @@
+{
+  "title": "식당 개업",
+  "description": " <div class=\"headline\"> <h2>문제</h2> </div> <div id=\"problem_description\" class=\"problem-text\"> <figure style=\"float: right;\"><img alt=\"\" src=\"https://upload.acmicpc.net/5af31fcd-2897-4b8a-9ef6-715b7c760a39/-/resize/600x/\" style=\"width: 200px; height: 300px;\" /> <figcaption>출처: <a href=\"https://www.freepik.com/free-photo/vertical-shot-orange-blue-neon-sign-that-says-open-bar_17247073.htm\">wirestock on Freepik</a></figcaption> </figure> <p>창업의 성공에 있어 가장 중요한 세가지를 꼽으라면 입지, 장소, 위치라고 할 수 있다. 국제요리도시에 새로운 식당을 개업하기 위해 최적의 위치를 찾으려 한다.</p> <p>도시는 격자형으로 되어있으며, 격자의 교차점마다 특정한 수의 사람들이 살고 있다. 두 격자점 $(r_1,c_1)$와 $(r_2,c_2)$ 사이의 거리는 $|r_1-r_2|+|c_1-c_2|$로 나타낼 수 있다. 각 사람이 식당을 방문하기 위해서는 살고 있는 지점과 식당 사이의 거리만큼 비용이 든다. 전체 방문 비용은 모든 사람이 식당을 방문하는데 드는 비용의 합이다.</p> <p>현재 도시의 상태가 주어질 때, 전체 방문 비용 최솟값을 구한다.</p> </div> ",
+  "input": " <div class=\"headline\"> <h2>입력</h2> </div> <div id=\"problem_input\" class=\"problem-text\"> <p>첫 번째 줄에는 두 정수 $n$과 $m$ ($1 &lt; n,m \\le 50$)이 주어진다. $n$은 도시의 행 수이며, $m$은 도시의 열 수이다.</p> <p>다음 $n$개의 줄에는 $m$개의 정수 $g_{ij}$ ($0\\le g_{ij}\\le 50$)가 주어진다. $g_{ij}$는 $i$행 $j$열에 살고 있는 사람의 수이다.</p> </div> ",
+  "output": " <div class=\"headline\"> <h2>출력</h2> </div> <div id=\"problem_output\" class=\"problem-text\"> <p>최적의 위치에 식당을 개업했을 때 전체 방문 비용을 출력한다.</p> </div> "
+}
