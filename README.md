@@ -29,8 +29,12 @@ You can translate the generated file, push to your repository, and send a pull r
 
 - No new sections can be used now.
 - **No XSS (or any malicious HTML injection) is allowed.**
-- You can rearrange paragraphs, rewrite sentences, or change character names **if you keep the shown and unshown.**
-- If the problem has defects that should be resolved, you can warn in translation but please **write together that the warning is inserted by the translator.**
+- You can rearrange paragraphs, rewrite sentences, or change character names
+  **if you keep the shown and unshown.**
+- If the problem has defects that should be resolved, you can warn in translation
+  but please **write together that the warning is inserted by the translator.**
 - Regarding formats, please refer to [formatting guide.](https://github.com/kiwiyou/boj-user-translation/blob/main/formatting.md)
 - Under constraints above, translate freely.
 - For languages not in my fluent zone, approval for pull requests can be delayed.
+- Before sending pull requests, please review the local changes via `o-ey`.
+  You can see the local changes by adding your repository to the repository list of `o-ey`.
