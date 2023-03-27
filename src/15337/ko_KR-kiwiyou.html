@@ -1,0 +1,151 @@
+<section id="title">해변 관광열차</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      철도회사에서 일하며 기차여행 패키지를 구성하는 종국이는 멋진 해변가를 따라
+      열차를 운행하면 분명 인기가 많을 거라 생각하지만, 인기가 어느 정도일지
+      확실하지 않다.
+    </p>
+
+    <p>
+      시장 조사를 맡긴 종국이는 관광객들의 예상 여행 경로를 전달받았다. 이를
+      바탕으로 수요에 맞게 열차 수를 조정할 예정이다.
+    </p>
+
+    <p>
+      예상되는 관광객 수만큼 전부 좌석을 마련하는 것은 비용이 클 것이다. 중간에
+      내리는 승객들을 고려하여, 열차를 타고 내리는 구간이 서로 겹치지 않는
+      승객들끼리 같은 좌석을 공유하도록 하려고 한다.
+    </p>
+
+    <p>
+      좌석을 배정할 때는 두 가지 방법을 고려한다. 창문에서 내다보이는 풍경은
+      좌석의 위치에 따라 다르기 때문에 승객이 직접 좌석을 고를 수 있다면 좋을
+      것이다. 첫 번째 방법은 승객이 열차 예약 시에 모든 남은 좌석 중 원하는
+      좌석을 고를 수 있도록 하는 것이다. 승객들의 예약 순서를 미리 알 수
+      없으므로 필요한 좌석 수를 계산할 때 가능한 모든 예약 순서를 고려해야 한다.
+    </p>
+
+    <p>
+      두 번째 방법은 승객이 좌석을 고를 수 없게 하는 방법이다. 모든 예약이 끝난
+      후에 관리자가 승객에게 좌석을 배정하므로 필요한 좌석 수를 상당히 줄일 수
+      있을 것이다.
+    </p>
+
+    <p>
+      여러분은 두 방법으로 좌석을 배정했을 때 각각 몇 개의 좌석이 필요한지
+      구하는 프로그램을 작성해야 한다.
+    </p>
+
+    <p>
+      역 S1, S2, S3, S4가 있고 예상되는 승객 p1, p2, p3, p4의 탑승 구간이 다음과
+      같다고 하자.
+    </p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/15337/1.png"
+        style="height: 107px; width: 269px"
+      />
+    </p>
+
+    <p>
+      p1과 p2의 탑승 구간은 겹치지 않고, p3의 구간은 p1과 p2의 구간과 겹치며,
+      p4의 구간은 누구와도 겹치지 않는다.
+    </p>
+
+    <p>
+      첫 번째 방법에서 좌석 두 개가 충분한지 확인해 보자. 만약 p1이 먼저 자리를
+      예약한다면 두 자리 중 아무거나 하나 고를 수 있고, p2가 다음으로 자리를
+      예약할 때 p1과 탑승 구간이 겹치지 않으므로 p1이 택한 자리를 고를 수는
+      있지만, 여기서는 p1과 다른 자리를 택했다고 가정하자. 그러면 p3은 S1 -
+      S3까지의 구간에서 두 자리 중 어떤 자리도 선택할 수 없다. (그림 I.1)
+    </p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/15337/2.png"
+        style="height: 120px; width: 416px"
+      />
+    </p>
+
+    <p style="text-align: center">그림 I.1. 좌석이 두 개인 경우</p>
+
+    <p>
+      좌석이 세 개라면, p1과 p2가 어떤 좌석을 선택하든 p3의 자리가 남는다. p4는
+      S3 - S4 구간에서 다른 승객이 없으므로 어떤 좌석이든 선택할 수 있다. (그림
+      I.2)
+    </p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/15337/3.png"
+        style="height: 120px; width: 415px"
+      />
+    </p>
+
+    <p style="text-align: center">Figure I.2. 좌석이 세 개인 경우</p>
+
+    <p>
+      이 예시에서 첫 번째 방법으로 좌석을 배정할 때 가능한 모든 예약 순서와 자리
+      선택을 고려하더라도 좌석은 세 개이면 충분하다.
+    </p>
+
+    <p>
+      한편, 모든 예약이 끝난 후 두 번째 방법으로 좌석을 배정하면 필요한 좌석을
+      두 개로 줄일 수 있다. (그림 I.3)
+    </p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/15337/4.png"
+        style="height: 92px; width: 417px"
+      />
+    </p>
+
+    <p style="text-align: center">그림 I.3. 두 좌석을 배정하는 방법</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 아래의 형식으로 주어진다.</p>
+
+    <pre>
+n
+a<sub>1</sub> b<sub>1</sub>
+.
+.
+.
+a<sub>n</sub> b<sub>n</sub></pre>
+
+    <p>
+      첫째 줄에 예측한 승객의 수 n이 주어진다. (1 &le; n &le; 200,000). 각 역은
+      열차의 운행 방향을 따라 1번부터 번호가 붙어 있다. 다음 n 개 줄 각각에는 각
+      승객의 탑승 구간을 나타내는 두 정수가 주어진다. 첫째 정수가 탑승하는 역의
+      번호 a<sub>i</sub>, 둘째 정수가 하차하는 역의 번호 b<sub>i</sub>이다. (1
+      &le; a<sub>i</sub> &lt; b<sub>i</sub> &le; 100,000) 하나 이상의 승객이
+      같은 (a<sub>i</sub>, b<sub>i</sub>) 쌍을 가질 수 있음에 유의하여라.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      한 줄에 정수 s1과 s2를 출력한다. s1은 첫 번째 방법으로 좌석을 배정했을 때
+      필요한 좌석의 수, s2는 두 번째 방법에서 필요한 좌석의 수이다.
+    </p>
+  </div>
+</section>
