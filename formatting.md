@@ -27,7 +27,7 @@ This guideline may be **different** from the document.
 |       &minus; `&minus;`       |   `-`    |
 |       &times; `&times;`       | `*`, `x` |
 |    &setminus; `&setminus;`    |   `\`    |
-| &mldr; `&hellip;` 및 `&mldr;` |  `...`   |
+| &mldr; `&hellip;` or `&mldr;` |  `...`   |
 |          &le; `&le;`          |   `<=`   |
 |          &ge; `&ge;`          |   `>=`   |
 |          &ne; `&ne;`          |   `!=`   |
