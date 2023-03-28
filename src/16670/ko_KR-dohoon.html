@@ -1,0 +1,40 @@
+<section id="title">King Kog’s Reception</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>King Kog got annoyed of the usual laxity of his knights &mdash; they can break into his hall without prior notice! Thus, the King decided to build a reception with a queue where each knight chooses in advance the time when he will come and how long the visit will take. The knights are served in the order of the recorded time, but each knight has to wait until the visits of all the knights before him are finished.</p>
+
+<p>Princess Keabeanie wants to see her father. However, she does not want to interrupt the knights so she joins the queue. Unfortunately, the knights change their minds very often &mdash; they can join the queue or cancel their visits. Please help the princess to understand how long she will have to wait until she sees her father if she enters the queue at the specified moments of time given the records at the reception.</p>
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>The first line of the input contains a single integer q (1 &le; q &le; 3 &middot; 10<sup>5</sup>) &mdash; the number of events. An event can be of three types: join, cancel, or query.</p>
+
+<ul>
+	<li>Join &ldquo;+ t d&rdquo; (1 &le; t, d &le; 10<sup>6</sup>) &mdash; a new knight joins the queue, where t is the time when the knight will come and d is the duration of the visit.</li>
+	<li>Cancel &ldquo;- i&rdquo; (1 &le; i &le; q) &mdash; the knight cancels the visit, where i is the number (counted starting from one) of the corresponding join event in the list of all events.</li>
+	<li>Query &ldquo;? t&rdquo; (1 &le; t &le; 10<sup>6</sup>) &mdash; Keabeanie asks how long she will wait if she comes at the time t.</li>
+</ul>
+
+<p>It is guaranteed that after each event there are no two knights with the same entrance time in the queue. Cancel events refer to the previous joins that were not cancelled yet.</p>
+
+<p>Keabeanie can come at the same time as some knight, but Keabeanie is very polite and she will wait for the knight to pass.</p>
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>For each query write a separate line with the amount of time Keabeanie will have to wait.</p>
+
+					</div>
+					</section>
