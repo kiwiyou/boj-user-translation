@@ -1,0 +1,79 @@
+<section id="title">커피숍1</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      동호는 커피숍의 마담이다. (마담이 무엇인지는 본인에게 물어보도록 하자.)
+      동호는 커피가 너무 안 팔린 나머지, 자신이 커피를 마셔버리기로 결심한다.
+    </p>
+
+    <p>
+      동호의 혀는 특이해서, 현재 마시려고 하는 커피의 농도(농도가 0인 경우도
+      커피로 친다)가 지금까지 마신 모든 커피의 농도 이상일 경우에만 맛을 느낄 수
+      있다. 동호는 커피를 즐기기 위해 아래 규칙에 따라 커피를 마신다.
+    </p>
+
+    <ol>
+      <li>두 항아리 A, B를 준비한다.</li>
+      <li>A와 B에 커피를 채운다.</li>
+      <li>A에서 커피 한 잔을 퍼서 마신다.</li>
+      <li>B에서 커피 한 잔을 퍼서 A에 붓는다.</li>
+      <li>B에 농도가 0인 커피 한 잔을 붓는다.</li>
+      <li>3번부터 5번까지의 과정을 반복한다.</li>
+    </ol>
+
+    <p>
+      동호는 위 과정을 수행하다가, A와 B에서 퍼낼 커피의 양이 한 잔에 못 미치는
+      경우 그만둔다. 동호가 마신 커피 중 맛을 느낀 커피는 총 몇 잔일까? 동호는
+      중간에 커피를 그만 마실 수도, 영원히 커피를 마실 수도 있다.
+    </p>
+
+    <p>
+      단, 양이 u인 커피의 농도가 U, 양이 v인 커피의 농도가 V일 때, 두 커피를
+      섞으면 양이 u + v가 되고, 커피의 농도는 (u × U + v × V) / (u + v)가 된다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 항아리 A에 처음 채우는 커피의 농도 a와 항아리 B에 처음 채우는
+      커피의 농도 b가 주어진다. (0 &le; a &le; b &le; 100) 둘째 줄에는 항아리
+      A가 담을 수 있는 커피의 양 S<sub>a</sub>와 B가 담을 수 있는 양
+      S<sub>b</sub>, 그리고 한 잔에 담기는 커피의 양 S가 주어진다. (1 &le;
+      S<sub>a</sub>, S<sub>b</sub>, S &le; 1,000)
+    </p>
+    <p>입력되는 모든 수는 정수이다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      첫째 줄에 동호가 마신 커피 중 맛을 느낀 커피가 몇 잔인지 16진수로
+      출력한다. 이때 숫자 <code>A</code>, <code>B</code>, <code>C</code>,
+      <code>D</code>, <code>E</code>, <code>F</code>는 대문자로 출력해야 한다.
+    </p>
+
+    <p>
+      동호가 마신 커피 중 맛을 느낄 수 있는 커피가 없거나, 동호가 마신 커피 중
+      맛을 느낀 커피가 10진수로 50잔을 넘어가는 경우엔 <code>gg</code>를 대신
+      출력한다.
+    </p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>동호가 마시는 커피의 농도 : 5, 5.5, 5.94, 6.3261 ...</p>
+  </div>
+</section>

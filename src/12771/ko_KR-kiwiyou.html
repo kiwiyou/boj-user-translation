@@ -1,0 +1,66 @@
+<section id="title">석유왕</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      세계 경제는 유가에 많은 부분 의존한다. 그래서 석유를 발견하고 시추하는
+      새로운 방법이 여전히 연구되고 있다. 석유 기업의 이익은 얼마나 석유를
+      효율적으로 뽑아낼 수 있는지와 관련이 있다. 국제 석유 컨소시엄(ICPC)는
+      컴퓨터 시뮬레이션을 통해 석유를 어떻게 최선의 방법으로 뽑아낼 수 있는지
+      알아낼 수 있을 것으로 전망한다.
+    </p>
+
+    <p>
+      석유를 효율적으로 뽑아내는 것은 날마다 어려워진다. 새로이 발견된 석유 샘은
+      하나의 덩어리를 이루지 않고 종종 여러 굴로 나뉘어 있기 때문이다. ICPC는
+      현재 그림 G.1과 같이 층층이 구성된 석유 샘에 관심을 갖고 있다.
+    </p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/12771/1.png"
+        style="height: 269px; width: 547px"
+      />
+    </p>
+
+    <p style="text-align: center">
+      그림 G.1. 땅에 묻힌 석유층들. 그림은 예제 1에 대응된다.
+    </p>
+
+    <p>
+      분석을 간단히 하기 위해 ICPC는 2차원인 경우만 고려한다. 즉, 석유 샘은
+      지면과 평행한 가로선으로 모델링된다. ICPC는 정확히 하나의 굴을 파 최대한의
+      석유를 얻으려고 한다. 석유 굴은 하나의 직선을 이루고, 만나는 모든 석유
+      샘으로부터 석유를 뽑아낸다. 단, 선분의 끝점이 만나는 경우도 만나는 것으로
+      센다. 석유 샘 세 개와 만나는 석유 굴의 예를 그림 G.1에서 볼 수 있다. 이
+      모형에서 한 샘으로부터 뽑아내는 석유의 양은 샘의 길이와 같다. 굴을 하나
+      파서 뽑아낼 수 있는 석유의 최대 양은 얼마일까?
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 석유 샘의 개수 n이 주어진다. (1 &le; n &le; 2 000) 다음 n개 줄
+      각각에는 샘의 정보를 나타내는 세 정수 x<sub>0</sub>, x<sub>1</sub>, y가
+      주어진다. (|x<sub>0</sub>|, |x<sub>1</sub>| &le; 10<sup>6</sup>; 1 &le; y
+      &le; 10<sup>6</sup>) 이는 샘이 (x<sub>0</sub>, y)과 (x<sub>1</sub>, y)를
+      양 끝점으로 하는 선분이라는 뜻이다. 모든 샘은 서로 교차하거나 끝점에서
+      만나지 않는다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>굴을 하나 파서 뽑아낼 수 있는 석유의 최대 양을 출력한다.</p>
+  </div>
+</section>
