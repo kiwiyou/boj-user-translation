@@ -44,4 +44,4 @@
 |         &cap; `&cap;`         |           |
 |         &cup; `&cup;`         |           |
 |       &empty; `&empty;`       |    `0`    |
-|         &deg; `&deg;`         |    `°`    |
+|         &deg; `&deg;`         |    `o`    |
