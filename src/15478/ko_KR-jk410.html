@@ -4,7 +4,7 @@
 				<h2>문제</h2>
 				</div>
 				<div id="problem_description" class="problem-text">
-				<p>JOI 왕국에는 아주 커다란 숲이 있다. 숲은 직사각형 모양이고, 남북 방향으로 &nbsp;<var>H</var>&nbsp;칸, 동서 방향으로 &nbsp;<var>W</var>&nbsp;칸으로 격자와 같이 나뉘어져 있다. 북쪽으로부터 &nbsp;<var>i</var>&nbsp;번째, 서쪽으로부터 &nbsp;<var>j</var>&nbsp;번째(<var>1 ≦ i ≦ H, 1 ≦ j ≦ W</var>)의 영역에는 &nbsp;<var>A_{i,j}</var>&nbsp;그루의 나무가 자라 있다. 단, 북서쪽 가장자리에는 목재 가공 공장이 있어 나무가 자라지 않는다. 즉, <var>A_{1,1}=0</var>&nbsp;이다.</p>
+				<p>JOI 왕국에는 아주 커다란 숲이 있다. 숲은 직사각형 모양이고, 남북 방향으로 &nbsp;<var>H</var>&nbsp;칸, 동서 방향으로 &nbsp;<var>W</var>&nbsp;칸으로 격자와 같이 나뉘어져 있다. 북쪽으로부터 &nbsp;<var>i</var>&nbsp;번째, 서쪽으로부터 &nbsp;<var>j</var>&nbsp;번째(<var>1 ≦ i ≦ H, 1 ≦ j ≦ W</var>)의 영역에는 &nbsp;<var>A<sub>i,j</sub></var>&nbsp;그루의 나무가 자라 있다. 단, 북서쪽 가장자리에는 목재 가공 공장이 있어 나무가 자라지 않는다. 즉, <var>A<sub>1,1</sub>=0</var>&nbsp;이다.</p>
 
 <p>나무가 자라지 않는 영역에는 사람이 들어갈 수 있다. 또, 사람은 동서남북으로 인접한 영역에 나무가 자라지 않는다면 그 영역으로 이동할 수 있다. JOI 군은 JOI 왕국의 공공사업으로 나무를 벌목하여 북서쪽 끝 영역과 남동쪽 끝 영역을 서로 왕래할 수 있게 하려 한다.</p>
 
@@ -23,9 +23,9 @@
 
 <pre>
 <var>H</var> <var>W</var>
-<var>A_{1,1}</var> <var>...</var> <var>A_{1,W}</var>
+<var>A<sub>1,1</sub></var> <var>...</var> <var>A<sub>1,W</sub></var>
 :
-<var>A_{H,1}</var> <var>...</var> <var>A_{H,W}</var>
+<var>A<sub>H,1</sub></var> <var>...</var> <var>A<sub>H,W</sub></var>
 </pre>
 
 					</div>
@@ -48,7 +48,7 @@
 	<li><var>1 ≦ H ≦ 30</var></li>
 	<li><var>1 ≦ W ≦ 30</var></li>
 	<li><var>(H, W) &ne; (1, 1)</var></li>
-	<li><var>0 ≦ A_{i,j} ≦ 10000</var>&nbsp;(<var>1 ≦ i ≦ H, 1 ≦ j ≦ W</var>)</li>
+	<li><var>0 ≦ A<sub>i,j</sub> ≦ 10,000</var>&nbsp;(<var>1 ≦ i ≦ H, 1 ≦ j ≦ W</var>)</li>
 	<li><var>A_{1,1}=0</var></li>
 </ul>
 			</div>
@@ -71,8 +71,8 @@
 							</div>
 							<div id="problem_subtask2" class="problem-text">
 															<ul>
-	<li><var>A_{i,j} ≦ A_{i,j+1}</var>&nbsp;(<var>1 ≦ i ≦ H, 1 ≦ j ≦ W-1</var>)</li>
-	<li><var>A_{i,j} ≦ A_{i+1,j}</var>&nbsp;(<var>1 ≦ i ≦ H-1, 1 ≦ j ≦ W</var>)</li>
+	<li><var>A<sub>i,j</sub> ≦ A<sub>i,j+1</sub></var>&nbsp;(<var>1 ≦ i ≦ H, 1 ≦ j ≦ W-1</var>)</li>
+	<li><var>A<sub>i,j</sub> ≦ A<sub>i+1,j</sub></var>&nbsp;(<var>1 ≦ i ≦ H-1, 1 ≦ j ≦ W</var>)</li>
 </ul>
 
 							</div>
