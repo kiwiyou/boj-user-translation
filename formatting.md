@@ -39,7 +39,7 @@ This guideline may be **different** from the document.
 |         &sim; `&sim;`         |   `~`    |
 |      &colone; `&colone;`      |   `:=`   |
 |         &and; `&and;`         |   `&&`   |
-|          &or; `&or;`          |   `||`   |
+|          &or; `&or;`          |  `\|\|`  |
 |         &not; `&not;`         | `!`, `~` |
 |         &cap; `&cap;`         |          |
 |         &cup; `&cup;`         |          |
