@@ -1,0 +1,56 @@
+<section id="title">선반 위 상자들</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>바르야의 헛간에는 $n$개의 상자들이 있고, 중요한 것들이 담겨있습니다. 그녀는 최근에 헛간 벽에 새로운 선반을 설치했습니다. 이제 그녀는 새 선반에 얼마나 많은 상자들을 올려놓을 수 있을지
+            궁금합니다.</p>
+        <p>선반이 있는 벽을 하나의 평면으로 봅시다. 선반은 길이가 $L$인 선분입니다. 선반의 양옆에는 무한히 넓은 공간이 있습니다. $i$번째 상자는 각 변의 길이가 $a_i$, $b_i$인
+            직사각형입니다.</p>
+        <p>상자는 한 면이나 일부가 선반에 붙어 있고, 상자의 중심이 선반의 내부에 있을 때 선반 위에 올려놓을 수 있습니다. 상자들은 선반 위에만 올려놓을 수 있고, 다른 상자 위에 올려놓거나 여러 층에
+            걸쳐 놓을 수 없습니다.</p>
+        <p>바르야가 선반 위에 올려놓을 수 있는 상자의 최대 개수를 구해봅시다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>첫 번째 줄에는 상자의 개수인 정수 $n$ ($1 \le n \le 100\,000$)이 주어집니다. 이어지는 $n$개의 줄에는 해당 상자의 각 변의 길이인 두 정수 $a_i$, $b_i$
+            ($1 \le a_i, b_i \le 100\,000$)가 주어집니다. 마지막 줄에는 선반의 길이인 정수 $L$ ($1 \le L \le 10^9$)가 주어집니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>상자가 떨어지지 않으면서, 바르야가 선반에 올려놓을 수 있는 상자의 최대 개수를 출력하세요.</p>
+    </div>
+</section>
+<section id="sample_explain_1">
+    <div id="problem_sample_explain_1" class="problem-text">
+        <p style="text-align: center;"><img alt=""
+                                            src="https://upload.acmicpc.net/5aa7a16b-ba12-4c20-a8e7-fc767e72cc2d/-/preview/"
+                                            style="width: 169px; height: 127px;"/></p>
+    </div>
+</section>
+<section id="sample_explain_2">
+    <div id="problem_sample_explain_2" class="problem-text">
+        <p style="text-align: center;"><img alt=""
+                                            src="https://upload.acmicpc.net/fcf8799e-5ba1-4d02-bb92-924543174a1e/-/preview/"
+                                            style="width: 43px; height: 36px;"/></p>
+    </div>
+</section>
+<section id="hint">
+    <div class="headline">
+        <h2>노트</h2>
+    </div>
+    <div id="problem_hint" class="problem-text">
+        <p>예제 입력 1에서, 바르야는 세 개의 상자를 선반 위에 올려놓을 수 있습니다. 예를 들어, 왼쪽에는 $4$의 길이를 가진 변을 선반에 붙이고, 가운데에는 $2$의 길이를 가진 변을 선반에
+            붙이고, 오른쪽에는 $3$의 길이를 가진 변을 선반에 붙일 수 있습니다.</p>
+        <p>예제 입력 2에서, 세 개의 상자를 선반 위에 올려놓는다면 떨어질 것입니다. 두 개의 상자를 선반에 딱 맞게 올려놓을 수 있습니다.</p>
+    </div>
+</section>
