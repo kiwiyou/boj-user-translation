@@ -1,0 +1,47 @@
+<section id="title">보물</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>도둑 Anna와 Bruno는 대부호의 저택에 몰래 들어가, 보물 1부터 보물 N까지 N개의 보물을 발견하였다. 이 보물을 Anna와 Bruno가 나눠 가지기로 했다. 보물의 일부를 Anna가 가져가고, 남은 보물을 Bruno가 가져간다. 같은 보물을 두 사람이 가져갈 수 없으며, Anna와 Bruno는 보물을 하나도 가져가지 않을 수도 있다. 또, 남은 보물은 저택에 남겨두고 가기 때문에, 두 사람 모두 가져가지 않는 보물이 있을 수 있다.</p>
+
+<p>각 보물에는 '시장가치'와 '귀중도'라는 두 가지 값이 정해져 있다. Anna가 가져가는 보물의 시장가치의 합과 Bruno가 가져가는 보물의 시장가치의 합의 차이의 절댓값이 D 이하인 경우, Anna는 공평하다고 생각하고 만족한다. 한편, Bruno는 Anna보다 귀중도가 큰 보물을 가져가고 싶어 한다.</p>
+
+<p>Anna가 만족할 수 있도록 보물을 분배할 때, Bruno가 가져가는 보물의 귀중도의 합에서 Anna가 가져가는 보물의 귀중도의 합을 뺀 값의 최댓값을 구하라.</p>
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>입력은 1 + N 행으로 주어진다.</p>
+
+<p>1 첫째 줄에는 2개의 정수 N, D (1 ≦ N ≦ 30，0 ≦ D ≦ 10<sup>15</sup>) 가 공백으로 구분되어 주어진다. 이는 보물의 개수가 N개이고, Anna가 가져간 보물의 시장가치의 합과 Bruno가 가져간 보물의 시장가치의 합의 차이의 절댓값이 D 이하이면 Anna가 만족한다는 것을 나타낸다.</p>
+
+<p>이어지는 N행 중 i번째 (1 ≦ i ≦ N) 에는 2개의 정수 X<sub>i</sub>, Y<sub>i</sub> (0 ≦ X<sub>i</sub> ≦ 10<sup>15</sup>, 0 ≦ Y<sub>i</sub> ≦ 10<sup>15</sup>) 공백으로 구분되어 주어진다. 이는 보물 i의 시장가치가 X<sub>i</sub>이고，귀중도가 Y<sub>i</sub>라는 것을 나타낸다.</p>
+
+<p>주어지는 5개의 입력 데이터 중, 입력 1은 N ≦ 10을 만족한다. 또, 입력 2는 D = 0을 만족한다.</p>
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>Anna가 만족할 수 있게 보물을 분배할 때, Bruno가 가져가는 보물의 귀중도의 합에서 Anna가 가져가는 보물의 귀중도의 합을 뺀 값의 최댓값을 한 줄에 출력하라.</p>
+
+					</div>
+					</section>
+<section id="hint">
+				<div class="headline">
+				<h2>힌트</h2>
+				</div>
+				<div id="problem_hint" class="problem-text">
+				<p>예제 입력 1에서 Anna가 보물 2, 보물 3, 보물 5를 가져가고 Bruno가 보물 1, 보물 6을 가져가면 가져간 보물의 시장가치의 합은 Anna가 130, Bruno가 120이 되고, 그 차이의 절댓값 10이 D = 15 이하이므로 Anna는 만족한다. 이때 가져간 보물의 귀중도의 합은 Anna가 400, Bruno가 1,600이 되고, Bruno가 가져가는 보물의 귀중도의 합에서 Anna가 가져가는 보물의 귀중도의 합을 뺀 값은 1,200이 된다. 이것이 최댓값이다.</p>
+
+				</div>
+				</section>
