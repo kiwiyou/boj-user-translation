@@ -15,8 +15,9 @@ This guideline may be **different** from the document.
   e.g. Don't use `Print "a"` but `Print "<code>a</code>"`.
 - Don't insert whitespaces right after opening parentheses and before closing parentheses. e.g. Don't use `( 1 ≤ N )` but `(1 ≤ N)`.
 - **If you don't use LaTeX,** insert whitespaces before and after mathematical symbols. e.g. Don't use `a+b` but `a + b`.
-- Don't use symbols like `<=`, `>=`, `*`, `!=`, etc. Use mathematical symbols like `≤` (LaTeX `\le`),
-  `≥` (LaTeX `\ge`), `×` (LaTeX `\times`), and `≠` (LaTeX `\ne`), etc. [Refer to Unicode Table.](#unicode-table)
+- **If you don't use LaTeX,** Don't use symbols like `<=`, `>=`, `*`, `!=`, etc.
+  Use mathematical symbols like `≤` (LaTeX `\le`), `≥` (LaTeX `\ge`), `×` (LaTeX `\times`), and `≠` (LaTeX `\ne`),
+  etc. [Refer to Unicode Table.](#unicode-table)
 - Use digit group separator, depending on your target language. On LaTeX, you can use `\,` as a digit separator.
   e.g. Don't use `1000000` or `1 000 000` but `1,000,000`, `1.000.000`, or `$1\,000\,000$` (depending on your target language).
 
