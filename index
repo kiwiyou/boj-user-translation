@@ -170,6 +170,9 @@
   "16367": [
     "ko_KR-kiwiyou"
   ],
+  "16445": [
+    "ko_KR-ez_code"
+  ],
   "16600": [
     "ko_KR-kiwiyou"
   ],
@@ -195,6 +198,9 @@
     "ko_KR-kiwiyou"
   ],
   "17903": [
+    "ko_KR-ez_code"
+  ],
+  "17912": [
     "ko_KR-ez_code"
   ],
   "17978": [
@@ -629,6 +635,9 @@
   "4714": [
     "ko_KR-kiwiyou"
   ],
+  "5102": [
+    "ko_KR-ez_code"
+  ],
   "5300": [
     "ko_KR-kiwiyou"
   ],
@@ -713,6 +722,9 @@
   "8718": [
     "ko_KR-ez_code"
   ],
+  "8719": [
+    "ko_KR-ez_code"
+  ],
   "8723": [
     "ko_KR-ez_code"
   ],
@@ -727,5 +739,8 @@
   ],
   "9772": [
     "ko_KR-kiwiyou"
+  ],
+  "9848": [
+    "ko_KR-ez_code"
   ]
 }
