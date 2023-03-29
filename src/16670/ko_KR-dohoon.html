@@ -1,12 +1,20 @@
-<section id="title">King Kog’s Reception</section>
+<section id="title">Kog 왕 접견</section>
 <section id="description">
 				<div class="headline">
 				<h2>문제</h2>
 				</div>
 				<div id="problem_description" class="problem-text">
-				<p>King Kog got annoyed of the usual laxity of his knights &mdash; they can break into his hall without prior notice! Thus, the King decided to build a reception with a queue where each knight chooses in advance the time when he will come and how long the visit will take. The knights are served in the order of the recorded time, but each knight has to wait until the visits of all the knights before him are finished.</p>
+<p>
+	Kog 왕은 병사들의 근무 태만에 화가 났다. 심지어 그들은 보고도 없이 왕의 홀에 마음대로 들락날락 한다!
+	따라서 왕은 각 기사의 방문 시각과 접견 시간을 미리 선택하고 줄을 서서 기다리는 접견 규칙을 만들었다.
+	기사들은 기록한 방문 시각 순서대로 입장하지만 각 기사는 자신보다 앞선 모든 기사의 접견이 끝날 때까지 기다려야 한다.
+</p>
 
-<p>Princess Keabeanie wants to see her father. However, she does not want to interrupt the knights so she joins the queue. Unfortunately, the knights change their minds very often &mdash; they can join the queue or cancel their visits. Please help the princess to understand how long she will have to wait until she sees her father if she enters the queue at the specified moments of time given the records at the reception.</p>
+<p>
+	Keabeanie 공주는 아버지를 뵙고 싶어 한다. 그러나 그녀는 기사들을 방해하고 싶지 않아 접견 줄에 합류한다.
+	불행히도 기사들은 마음을 자주 바꾼다. 그들은 접견 줄에 합류하거나 방문을 취소하곤 한다.
+	접수된 기록들을 통해 특정 시간에 줄을 서면 공주가 아버지를 볼 때까지 기다려야 하는 시간을 구하여라.
+</p>
 
 				</div>
 				</section>
@@ -15,26 +23,39 @@
 					<h2>입력</h2>
 					</div>
 					<div id="problem_input" class="problem-text">
-					<p>The first line of the input contains a single integer q (1 &le; q &le; 3 &middot; 10<sup>5</sup>) &mdash; the number of events. An event can be of three types: join, cancel, or query.</p>
+<p>
+	첫 번째 줄에는 이벤트의 개수 $q$($1\le q\le 3\cdot 10^5$)가 주어진다. 각 이벤트는 접수, 취소, 질의 중 하나이다.
+</p>
 
 <ul>
-	<li>Join &ldquo;+ t d&rdquo; (1 &le; t, d &le; 10<sup>6</sup>) &mdash; a new knight joins the queue, where t is the time when the knight will come and d is the duration of the visit.</li>
-	<li>Cancel &ldquo;- i&rdquo; (1 &le; i &le; q) &mdash; the knight cancels the visit, where i is the number (counted starting from one) of the corresponding join event in the list of all events.</li>
-	<li>Query &ldquo;? t&rdquo; (1 &le; t &le; 10<sup>6</sup>) &mdash; Keabeanie asks how long she will wait if she comes at the time t.</li>
+	<li>
+		<code>+ t d</code>($1 \le t, d \le 10^6$): 접수.
+		새로운 기사가 ​접견 줄에 합류한다. 여기서 <code>t</code>는 기사의 방문 시각이고 <code>d</code>는 접견 시간이다.
+	</li>
+	<li>
+		<code>- i</code>($1 \le i \le q$): 취소.
+		the knight cancels the visit, where i is the number (counted starting from one) of the corresponding
+		join event in the list of all events.
+	</li>
+	<li>
+		<code>? t</code>($1 \le t \le 10^6$): 질의.
+		Keabeanie asks how long she will wait if she comes at the time t.
+	</li>
 </ul>
 
-<p>It is guaranteed that after each event there are no two knights with the same entrance time in the queue. Cancel events refer to the previous joins that were not cancelled yet.</p>
+<p>
+	It is guaranteed that after each event there are no two knights with the same entrance time in the queue.
+	Cancel events refer to the previous joins that were not cancelled yet.
+</p>
 
-<p>Keabeanie can come at the same time as some knight, but Keabeanie is very polite and she will wait for the knight to pass.</p>
+<p>
+	Keabeanie can come at the same time as some knight,
+	but Keabeanie is very polite and she will wait for the knight to pass.
+</p>
 
-					</div>
-					</section>
-<section id="output">
-					<div class="headline">
-					<h2>출력</h2>
-					</div>
-					<div id="problem_output" class="problem-text">
-					<p>For each query write a separate line with the amount of time Keabeanie will have to wait.</p>
+</div>
+</section>
 
-					</div>
-					</section>
+<section id="output"><div class="headline"><h2>출력</h2></div><div id="problem_output" class="problem-text">
+<p>각 질의에 대해 Keabeanie가 기다려야 하는 시간을 각 줄에 출력하여라.</p>
+</div></section>
