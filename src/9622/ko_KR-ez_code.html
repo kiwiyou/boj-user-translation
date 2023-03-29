@@ -1,0 +1,40 @@
+<section id="title">캐리어</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>(캐빈 백으로도 불리는) 캐리어는 승객이 항공기에 들고 들어갈 수 있는 가방입니다. 안전을 위해 캐리어는 너무 무겁거나 커서는 안 됩니다. IATA (국제 항공 협회) 가이드라인에 따르면 항공사는
+            캐리어에 대해 자체적인 크기 및 무게 제한을 설정할 수 있습니다.</p>
+        <p>ICPC 항공은 아래와 같이 캐리어에 제한을 설정했습니다:</p>
+        <p>캐리어는 최대 높이 56cm, 가로 45cm, 세로 25cm를 준수하거나 세 변의 합(높이 + 가로 + 세로)이 125cm를 초과하지 않아야 합니다. 무게는 7kg를 초과할 수 없습니다.</p>
+        <p><img alt="" src="/upload/images2/cabin.png" style="height:152px; width:153px"/></p>
+        <p>회사는 캐리어의 크기와 무게를 높은 정밀도로 측정하는 레이저 측정기를 가지고 있습니다. 장비는 소수 둘째 자리까지 나오는 양수 4개를 반환합니다. 이는 각각 (cm 단위의) 높이, 가로, 세로와
+            (kg 단위의) 무게입니다.</p>
+        <p>예시는 아래와 같습니다.</p>
+        <ul>
+            <li>51.23 40.12 21.20 3.45 (이 가방은 허용됩니다.)</li>
+            <li>60.00 30.00 20.00 7.00 (이 가방은 허용됩니다.)</li>
+            <li>52.03 41.24 23.50 7.01 (이 가방은 허용되지 않습니다.)</li>
+        </ul>
+        <p>당신은 캐리어가 허용되는지 안 되는지 확인하는 프로그램을 작성해야 합니다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>첫 줄에 테스트 케이스(즉 확인해야 하는 가방)의 수를 나타내는 하나의 정수 $t$ $(1 \le t \le 300)$가 입력됩니다. 다음 $t$개의 줄에 캐리어의 측정 값이 들어옵니다. 각 줄은
+            각각 높이,
+            가로, 세로, 무게를 나타내는 4개의 값으로 이루어져 있습니다. 4개의 값은 모두 소수 둘째 자리까지 표현된 양수입니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해 캐리어가 허용되면 <code>1</code>을, 허용되지 않으면 <code>0</code>을 한 줄에 출력합니다. 마지막 줄에 허용된 가방의 총 개수를 출력합니다.</p>
+    </div>
+</section>
