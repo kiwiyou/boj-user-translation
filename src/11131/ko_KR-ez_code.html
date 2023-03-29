@@ -1,0 +1,65 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문제</title>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+
+
+
+
+
+
+
+
+
+    </script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<section id="title">균형 잡기</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>당신이 공부를 하니까, 모든 가족이 당신이라면 어떤 어려운 질문에도 답할 수 있으리라 기대합니다. 내 컴퓨터 왜 고장 났어? 해리 왕자의 새 여자친구 이름이 뭐야? 내 새 바지 어디 있는지
+            봤어? 질문도 참 다양합니다. 이번에는 할아버지가 문제를 들고 와, 당신은 또다시 인생의 가장 근원적인 질문에 답을 찾아야 한다는 압박에 시달립니다.</p>
+        <p> 정확히 가운데에서 질량이 없는 받침점이 지탱해 평형을 유지하고 있는 20m 길이의 막대가 있습니다. 막대에 무게가 몇 개 올라갑니다. 당신은 만약 한쪽이 기울어진다면 어느 쪽이 기울어질지
+            판단해야 합니다. 당신은 똑똑하기에 바로 각 무게가 막대에 적용되는 돌림힘에 영향을 주며, 이에 따라 답이 정해질 것임을 알아챘습니다. 하나의 무게가 발생시키는 돌림힘의 크기는 아래와 같이
+            결정됩니다.</p>
+        <p>\[\tau = m \times d\]</p>
+        <p>$\tau$은 돌림힘의 크기이며, $m$은 물체의 무게, $d$는 중심으로부터 물체의 거리입니다. 이후 막대의 각가속도는 아래의 등식으로 구할 수 있습니다.</p>
+        <p>\[\alpha = \tau / I\]</p>
+        <p>$\alpha$는 각가속도, $I$는 막대의 관성 모멘트입니다. 관성 모멘트는 아래와 같은 공식으로 정해집니다.</p>
+        <p>\[I = \int {r^2dm}\]</p>
+        <p>$r$은 회전축으로부터의 수직 거리입니다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>테스트 케이스의 수를 나타내는 하나의 숫자 $T$가 첫 줄에 주어집니다. 각 테스트 케이스는 테스트 케이스의 무게의 수를 나타내는 $N$이 포함된 줄로 시작됩니다. 이후 $N$개 무게의 위치를
+            나타내는 $N$개의 수 $W_1$, $W_2$ … $W_n$이 한 줄에 주어집니다.</p>
+        <ul>
+            <li>$0 < T \le 100$</li>
+            <li>$0 < N \le 100$</li>
+            <li>$-1000 \le W_i \le 1000$</li>
+            <li>$W_i$가 음수일 경우 무게가 중심으로부터 왼쪽에 위치함을, 양수일 경우 오른쪽에 위치함을 나타냅니다.</li>
+            <li>막대의 무게는 정확히 2000g으로 모든 부분이 균일합니다. 각 무게는 100g입니다.</li>
+            <li>무게는 하나의 점으로 작용한다고 가정합니다.</li>
+        </ul>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해 무게가 왼쪽으로 기울면 <code>Left</code>를, 오른쪽으로 기울면 <code>Right</code>를, 어느 쪽으로도 기울지 않으면
+            <code>Equilibrium</code>을 출력합니다.</p>
+    </div>
+</section>
