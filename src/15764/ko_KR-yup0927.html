@@ -1,0 +1,41 @@
+<section id="title">순서 정하기</section>
+	<section id="description">
+		<div class="headline">
+			<h2>문제</h2>
+		</div>
+		<div id="problem_description" class="problem-text">
+			<p>농부 존에게는 $N$마리의 젖소가 있다. 편의상 $1, \ldots, N$번 소라고 하자. 소들은 너무 심심했던 나머지 서로 복잡한 규칙을 정했다. 아침마다 줄을 선 젖소들의 젖을 짜면서 관찰한 결과 존은 젖소들의 구조가 두 가지 속성을 가진다는 것을 발견하였다.</p>
+			<p>첫째로 젖소들의 계층적 구조였다. 몇몇 소는 서로 순서를 정해두었다. 예로 $3$번 소가 제일 높고 $2$번 소가 중간, $5$번 소가 제일 낮다면 이중에서 $3$번 소가 제일 먼저, 그리고 $2$번, 마지막으로 $5$번 순서대로 줄을 선다.</p>
+			<p>둘째로 몇몇 소는 줄의 특정 위치에만 위치하였다. 예로 $4$번 소는 항상 앞에서 두 번째에 위치하였다.</p>
+			<p>존은 이 규칙을 만족하는 한 문제없이 젖소들의 젖을 짤 수 있었다.</p>
+			<p>하지만 안타깝게도 $1$번 소가 병에 걸리고 말았다. 존은 $1$번 소의 젖을 최대한 빨리 짜고 쉬게 하고 싶었다. $1$번 소가 줄에서 최대한 앞으로 오도록 배치할 때 몇 번째에 위치할지 구해보자.</p>
+		</div>
+	</section>
+	<section id="input">
+		<div class="headline">
+			<h2>입력</h2>
+		</div>
+		<div id="problem_input" class="problem-text">
+			<p>첫째 줄에 소의 수를 나타내는 $N$, 계층 구조를 가지는 소의 수 $M$, 고정된 위치를 가지는 소의 수 $K$가 주어진다. $(1 \leq M \le N)$, $(1 \leq K \le N)$</p>
+			<p>둘째 줄에 계층 구조를 가지는 서로 다른 소의 번호 $m_i$가 $M$개 들어온다. $(1 \leq m_i \leq N)$</p>
+			<p>이후 $K$개 줄에 걸쳐 $c_i$와 $p_i$가 주어진다. $(1 \leq c_i \leq N;$ $1 \leq p_i \leq N)$ $c_i$는 소의 번호, $p_i$는 소가 줄의 앞부터 몇 번째에 위치했는지를 나타낸다.</p>
+			<p>항상 답이 존재하는 입력만 주어진다.</p>
+		</div>
+	</section>
+	<section id="output">
+		<div class="headline">
+			<h2>출력</h2>
+		</div>
+		<div id="problem_output" class="problem-text">
+			<p>$1$번 소가 줄에서 최대한 앞에 위치했을 때 몇 번째에 위치하는지를 출력하라.</p>
+		</div>
+	</section>
+	<section id="hint">
+		<div class="headline">
+			<h2>힌트</h2>
+		</div>
+		<div id="problem_hint" class="problem-text">
+			<p>$3, 4, 5, 1, 6, 2$이나 $3, 4, 5, 1, 2, 6$으로 배치했을 때 $1$번 소는 네 번째에 위치하고 이것이 가장 앞에 위치하는 배치이다.</p>
+		</div>
+	</section>
+</section>
