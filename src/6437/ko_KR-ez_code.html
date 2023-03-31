@@ -1,0 +1,35 @@
+<section id="title">골프</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>골프를 배우고 싶은 사람은 누구든 우선 (영국에서 유래된 모든 게임을 배울 때와 마찬가지로) 이상한 규칙 몇 개에 익숙해져야 합니다. 그 중 하나는 선수가 홀에 골프 공을 넣는 데까지 필요한
+            타수를 세는 방식입니다. 모든 홀에는 "파"가 있는데, 사실상 모든 점수는 파를 기준으로 표현됩니다. 예를 들어 "파", "버디" (파보다 1타 아래), "보기" (파보다 1타 위) 같은
+            용어와, 보다 드물게 일어나긴 하지만 "홀인원", "이글" (파보다 2타 아래), "더블 이글" (파보다 3타 아래), "더블 보기" (파보다 2타 위) 등이 있습니다. 더블 보기보다 안 좋은
+            점수를 기록할 수도 있고 그에 대한 용어도 다 있지만, 대부분 사람들이 그런 경우 대충 "더블 보기"라 적는다고 칩시다.</p>
+        <p>존은 골프 클럽에 막 가입해 아직 용어가 낯섭니다. 첫 골프 코스 경험 때, 존은 점수 기록 카드에 홀마다 그냥 자신이 친 타수를 적었습니다. 이제 이 숫자를 알맞은 용어로 바꿔야 합니다.</p>
+        <p>존의 캐디인 당신은 홀의 파가 되는 타수와 존이 적은 타수가 주어질 때, 점수의 올바른 명칭을 출력하는 프로그램을 작성하려 합니다. 다른 용어가 알맞을 경우에도 "홀인원"을 우선합시다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>입력은 여러 개의 테스트 케이스로 이루어져 있습니다. 각 테스트 케이스에는 한 줄에 홀에서 파가 되는 타수를 나타낸 (3, 4, 5 중 하나인) $p$와 존이 친 타수를 나타내며 $1 \le s
+            < 20$을 만족하는 $s$, 총 두 정수 $p$와 $s$가 주어집니다.</p>
+        <p>입력은 $p = 0$인 홀이 주어지며 종료되는데, 이 줄은 처리하지 않습니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해, 홀의 번호를 한 줄에 출력합니다. ('<code>Hole #1</code>', '<code>Hole #2</code>' 등등)</p>
+        <p>다음 줄에 점수의 올바른 명칭과 점을 출력하는데, '<code>Hole-in-one.</code>', '<code>Double eagle.</code>', '<code>Eagle.</code>',
+            '<code>Birdie.</code>', '<code>Par.</code>', '<code>Bogey.</code>', '<code>Double Bogey.</code>' 중 하나를 출력하면
+            됩니다.</p>
+    </div>
+</section>
