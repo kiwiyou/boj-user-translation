@@ -1,0 +1,46 @@
+<section id="title">등차수열과 등비수열의 합</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>등차수열은 다음 수가 이전 수와 항상 일정한 수만큼 차를 이루는 수열입니다.</p>
+        <p>\[a_1+a_2+a_3+\dots+a_n = a_1 + (a_1+d)+(a_1+2d)+\dots+(a_1+nd)\]</p>
+        <p>\(a_1\)부터 \(a_n\)까지 합은 아래와 같이 구할 수 있습니다.</p>
+        <p>\[s_n = \dfrac{n(2a_1 + (n-1)d)}{2}\]</p>
+        <p>등비수열은 다음 수가 이전 수와 항상 일정한 수만큼 비율을 이루는 수열입니다.</p>
+        <p>\[a_1+a_2+a_3+\dots+a_n = a_1 + (ra_1)+(r^2a_1)+\dots+(r^na_1)\]</p>
+        <p>\(a_1\)부터 \(a_n\)까지 합은 아래와 같이 구할 수 있습니다.</p>
+        <p>\[S_n = a_1\dfrac{r^n-1}{r-1}\]</p>
+        <p>등차수열 혹은 등비수열의 첫 세 수가 주어졌을 때, \(N\)번째 항까지 합을 구합시다. 첫 번째 항은 첫 번째로 오는 수이며, \(N\)번째 항까지 합을 구할 때 \(N\)번째 항도 계산에
+            포함해야 합니다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>각 데이터에 대해 입력이 두 줄 들어옵니다. 첫 줄은 계산해야 하는 마지막 항을 나타내는 \(N\)입니다. 다음 줄은 수열입니다. 하나의 공백이 숫자를 구분할 것입니다. 수열은 등비수열이거나
+            등차수열입니다. \(N\)의 값으로 <code>0</code>이 들어와 입력의 종료를 알립니다. 만약 수열이 등비수열일 경우 \(r\)이 정수임은 보장됩니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해 독립된 줄에 \(S_n\)을 출력합니다.</p>
+    </div>
+</section>
+<section id="limit">
+    <div class="headline">
+        <h2>제한</h2>
+    </div>
+    <div id="problem_limit" class="problem-text">
+        <ul>
+            <li>\(1 \le N \le 100\)</li>
+            <li>\(1 \le a_1, a_2, a_3 \le 2\,500\)</li>
+        </ul>
+    </div>
+</section>
