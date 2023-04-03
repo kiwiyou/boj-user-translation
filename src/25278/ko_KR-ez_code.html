@@ -1,0 +1,65 @@
+<section id="title">테라포밍</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>세계 정부의 대변인 레비 유켄(2315년)에 따르면, 화성을 살 수 있는 행성으로 바꾸려는 인류의 노력은 "엄청난 도전으로 완수를 위해서는 인류의 단합된 노력이 필요"합니다.</p>
+        <p>이 도전을 시작할 때, 화성에는 바다도 산소도 없었으며 평균 기온은 -30도였습니다.</p>
+        <p>물</p>
+        <p>물의 순환, 습도, 온도, 일교차의 안정화를 위해서 화성은 9%의 바다 표면적을 필요로 합니다.</p>
+        <p>기온</p>
+        <p>아주 낮은 기온에서, 한 해의 대부분 바다는 빙하 상태입니다. 이미 '더운' 여름 21세기 화성의 기온은 20도까지 오르지만, 평균 기온은 어는 점보다 한참 아래입니다. 바다가 액체 상태로
+            존재하기 위해 최소한 적도에서는 기온이 양수가 돼야 하며, 이는 8도의 평균 기온을 필요로 함을 말합니다.</p>
+        <p>산소</p>
+        <p>화성을 살 수 있는 행성으로 바꾸기 위해 가장 중요한 것은 산소입니다 - 숨을 쉴 수 있는 공기가 없다면, 사람은 화성에서 살 수 없습니다. 해수면에서 지구의 산소 농도는 공기의 21%입니다.
+            하지만 21세기 거의 100만 명의 인구가 살고 있는 볼리비아의 도시 엘알토(4150m)나 라파즈(3640m)를 고려할 대, 14%면 사람이 살기에 충분합니다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>첫 줄에 화성에 가할 변화의 수 $n\in\{1,\ldots, 315\}$가 주어집니다. 다음 n개의 줄 각각에 변화를 가할 요소(<code>oxygen</code>,
+            <code>ocean</code>, <code>temperature</code>)와 하나의 정수가 주어집니다.</p>
+        <p>산소와 물에 가하는 변화는 퍼센트 포인트로, 기온에 가하는 변화는 섭도로 나타냅니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>환경을 변화해 바다 표면적이 최소 $9$\%, 산소가 최소 $14\%$, 온도가 최소 $+8$도가 보장됐다면, <code>liveable</code>을 출력합니다. 그 외의 경우, <code>not
+            liveable</code>을 출력합니다.</p>
+    </div>
+</section>
+<section id="subtask">
+    <div class="headline"><h2>서브태스크</h2></div>
+    <div id="problem_subtask" class="problem-text">
+        <div class="table-responsive">
+            <table class="table table-bordered td-middle subtask-table" style="width: 100%;">
+                <thead>
+                <th style="width: 5%;">번호</th>
+                <th style="width: 5%;">배점</th>
+                <th style="width: 90%;">제한</th>
+                </thead>
+                <tbody>
+                <tr data-subtask-id="1">
+                    <td>1</td>
+                    <td>50</td>
+                    <td class="subtask-body"><p>변화량이 항상 $+1$입니다.</p>
+                    </td>
+                </tr>
+                <tr data-subtask-id="2">
+                    <td>2</td>
+                    <td>50</td>
+                    <td class="subtask-body"><p>변화량이 $\{+1,\ldots,+5\}$ 사이의 정수입니다.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
