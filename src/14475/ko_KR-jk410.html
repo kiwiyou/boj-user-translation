@@ -1,0 +1,57 @@
+<section id="title">스네이크 JOI 군</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>스네이크 JOI 군은 어떤 큰 저택에 갇혀 버렸다. 저택의 주인에게 발견되기 전에 저택을 탈출해야 한다.</p>
+
+<p>이 저택에는 방이 N 개 있고, 1, 2, ..., N 의 번호가 붙어 있다. 또, 복도가 M 개 있고, i 번째의 복도 (1 ≤ i ≤ M) 는 방 A<sub>i</sub>&nbsp;와 방 B<sub>i</sub>&nbsp;를 연결하고 있다. JOI 군은 복도들을 어떤 방향으로든 통과할 수 있고, 복도 i 를 통과하는 데에는 D<sub>i</sub>&nbsp;분이 걸린다. 방과 방 사이는 복도를 통해 이동하는 것 이외에는 이동하는 방법이 없다.</p>
+
+<p>이 저택의 방의 온도는 각각 일정하게 조절되어 있고, JOI 군에게 너무 춥거나, 쾌적하거나, 너무 덥거나 중 하나이다. JOI 군은 급격한 온도 변화에 대응할 수 없기 때문에, 가장 마지막으로 너무 추운 방에서 나온 후 X 분 미만 동안 너무 더운 방에 들어갈 수 없다. 마찬가지로, 가장 마지막으로 너무 더운 방에서 나온 후 X 분 미만 동안 너무 추운 방에 들어갈 수 없다.</p>
+
+<p>JOI 군은 이동 중에 방에 들어가면 즉시 방에서 나와야 한다. 또, 복도 중간에서 되돌아가거나 복도 i 를 D<sub>i</sub>&nbsp;보다 긴 시간 동안 통과할 수 없다. 단, 이전에 방문했던 방에 다시 들어가거나, 이전에 사용했던 복도를 다시 사용하는 것은 가능하다.</p>
+
+<p>JOI 군은 지금 방 1 에 있다. 이 방은 JOI 군에게 너무 춥다. JOI 군은 저택 출구가 있는 방 N에 도착하면 저택에서 탈출할 수 있다.</p>
+
+<p>JOI 군이 저택에서 탈출하는 데 걸리는 최단 시간을 구하라.</p>
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>입력은 1 + N + M 줄로 주어진다.</p>
+
+<p>첫째 줄에는 3 개의 정수 N, M, X (2 ≤ N ≤ 10000, 1 ≤ M ≤ 20000, 1 ≤ X ≤ 200) 가 공백을 사이에 두고 주어진다. 이는 저택에 N 개의 방과 M 개의 복도가 있고, JOI 군이 온도 변화에 대응하는 데에 X 분이 걸린다는 것을 나타낸다.</p>
+
+<p>이어지는 N 줄 중 i 번째 줄 (1 ≤ i ≤ N) 에는 방 i 의 온도를 나타내는 정수 T<sub>i</sub>&nbsp;(0 ≤ T<sub>i</sub>&nbsp; ≤ 2) 가 주어진다. JOI 에게 방 i 는，T<sub>i</sub>&nbsp;= 0 일 때 너무 춥고, T<sub>i</sub>&nbsp;= 1 일 때 쾌적하고, T<sub>i</sub>&nbsp;= 2 일 때 너무 덥다. T<sub>1</sub>&nbsp;= 0 임은 보장된다.</p>
+
+<p>이어지는 M 줄 중 j 번째 줄 (1 ≤ j ≤ M) 에는, 3 개의 정수 A<sub>j</sub>, B<sub>j</sub>, D<sub>j</sub>&nbsp;(1 ≤ A<sub>j</sub>&nbsp;&lt; B<sub>j</sub>&nbsp;≤ N, 1 ≤ D<sub>j</sub>&nbsp;≤ 200) 가 공백을 사이에 두고 주어진다. 이는 복도 j 가 방 A<sub>j</sub>&nbsp;와 방 B<sub>j</sub>&nbsp;를 연결하고, 지나가는 데에 D<sub>j</sub>&nbsp;분이 걸린다는 것을 나타낸다. 같은 방의 조합을 연결하는 복도가 여러 개 있을 수 있음에 주의하라.</p>
+
+<p>주어진 입력 데이터에서 JOI 군이 저택에서 탈출할 수 있음을 보장한다.</p>
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>JOI 군이 저택에서 탈출하는 데에 최단 시간 몇 분이 걸리는지 나타내는 정수를 한 줄에 출력하라.</p>
+
+					</div>
+					</section>
+<section id="hint">
+				<div class="headline">
+				<h2>힌트</h2>
+				</div>
+				<div id="problem_hint" class="problem-text">
+				<p>예제 입력 1 에서는, 방을 1 &rarr; 2 &rarr; 3 &rarr; 4 &rarr; 5 &rarr; 6 &rarr; 5 &rarr; 8 의 순서로 이동하는 것이 최단이다.</p>
+
+<p>예제 입력 2 에서는, 같은 방의 조합 (예를 들어 방 1 과 방 5) 을 연결하는 복도가 여러 개 있다.</p>
+
+				</div>
+				</section>
