@@ -1,0 +1,34 @@
+<section id="title">아호이!</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>축하합니다! 당신은 오래 전 해적 생활을 하다 돌아가신 조상님으로부터 보물 지도를 물려받았습니다. 금화와 보석 커틀라스를 꿈꾸며 조심스럽게 지도를 펼칩니다. 큰 X 표시가 있는 일반적인
+            지도와는 다르게, 이 지도는 어디로 가야하는지를 순차적으로 알려줍니다. 첫 번째 지시는 각각 위도와 경도를 알려주는 두 정수 $x$와 $y$입니다. 그 다음에는 <code>N 7</code>,
+            <code>SW 6</code>같은 지시가 적혀있는데, 각각 북쪽으로 7피트, 남서쪽으로 6피트를 말합니다. 모든 지시를 따라 이동한 다음이면 보물상자 묻혀진 위치에 서있을 것입니다.</p>
+        <p>(명확히 말하면, 북쪽으로 이동하면 $y$ 값이 증가하고 $x$ 값이 일정하게 유지됩니다. 동쪽으로 이동하면 $x$ 값이 증가하고 $y$ 값이 일정하게 유지됩니다. 이제 다른 방향으로 가도 어떻게
+            될지 아시겠죠?)</p>
+        <p>당신은 시작점부터 지시를 하나하나씩 따라갈 수도 있겠지만, 도착점을 계산하고 바로 그곳으로 가는 것이 훨씬 쉬울 것입니다. 그리고 이 문제를 해결하는 것이 당신의 과제입니다!</p>
+        <p>아, 한 가지 더: 알고 보니 당신의 조상은 실제로 소말리아 해적이었고 보물은 낡은 야구공 다발과 곰팡이 핀 글러브였습니다. 이거라도 당근하면 짭짤할 거에요.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>첫 번째 줄에는 지시의 개수인 정수 $n$ ($1 \le n \le 100$)이 주어집니다. 다음 $n$개의 줄에는 각각 지시가 주어집니다. 첫 번째 지시는 시작점의 위치를 의미하는 두 정수
+            $x$와 $y$ ($0 \le x, y \le 100$)가 주어집니다. 나머지 지시들은 $dir$ $d$ 형식으로 주어집니다. $dir$은 방향 (<code>N</code>,
+            <code>NE</code>, <code>E</code>, <code>SE</code>, <code>S</code>, <code>SW</code>, <code>W</code>,
+            <code>NW</code> 중 하나)이고 $d$ ($1 \le d \le 100$)는 걸어갈 거리입니다. </p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>도착점의 $x$와 $y$ 좌표를 공백으로 구분하여 출력합니다. 모든 좌표는 상대 오차 또는 절대 오차가 $10^{-6}$ 이하가 되어야 합니다.</p>
+    </div>
+</section>
