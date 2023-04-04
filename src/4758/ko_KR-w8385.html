@@ -1,0 +1,63 @@
+<section id="title">포켓 리그 스토리</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>위대한 도시 카이로의 사람들은 누구에게도 뒤지지 않는 미식축구에 대한 집단 지성을 보여주었습니다. 최근에 스파이가
+            카이로의 축구 지성의 진정한 근원을 발견했습니다. &ldquo;마이론&rdquo;이라는 마법사로, 각 선수가 어떤 포지션에서
+            뛰어날지를 정확히 예측할 수 있습니다.</p>
+        <p>이제 카이로의 지성의 근원을 알았으니, 당신은 학교 미식축구팀에 &ldquo;마이론&rdquo;의 지성과 같은 컴퓨터 프로그램을 제공하려고 합니다. 당신은 최고의 미식축구 전문가들과 상담했고,
+            그들은 각 포지션에 필요한 최저 속도, 최소 중량, 최소 힘을 제시했습니다.</p>
+        <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+            <tbody>
+            <tr>
+                <td style="text-align: center;">포지션</td>
+                <td style="text-align: center;">최저 속도</td>
+                <td style="text-align: center;">최소 중량</td>
+                <td style="text-align: center;">최소 힘</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">와이드 리시버</td>
+                <td style="text-align: center;">4.5</td>
+                <td style="text-align: center;">150</td>
+                <td style="text-align: center;">200</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">라인맨</td>
+                <td style="text-align: center;">6.0</td>
+                <td style="text-align: center;">300</td>
+                <td style="text-align: center;">500</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">쿼터백</td>
+                <td style="text-align: center;">5.0</td>
+                <td style="text-align: center;">200</td>
+                <td style="text-align: center;">300</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>이 정보를 바탕으로, 당신은 선수들의 신체 점수를 입력받고 그들이 뛸 수 있는 포지션을 출력하는 프로그램을
+            작성해야 합니다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>입력의 각 줄에는 한 선수에 대한 신체 점수가 주어집니다.</p>
+        <p>&lt;속도&gt; &lt;중량&gt; &lt;힘&gt;</p>
+        <p>각 점수는 실수이며, &ldquo;0 0 0&rdquo;이 주어지고 끝납니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 선수에 대해, 그들이 뛸 수 있는 포지션을 출력해야 합니다. 각 속성이 최소 중량과 최소 힘의 최소값보다 크거나 같고, 최저 속도보다 작거나 같으면 그 선수는 그 포지션에서 뛸 수 있습니다.
+            만약 선수가 여러 포지션에서 뛸 수 있다면, 위의 표에서 나열된 순서대로 공백으로 구분하여 출력합니다. 만약 선수가 어떤 포지션에서도 뛸 수 없다면, <code>No
+                positions</code>를 출력해야 합니다.</p>
+    </div>
+</section>

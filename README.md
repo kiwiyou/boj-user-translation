@@ -30,7 +30,7 @@ You can translate the generated file, push to your repository, and send a pull r
 - No new sections can be used now.
 - **No XSS (or any malicious HTML injection) is allowed.**
 - You can rearrange paragraphs, rewrite sentences, or change character names
-  **if you keep the shown and unshown.**
+  **if you follow the problemsetter's intention.**
 - If the problem has defects that should be resolved, you can warn in translation
   but please **write together that the warning is inserted by the translator.**
 - Regarding formats, please refer to [formatting guide.](https://github.com/kiwiyou/boj-user-translation/blob/main/formatting.md)

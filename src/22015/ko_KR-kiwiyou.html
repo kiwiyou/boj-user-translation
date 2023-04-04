@@ -1,0 +1,114 @@
+<section id="title">별사탕</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      JOI 학교의 학생 명일이와 송이는 박조영 선생님과 함께 별사탕을 같은 양만큼
+      먹기로 했다.
+    </p>
+
+    <p>
+      지금 명일이는 <var>A</var> 개, 송이는 <var>B</var> 개, 선생님은
+      <var>C</var> 개의 별사탕을 먹었다. 셋이 먹은 별사탕의 수를 같도록 하기
+      위해서는 모두 합쳐 최소 몇 개의 별사탕을 더 먹어야 할까?
+    </p>
+
+    <p>
+      셋이 먹은 별사탕의 개수 <var>A, B, C</var>가 주어질 때 더 먹어야 하는
+      별사탕의 최소 양을 구하자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 아래 형식으로 주어진다.</p>
+
+    <pre>
+<var>A</var> <var>B</var> <var>C</var></pre>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>더 먹어야 하는 별사탕의 양을 출력한다.</p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li><var>1 &le; A &le; 100</var></li>
+      <li><var>1 &le; B &le; 100</var></li>
+      <li><var>1 &le; C &le; 100</var></li>
+      <li>입력되는 수는 모두 정수이다.</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>40</td>
+            <td class="subtask-body">
+              <p><var>A &lt; B &lt; C</var></p>
+            </td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>60</td>
+            <td class="subtask-body"><p>추가 제약 조건이 없다.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      명일이는 <var>4</var>개, 송이는 <var>6</var> 개, 선생님은
+      <var>9</var> 개의 별사탕을 먹었다.
+    </p>
+
+    <p>
+      명일이가 <var>5</var> 개, 송이가 <var>3</var> 개의 별사탕을 추가로 먹으면
+      셋이 먹은 별사탕의 양이 모두 <var>9</var> 개가 된다. 추가로 먹은 별사탕의
+      양은 모두 합쳐 <var>8</var> 개이다.
+    </p>
+
+    <p>
+      <var>8</var> 개보다 적게 먹어 먹은 별사탕의 개수를 똑같이 하는 방법은
+      없으므로 <var>8</var>을 출력한다.
+    </p>
+
+    <p>この入力例はすべての小課題の制約を満たす．</p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>별사탕을 더 먹을 필요가 없으므로 <var>0</var>을 출력한다.</p>
+
+    <p>이 예제는 서브태스크 2의 제약만을 만족한다.</p>
+  </div>
+</section>

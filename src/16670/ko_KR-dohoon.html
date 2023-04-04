@@ -1,0 +1,44 @@
+<section id="title">Kog 왕 접견</section>
+<section id="description"><div class="headline"><h2>문제</h2></div>
+<div id="problem_description" class="problem-text">
+<p>
+	Kog 왕은 병사들이 보고도 없이 왕의 홀에 마음대로 들락날락해서 화가 났다!
+	따라서 왕은 각 기사의 입장 시각과 접견 시간을 미리 선택하고 줄을 서서 기다리는 접견 규칙을 만들었다.
+	기사들은 기록한 입장 시각 순서로 입장하지만 각 기사는 자신보다 앞선 모든 기사의 접견이 끝날 때까지 기다려야 한다.
+</p>
+<p>
+	Keabeanie 공주는 아버지를 뵙고 싶어 한다. 그러나 그녀는 기사들을 방해하고 싶지 않아 접견 줄에 합류한다.
+	불행히도 기사들은 마음을 자주 바꾼다. 그들은 접견 줄에 합류하거나 접견을 취소하곤 한다.
+	접수된 기록들을 통해 특정 시간에 줄을 서면 공주가 아버지를 볼 때까지 기다려야 하는 시간을 구하여라.
+</p>
+</div></section>
+
+<section id="input"><div class="headline"><h2>입력</h2></div>
+<div id="problem_input" class="problem-text">
+<p>
+	첫 번째 줄에는 이벤트의 개수 $q$($1\le q\le 3\cdot 10^5$)가 주어진다. 각 이벤트는 합류, 취소, 질의 중 하나이다.
+</p>
+<ul>
+	<li>
+		<code>+ t d</code>($1 \le t, d \le 10^6$): 새로운 기사가 접견 줄에 합류한다. 여기서 $t$는 기사의 입장 시각이고 $d$는 접견 시간이다.
+	</li>
+	<li>
+		<code>- i</code>($1 \le i \le q$): $i$번째 이벤트를 취소한다. 이때, 취소하는 이벤트는 앞선 합류 이벤트임이 보장된다.
+	</li>
+	<li>
+		<code>? t</code>($1 \le t \le 10^6$): Keabeanie가 시각 $t$에 오면 기다려야 하는 시간을 묻는다.
+	</li>
+</ul>
+<p>
+	각 이벤트 후에 접견 줄에 입장 시각이 같은 두 명의 기사가 없다는 것이 보장된다.
+</p>
+<p>
+	Keabeanie는 기사와 입장 시각이 같은 수 있지만, Keabeanie는 매우 예의 바르기 때문에 기사가 먼저 접견하도록 양보한다.
+</p>
+</div></section>
+
+<section id="output"><div class="headline"><h2>출력</h2></div><div id="problem_output" class="problem-text">
+<p>
+	각 질의에 대해 Keabeanie가 기다려야 하는 시간을 각 줄에 출력하여라.
+</p>
+</div></section>

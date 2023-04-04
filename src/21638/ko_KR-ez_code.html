@@ -1,0 +1,92 @@
+<section id="title">MCHS 문자</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      당신은 MCHS(러시아 긴급상황부)에서 일합니다. 당신은 방금 해양
+      기상청으로부터 오늘의 날씨 및 내일의 기상 예측 정보를 담은 보고서를
+      받았습니다.
+    </p>
+
+    <p>
+      이 보고서에 따르면, 오늘의 기온은 $t_1$ 도이며 풍속은 초속 $v_1$
+      미터입니다. 내일의 기온은 $t_2$ 도이며 풍속은 초속 $v_2$ 미터로
+      예상됩니다.
+    </p>
+
+    <p>당신은 문자를 통해 시민들에게 내일의 날씨 정보를 알려야 합니다.</p>
+
+    <p>
+      가장 중요한 과제는 폭풍이 예상되면 시민들에게 경고하는 것입니다. 만약
+      내일의 기온이 영하이고 풍속이 초속 10m 이상으로 예측되면, 당신은 아래와
+      같은 문자 메시지를 보내야 합니다:
+    </p>
+
+    <p style="text-align: center">
+      <code
+        >A storm warning for tomorrow! Be careful and stay home if
+        possible!</code
+      >
+    </p>
+
+    <p>
+      그렇지 않다면, 당신은 좋지 않은 기상 변화만 시민들에게 알려주면 됩니다.
+    </p>
+
+    <p>
+      만약 내일의 기온이 오늘보다 낮아진다면, 당신은 한파를 경고하는 메시지를
+      보내야 합니다. 내용은 아래와 같습니다:
+    </p>
+
+    <p style="text-align: center">
+      <code>MCHS warns! Low temperature is expected tomorrow.</code>
+    </p>
+
+    <p>
+      만약 기온이 떨어지지 않고 내일의 풍속이 오늘보다 빨라진다면, 당신은 강풍을
+      경고하는 메시지를 보내야 합니다. 내용은 아래와 같습니다:
+    </p>
+
+    <p style="text-align: center">
+      <code>MCHS warns! Strong wind is expected tomorrow.</code>
+    </p>
+
+    <p>
+      만약 위의 조건이 아무것도 충족되지 않는다면, 당신은 메시지를 보내지 않아도
+      됩니다.
+    </p>
+
+    <p>
+      해양 기상청으로부터 받은 보고서가 주어질 때, 무슨 메시지를 보내야 하는지
+      판단합시다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫 줄에 오늘의 기온과 풍속을 나타내는 두 정수 $t_1$과 $v_1$이 주어집니다.
+      $(-50 \le t_1 \le 50;$ $0 \le v_1 \le 20)$ 둘째 줄에는 내일의 기온과
+      풍속을 나타내는 두 정수 $t_2$와 $v_2$가 주어집니다. $(-50 \le t_2 \le 50;$
+      $0 \le v_2 \le 20)$
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      만약 특정 메시지를 출력해야 한다면, 그 메시지를 출력합니다. 그렇지 않다면,
+      "<code>No message</code>"를 출력합니다.
+    </p>
+
+    <p>단어 간 공백이나 줄 바꿈은 임의로 설정해도 됩니다.</p>
+  </div>
+</section>
