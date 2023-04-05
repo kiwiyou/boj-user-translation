@@ -1,0 +1,29 @@
+<section id="title">심박수</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>자신의 심박수를 측정하는 흔한 방법으로는 둘째 손가락과 셋째 손가락을 목 옆에 올리는 것이 있습니다. 이후 15초 동안 몇 번 심장이 뛰는지 센 후 그 수에 4를 곱하면 분 당 심박수(BPM)를
+            구할 수 있습니다. 이 방식은 괜찮은 근사치를 제공하지만 그렇게 정확하지는 않습니다. 일반적으로 $p$초 동안 $b$번 심장이 뛰었다면 BPM은 $60b/p$로 계산합니다.</p>
+        <p>이 문제에서 심박수는 일정하고 바뀌지 않는다고 가정합시다. 심장이 뛰는 시간 간격 $t$가 주어질 때, 실제 심박수(ABPM)는 $60/t$로 정의합니다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>테스트 케이스의 수를 나타내는 $N$ ($1 \le N \le 1000$)이 주어지며 입력이 시작됩니다. 다음 $N$개의 줄은 각각 하나의 테스트 케이스를 나타내며, 문제에 제시된 정수 $b$
+            ($2 \le b \le 1000$)와 $p$ ($0 < p < 1000$)로 구성됩니다. $p$는 소수 넷째 자리까지 주어진 실수입니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해, 한 줄에 최소 ABPM, 계산한 BPM, 최대 ABPM을 하나의 공백으로 나누어 출력합니다. 정답과 절대 오차 또는 상대 오차가 $10 ^ {-4}$를 초과하지
+            않는다면 정답으로 인정됩니다.</p>
+    </div>
+</section>
