@@ -1,0 +1,44 @@
+<section id="title">모니터 DPI</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>화면 해상도는 꽤 빠르게 좋아지고 있고 합리적인 소비자인 당신은 당신이 사려고 하는 모니터의 DPI(인치 당 도트 수)를 비교하려 합니다. 안타깝게도 제조사는 DPI를 표기하지 않고 대각선 길이와
+            해상도만 각각 인치 단위와 너비&times;높이 단위로 제공합니다. 모든 모니터의 너비 대 높이 비율은 16:9로 가정합시다.</p>
+        <p>다음과 같이 가정합시다. </p>
+        <p>\[W = \text{모니터의 너비 (인치)}\]
+            \[H = \text{모니터의 높이 (인치)}\]
+            \[D = \text{모니터의 대각선 길이(인치)}\]</p>
+        <p>$D$는 다음과 같으며</p>
+        <p>\[D = \sqrt{W^2+H^2}\]</p>
+        <p>그리고</p>
+        <p>\[H = \frac{9}{16}W\]</p>
+        <p>따라서</p>
+        <p>\[D = \sqrt{W^2 + \left(\frac{9}{16}W\right)^2} = \sqrt{\left(1+\frac{9^2}{16^2}\right)W^2} =
+            \sqrt{1+\frac{9^2}{16^2}}W \]\[&nbsp;W = \frac{16 \times D}{\sqrt{337}} &nbsp;\]\[
+            \text{DPI}_{\text{너비}} = \frac{\text{해상도}_{\text{너비}}}{W} \]\[&nbsp;\text{DPI}_{\text{높이}}
+            = \frac{\text{해상도}_{\text{높이}}}{H}&nbsp;\]</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>각 입력에 세 수로 십진수 $D$, 정수 \(\text{해상도}_{\text{너비}}\)와 정수 \(\text{해상도}_{\text{높이}}\)가 주어집니다.
+            0 세 개가 입력의 종료를 나타냅니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스(한 줄의 입력)에 대해 아래와 같이 소수 두 자리까지 반올림한 가로 DPI와 세로 DPI 값을 계산합니다:</p>
+        <pre>
+Horizontal DPI: XXX.XX
+
+Vertical DPI: XXX.XX</pre>
+    </div>
+</section>
