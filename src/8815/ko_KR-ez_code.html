@@ -1,0 +1,47 @@
+<section id="title">시험</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>헥토르는 (보기가 A, B, C, D인) 사지선다 문제로 된 시험을 좋아합니다. 답을 모르겠을 때, 헥토르는 무작위로 찍는 대신 아래와 같은 패턴에 따라 답을 찍습니다.</p>
+        <ol>
+            <li>첫 번째 문제에 A로 답합니다.</li>
+            <li>두 번째 문제는 전에 찍었던 글자 다음 글자(B)를 찍습니다.</li>
+            <li>세 번째 문제도 전에 찍었던 글자 다음 글자(C)를 찍습니다.</li>
+            <li>네 번째 문제는 전에 찍었던 글자 "하나 전" 글자(B)를 찍습니다.</li>
+        </ol>
+        <p>시험이 끝날 때까지, 헥토르는 과정 2, 3, 4를 반복합니다. (물론 괄호 속 문자는 경우에 따라 바뀔 수 있습니다.)</p>
+        <ul>
+            <li>A 다음 글자는 B입니다.</li>
+            <li>B 다음 글자는 C입니다.</li>
+            <li>C 다음 글자는 D입니다.</li>
+            <li>D 다음 글자는 A입니다.</li>
+        </ul>
+        <ul>
+            <li>A 하나 전 글자는 D입니다.</li>
+            <li>B 하나 전 글자는 A입니다.</li>
+            <li>C 하나 전 글자는 B입니다.</li>
+            <li>D 하나 전 글자는 C입니다.</li>
+        </ul>
+        <p>따라서 첫 12문제에 대해, 헥토르는 아래와 같이 찍을 것입니다: ABCBCDCDADAB.</p>
+        <p>$N$번째 문제에서 헥토르가 낸 답은 무슨 글자입니까?</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>첫 번째 줄에 테스트 케이스의 수 $Z$ ($1 \le Z \le 10$)가 입력됩니다. </p>
+        <p>다음 Z개의 줄에 하나의 정수 $N$ ($1 \le N \le 10 ^ 9$)이 입력됩니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해, 헥토르가 $N$번째 문제에 낸 답을 출력합니다.</p>
+    </div>
+</section>
