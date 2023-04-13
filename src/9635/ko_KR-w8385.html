@@ -1,0 +1,40 @@
+<section id="title">풍선 색</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>각 문제에 풍선 색을 지정하는 것은 매년 수행해야 하는 작업 중 하나이며 때로는 까다로울 때도 있습니다.</p>
+        <p>일부 참가자는 난이도에 따라 일부 문제에 대해 일부 색을 사용하는 것으로 나타났습니다. 예를 들어 가장 쉬운 문제는 빨간색이고 가장 어려운 문제는 검은색입니다.</p>
+        <p>우리는 이렇게 일반화 되기를 원하지 않기 때문에 가장 쉬운 문제와 가장 어려운 문제에 대한 제약 조건을 추가하기로 결정했습니다.</p>
+        <p>$1$부터 $N$까지 $N$개의 문제가 있으며 가장 쉬운 문제는 $1$번 문제이고 가장 어려운 문제는 $N$번 문제입니다. 또한 $N$개의 고유한 색이 있습니다. 단순화를 위해 각 색에
+            $1$에서 $N$까지의 고유 번호를 부여합니다.</p>
+        <p>우리는 각 색을 정확히 1개의 문제에 할당하려고 합니다. 가장 쉬운 문제는 색 $X$를 얻지 못하고 가장 어려운 문제는 색 $Y$를 얻지 못합니다.</p>
+        <p>$N$, $X$, $Y$ 및 색 할당이 주어지면 이 할당이 위의 조건을 충족하는지 여부를 찾는 것이 작업입니다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>하나 이상의 테스트 케이스가 주어집니다. 입력의 첫 번째 줄은 단일 정수 $T$, 테스트 케이스 수($1 \le T \le 100$)입니다. 각 테스트 케이스의 첫 번째 줄에는 단일 공백 $N$
+            $X$ $Y$ ($3 \le N \le 100$) 및 ($1 \le X , Y \le N$)로 구분된 3개의 정수가 주어지며, 각각 문제 수, 가장 쉬운 문제가 지정될 수 없는 색, 가장
+            어려운 문제가 지정될 수 없는 색입니다. 그 다음 줄에는 단일 공백으로 구분된 $N$개의 정수를 포함하는 라인이 이어집니다($1$에서 $N$까지의 각 정수는 정확히 한 번만 나타납니다).
+            각 정수는 해당 문제의 색을 나타냅니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해 아래의 단어를 출력하세요:</p>
+        <ul>
+            <li>&ldquo;<code>BOTH</code>&rdquo;: 가장 쉬운 문제와 가장 어려운 문제 모두가 지정될 수 없는 색일 때</li>
+            <li>&ldquo;<code>EASY</code>&rdquo;: 가장 쉬운 문제가 지정될 수 없는 색일 때</li>
+            <li>&ldquo;<code>HARD</code>&rdquo;: 가장 어려운 문제가 지정될 수 없는 색일 때</li>
+            <li>&ldquo;<code>OKAY</code>&rdquo;: 가장 쉬운 문제와 가장 어려운 문제 모두가 지정될 수 있는 색일 때</li>
+        </ul>
+    </div>
+</section>

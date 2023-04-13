@@ -17,6 +17,9 @@
   "10189": [
     "ko_KR-kiwiyou"
   ],
+  "10230": [
+    "ko_KR-ez_code"
+  ],
   "10277": [
     "ko_KR-kiwiyou"
   ],
@@ -114,6 +117,9 @@
     "ko_KR-ez_code"
   ],
   "13773": [
+    "ko_KR-ez_code"
+  ],
+  "13871": [
     "ko_KR-ez_code"
   ],
   "13985": [
@@ -356,6 +362,9 @@
   "20976": [
     "ko_KR-kiwiyou"
   ],
+  "21105": [
+    "ko_KR-ez_code"
+  ],
   "21146": [
     "ko_KR-w8385"
   ],
@@ -368,8 +377,14 @@
   "21335": [
     "ko_KR-kiwiyou"
   ],
+  "21339": [
+    "ko_KR-ez_code"
+  ],
   "21354": [
     "ko_KR-kiwiyou"
+  ],
+  "21420": [
+    "ko_KR-ez_code"
   ],
   "21479": [
     "ko_KR-midori"
@@ -379,6 +394,9 @@
   ],
   "21612": [
     "ko_KR-kiwiyou"
+  ],
+  "21614": [
+    "ko_KR-ez_code"
   ],
   "21631": [
     "ko_KR-kiwiyou"
@@ -776,6 +794,9 @@
   "5102": [
     "ko_KR-ez_code"
   ],
+  "5163": [
+    "ko_KR-ez_code"
+  ],
   "5300": [
     "ko_KR-kiwiyou"
   ],
@@ -902,6 +923,9 @@
   "9622": [
     "ko_KR-ez_code"
   ],
+  "9635": [
+    "ko_KR-w8385"
+  ],
   "9664": [
     "ko_KR-ez_code"
   ],
@@ -913,5 +937,8 @@
   ],
   "9907": [
     "ko_KR-w8385"
+  ],
+  "9945": [
+    "ko_KR-ez_code"
   ]
 }
