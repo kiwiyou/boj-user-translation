@@ -1,0 +1,50 @@
+<section id="title">피보나치 덧셈</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>피보나치 수열은 다음과 같이 정의된다.</p>
+
+		<ul>
+			<li><em>F</em><sub>1</sub> = <em>F</em><sub>2</sub> = 1</li>
+			<li><em>F</em><sub><em>k</em>+2</sub> = <em>F</em><sub><em>k</em>+1</sub> + <em>F</em><sub><em>k </em></sub> (단, k &ge; 1)</li>
+		</ul>
+
+		<p>피보나치 진법은 양의 정수를 피보나치 수의 합으로 표현하는 방법이다. 양의 정수 <em>X</em>를 피보나치 진법으로 (<em>b</em><sub>1</sub>, <em>b</em><sub>2</sub>, &hellip;, <em>b</em><sub><em>n</em></sub>)으로 표기한다. 이때, 다음과 같은 조건을 만족해야 한다.</p>
+
+		<ul>
+			<li><em>X</em> = <em>b</em><sub>1</sub> &middot; <em>F</em><sub>2</sub> + <em>b</em><sub>2</sub> &middot; <em>F</em><sub>3</sub> + &hellip; + <em>b<sub>i</sub></em> &middot; <em>F</em><sub><em>i</em>+1</sub> + &hellip; + <em>b<sub>n</sub></em> &middot; <em>F</em><sub><em>n</em>+1</sub></li>
+			<li>각 <em>b</em><sub><em>i</em></sub>는 0 또는 1이고, <em>b</em><sub><em>n</em></sub> = 1이다.</li>
+			<li>1이 연달아서 나올 수 없다. 즉, 1 &le; <em>i</em> &lt; <em>n</em>일 때 <em>b</em><sub><em>i</em></sub> &middot; <em>b</em><sub><em>i</em>+1</sub> = 0이다.</li>
+		</ul>
+
+		<p>인덱스에 주의하자. <em>F</em><sub>1</sub>은 사용하지 않는다.</p>
+
+		<p>모든 양의 정수에 대해 그 정수를 피보나치 진법으로 표현하는 방법은 유일하다. 예를 들어 42의 경우, (0, 0, 0, 0, 1, 0, 0, 1)이 유일한 방법이다.</p>
+
+		<p>피보나치 진법으로 표현된 두 개의 양의 정수 <em>X</em>, <em>Y</em>가 주어진다. <em>X</em>와 <em>Y</em>의 합 <em>X</em> + <em>Y</em>를 피보나치 진법으로 표현해보자.</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>입력은 두 줄에 걸쳐서 주어진다.</p>
+
+		<p>첫번째 줄에는 양의 정수 <em>X</em>를 피보나치 진법으로 표현했을 때 <em>n</em>, <em>b</em><sub>1</sub>, <em>b</em><sub>2</sub>, &hellip;, <em>b</em><sub><em>n</em></sub>의 값이 순서대로 공백으로 구분되어 주어진다.</p>
+
+		<p>두번째 줄에는 양의 정수 <em>Y</em>에 대해 마찬가지 방법으로 주어진다.</p>
+
+		<p><em>X</em>와 <em>Y</em>에 대해서 1 &le; <em>n</em> &le; 1,000,000 = 10<sup>6</sup>이다.</p>
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>첫번째 줄에 <em>X</em>와 <em>Y</em>의 합 <em>X</em> + <em>Y</em>에 대해 입력과 마찬가지 방법으로 출력한다. 결과가 1 &le; <em>n</em> &le; 1,000,000 = 10<sup>6</sup>인 데이터만 주어진다.</p>
+	</div>
+</section>
