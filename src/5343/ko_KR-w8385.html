@@ -1,0 +1,59 @@
+<section id="title">패리티 비트</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>패리티 비트 또는 검사 비트는 오류 감지를 위해 일련의 비트 끝에 추가되는 비트입니다. 통신 및 컴퓨팅에서 모든 데이터는 일련의 <code>0</code>과 <code>1</code>로
+            변환됩니다. 이 문제의 경우 모든 정보가 8비트 단위로 변환되어 있다고 가정할 수 있습니다. 처음 7비트는 데이터에 사용되고 마지막 비트는 패리티 비트로 사용됩니다. 앞의 7비트에서
+            <code>1</code>이 홀수만큼 있으면 패리티 비트는 <code>1</code>로 설정되고, 앞의 7비트에서 <code>1</code>이 짝수만큼 있으면 패리티 비트는
+            <code>0</code>으로 설정됩니다.</p>
+        <table class="table table-bordered table-center-50">
+            <tbody>
+            <tr>
+                <th>데이터 7비트(1의 개수)</th>
+                <th>패리티 비트를 포함한 8비트</th>
+            </tr>
+            <tr>
+                <td>0000000 (0)</td>
+                <td>00000000</td>
+            </tr>
+            <tr>
+                <td>0101001 (3)</td>
+                <td>01010011</td>
+            </tr>
+            <tr>
+                <td>0111001 (4)</td>
+                <td>01110010</td>
+            </tr>
+            <tr>
+                <td>0110111 (5)</td>
+                <td>01101111</td>
+            </tr>
+            <tr>
+                <td>1001100 (3)</td>
+                <td>10011001</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>패리티 비트는 데이터가 잘못 전송되었는지 확인하는 데 사용할 수 있습니다. 패리티 비트가 올바르지 않으면(이전 7비트의 패리티와 일치하지 않음) 패리티 오류가 발생한 것입니다. 귀하의 임무는
+            각 줄의 데이터를 읽고 각 데이터의 패리티 오류 수를 결정하는 것입니다.</p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>첫 번째 줄은 전송된 데이터의 줄 수를 나타내는 양의 정수입니다. 각 데이터는 <code>0</code>과 <code>1</code>로 이루어져있으며, 길이는 8의 배수이고 64보다 길지
+            않습니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 데이터에 대해 데이터 전송에서 발견된 패리티 오류 수를 출력하십시오.</p>
+    </div>
+</section>
