@@ -1,0 +1,36 @@
+<section id="title">초콜릿</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>오늘 이그낫은 쉽니다! 이그낫은 $n &times; n$ 단위로 이루어진 초콜릿을 선물로 받았습니다. 쉬는 동안, 그는 초콜릿을 책상에 올려 놓고 완전히 초콜릿에 대해 까먹고 있었습니다.
+            돌아오니, 끔찍한 일이 벌어졌습니다! 바로 누군가 초콜릿을 부러뜨린 것입니다! 범인은 초콜릿을 부러뜨렸을 뿐 아니라, 몇 단위를 먹었을 수도 있습니다. 이그낫이 진실을 발견할 수 있도록
+            도와줍시다: 범인은 초콜릿을 먹었나요?</p>
+        <p>초콜릿은 두 조각으로 깨졌습니다 - 각각 왼쪽, 오른쪽 조각이라 합시다. 왼쪽 조각은 원래 초콜릿의 왼쪽 변을 포함하며, 오른쪽 조각은 원래 초콜릿의 오른쪽 변을 포함합니다. 각 조각은 $n$개의
+            열로 이루어져 있습니다. 왼쪽 조각의 $i$번째 열에는 $l_i$개의 단위가, 오른쪽 조각의 $i$번째 열에는 $r_i$개의 단위가 있습니다. 이그낫은 왼쪽과 오른쪽 조각을 책상에서 들거나
+            회전하지 않고 맞췄을 때 $n &times; n$ 단위 초콜릿이 나오면 아무도 초콜릿을 먹지 않았다고 생각합니다.</p>
+        <p>아래 그림은 첫 번째, 두 번째 예시를 보여줍니다.</p>
+        <p style="text-align: center;"><img alt=""
+                                            src="https://upload.acmicpc.net/e2ee03e9-55b0-426d-9f56-74f7039a802c/-/preview/"
+                                            style="width: 422px; height: 183px;"/></p>
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>여러 개의 테스트 케이스가 주어집니다. 첫 줄에 테스트 케이스의 수 $t$ ($1 \le t \le 100$)가 주어집니다.</p>
+        <p>각 테스트 케이스는 아래와 같은 형식으로 주어집니다: 우선 초콜릿의 크기를 나타내는 $n$ ($2 \le n \le 100$)이 입력되고 $n$개의 숫자 쌍 $l_1$ $r_1$, $l_2$
+            $r_2$, &mldr;, $l_n$ $r_n$ ($1 \le li, ri \le n$, $li + ri \le n$)이 이어집니다: 모든 수는 정수입니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해 누군가 초콜릿을 먹었으면 "<code>yes</code>"를, 아니면 "<code>no</code>"를 서로 다른 줄에 출력합니다.</p>
+    </div>
+</section>
