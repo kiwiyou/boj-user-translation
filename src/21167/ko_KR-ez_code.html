@@ -1,0 +1,56 @@
+<section id="title">커브 속도</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>차량의 안정을 위해, 커브에서 도로의 바깥쪽 면은 안쪽 면과 비교했을 때 올라가 있습니다. 이를 경사라 부르고, 높이의 차를 도로 너비로 나눠 구합니다. 차량의 속도가 빠르거나 커브가 깊을 경우
+            더 높은 경사가 필요합니다.</p>
+
+
+        <p>커브의 반지름은 커브가 일정하다고 할 때 도로의 중심을 따라 만든 호의 반지름입니다. 그림 1을 확인합시다.</p>
+
+
+        <p style="text-align: center;"><img alt=""
+                                            src="https://upload.acmicpc.net/5ad15b5d-d040-43f4-9126-a939ffdd39c5/-/preview/"
+                                            style="width: 562px; height: 250px;"/></p>
+
+
+        <p>그림 1: 반지름 $R$인 도로의 중심을 따라 만든 호</p>
+
+
+        <p>몇몇 경우 커브는 도로의 직선 구간보다 낮은 속도 제한을 필요로 할 수도 있습니다. 차량이 도로가 미끄러울 때 미끄러지는 것을 방지하기 위해 경사는 $.12$를 초과해서는 안 됩니다.</p>
+
+
+        <p>당신은 커브의 반지름과 경사가 주어질 때, 커브에서 최대 속도를 계산해야 합니다.</p>
+
+
+        <p>최대 속도는 아래의 공식을 이용해 구합니다:
+            $$V = \sqrt{(R*(S+.16))/.067},$$
+            $V$는 시간 당 마일로 나타낸 최대 속도, $R$은 피트로 나타낸 커브의 반지름, $S$는 경사입니다.
+        </p>
+
+
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>입력은 파일의 종료와 함께 종료되며 여러 줄로 이루어져 있습니다. 각 줄은 $R$, $S$가 공백으로 구분되어 주어진 하나의 테스트 케이스입니다. $R$은 $99$보다 크되 $5281$보다 작은
+            정수이며 $S$는 $.009$보다 크고 $1.0$보다 작은 실수입니다. 앞에 무의미한 0이 붙는 수는 없습니다. 입력은 최대 100줄입니다.</p>
+
+
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 테스트 케이스에 대해 최대 속도를 가장 가까운 정수로 반올림해 출력합니다. 반올림하기 전 정답이 정수 + 0.5에서 $10 ^ {-3}$ 이내는 아님이 보장됩니다.</p>
+
+
+    </div>
+</section>
