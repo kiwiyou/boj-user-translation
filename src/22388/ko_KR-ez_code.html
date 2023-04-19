@@ -1,0 +1,60 @@
+<section id="title">연호 교체</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>헤이세이 31년 4월 30일을 기준으로 현재 연호인 헤이세이가 종료되고, 다음 날부터 새로운 연호가 시작됩니다. 헤이세이 마지막 날의 다음 날은 새로운 연호 원년 5월 1일이 됩니다.</p>
+
+
+        <p>ACM-ICPC OB/OG 모임(Japanese Alumni Group; JAG)이 개발한 프로그램에는 날짜가 (연호에 년도를 붙여 해를 표기하는) 일본 달력 기준 "헤이세이 $y$년 $m$월
+            $d$일" 형식으로 데이터 베이스에 보존되어 있습니다. 이 보존 형식을 변경하는 것은 불가능하므로 JAG는 연호가 교체되지 않았다고 가정하고 일본 달력으로 표기한 날짜를 데이터 베이스에 보존한
+            후, 출력할 즈음 날짜를 올바른 연호를 사용한 형식으로 변환하기로 했습니다.</p>
+
+
+        <p>당신은 JAG 데이터 베이스에 보존되어 있는 날짜를 헤이세이 또는 새로운 연호를 사용한 날짜로 변환하는 프로그램을 작성해야 합니다. 새로운 연호는 아직 발표되지 않았기에
+            "<code>?</code>"를 사용해 표기합시다.</p>
+
+
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>입력은 복수의 데이터로 구성되어 있습니다. 각 데이터는 아래의 형식을 따릅니다.</p>
+
+
+        <pre>
+
+<i>g</i> <i>y</i> <i>m</i> <i>d</i></pre>
+
+
+        <p>$g$는 연호를 표기하는 문자열로, $g=$<code>HEISEI</code>입니다. $y$, $m$, $d$는 각각 년, 월, 일을 나타내는 정수입니다. $1 \le y \le 100$, $1
+            \le m \le 12$, $1 \le d \le 31$입니다.</p>
+
+
+        <p>2월 30일 등 일본 달력 기준으로 존재하지 않는 날짜는 데이터로 주어지지 않습니다. 일본 달력 기준으로 올바르게 변환했을 때, 헤이세이보다 이전 연호를 사용할 필요가 있는 날짜도 데이터로
+            주어지지 않습니다.</p>
+
+
+        <p>입력의 끝으로 '<code>#</code>' 하나로 된 줄이 주어집니다. 데이터의 개수는 100개를 넘지 않습니다.</p>
+
+
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>각 데이터에 대해 변환 후 연호, 년, 월, 일을 공백을 두고 한 줄에 출력합니다. 변환 후 연호가 "헤이세이"일 경우 "<code>HEISEI</code>"를 연호로 사용하고, 새로운 연호일
+            경우 "<code>?</code>"를 사용합니다.</p>
+
+
+        <p>보통 연호의 첫 해는 원년으로 표기하지만, 이 문제의 출력에서는 이 규칙을 무시하고 <code>1</code>을 출력합니다.</p>
+
+
+    </div>
+</section>
