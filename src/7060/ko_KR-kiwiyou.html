@@ -1,0 +1,110 @@
+<section id="title">회로기판</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      <strong>회로기판</strong>은 <strong>전극</strong>과 전극 쌍을 잇는
+      <strong>전선</strong>으로 이루어져 있습니다. 여기서는 모든 전극이 직사각형
+      격자 위에 배열되어 있고 전선은 가로세로로 인접한 전극만을 연결한다고
+      합시다. 만약 모든 서로 다른 전극이 하나 이상의 전선을 통해 연결되어 있다면
+      회로기판은 <strong>연결되어 있다</strong>라고 합니다. 이미 몇 개의 인접한
+      전극이 연결된 회로기판이 주어질 때, 기판이 연결되도록 새로운 전선을
+      추가하려고 합니다. 새로운 전선을 추가하는 비용은 세로의 경우 1, 가로의
+      경우 2입니다.
+    </p>
+
+    <table class="table table-bordered td-center">
+      <tbody>
+        <tr>
+          <td>
+            <img
+              alt=""
+              src="https://upload.acmicpc.net/31fe228d-e4b5-4dda-9992-d3deaa3f8b7a/-/preview/"
+              style="width: 168px; height: 128px"
+            />
+          </td>
+          <td>
+            <img
+              alt=""
+              src="https://upload.acmicpc.net/6e1d73ad-2dc4-4c01-aff9-e7e0de2f2286/-/preview/"
+              style="width: 168px; height: 128px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>그림 1</td>
+          <td>그림 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>주어진 회로기판을 연결하기 위해 드는 비용의 최솟값을 구해 봅시다.</p>
+
+    <p>작성하는 프로그램은 세 가지 역할을 수행해야 합니다.</p>
+
+    <ol style="list-style-type: upper-alpha">
+      <li>최소 비용으로 회로기판을 연결할 때 추가하는 전선의 수를 계산하기</li>
+      <li>회로기판을 연결하는 데 드는 비용의 최솟값을 계산하기</li>
+      <li>최소 비용으로 회로기판을 연결할 때 추가되는 전선의 목록을 구하기</li>
+    </ol>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 정수 N과 M이 주어집니다. N (1 &le; N &le; 100)은 격자의 행 수, M
+      (1 &le; M &le; 100)은 격자의 열 수입니다. 기판의 각 전극은 격자상의 위치로
+      표현됩니다. 가장 왼쪽 위 전극은 (1, 1), 오른쪽 아래는 (N, M)입니다. 다음
+      N개 줄에는 각각 M개의 정수가 주어집니다. i행 j열의 수는 전극 (i, j)와
+      (i+1, j), (i, j)와 (i, j+1)의 전선 연결 관계를 다음과 같이 나타냅니다.
+    </p>
+
+    <ul>
+      <li>
+        0은 (i, j)가 (i+1, j)와도, (i + j+1)과도 연결되어 있지 않음을
+        나타냅니다.
+      </li>
+      <li>1은 (i, j)와 (i+1, j)만이 연결되어 있음을 나타냅니다.</li>
+      <li>2는 (i, j)와 (i, j+1)만이 연결되어 있음을 나타냅니다.</li>
+      <li>
+        3은 (i, j)와 (i+1, j), (i, j+1)이 모두 연결되어 있음을 나타냅니다.
+      </li>
+    </ul>
+
+    <p>
+      각 값이 모든 위치에서 주어질 수 있는 것은 아닙니다. 예를 들어, N행
+      M열에서는 0만이 주어집니다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      첫째 줄에 정수 K와 V를 출력한다. K는 최소 비용으로 회로기판을 연결할 때
+      추가하는 전선의 수이고, V는 그 최소 비용입니다. 다음 K개 줄에 추가된
+      전선의 목록을 출력합니다. 각 줄에는 정수 i, j, d를 출력하며, d는 1 혹은
+      2여야 합니다. d가 1일 경우 전극 (i, j)와 (i+1, j)를 연결하는 전선이
+      추가되었다는 뜻이며, d가 2일 경우 적근 (i, j)와 (i, j+1)을 연결하는 전선이
+      추가되었다는 뜻입니다.
+    </p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      예제 입력 1은 그림 1의 회로기판을 나타냅니다. 예제 출력 1은 최소 비용으로
+      기판을 연결하는 한 방법을 나타내며, 그림 2에 대응됩니다.
+    </p>
+  </div>
+</section>
