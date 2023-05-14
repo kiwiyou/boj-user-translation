@@ -5,58 +5,57 @@
   </div>
   <div id="problem_description" class="problem-text">
     <p>
-      트리는 굉장히 잘 알려진 자료 구조이다. 트리를 만족하는 자료 구조는 노드의
-      개수가 0개이거나, 노드의 개수가 1개 이상이고 방향 간선이 존재하며 다음과
-      같은 조건을 만족해야 한다. 이때, 노드 u에서 노드 v로 가는 간선이 존재하면
-      이 간선을 u에서 &ldquo;나가는 간선&rdquo;이자 v로 &ldquo;들어오는
-      간선&rdquo;이라고 하자.
+      트리는 그래프의 일종으로, 정점이 0개이거나 아래의 조건을 만족하는 유향
+      그래프를 뜻한다.
     </p>
 
     <ol>
+      <li>정점이 1개 이상이다.</li>
+      <li>진입 간선이 없는 정점인 루트가 유일하다.</li>
+      <li>루트 노드를 제외한 모든 정점은 진입 간선이 유일하다.</li>
       <li>
-        들어오는 간선이 하나도 없는 단 하나의 노드가 존재한다. 이를 루트(root)
-        노드라고 부른다.
+        루트로부터 루트를 제외한 각 정점으로 하나 이상의 간선을 거쳐 도달할 수
+        있는 경로가 유일하다.
       </li>
-      <li>
-        루트 노드를 제외한 모든 노드는 반드시 단 하나의 들어오는 간선이
-        존재한다.
-      </li>
-      <li>루트에서 루트를 제외한 각 노드로 가는 경로는 유일하다.</li>
     </ol>
 
     <p>
-      아래의 그림을 보자. 원은 노드, 화살표는 간선을 의미하며, 화살표의 방향이
-      노드 u에서 노드 v로 향하는 경우 이 간선이 u에서 나가는 간선이며 v로
-      들어오는 간선이라는 뜻이다. 3개의 그림 중 앞의 2개는 트리지만 뒤의 1개는
-      트리가 아니다.
+      예를 들어 원을 정점, 간선을 화살표로 표시한 아래 그림에서 그림 1과 그림
+      2는 트리이며, 그림 3은 트리가 아니다.
     </p>
 
     <p>
-      <img alt="" src="/upload/images2/tree1.gif" /><img
-        alt=""
-        src="/upload/images2/tree2.gif"
-        style="
-          background-color: initial;
-          font-size: medium;
-          height: 210px;
-          width: 204px;
-        "
-      /><img
-        alt=""
-        src="/upload/images2/tree3.gif"
-        style="
-          background-color: initial;
-          font-size: medium;
-          height: 194px;
-          width: 164px;
-        "
-      />
+      <figure>
+        <img src="/upload/images2/tree1.gif" />
+        <figcaption style="text-align: center">그림 1</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="/upload/images2/tree2.gif"
+          style="
+            background-color: initial;
+            font-size: medium;
+            height: 210px;
+            width: 204px;
+          "
+        />
+        <figcaption style="text-align: center">그림 2</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="/upload/images2/tree3.gif"
+          style="
+            background-color: initial;
+            font-size: medium;
+            height: 194px;
+            width: 164px;
+          "
+        />
+        <figcaption style="text-align: center">그림 3</figcaption>
+      </figure>
     </p>
 
-    <p>
-      당신은 테스트 케이스마다 간선의 정보들을 받아서 해당 케이스가 트리인지를
-      판별해야 한다.
-    </p>
+    <p>유향 그래프의 정점과 간선의 정보를 받아 트리인자 판단해 보자.</p>
   </div>
 </section>
 <section id="input">
@@ -65,22 +64,25 @@
   </div>
   <div id="problem_input" class="problem-text">
     <p>
-      입력은 여러 개의 테스트 케이스로 이루어져 있으며, 입력의 끝에는 두 개의 -1이 주어진다.
+      입력은 여러 개의 테스트 케이스로 이루어져 있으며, 입력의 끝에는 두 개의
+      정수 -1이 주어진다.
     </p>
 
     <p>
-      각 테스트 케이스는 여러 개의 정수쌍으로 이루어져 있으며, 테스트 케이스의
-      끝에는 두 개의 0이 주어진다.
+      각 테스트 케이스에는 간선의 정보를 나타내는 정수들이 주어진다. 테스트
+      케이스의 끝에는 두 개의 정수 0이 주어진다.
     </p>
 
     <p>
-      입력으로 주어지는 각 정수쌍 u, v는 노드 u에서 노드 v로 가는 간선이
-      존재함을 의미한다. (1 &le; u, v &le; 13)
+      간선의 정보는 정점 번호를 나타내는 정수 u와 v로 표현된다. 이는 정점
+      u로부터 정점 v로 가는 간선이 존재한다는 뜻이다. (1 &le; u, v &le; 13)
     </p>
 
-    <p>주어진 정수쌍에서 나타나는 노드 외에 다른 노드는 없다.</p>
+    <p>간선 정보에서 주어진 정점 외에 다른 정점은 그래프에 존재하지 않는다.</p>
 
-    <p>입력으로 주어지는 정수는 하나 이상의 공백 혹은 개행 문자로 구분된다.</p>
+    <p>
+      입력으로 주어지는 정수들은 하나 이상의 공백 혹은 개행 문자로 구분된다.
+    </p>
   </div>
 </section>
 <section id="output">
@@ -89,8 +91,9 @@
   </div>
   <div id="problem_output" class="problem-text">
     <p>
-      k번째 테스트 케이스가 트리일 경우 &ldquo;Case k is a tree.&rdquo;를,
-      트리가 아닐 경우 &ldquo;Case k is not a tree.&rdquo;를 순서대로 출력한다.
+      k번째 테스트 케이스에서 주어진 그래프가 트리일 경우
+      <code>Case k is a tree.</code>를, 트리가 아닐 경우
+      <code>Case k is not a tree.</code>를 순서대로 출력한다.
     </p>
   </div>
 </section>
