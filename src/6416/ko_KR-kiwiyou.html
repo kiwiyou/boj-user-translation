@@ -1,0 +1,95 @@
+<section id="title">트리인가?</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      트리는 굉장히 잘 알려진 자료 구조이다. 트리를 만족하는 자료 구조는 노드의
+      개수가 0개이거나, 노드의 개수가 1개 이상이고 방향 간선이 존재하며 다음과
+      같은 조건을 만족해야 한다. 이때, 노드 u에서 노드 v로 가는 간선이 존재하면
+      이 간선을 u에서 &ldquo;나가는 간선&rdquo;이자 v로 &ldquo;들어오는
+      간선&rdquo;이라고 하자.
+    </p>
+
+    <ol>
+      <li>
+        들어오는 간선이 하나도 없는 단 하나의 노드가 존재한다. 이를 루트(root)
+        노드라고 부른다.
+      </li>
+      <li>
+        루트 노드를 제외한 모든 노드는 반드시 단 하나의 들어오는 간선이
+        존재한다.
+      </li>
+      <li>루트에서 루트를 제외한 각 노드로 가는 경로는 유일하다.</li>
+    </ol>
+
+    <p>
+      아래의 그림을 보자. 원은 노드, 화살표는 간선을 의미하며, 화살표의 방향이
+      노드 u에서 노드 v로 향하는 경우 이 간선이 u에서 나가는 간선이며 v로
+      들어오는 간선이라는 뜻이다. 3개의 그림 중 앞의 2개는 트리지만 뒤의 1개는
+      트리가 아니다.
+    </p>
+
+    <p>
+      <img alt="" src="/upload/images2/tree1.gif" /><img
+        alt=""
+        src="/upload/images2/tree2.gif"
+        style="
+          background-color: initial;
+          font-size: medium;
+          height: 210px;
+          width: 204px;
+        "
+      /><img
+        alt=""
+        src="/upload/images2/tree3.gif"
+        style="
+          background-color: initial;
+          font-size: medium;
+          height: 194px;
+          width: 164px;
+        "
+      />
+    </p>
+
+    <p>
+      당신은 테스트 케이스마다 간선의 정보들을 받아서 해당 케이스가 트리인지를
+      판별해야 한다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      입력은 여러 개의 테스트 케이스로 이루어져 있으며, 입력의 끝에는 두 개의
+      음의 정수가 주어진다.
+    </p>
+
+    <p>
+      각 테스트 케이스는 여러 개의 정수쌍으로 이루어져 있으며, 테스트 케이스의
+      끝에는 두 개의 0이 주어진다.
+    </p>
+
+    <p>
+      입력으로 주어지는 각 정수쌍 u, v는 노드 u에서 노드 v로 가는 간선이
+      존재함을 의미한다. (1 &le; u, v &le; 13)
+    </p>
+
+    <p>주어진 정수쌍에서 나타나는 노드 외에 다른 노드는 없다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      k번째 테스트 케이스가 트리일 경우 &ldquo;Case k is a tree.&rdquo;를,
+      트리가 아닐 경우 &ldquo;Case k is not a tree.&rdquo;를 순서대로 출력한다.
+    </p>
+  </div>
+</section>
