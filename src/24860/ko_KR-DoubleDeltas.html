@@ -1,0 +1,40 @@
+<section id="title">항체 수 세기</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>항체로도 알려진 면역글로불린은 단백질 분자입니다. 항체는 면역 반응에서 해로운 세균이나 바이러스와 같은 이물질을 감지하고 제거하는 데 도움을 주는 중요한 역할을 합니다. 모든 외부 분자는 고유한 종류의 항체와 결합합니다. 잠재적인 유해 물질은 많으므로, 모든 위협을 무력화시키기 위해서는 엄청나게 많은 유형의 면역글로불린이 있어야 합니다. 요구되는 면역글로불린의 종류 수가 아주 많기 때문에 각각의 유형을 DNA에 암호화하는 것은 불가능합니다. 다행히도, 해결책은 있습니다.</p>
+		<p>면역글로불린은 면역 세포, DNA 정보인 유전자에 기반한 B세포에 의해 생성됩니다. 면역글로불린 유전자는 DNA 조각으로부터 생성자와 같이 결합됩니다. 각각의 조각들은 여러 변형으로 존재하고 면역글로불린 분자의 다양한 부분을 담당합니다. 이 과정을 체세포 재조합이라 부릅니다.&nbsp;</p>
+		<p>면역글로불린 분자는 두 개의 동일한 중쇄와 두 개의 동일한 경쇄로 구성됩니다. 경쇄는 구조가 유사한 $\kappa$와 $\lambda$ 두 종류가 있습니다. 두 종류의 경쇄는 모두 두 가변부 $V$와 $J$가 있습니다. 하나의 가변부를 형성하기 위해 여러 변형 중에서 하나의 유전자 조각이 선택됩니다. 즉, $\kappa$-경쇄의 $V$ 가변부와 $J$ 가변부를 형성하기 위해 $V_\kappa$개와 $J_\kappa$개의 변형 중 각각 하나가 선택되거나, $\lambda$-경쇄의 $V$ 가변부와 $J$ 가변부를 형성하기 위해 $V_\lambda$개와 $J_\lambda$개의 변형 중 각각 하나가 선택됩니다.</p>
+		<p>중쇄는 한 종류만 있으며 $V$, $D$, $J$ 세 개의 가변부를 가집니다. 중쇄를 형성하기 위해 각각 $V_h$개, $D_h$개, $J_h$개의 변형으로부터 하나씩 유전자 조각이 선택됩니다.</p>
+		<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/2b239f5e-22d2-455c-8014-0e7f72f0c233/-/preview/" style="width: 768px; height: 660px;" /></p>
+		<p>당신은 주어진 $V_\kappa$, $J_\kappa$, $V_\lambda$, $J_\lambda$, $V_h$, $D_h$, $J_h$ 값에 대해 얼마나 많은 면역글로불린 분자가 생성될 수 있는지 세어야 합니다.</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>첫번째 줄에는 각각 $\kappa$-경쇄의 $V$ 가변부와 $J$ 가변부의 유전자 조각 변형 수를 나타내는 두 정수 $V_\kappa$, $J_\kappa$가 주어집니다. ($1 \leq V\kappa, J\kappa \leq 1500$)</p>
+		<p>두번째 줄에는 각각 $\lambda$-경쇄의 $V$ 가변부와 $J$ 가변부의 유전자 조각 변형 수를 나타내는 두 정수 $V_\lambda$, $J_\lambda$가 주어집니다. ($1 \leq V_\lambda, J_\lambda \leq 1500$)</p>
+		<p>세번째 줄에는 각각 중쇄의 $V$ 가변부, $D$ 가변부, $J$ 가변부의 유전자 조각 변형 수를 나타내는 세 정수 $V_h$, $D_h$, $J_h$가 주어집니다. ($1 \leq V_h, D_h, J_h \leq 1000$)</p>
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>생성될 수 있는 면역글로불린 변형의 수를 나타내는 한 개의 정수를 출력하세요.</p>
+	</div>
+</section>
+<section id="hint">
+	<div class="headline">
+		<h2>힌트</h2>
+	</div>
+	<div id="problem_hint" class="problem-text">
+		<p>결론적으로, 체세포 재조합은 다양한 세균과 바이러스에 대한 강력한 면역 보호 메커니즘입니다만, 유일한 방법은 아니라는 점을 참고합니다. 외부 침입을 방지하는 다른 방법은 이 문제의 초점에서 벗어납니다.</p>
+	</div>
+</section>
