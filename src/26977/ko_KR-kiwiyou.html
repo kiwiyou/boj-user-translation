@@ -1,0 +1,102 @@
+<section id="title">역공학</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      엘시는 $0$ 또는 $1$의 값을 가지는 변수 $b[0],\cdots,b[N-1]$로 구성된
+      배열을 입력으로 받아 if / else if / else 구문의 결과를 반환하는 프로그랭을
+      만들었다. 각 구문은 최대 하나의 입력 변수를 확인하고 $0$ 또는 $1$을
+      반환한다. 아래 예를 보자.
+    </p>
+
+    <pre class="prettyprint">
+if (b[1] == 1) return 1;
+else if (b[0] == 0) return 0;
+else return 1;
+</pre
+    >
+
+    <p>
+      예를 들어 위 프로그램에 입력 <code>10</code>이 주어진다면 (즉 $b[0] = 1$
+      이고 $b[1] = 0$이라면) 출력은 1이 된다.
+    </p>
+
+    <p>
+      엘시는 베시에게 $M$ ($1\le M\le 100$)가지 다른 입력에 대한 올바른 출력을
+      알려주었다. 베시는 엘시의 프로그램을 재구성해보려고 한다. 단, 엘시가
+      거짓말을 해서 위 형태의 어떤 프로그램도 엘시의 말과 맞는 결과를 내지 않을
+      수 있다.
+    </p>
+
+    <p>
+      $T$ ($1\le T\le 10$)개의 테스트 케이스에 대해 엘시가 거짓말을 하고 있는지
+      아닌지 알아보자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 테스트 케이스의 개수 $T$가 주어진다.</p>
+
+    <p>
+      각 테스트 케이스의 첫째 줄에는 $N$과 $M$이 주어진다. 다음 $M$개 줄
+      각각에는 입력을 나타내는 $N$개의 $0$과 $1$, ($b[0]$부터 $b[N-1]$까지의 값)
+      그리고 출력을 나타내는 문자 하나가 주어진다. 테스트 케이스의 사이에는 빈
+      줄이 하나 주어진다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 테스트 케이스마다 한 줄에 엘시가 거짓말을 하지 않았다면
+      <code>OK</code>, 거짓말을 했다면 <code>LIE</code>를 출력한다.
+    </p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>첫 번째 테스트 케이스에서 가능한 프로그램은 아래와 같다.</p>
+
+    <pre>
+if (b[0] == 0) return 0;
+else return 1;
+</pre
+    >
+
+    <p>다른 가능한 정답은 다음과 같다.</p>
+
+    <pre>
+if (b[0] == 1) return 1;
+else return 0;
+</pre
+    >
+
+    <p>두 번째 테스트 케이스에서 가능한 정답은 다음과 같다.</p>
+
+    <pre>
+if (b[1] == 1) return 1;
+else if (b[0] == 0) return 0;
+else return 1;
+</pre
+    >
+
+    <p>
+      세 번째 테스트 케이스에 해당하는 프로그램은 존재하지 않는다. 엘시의
+      프로그램은 같은 입력에 대해 같은 답을 내야 하기 때문이다.
+    </p>
+
+    <p>마지막 테스트 케이스에 대응하는 프로그램이 없음을 증명할 수 있다.</p>
+  </div>
+</section>
