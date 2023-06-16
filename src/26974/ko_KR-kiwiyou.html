@@ -1,0 +1,58 @@
+<section id="title">범위의 재구성</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      베시는 정수 배열 $a_1, \cdots, a_N$를 가지고 있다. ($1 \leq N \leq 300;$
+      $0 \leq a_i \leq 10^9$) 배열의 각 원소는 비밀이지만, 베시는 각 부분배열의
+      원소의 범위를 알려줄 것이다. 즉, 각 $i \leq j$ 쌍에 대해서 베시는 $r_{i,
+      j} = \max a[i\ldots j] - \min a[i\ldots j]$를 알려줄 것이다. 주어진 $r$을
+      통해 $a$를 알아내 보자. 배열의 각 원소는 구간 $[-10^9, 10^9]$ 내에 있어야
+      한다.
+    </p>
+
+    <p></p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다.</p>
+
+    <p>
+      다음 $N$개 줄의 $i$번째 줄에는 정수 $r_{i, i}, r_{i, i + 1}, \cdots, r_{i,
+      N}$이 주어진다.
+    </p>
+
+    <p>
+      모든 $i \leq j$에 대해 $r_{i, j} = \max a[i\ldots j] - \min a[i\ldots
+      j]$를 만족하고 원소가 구간 $[0, 10^9]$ 내에 있는 배열 $a$가 항상 존재함이
+      보장된다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      첫째 줄에 알아낸 배열을 나타내는 $N$개의 정수 $b_1, b_2, \cdots, b_N$를
+      출력한다. 각 $b_i$는 구간 $[-10^9, 10^9]$ 내에 있어야 한다. 모든 $i \leq
+      j$에 대해 $r_{i, j} = \max b[i\ldots j] - \min b[i\ldots j]$를 만족해야
+      한다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      예를 들어, $r_{1, 3} = \max a[1\ldots 3] - \min a[1\ldots 3] = 3 - 1 =
+      2$이다.
+    </p>
+  </div>
+</section>
