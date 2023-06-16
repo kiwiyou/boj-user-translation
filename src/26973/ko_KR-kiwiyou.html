@@ -1,0 +1,86 @@
+<section id="title">헛간 게임</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    농부 존과 라이벌 눚은 원형 헛간에서 게임을 하고 있다. 헛간에는 $N$ ($1 \leq
+    N \leq 10^5$)개의 방이 있고, $i$번째 방에는 처음에 $a_i$ ($1 \leq a_i \leq
+    5\cdot 10^6$) 마리의 소가 있다. 게임은 아래 규칙에 따라 진행된다.
+    <p></p>
+    <ul>
+      <li>
+        두 농부는 항상 같은 방에 있다. 방에 들어가면 서로 돌아가며 존부터 정확히
+        한 번의 차례를 가진다. 두 농부는 처음에 $1$번째 방에 들어간다.
+      </li>
+      <li>
+        현재 방에 소가 $0$마리 있다면, 현재 차례의 농부가 진다. 그렇지 않으면
+        현재 차례의 농부가 정수 $1$ 또는 현재 방에 있는 소의 수를 넘지 않는 소수
+        $P$를 고른다. 그리고 방에서 $P$마리의 소를 몰아낸다.
+      </li>
+      <li>
+        두 농부가 차례를 가진 후에 원형 헛간의 다음 방으로 이동한다. 만약
+        농부들이 $i$번째 방에 있었다면 $i+1$번째 방으로 이동한다. 단, $N$번째
+        방에 있었던 경우 $1$번째 방으로 이동한다.
+      </li>
+    </ul>
+
+    <p>두 농부가 최적의 전략으로 게임을 진행했을 때 이기는 농부를 구하자.</p>
+  </div>
+</section>
+<section id="input" class="problem-section">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      $T$개의 테스트 케이스가 주어진다. 첫째 줄에 $T$가 주어진다. ($1 \leq T
+      \leq 1000$) 이어서 $T$개의 테스트 케이스가 주어진다.
+    </p>
+
+    <p>
+      각 테스트 케이스의 첫째 줄에는 $N$이 주어진다. 둘째 줄에는
+      $a_1,\cdots,a_N$이 주어진다.
+    </p>
+
+    <p>모든 $N$의 합은 최대 $2\cdot 10^5$이다.</p>
+  </div>
+</section>
+<section id="output" class="problem-section">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    각 테스트 케이스에 대해 존이 이긴다면 <code>Farmer John</code>을, 눚이
+    이긴다면 <code>Farmer Nhoj</code>를 출력한다.
+  </div>
+</section>
+<section id="hint" class="problem-section">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      첫 번째 테스트 케이스에서, 존은 첫 번째 방에서 $1$, $2$, $3$마리의 소를
+      몰아낼 수 있다. 소를 몇 마리 몰아내든 눚은 남은 소를 모두 몰아낼 수
+      있으므로 존은 다시 첫 번째 방으로 돌아왔을 때 지게 된다.
+    </p>
+
+    <p>
+      두 번째 테스트 케이스에서, 존은 $5$마리의 소를 몰아낼 수 있고, $4$마리의
+      소가 남게 된다. 눚은 $1$, $2$, $3$마리의 소를 몰아낼 수 있고, 이후는 첫
+      번째 테스트 케이스와 같다.
+    </p>
+
+    <p>
+      세 번째와 네 번째 테스트 케이스에서 존은 첫 번째 방에서 곧바로 소를 몰아낼
+      수 있고, 눚이 지게 된다.
+    </p>
+
+    <p>
+      다섯 번째 테스트 케이스에서, 존은 첫 번째 방에서 $1$, $2$, $3$마리의 소를
+      몰아낼 수 있고, 눚은 바로 남은 소를 모두 몰아낼 수 있다. 한 바퀴를 돌아 첫
+      번째 방으로 돌아왔을 때 존이 지게 된다.
+    </p>
+  </div>
+</section>
