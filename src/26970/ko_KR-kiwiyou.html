@@ -1,0 +1,74 @@
+<section id="title">산 바라보기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    농부 존의 농장 변두리에는 같은 간격으로 $N$개의 산이 늘어서 있다. ($1 \leq N
+    \leq 2000$) 각 산의 높이를 $h_1,h_2,\dots,h_N$이라고 하자. 산 $i$와 산 $j$
+    사이에 두 산의 꼭대기를 연결한 선보다 분명히 높은 산이 없다면 산 $i$에서 산
+    $j$를 볼 수 있다고 한다. 엄밀하게는 두 산 $i &lt; j$에 대해 $i &lt; k &lt;
+    j$이면서 $(k, h_k)$가 $(i, h_i)$와 $(j, h_j)$를 연결하는 선분보다 위에 있는
+    $k$가 없다면 두 산 $i$와 $j$는 서로를 볼 수 있다. 산의 높이가 늘어나는
+    변화가 $Q$번 주어진다. ($1 \leq Q \leq 2000$) 각 변화 이후에 서로를 볼 수
+    있는 산의 쌍을 세자. 산의 순서만 다른 쌍들은 같은 것으로 센다.
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다.</p>
+
+    <p>
+      둘째 줄에 $N$개 산의 높이 $h_1,h_2,\dots,h_N$가 주어진다. (모든 $i$에 대해
+      $0 \leq h_i \leq 10^9$).
+    </p>
+
+    <p>셋째 줄에 $Q$가 주어진다.</p>
+
+    <p>
+      넷째 줄부터 $3+Q$째 줄까지 각 줄에 $x$와 $y$가 주어진다. ($1 \leq x \leq
+      N$, $1 \leq y$) 이는 $h_x$의 값이 $h_x + y$로 변한다는 뜻이다. 변화 후에
+      산의 높이는 항상 $10^9$ 이하임이 보장된다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    $Q$줄에 걸쳐 각 변화 후에 서로를 볼 수 있는 산의 쌍 수를 출력한다.
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      처음에 서로를 볼 수 있는 산의 쌍은 $(1, 2)$, $(2, 3)$, $(2, 5)$, $(3, 4)$,
+      $(3, 5)$, $(4, 5)$으로 총 $6$쌍이다.
+    </p>
+
+    <p>
+      첫 번째 변화 후에, 넷째 산의 높이는 $4$가 된다. 다른 산의 시야를 방해하지
+      않으면서 넷째 산과 둘째 산이 서로를 볼 수 있게 되므로 답은 $7$이 된다.
+    </p>
+
+    <p>
+      두 번째 변화 후에, 첫째 산의 높이는 $5$가 된다. 다른 산의 시야를 방해하지
+      않으면서 첫째 산이 셋째, 넷째, 다섯째 산을 볼 수 있게 되므로 답은 $10$이
+      된다.
+    </p>
+
+    <p>
+      세 번째 변화 후에 셋째 산의 높이는 $5$가 된다. 첫째 산이 넷째 산을 볼 수
+      없게 되고, 둘째 산이 넷째, 다섯째 산을 볼 수 없게 되고, 셋째 산은 이미
+      모든 산을 볼 수 있으므로 추가로 볼 수 있게 되는 산은 없다. 따라서 답은
+      $7$이 된다.
+    </p>
+  </div>
+</section>
