@@ -1,0 +1,74 @@
+<section id="title">무 만들기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      베시는 <code>C</code>, <code>O</code>, <code>W</code>만을 포함하는
+      문자열로 노는 것에는 질렸다. 존은 베시에게 <code>M</code>과
+      <code>O</code>만으로만 이루어진 새로운 문자열 $Q$개를 준비했다. ($1 \leq Q
+      \leq 100$) <code>M</code>과 <code>O</code>로만 이루어진 베시가 가장
+      좋아하는 단어는 당연히 <code>MOO</code>이기 때문에 $Q$개의 문자열을 아래
+      연산만을 통해 <code>MOO</code>로 만들려고 한다.
+    </p>
+
+    <ol>
+      <li>
+        맨 앞 혹은 맨 뒤 문자를 다른 문자로 바꾼다. (<code>M</code>은
+        <code>O</code>로, <code>O</code>는 <code>M</code>으로)
+      </li>
+      <li>맨 앞 혹은 맨 뒤 문자를 지운다.</li>
+    </ol>
+
+    <p>
+      베시는 게을러서 연산을 최소 횟수로만 사용하려고 한다. 각 문자열을
+      <code>MOO</code>로 만들기 위해 필요한 연산의 최소 횟수를 출력하되,
+      불가능하다면 <code>-1</code>을 출력하자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 정수 $Q$가 주어진다.</p>
+
+    <p>
+      다음 $Q$줄에는 문자열이 주어진다. 문자열의 각 문자는 <code>M</code> 또는
+      <code>O</code>이고, 길이는 1 이상 100 이하이다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>각 문자열마다 정답을 한 줄에 출력한다.</p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      첫 번째 문자열을 <code>MOO</code>로 $4$번 만에 바꾸는 방법은 다음과 같다.
+    </p>
+
+    <pre>
+맨 뒤 글자를 O로 변경 (1번 연산)
+맨 앞 글자를 삭제 (2번 연산)
+맨 앞 글자를 삭제 (2번 연산)
+맨 앞 글자를 삭제 (2번 연산)
+</pre
+    >
+
+    <p>
+      두 번째 문자열은 <code>MOO</code>로 바꿀 수 없다. 세 번째 문자열은 이미
+      <code>MOO</code>이므로 연산을 할 필요가 없다.
+    </p>
+  </div>
+</section>
