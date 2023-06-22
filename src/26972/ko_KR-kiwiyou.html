@@ -1,0 +1,73 @@
+<section id="title">헛간 나무</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      농부 존의 농장에는 $1$번부터 $N$번까지의 번호가 붙은 $N$개의 헛간이 있다.
+      ($2 \leq N \leq 2\cdot 10^5$) 농장에는 두 헛간을 연결하는 길이 $N-1$개
+      있고, 길을 통해 모든 두 헛간 사이를 이동할 수 있다. 현재 $j$번 헛간에는
+      $h_j$개의 건초 더미가 있다. ($1\le h_j\le 10^9$)
+    </p>
+
+    <p>
+      소들을 행복하게 하기 위해 존은 모든 헛간에 같은 수의 건초 더미를 두려고
+      한다. 존은 길 하나로 연결된 두 헛간을 골라 한쪽에서 다른 쪽으로 정수 개의
+      건초 더미를 옮길 수 있다. 단, 출발점에 있는 건초 더미보다 많은 양을 가져갈
+      수는 없다.
+    </p>
+
+    <p>
+      최소 횟수로 건초 더미를 옮겨서 모든 헛간의 같은 양의 건초 더미를 두는
+      방법을 구해 보자. 조건을 만족하는 방법이 항상 존재함이 보장된다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다.</p>
+
+    <p>둘째 줄에 $h_j$의 값들이 주어진다. ($1 \le j \le N$)</p>
+
+    <p>
+      셋째 줄부터 $N-1$개의 줄 각각에 정수 $u_i$와 $v_i$가 주어진다. 이는
+      $u_i$번 헛간과 $v_i$번 헛간을 연결하는 양방향 길 하나가 존재한다는 뜻이다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      첫째 줄에 건초 더미를 옮기는 횟수를 출력한다. 둘째 줄부터 건초 더미를
+      옮기는 순서를 한 줄에 한 단계씩 출력한다.
+    </p>
+
+    <p>각 단계마다 출발 지점, 도착 지점, 옮기는 건초 더미의 수를 출력한다.</p>
+
+    <p>가능한 답이 여러 가지라면 아무거나 출력한다.</p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      이 예제에서 총 열두 개의 건초 더미와 네 채의 헛간이 있다. 각 헛간에는 결국
+      건초 더미가 세 개씩 있어야 한다. 예제 출력을 해석하면 다음과 같다.
+    </p>
+
+    <ol>
+      <li>헛간 $3$에서 헛간 $2$로 건초 $1$더미를 옮긴다.</li>
+      <li>헛간 $4$에서 헛간 $2$로 건초 $2$더미를 옮긴다.</li>
+      <li>헛간 $2$에서 헛간 $1$로 건초 $1$더미를 옮긴다.</li>
+    </ol>
+  </div>
+</section>
