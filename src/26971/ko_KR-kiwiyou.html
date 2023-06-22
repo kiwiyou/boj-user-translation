@@ -1,0 +1,57 @@
+<section id="title">친한 사이</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      농부 존은 $1$번부터 $N$번까지의 번호가 붙은 $N$마리의 소를 키운다. ($2 \le
+      N\le 10^5$) 그중 $M$쌍의 친구 관계가 있다. ($1 \le M\le 2\cdot 10^5)
+    </p>
+
+    <p>
+      몇 마리의 소를 골라 그룹을 만들자. 그룹 안의 모든 소가 그룹 안의 친구
+      관계만을 따라 그룹 안의 다른 모든 소와 연결된다면 그 그룹을 &ldquo;친한
+      사이&rdquo;라고 한다. (즉 그룹 바깥 소와의 친구 관계는 고려하지 않는다.)
+      &ldquo;친밀도&rdquo;는 친한 사이에 포함된 소의 친구 수의 최솟값에 친한
+      사이에 포함된 소의 수를 곱한 값이다. 여기서도 친한 사이 바깥의 소와의 친구
+      관계는 고려하지 않는다.
+    </p>
+
+    <p>친한 사이의 친밀도의 최댓값을 구하자.</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$과 $M$이 주어진다.</p>
+
+    <p>
+      다음 $M$줄 각각에는 두 정수 $u_i$와 $v_i$가 주어진다. 이는 소 $u_i$번 소와
+      $v_i$번 소가 친구라는 뜻이다. ($1\le u_i,v_i\le N$, $u_i\neq v_i$) $u_i$와
+      $v_i$가 주어지면, 다른 줄에 $u_i$와 $v_i$ 혹은 $v_i$와 $u_i$가 동시에
+      주어지지 않는다. (역주: 친구 관계는 양방향이다.)
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    친한 사이의 친밀도의 최댓값을 출력한다.
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      $1$, $2$, $3$, $4$번 소로 구성된 친한 사이에서 최대 친밀도를 얻는다. 친한
+      사이 안의 소의 친구 수는 최소 $3$이고, 답은 $4\cdot 3=12$이다.
+    </p>
+  </div>
+</section>
