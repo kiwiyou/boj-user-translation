@@ -1,0 +1,77 @@
+<section id="title">에어컨 2</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      농부 존의 농장에서도 기록적인 폭염으로 인해 소들을 식혀줄 필요가 있었다.
+      답은 바로 에어컨이다!
+    </p>
+
+    <p>
+      소 $N$마리는 한 줄에 $1$번부터 $100$번까지 번호가 붙은 칸이 있는 헛간에
+      살고 있다. $i$번 소는 $s_i$번 칸부터 $t_i$번 칸까지 차지하고 있다. 서로
+      다른 소가 차지하는 칸들은 서로 겹치지 않는다. 소마다 안락해지기 위해
+      식혀야 하는 양이 다른데, $i$번 소는 $c_i$만큼 식혀줘야 한다. 이는 $i$번
+      소가 차지하는 모든 칸의 온도가 최소 $c_i$만큼 떨어져야 한다는 뜻이다.
+    </p>
+
+    <p>
+      헛간에는 $1$번부터 $M$번까지 번호가 붙은 에어컨이 $M$대 있다. ($1 \leq M
+      \leq 10$) $i$번 에어컨은 작동시키는 데 $m_i$만큼의 돈이 들고 $a_i$번
+      칸부터 $b_i$번 칸까지 더위를 식혀 준다. 에어컨은 동작하는 동안 구간 내의
+      모든 칸의 온도를 $p_i$만큼 낮춘다. ($1 \leq p_i \leq 10^6$) 에어컨이
+      식혀주는 구간은 서로 겹칠 수 있다.
+    </p>
+
+    <p>
+      농장 경영은 쉬운 일이 아니므로 존은 예산을 아끼려고 한다. 모든 소를
+      안락하게 만들기 위해 써야 하는 돈의 최솟값을 구하자. 모든 에어컨을
+      사용하면 모든 소가 안락해짐이 보장된다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 정수 $N$과 $M$이 주어진다.</p>
+
+    <p>
+      다음 $N$줄에 걸쳐 소의 정보가 주어진다. 그중 $i$번째 줄에는 정수 $s_i$,
+      $t_i$, $c_i$가 주어진다.
+    </p>
+
+    <p>
+      다음 $M$줄에 걸쳐 에어컨의 정보가 주어진다. 그중 $i$번째 줄에는 정수
+      $a_i$, $b_i$, $p_i$, $m_i$가 주어진다.
+    </p>
+
+    <p>예제를 제외한 모든 입력 데이터는 $M = 10$을 만족한다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      모든 소들이 안락하도록 에어컨을 동작시킬 때 써야 하는 돈의 최솟값을
+      출력한다.
+    </p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      예산을 최소화하는 방법 중 하나는 구간 $[2, 9]$, $[1, 2]$, $[6, 9]$를
+      식히는 에어컨을 동작시키는 것이다. 이는 총 $3 + 2 + 5 = 10$만큼의 돈을
+      사용한다.
+    </p>
+  </div>
+</section>
