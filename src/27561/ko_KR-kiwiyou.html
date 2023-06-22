@@ -1,0 +1,71 @@
+<section id="title">Leaders</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      농부 존은 $N$마리의 소를 키운다. ($2 \leq N \leq 10^5$) 각 소는 건지 혹은
+      홀스타인 종이다. 여느 때와 같이 소들은 한 줄에 늘어서 있으며, 순서대로
+      $1$번부터 $N$번까지의 번호가 붙어 있다.
+    </p>
+
+    <p>
+      오늘 하루동안 각 소는 소의 목록을 작성한다. $i$번 소의 목록은 $i$번 소부터
+      $E_i$번 소까지 포함한다. ($i \leq E_i \leq N$)
+    </p>
+
+    <p>
+      농부 존은 소의 종마다 한 마리씩 리더가 있다는 걸 알아냈다. 어느 소가
+      리더인지는 모르지만 종의 리더는 목록에 그 종의 모든 소들이 적혀 있어야
+      하거나, 다른 종의 리더가 적혀 있거나, 둘 모두 해당해야 한다.
+    </p>
+
+    <p>
+      농부 존이 리더일 가능성이 있는 소들이 몆 쌍 있는지 세려고 한다. 적어도 한
+      쌍이 조건을 만족함이 보장된다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다.</p>
+
+    <p>
+      둘째 줄에 길이 $N$인 문자열이 주어진다. $i$번째 문자는 $i$번 소의 종을
+      뜻한다. <code>G</code>는 건지 종을, <code>H</code>는 홀스타인 종이다.
+      적어도 한 마리의 건지 종과 홀스타인 종이 주어진다.
+    </p>
+
+    <p>셋째 줄에 $E_1 \cdots E_N$이 주어진다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>리더로 가능한 쌍의 수를 출력한다.</p>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      가능한 리더는 $(1, 2)$뿐이다. $1$번 소의 목록은 다른 종의 리더 ($2$번
+      소)를 포함하고, $2$번 소의 목록은 같은 종(홀스타인)인 모든 소를 포함한다.
+    </p>
+
+    <p>
+      다른 모든 쌍은 답이 될 수 없다. $(2, 4)$를 예로 들면 $4$번 소의 목록은
+      다른 종의 리더를 포함하지도 않고 같은 종의 모든 소를 포함하지도 않는다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>가능한 리더는 $(1, 3)$과 $(2, 3)$이 있다.</p>
+  </div>
+</section>
