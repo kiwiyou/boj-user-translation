@@ -1,0 +1,74 @@
+<section id="title">찾아 바꾸기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      베시는 혁신적인 최신 텍스트 에디터 miV를 쓴다! 베시는 전부 대문자이거나
+      소문자인 문자열에서 시작해서 원하는 문자열을 만들려고 한다. 키를 한 번
+      누르면 모든 영문자 $c_1$를 다른 영문자 $c_2$로 바꿀 수 있다. 예를 들어
+      문자열 <code>aAbBa</code>가 있을 때 베시가 $c_1$으로 <code>a</code>를
+      고르고 $c_2$로 <code>B</code>를 고르면 문자열이 <code>BAbBB</code>로
+      바뀐다.
+    </p>
+
+    <p>
+      바쁜 베시를 위해 각 $T$개의 테스트 케이스마다 주어진 문자열을 원하는
+      문자열로 바꾸기 위해 키를 눌러야 하는 횟수의 최솟값을 구하자. ($1\le T\le
+      10$)
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 테스트 케이스의 개수 $T$가 주어진다.</p>
+
+    <p>
+      테스트 케이스의 첫째 줄에는 입력 문자열이 주어진다. 테스트 케이스의 둘째
+      줄에는 같은 길이의 출력 문자열이 주어진다. 모든 문자열은 영어
+      대소문자이다. (A에서 Z, a에서 z) 모든 문자열의 길이의 합은 $10^5$
+      이하이다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 테스트 케이스마다 입력 문자열을 출력 문자열로 바꾸기 위해 키를 눌러야
+      하는 횟수의 최솟값을 출력한다. 바꾸는 것이 불가능하다면 $-1$을 출력한다.
+    </p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>첫 번째 입력 문자열은 출력 문자열과 같으므로 키를 누를 필요가 없다.</p>
+
+    <p>
+      두 번째 입력 문자열의 경우, 베시가 하나의 <code>B</code>만을
+      <code>A</code>로 바꿀 수 없으므로 입력 문자열을 출력 문자열로 바꿀 수
+      없다.
+    </p>
+
+    <p>
+      세 번째 입력 문자열의 경우 <code>a</code>를 <code>b</code>로 바꾸어 출력
+      문자열로 만들 수 있다.
+    </p>
+
+    <p>
+      마지막 입력 문자열의 경우
+      <code>ABCD</code> $\rightarrow$ <code>EBCD</code> $\rightarrow$
+      <code>EACD</code> $\rightarrow$ <code>BACD</code>와 같은 과정을 거쳐 출력
+      문자열을 만들 수 있다.
+    </p>
+  </div>
+</section>
