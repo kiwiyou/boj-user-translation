@@ -1,0 +1,101 @@
+<section id="title">달빛농부</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      여러분은 선풍적인 인기를 끌고 있는 웹 게임 "달빛 목장"을 열심히 플레이하고
+      있다. 게임의 목적은 밭에서 작물을 키워 팔아 수입을 얻고 그 수입으로 목장을
+      점점 넓히는 것이다.
+    </p>
+
+    <p>
+      밭은 빠르게 넓히기 위한 첫걸음으로 게임 내에서 키울 수 있는 작물을 시간당
+      수입 효율 순으로 나열하려고 한다.
+    </p>
+
+    <p>
+      작물을 키우기 위해서 우선 종자를 사야 한다. 작물 <i>i</i>의 종자명을
+      <i>L<sub>i</sub></i
+      >, 가격을 <i>P<sub>i</sub></i
+      >이라고 하자. 밭에 종자를 심고 시간 <i>A<sub>i</sub></i
+      >가 지나면 싹이 난다. 싹이 나고 시간 <i>B<sub>i</sub></i
+      >가 지나면 어린잎이 난다. 어린잎이 나고 시간 <i>C<sub>i</sub></i
+      >가 지나면 잎이 무성해진다. 잎이 무성해지고 시간 <i>D<sub>i</sub></i
+      >가 지나면 꽃이 핀다. 꽃이 피고 시간 <i>E<sub>i</sub></i
+      >가 지나면 열매가 맺힌다. 한 개의 종자가 열매 <i>F<sub>i</sub></i
+      >개를 맺으며, 열매 하나당 가격 <i>S<sub>i</sub></i
+      >에 팔린다. 어떤 식물은 여러 번 수확할 수 있기 때문에 총
+      <i>M<sub>i</sub></i
+      >번 열매를 맺는다. 한 번 수확하는 경우 <i>M<sub>i</sub></i> = 1이다. 여러
+      번 수확하는 경우 <i>M<sub>i</sub></i
+      >번 열매를 맺기 전까지는 열매를 맺은 후 잎이 무성한 상태로 돌아간다.
+      종자의 수입은 그 종자가 맺은 모든 열매를 팔아 얻은 금액에서 종자의 가격을
+      뺀 값이다. 또한, 그 종자의 수입 효율은 종자의 수입을 종자를 심고 마지막
+      열매를 맺을 때까지 걸린 시간으로 나눈 값이다.
+    </p>
+
+    <p>
+      여러분은 입력으로 주어진 작물을 수입 효율의 내림차순으로 나열하는
+      프로그램을 작성해야 한다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      입력은 여러 개의 테스트 케이스로 이루어져 있다. 각 테스트 케이스는 다음
+      형식으로 주어진다.
+    </p>
+
+    <pre>
+<i>N
+</i><i>L<sub>1</sub></i> <i>P<sub>1</sub></i> <i>A<sub>1</sub></i> <i>B<sub>1</sub></i> <i>C<sub>1</sub></i> <i>D<sub>1</sub></i> <i>E<sub>1</sub></i> <i>F<sub>1</sub></i> <i>S<sub>1</sub></i> <i>M<sub>1</sub></i>
+<i>L<sub>2</sub></i> <i>P<sub>2</sub></i> <i>A<sub>2</sub></i> <i>B<sub>2</sub></i> <i>C<sub>2</sub></i> <i>D<sub>2</sub></i> <i>E<sub>2</sub></i> <i>F<sub>2</sub></i> <i>S<sub>2</sub></i> <i>M<sub>2</sub></i>
+...
+<i>L<sub>N</sub></i> <i>P<sub>N</sub></i> <i>A<sub>N</sub></i> <i>B<sub>N</sub></i> <i>C<sub>N</sub></i> <i>D<sub>N</sub></i> <i>E<sub>N</sub></i> <i>F<sub>N</sub></i> <i>S<sub>N</sub></i> <i>M<sub>N</sub></i></pre>
+
+    <p>
+      첫째 줄에 테스트 케이스에서 주어지는 작물의 수 <i>N</i>이 주어진다. (1
+      &le; N &le; 50)
+    </p>
+
+    <p>
+      다음 <i>N</i>줄 각각에는 한 작물의 정보가 주어진다. 각 변수의 의미는
+      위에서 서술한 바를 따른다. 작물의 종자명 <i>L<sub>i</sub></i
+      >은 영어 알파벳 소문자로만 이루어진 20자 이하의 문자열이고, 1 &le;&nbsp;<i
+        >P<sub>i</sub></i
+      >&nbsp;,&nbsp;<i>A<sub>i</sub></i
+      >&nbsp;,&nbsp;<i>B<sub>i</sub></i
+      >&nbsp;,&nbsp;<i>C<sub>i</sub></i
+      >&nbsp;,&nbsp;<i>D<sub>i</sub></i
+      >&nbsp;,&nbsp;<i>E<sub>i</sub></i
+      >&nbsp;,&nbsp;<i>F<sub>i</sub></i
+      >&nbsp;,&nbsp;<i>S<sub>i</sub></i
+      >&nbsp;&le; 100, 1 &le;&nbsp;<i>M<sub>i</sub></i
+      >&nbsp;&le; 5를 만족한다. 한 테스트 케이스에서 두 식물이 같은 종자명을
+      갖는 경우는 없다.
+    </p>
+
+    <p>입력의 끝에는 0 하나가 주어진다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 테스트 케이스마다 한 줄에 하나씩 종자명을 수입 효율의 내림차순으로
+      출력한다. 수입 효율이 동일한 경우 이름의 오름차순으로 출력한다.
+    </p>
+
+    <p>
+      각 테스트 케이스의 답을 출력한 후에는 &ldquo;#&rdquo; 한 줄을 출력한다.
+    </p>
+  </div>
+</section>
