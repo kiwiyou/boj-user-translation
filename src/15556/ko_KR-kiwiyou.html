@@ -1,0 +1,183 @@
+<section id="title">정기권</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      JOI 군은 1번부터 N번까지 N개의 철도역과, 1번부터 M번까지 M개의 철로가 있는
+      도시에 산다. i번 철로는 A<sub>i</sub>번 역과 B<sub>i</sub>번 역을
+      양방향으로 연결하며, 운임은 두 방향 모두 C<sub>i</sub>이다. (1 &le; i &le;
+      M)
+    </p>
+
+    <p>
+      JOI 군은 S번 역 근방에 살며 T번 역 근방의 IOI 고등학교에 다닌다. JOI 군은
+      두 역을 오갈 수 있는 정기권을 구매하려고 한다. 정기권을 구매할 때는 S번
+      역에서 T번 역으로 가는 최소 운임의 경로를 골라야 한다. 정기권을 사용하면
+      고른 경로상의 모든 철로를 어느 방향으로도 추가 운임 없이 지날 수 있다.
+    </p>
+
+    <p>
+      JOI 군은 U번 역과 V번 역 근방에 있는 서점에 자주 간다. 그래서 U번 역에서
+      V번 역으로 가는 추가 운임이 최소화되도록 정기권을 구매하려고 한다.
+    </p>
+
+    <p>
+      U번 역에서 V번 역으로 갈 때는 우선 U번 역에서 V번 역으로 가는 경로를 하나
+      고른다. 추가 운임은 고른 경로에 포함된 각 i번 철로에 대해 아래 방법으로
+      구한 값의 합이다.
+    </p>
+
+    <ul>
+      <li>i번 철로가 정기권에서 선택된 경로에 포함된다면 0</li>
+      <li>
+        i번 철로가 정기권에서 선택된 경로에 포함되지 않는다면 C<sub>i</sub>
+      </li>
+    </ul>
+
+    <p>
+      JOI 군은 정기권을 위한 적당한 경로를 골랐을 때 U번 역에서 V번 역으로 갈 때
+      내는 추가 운임의 최솟값을 알고 싶다.
+    </p>
+
+    <p>
+      정기권을 위한 경로를 적당히 골랐을 때 U번 역에서 V번 역까지 추가 운임의
+      최솟값을 구하자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>표준 입력을 통해 아래 입력이 주어진다.</p>
+
+    <ul>
+      <li>
+        입력의 첫째 줄에 정수 N, M이 주어진다. 이는 JOI 군이 사는 도시가 N개의
+        역과 M개의 철로로 구성된다는 뜻이다.
+      </li>
+      <li>
+        둘째 줄에 정수 S, T가 주어진다. 이는 JOI 군이 S번 역과 T번 역을 오가는
+        정기권을 구매한다는 뜻이다.
+      </li>
+      <li>
+        셋째 줄에 정수 U, V가 주어진다. 이는 JOI 군이 U번 역에서 V번 역으로
+        이동할 때 내는 추가 운임을 최소화하려 한다는 뜻이다.
+      </li>
+      <li>
+        다음 M줄 중 i째 줄에는 세 정수 A<sub>i</sub>, B<sub>i</sub>,
+        C<sub>i</sub>가 주어진다. i번 철로는 A<sub>i</sub>번 역과
+        B<sub>i</sub>번 역을 양방향으로 연결하며, 운임은 두 방향 모두
+        C<sub>i</sub>이다.
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      표준 출력에 정기권의 경로를 적당히 선택해 얻을 수 있는 U번 역으로부터 V번
+      역까지의 추가 운임의 최솟값을 출력한다.
+    </p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>2 &le; N &le; 100 000</li>
+      <li>1 &le; M &le; 200 000</li>
+      <li>1 &le; S &le; N</li>
+      <li>1 &le; T &le; N</li>
+      <li>1 &le; U &le; N</li>
+      <li>1 &le; V &le; N</li>
+      <li>S &ne; T</li>
+      <li>U &ne; V</li>
+      <li>S &ne; U 또는 T &ne; V</li>
+      <li>JOI 군은 철로를 통해 모든 두 역 사이를 이동할 수 있다.</li>
+      <li>1 &le; A<sub>i</sub> &lt; B<sub>i</sub> &le; N (1 &le; i &le; M)</li>
+      <li>
+        1 &le; i &lt; j &le; M인 i에 대해서, A<sub>i</sub> &ne; A<sub>j</sub>
+        또는 B<sub>i</sub> &ne; B<sub>j</sub>이다.
+      </li>
+      <li>1 &le; C<sub>i</sub> &le; 1 000 000 000 (1 &le; i &le; M)</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>16</td>
+            <td class="subtask-body"><p>S = U.</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>15</td>
+            <td class="subtask-body">
+              <p>S번 역에서 T번 역으로 가는 최소 운임 경로는 유일하다.</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>24</td>
+            <td class="subtask-body"><p>N &le; 300</p></td>
+          </tr>
+          <tr data-subtask-id="4">
+            <td>4</td>
+            <td>45</td>
+            <td class="subtask-body">
+              <p>추가 제약 조건 없음</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      JOI 군이 정기권 구매 시에 고를 수 있는 경로는 1번 역 &rarr; 2번 역 &rarr;
+      3번 역 &rarr; 5번 역 &rarr; 6번 역으로 유일하다.
+    </p>
+
+    <p>
+      1번 역부터 4번 역까지의 추가 운임을 최소화하려면 1번 역 &rarr; 2번 역
+      &rarr; 3번 역 &rarr; 5번 역 &rarr; 4번 역과 같이 이동하면 된다. 이때 추가
+      운임은
+    </p>
+
+    <ul>
+      <li>4번 역과 5번 역을 연결하는 5번 철로의 경우 2</li>
+      <li>다른 철로의 경우 0</li>
+    </ul>
+
+    <p>으로 총 2이다.</p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>3번 역에서 6번 역으로 이동할 때 정기권을 사용할 수 없다.</p>
+  </div>
+</section>
