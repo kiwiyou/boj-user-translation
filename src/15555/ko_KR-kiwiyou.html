@@ -1,0 +1,151 @@
+<section id="title">당고왕</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      여러분은 일본식 경단인 당고 직인이다. 오늘은 당고를 꼬챙이에 꿰려고 한다.
+    </p>
+
+    <p>
+      당고는 N행 M열의 격자의 각 칸에 하나씩 놓여 있다. 당고의 색은
+      빨강(<code>R</code>), 초록(<code>G</code>), 하양(<code>W</code>) 중
+      하나이다.
+    </p>
+
+    <p>
+      격자에서 연속한 세 칸에 놓인 당고를 꼬챙이에 꿸 수 있다. 이때 왼쪽에서
+      오른쪽 방향 혹은 위에서 아래 방향으로만 세 칸을 고를 수 있다.
+    </p>
+
+    <p>
+      고른 세 칸에 놓인 당고의 색은 칸을 고른 순서대로 빨강, 초록, 하양이어야
+      한다. 여러분의 목표는 가능한 많은 꼬치를 만드는 것이다. 한 당고에 여러
+      꼬챙이를 꿸 수 없다.
+    </p>
+
+    <p>만들 수 있는 꼬치의 수는 최대 몇 개일까?</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>표준 입력을 통해 아래 입력이 주어진다.</p>
+
+    <ul>
+      <li>첫째 줄에 정수 N과 M이 주어진다.</li>
+      <li>
+        다음 N줄 중 i번째 줄에는 <code>R</code>, <code>G</code>,
+        <code>W</code>로만 이루어진 길이 M의 문자열이 주어진다. (1 &le; i &le;
+        N) 문자열의 j번째 문자열은 위에서 i번째 행, 왼쪽에서 j번째 열에 놓인
+        당고의 색을 뜻한다. (1 &le; j &le; M)
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>표준 출력에 만들 수 있는 꼬치의 최대 개수를 출력한다.</p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>1 &le; N &le; 3 000.</li>
+      <li>1 &le; M &le; 3 000.</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>13</td>
+            <td class="subtask-body"><p>N &le; 4, M &le; 4.</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>20</td>
+            <td class="subtask-body"><p>N &le; 10, M &le; 10.</p></td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>67</td>
+            <td class="subtask-body">
+              <p>추가 제약 조건 없음</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>아래 방법으로 꼬치를 3개 만들 수 있다.</p>
+
+    <ul>
+      <li>
+        위에서 첫 번째 행, 왼쪽에서 첫 번째 열에 있는 당고부터 왼쪽에서
+        오른쪽으로 당고 3개를 꿸 수 있다.
+      </li>
+      <li>
+        위에서 첫 번째 행, 왼쪽에서 네 번째 열에 있는 당고부터 위에서 아래로
+        당고 3개를 꿸 수 있다.
+      </li>
+      <li>
+        위에서 세 번째 행, 왼쪽에서 첫 번째 열에 있는 당고부터 왼쪽에서
+        오른쪽으로 당고 3개를 꿸 수 있다.
+      </li>
+    </ul>
+
+    <p>꼬치 4개를 만들 수 없으므로 3을 출력한다.</p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>아래 방법으로 꼬치를 4개 만들 수 있다.</p>
+
+    <ul>
+      <li>
+        위에서 첫 번째 행, 왼쪽에서 첫 번째 열에 있는 당고부터 왼쪽에서
+        오른쪽으로 당고 3개를 꿸 수 있다.
+      </li>
+      <li>
+        위에서 첫 번째 행, 왼쪽에서 네 번째 열에 있는 당고부터 위에서 아래로
+        당고 3개를 꿸 수 있다.
+      </li>
+      <li>
+        위에서 두 번째 행, 왼쪽에서 두 번째 열에 있는 당고부터 위에서 아래로
+        당고 3개를 꿸 수 있다.
+      </li>
+      <li>
+        위에서 두 번째 행, 왼쪽에서 세 번째 열에 있는 당고부터 위에서 아래로
+        당고 3개를 꿸 수 있다.
+      </li>
+    </ul>
+
+    <p>꼬치 5개를 만들 수 없으므로 3을 출력한다.</p>
+  </div>
+</section>
