@@ -1,0 +1,211 @@
+<section id="title">연구소 탈출</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      JOI 연구소에는 0부터 2<sup>L</sup> &minus; 1까지의 번호가 붙은
+      2<sup>L</sup>마리의 독사가 있다. 각 뱀의 몸은 머리부터 꼬리까지 L개의
+      부분으로 나눌 수 있고, 각 부분은 붉은색 혹은 푸른색이다. i번 독사에 대해
+      i의 이진법 표현 i =
+      \(\sum_{k=1}^{L}\)c<sub>k</sub>2<sup>L&minus;k</sup>&nbsp;(0 &le; c<sub
+        >k</sub
+      >
+      &le; 1)를 생각하자.
+    </p>
+
+    <ul>
+      <li>
+        c<sub>k</sub> = 0이면 i번 독사의 머리에서부터 k번째 부분은 푸른색이다.
+      </li>
+      <li>
+        c<sub>1</sub> = 0이면 i번 독사의 머리에서부터 k번째 부분은 붉은색이다.
+      </li>
+    </ul>
+
+    <p>
+      각 독사는 0부터 9까지의 정수로 표현되는 독성 지수를 가진다.
+      <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>,
+      <code>4</code>, <code>5</code>, <code>6</code>, <code>7</code>,
+      <code>8</code>, <code>9</code>로 이루어진 길이 2<sup>L</sup>의 문자열 S가
+      주어진다. i번째 문자는 i &minus; 1번 독사의 독성 지수를 나타낸다. (1 &le;
+      i &le; 2<sup>L</sup>)
+    </p>
+
+    <p>
+      독사들은 재빨라서 JOI 연구소에서 자주 탈출한다. 때문에 탈출한 독사를
+      목격한 연구소 인근 주민들에게서 민원이 들어오기도 한다.
+    </p>
+
+    <p>
+      Q일 간의 민원 목록이 주어진다. d번째 날의 민원은 <code>0</code>,
+      <code>1</code>, <code>?</code>로 구성된 길이 L의 문자열 T<sub>d</sub>로
+      나타낸다. (1 &le; d &le; Q)
+    </p>
+
+    <ul>
+      <li>
+        T<sub>d</sub>의 j번째 문자가 <code>0</code>이라면, 연구소에서 탈출한
+        모든 독사의 머리에서부터 j번째 부분이 푸른색이라는 뜻이다. (1 &le; j
+        &le; L)
+      </li>
+      <li>
+        T<sub>d</sub>의 j번째 문자가 <code>1</code>이라면, 연구소에서 탈출한
+        모든 독사의 머리에서부터 j번째 부분이 붉은색이라는 뜻이다. (1 &le; j
+        &le; L)
+      </li>
+      <li>
+        T<sub>d</sub>의 j번째 문자가 <code>?</code>라면, 연구소에서 탈출한 모든
+        독사의 머리에서부터 j번째 부분의 색에 대한 정보가 없다는 뜻이다. (1 &le;
+        j &le; L)
+      </li>
+    </ul>
+
+    <p>
+      모든 민원은 정확하다. 연구소에서 탈출한 뱀들은 모두 같은 날에 JOI 연구소의
+      직원이 데리고 있었다. 같은 뱀이 다른 날에 탈출할 수도 있다.
+    </p>
+
+    <p>
+      독사가 탈출할 위험성을 예측하기 위해서 JOI 연구소의 총감독 K 교수는
+      연구소에서 탈출했을 가능성이 있는 독사들의 독성 지수의 합을 구하려고 한다.
+      여러분은 Q일간의 민원을 받아 각 날에 탈출했을 가능성이 있는 독사들의 독성
+      지수의 합을 구해야 한다.
+    </p>
+
+    <p>이 문제의 메모리 제한이 낮은 점에 유의하라.</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>표준 입력을 통해 다음 입력이 주어진다.</p>
+
+    <ul>
+      <li>
+        첫째 줄에 독사 몸의 부분 수 L과 민원이 들어온 날의 수 Q가 주어진다.
+      </li>
+      <li>
+        둘째 줄에 독사들의 독성 지수를 나타내는 길이 2<sup>L</sup>의 문자열 S가
+        주어진다.
+      </li>
+      <li>
+        다음 Q줄 중 d째 줄에는 d번째 날의 민원을 나타내는 길이 L의 정수
+        T<sub>d</sub>가 주어진다.
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      표준 출력에 Q줄을 출력한다. d째 줄에는 d번째 날에 탈출했을 가능성이 있는
+      독사의 독성 지수의 합을 출력한다.
+    </p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>1 &le; L &le; 20</li>
+      <li>1 &le; Q &le; 1 000 000</li>
+      <li>S는 길이 2<sup>L</sup>의 문자열</li>
+      <li>
+        S는 <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>,
+        <code>4</code>, <code>5</code>, <code>6</code>, <code>7</code>,
+        <code>8</code>, <code>9</code>로 구성됨
+      </li>
+      <li>T<sub>d</sub> 는 길이 L의 문자열 (1 &le; d &le; Q)</li>
+      <li>
+        T<sub>d</sub>는 <code>0</code>, <code>1</code>, <code>?</code>로 구성됨
+        (1 &le; d &le; Q)
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>5</td>
+            <td class="subtask-body"><p>L &le; 10, Q &le; 1 000</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>7</td>
+            <td class="subtask-body"><p>L &le; 10</p></td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>10</td>
+            <td class="subtask-body"><p>L &le; 13</p></td>
+          </tr>
+          <tr data-subtask-id="4">
+            <td>4</td>
+            <td>53</td>
+            <td class="subtask-body"><p>Q &le; 50 000</p></td>
+          </tr>
+          <tr data-subtask-id="5">
+            <td>5</td>
+            <td>25</td>
+            <td class="subtask-body">
+              <p>추가 제약 조건 없음</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      L = 3이므로 독사는 2<sup>3</sup> = 8마리 있다. 각 독사의 몸은 3개의
+      부분으로 나뉜다. 민원은 5일간 들어왔다.
+    </p>
+
+    <ul>
+      <li>
+        첫 번째 날에 연구소에서 탈출했을 가능성이 있는 뱀은 0번뿐이다. 독성
+        지수의 합은 1이다.
+      </li>
+      <li>
+        두 번째 날에 연구소에서 탈출했을 가능성이 있는 뱀은 0, 1, 2, 3번이다.
+        독성 지수의 합은 10이다.
+      </li>
+      <li>
+        세 번째 날에 연구소에서 탈출했을 가능성이 있는 뱀은 4, 6번이다. 독성
+        지수의 합은 12이다.
+      </li>
+      <li>
+        네 번째 날에 연구소에서 탈출했을 가능성이 있는 뱀은 3, 7번이다. 독성
+        지수의 합은 12이다.
+      </li>
+      <li>
+        다섯 번째 날에 연구소에서 탈출했을 가능성이 있는 뱀은 0, 1, 2, 3, 4, 5,
+        6, 7번이다. 독성 지수의 합은 36이다.
+      </li>
+    </ul>
+  </div>
+</section>
