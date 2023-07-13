@@ -1,0 +1,160 @@
+<section id="title">불</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      JOI 마을에는 1부터 N까지의 번호가 붙은 N개의 구역이 있다. 각 구역은
+      직선상에 위치해 있다. 각 구역에 불이 붙었다. 시각 0에 i번 구역에서 난 불의
+      세기는 S<sub>i</sub>이다. (1 &le; i &le; N; S<sub>i</sub> &gt; 0)
+    </p>
+
+    <p>
+      시각 0에 1번 구역에서 N번 구역으로 바람이 분다. 인접한 두 마을마다, 만약
+      시각 t에 바람이 불어오는 쪽의 구역이 바람을 맞는 쪽의 구역보다 불이
+      세다면, 시각 t+1에 바람을 맞는 쪽의 불의 세기는 시각 t의 바람이 불어오는
+      쪽의 불의 세기와 같아진다. (0 &le; t) 그렇지 않으면 바람을 맞는 쪽의 불의
+      세기는 시각 t와 t+1에서 같다. 다시 말해, 만약 시각 t에 i번 구역의 불의
+      세기를 S<sub>i</sub>(t)라 한다면, 모든 t에 대해 S<sub>i</sub>(t) =
+      max{S<sub>i&minus;1</sub>(t &minus; 1), S<sub>i</sub>(t &minus; 1)}이다.
+      (1 &le; t) 모든 t에 대해서 S<sub>0</sub>(t) = 0이라 두고, 모든 i에 대해서
+      S<sub>i</sub>(0) = S<sub>i</sub>라 두자. (0 &le; t; 1 &le; i &le; N)
+    </p>
+
+    <p>
+      당신은 소방관이다. 불을 끄기 위한 Q개의 계획이 있고, 그중 하나만을 골라
+      수행할 수 있다. j번째 계획에서 당신은 L<sub>j</sub> &le; k &le;
+      R<sub>j</sub>를 만족하는 모든 k에 대해 k번 구역의 소화제를 사용하여 불을
+      끈다. 어떤 구역의 불의 세기가 s인 경우 불을 끄기 위해서는 s리터의 소화제가
+      필요하다. 따라서 j번째 계획에서 필요한 소화제의 양은 S<sub
+        >L<sub>j</sub></sub
+      >(T<sub>j</sub>) + S<sub>L<sub>j+1</sub></sub
+      >(T<sub>j</sub>) + &mldr; + S<sub>R<sub>j</sub></sub>
+      (T<sub>j</sub>)리터이다. 당신은 계획을 검사하기 위해 계획마다 얼마만큼의
+      소화제가 필요한지 알려고 한다.
+    </p>
+
+    <p>
+      시각 0에서 불의 세기와 화재 진압 계획의 정보가 주어질 때 각 계획에 필요한
+      소화제의 양을 계산하자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>표준 입력에서 아래 데이터를 읽는다. 주어지는 수는 모두 정수이다.</p>
+
+    <pre>
+N Q
+S<sub>1</sub> &mldr; S<sub>N</sub>
+T<sub>1</sub> L<sub>1</sub> R<sub>1</sub>
+&vellip;
+T<sub>Q</sub> L<sub>Q</sub> R<sub>Q</sub></pre>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      표준 출력에 Q개의 줄을 출력한다. j번째 줄에는 j번째 계획에 필요한 소화제의
+      양을 출력한다. (1 &le; j &le; Q)
+    </p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>1 &le; N &le; 200 000.</li>
+      <li>1 &le; Q &le; 200 000.</li>
+      <li>1 &le; S<sub>i</sub> &le; 1 000 000 000 (1 &le; i &le; N).</li>
+      <li>1 &le; T<sub>j</sub> &le; N (1 &le; j &le; Q).</li>
+      <li>1 &le; L<sub>j</sub> &le; R<sub>j</sub> &le; N (1 &le; j &le; Q).</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>1</td>
+            <td class="subtask-body"><p>N &le; 200, Q &le; 200.</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>6</td>
+            <td class="subtask-body">
+              <p>T<sub>1</sub> = T<sub>2</sub> = &mldr; = T<sub>Q</sub>.</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>7</td>
+            <td class="subtask-body">
+              <p>L<sub>j</sub> = R<sub>j</sub> (1 &le; j &le; Q).</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="4">
+            <td>4</td>
+            <td>6</td>
+            <td class="subtask-body">
+              <p>S<sub>i</sub> &le; 2 (1 &le; i &le; N).</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="5">
+            <td>5</td>
+            <td>80</td>
+            <td class="subtask-body"><p>추가 제약 조건 없음.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <ul>
+      <li>시각 0에 1번 구역부터 각 구역의 불의 세기는 9, 3, 2, 6, 5이다.</li>
+      <li>
+        시각 1에 1번 구역부터 각 구역의 불의 세기는 9, 9, 3, 6, 6이다. 1번째
+        계획에 필요한 소화제의 양은 9 + 9 + 3 = 21리터이다.
+      </li>
+      <li>
+        시각 2에 1번 구역부터 각 구역의 불의 세기는 9, 9, 9, 6, 6이다. 2번째
+        계획에 필요한 소화제의 양은 9 + 9 + 9 + 6 + 6 = 39리터이다.
+      </li>
+      <li>
+        시각 3에 1번 구역부터 각 구역의 불의 세기는 9, 9, 9, 9, 6이다. 3번째
+        계획에 필요한 소화제의 양은 9 + 9 + 9 + 6 = 33리터이다.
+      </li>
+      <li>
+        시각 4에 1번 구역부터 각 구역의 불의 세기는 9, 9, 9, 9, 9이다. 4번째
+        계획에 필요한 소화제의 양은 9리터이다.
+      </li>
+      <li>
+        시각 5에 1번 구역부터 각 구역의 불의 세기는 9, 9, 9, 9, 9이다. 4번째
+        계획에 필요한 소화제의 양은 9 + 9 + 9 = 27리터이다.
+      </li>
+    </ul>
+  </div>
+</section>

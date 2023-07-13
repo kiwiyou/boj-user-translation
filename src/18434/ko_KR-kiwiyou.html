@@ -1,0 +1,154 @@
+<section id="title">올림픽 버스</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      JOI 왕국에는 1부터 N까지의 번호가 붙은 N개의 도시와 도시들을 연견하는
+      1번부터 M번까지의 M개 버스 노선이 있다. i번 버스 노선은 U<sub>i</sub>번
+      도시에서 V<sub>i</sub>번 도시로 향하며, 운임은 C<sub>i</sub>이다. i번 버스
+      노선에서 승객은 도시 U<sub>i</sub>에서만 탑승할 수 있고,
+      V<sub>i</sub>에서만 하차할 수 있다. 한 도시에서 다른 도시로 가는 버스
+      노선은 하나 이상일 수 있다.
+    </p>
+
+    <p>
+      올림픽이 JOI 왕국에서 개최될 예정이다. K는 JOI 왕국의 교통부 장관이다. K는
+      올림픽이 열리기 직전 최대 하나의 버스 노선을 골라 운임은 그대로 두고
+      노선의 방향을 뒤집을 수 있다. 다르게 말해서, i번 버스 노선을 골라
+      U<sub>i</sub>에서 V<sub>i</sub>로 향하는 것이 아니라 V<sub>i</sub>에서
+      U<sub>i</sub>로 향하도록 할 수 있다. (1 &le; i &le; M) 노선 방향을 뒤집는
+      데 드는 비용은 D<sub>i</sub>이고, K가 지불할 것이다. 혼란을 막기 위해
+      올림픽 중에는 노선의 방향을 뒤집을 수 없다.
+    </p>
+
+    <p>
+      K는 교통부 장관이므로 올림픽 중에 버스를 타고 1번 도시와 N번 도시를 왕복할
+      예정이다. K는 적당한 노선의 방향을 바꿔 왕복 운임에 노선의 방향을 바꾸는
+      비용을 더한 값을 최소로 하려고 한다.
+    </p>
+
+    <p>
+      도시의 수와 버스 노선의 정보가 주어지면 왕복 운임과 노선의 방향을 바꾸는
+      비용의 합의 최솟값을 구하자. 1번 도시와 N번 도시를 왕복할 수 없다면
+      <code>-1</code>을 대신 출력한다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>표준 입력에서 아래 데이터를 읽는다. 주어지는 수는 모두 정수이다.</p>
+
+    <pre>
+N M
+U<sub>1</sub> V<sub>1</sub> C<sub>1</sub> D<sub>1</sub>
+&vellip;
+U<sub>M</sub> V<sub>M</sub> C<sub>M</sub> D<sub>M</sub></pre>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      표준 출력에 왕복 운임과 노선의 방향을 바꾸는 비용의 합의 최솟값을
+      출력한다. 만약 1번 도시와 N번 도시를 왕복할 수 없다면 <code>-1</code>을
+      대신 출력한다.
+    </p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>2 &le; N &le; 200.</li>
+      <li>1 &le; M &le; 50 000.</li>
+      <li>1 &le; U<sub>i</sub> &le; N (1 &le; i &le; M).</li>
+      <li>1 &le; V<sub>i</sub> &le; N (1 &le; i &le; M).</li>
+      <li>U<sub>i</sub>, V<sub>i</sub> (1 &le; i &le; M).</li>
+      <li>0 &le; C<sub>i</sub> &le; 1 000 000 (1 &le; i &le; M).</li>
+      <li>0 &le; D<sub>i</sub> &le; 1 000 000 000 (1 &le; i &le; M).</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>5</td>
+            <td class="subtask-body"><p>M &le; 1000.</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>11</td>
+            <td class="subtask-body">
+              <p>
+                M은 짝수, U<sub>2i&minus;1</sub> = U<sub>2i</sub>, V<sub
+                  >2i&minus;1</sub
+                >
+                = V<sub>2i</sub>, C<sub>2i&minus;1</sub> = C<sub>2i</sub> (1
+                &le; i &le; M/2).
+              </p>
+            </td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>21</td>
+            <td class="subtask-body">
+              <p>C<sub>i</sub> = 0 (1 &le; i &le; M).</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="4">
+            <td>4</td>
+            <td>63</td>
+            <td class="subtask-body"><p>추가 제약 조건 없음.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      K가 2번 버스 노선의 방향을 바꾸면 드는 비용은 1이다. 이때 1번 도시에서 4번
+      도시로 가는 최소 운임은 6이고, 4번 도시에서 1번 도시로 가는 최소 운임은
+      3이다. 따라서 1번 도시와 4번 도시를 왕복하는 운임과 노선 방향을 바꾸는
+      비용의 합은 10이다.
+    </p>
+
+    <p>
+      1번 도시와 4번 도시를 왕복하는 운임과 노선 방향을 바꾸는 비용의 합은
+      10보다 작아질 수 없으므로 10을 출력한다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_4">
+  <div id="problem_sample_explain_4" class="problem-text">
+    <p>버스 노선의 방향을 바꿀 필요가 없다.</p>
+  </div>
+</section>
+<section id="sample_explain_5">
+  <div id="problem_sample_explain_5" class="problem-text">
+    <p>4번 도시에서 3번 도시로 가는 버스 노선은 2개이다.</p>
+  </div>
+</section>
