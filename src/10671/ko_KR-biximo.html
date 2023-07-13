@@ -1,0 +1,76 @@
+<section id="title">문제아</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>농부존은 베시가 항상 지정된 경로에서 벗어나는 것에 화가 난 나머지 혼쭐을 내주기 위해 농장 전체에 일방통행 소 경로를 설치했다. &nbsp; 농장은 1부터 N까지 번호가 매겨진 N개의 밭으로 구성되어 있으며, 각각의 소 경로는 두 개의 밭을 연결한다.</p>
+
+
+
+<p>베시는 식사 시간에 밭 1에서 시작해, 경로를 따라서 농장을 돌아다니며 밭들에서 싱싱한 상추를 먹고 다시 밭 1로 돌아온다. 베시는 식탐이 많기 때문에 최대한 많은 양의 상추를 먹고 싶다 (한 밭을 여러 번 방문 하더라도 한 밭에서는 한번만 먹을수 있다).</p>
+
+
+
+<p>더 이상 베시의 말썽을 참아줄 생각이 없는 농부존은 매의 눈으로 베시를 감시한다. 하지만 이러한 저지에 멈출 소가 아닌 문제아 베시는 농부 존이 짜놓은 경로를 따르는 척 하다가 기회를 노려 단 한번 소 경로를 역방향으로 건널 것이다. 경로의 시작과 끝이 밭 1이고 경로 상에서 한 번의 잘못된 방향으로 경로를 따라갔을때 베시가 방문할 수 있는 서로 다른 밭의 최대 수를 계산하라. 베시는 역방향으로 최대 한번 건널수 있다는 점에 유의하라.</p>
+
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>첫째 줄에 밭의 수 N과 경로의 수 M(1 ≤ N, M ≤ 100,000)이 주어진다.</p>
+
+
+
+<p>다음 M개의 줄에는 각 경로가 연결하는 두 밭의 번호 X과 Y가 주어진다.</p>
+
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>베시가 방문 가능한 밭의 최대 수를 출력한다.</p>
+
+
+					</div>
+					</section>
+<section id="hint">
+				<div class="headline">
+				<h2>힌트</h2>
+				</div>
+				<div id="problem_hint" class="problem-text">
+
+
+
+<pre>
+
+v---3--&gt;6
+
+7   |\  |
+
+^\  v \ |
+
+| \ 1  \|
+
+|  \|   v
+
+|   v   5
+
+4&lt;--2---^
+
+</pre>
+
+
+
+<p>베시가 1, 2, 4, 7, 2, 5의 순서로 이동한뒤 역방향으로 3으로 간 뒤 1로 돌아가면 6개의 밭을 방문할수 있다.</p>
+
+
+				</div>
+				</section>
