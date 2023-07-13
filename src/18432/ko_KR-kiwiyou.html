@@ -1,0 +1,150 @@
+<section id="title">JJOOII 2</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      비타로는 생일 선물로 길이 N의 문자열 S를 받았다. 문자열은 <code>J</code>,
+      <code>O</code> <code>I</code> 세 가지 문자로 구성된다.
+    </p>
+
+    <p>
+      양의 정수 K에 대해서, 문자 <code>J</code>가 K개, 문자 <code>O</code>가
+      K개, 문자 <code>I</code>가 K개 순서대로 있는 문자열은
+      <strong>K단계 JOI 문자열</strong>이라고 한다. 예를 들어
+      <code>JJOOII</code>는 2단계 JOI 문자열이다.
+    </p>
+
+    <p>
+      비타로는 K단계 JOI 문자열을 좋아해서 문자열 S에 아래 연산을 원하는
+      순서대로 원하는 만큼 수행해 K단계 JOI 문자열로 만들려고 한다.
+    </p>
+
+    <ul>
+      <li><strong>연산 1</strong> S의 첫 글자를 지운다.</li>
+      <li><strong>연산 2</strong> S의 마지막 글자를 지운다.</li>
+      <li><strong>연산 3</strong> S의 처음도 마지막도 아닌 글자를 지운다.</li>
+    </ul>
+
+    <p>
+      연산 3을 수행하는 데는 시간이 많이 걸리기 때문에 비타로는 연산 3을 최소로
+      수행해여 K단계 JOI 문자열을 만들려고 한다.
+    </p>
+
+    <p>
+      길이 N의 문자열 S와 양의 정수 K가 주어질 때 S를 K단계 JOI 문자열로 만들기
+      위해 필요한 연산 3의 최소 횟수를 구하자. 만약 연산을 통해 K단계 JOI
+      문자열을 만들 수 없다면 <code>-1</code>을 대신 출력한다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      다표준 입력에서 아래 데이터를 읽는다. N과 K는 정수이다. S는 문자열이다.
+    </p>
+
+    <pre>
+N K
+S</pre
+    >
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      표준 출력에 S를 K단계 JOI 문자열로 만들기 위해 필요한 연산 3의 최소 횟수를
+      출력한다. 만약 K단계 JOI 문자열을 만들 수 없다면 <code>-1</code>을 대신
+      출력한다.
+    </p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>3 &le; N &le; 200 000.</li>
+      <li>1 &le; K &le; N/3.</li>
+      <li>
+        S는 <code>J</code>, <code>O</code>, <code>I</code>로만 구성된 길이 N의
+        문자열이다.
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>1</td>
+            <td class="subtask-body"><p>N &le; 21.</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>12</td>
+            <td class="subtask-body"><p>N &le; 3 000.</p></td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>87</td>
+            <td class="subtask-body"><p>추가 제약 조건 없음.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>다음과 같이 S를 K단계 JOI 문자열로 만들 수 있다.</p>
+
+    <ol>
+      <li>연산 1을 수행하면 S는 <code>JIJOIOIIJ</code>가 된다.</li>
+      <li>연산 2를 수행하면 S는 <code>JIJOIOII</code>가 된다.</li>
+      <li>
+        연산 3을 수행하여 2번째 글자를 지우면 S는
+        <code>JJOIOII</code>가 된다.
+      </li>
+      <li>
+        연산 3을 수행하여 4번째 글자를 지우면 S는
+        <code>JJOOII</code>가 된다.
+      </li>
+    </ol>
+
+    <p>
+      연산 3을 2번보다 적게 수행하여 K단계 JOI 문자열을 만들 수 없으므로 2를
+      출력한다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>연산을 수행할 필요가 없다.</p>
+  </div>
+</section>
+<section id="sample_explain_3">
+  <div id="problem_sample_explain_3" class="problem-text">
+    <p>S를 1단계 JOI 문자열로 만들 수 없다.</p>
+  </div>
+</section>
