@@ -1,0 +1,42 @@
+<section id="title">코로나 검사</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			당신은 여러 명의 코로나 검사를 해야 한다. 코로나 검사는 한 번에 한 명씩 할 수도 있지만, 여러 명을 한 번에 그룹으로 묶어서 검사할 수도 있다.
+			즉, 당신은 100명의 코로나 검사를 위해 100개의 검사 키트를 쓰는 대신 20명으로 이루어진 5개의 그룹으로 나누어 그룹별로 각각 1개씩,
+			총 5개의 키트를 사용할 수 있다.
+			만약 어떤 그룹의 검사 결과가 양성이라면, 그 그룹에 포함된 사람들 모두 각각 개인 검사가 이루어져야 한다. 
+			위 예시에서 그룹 2개의 검사 결과가 양성이라면, 40($2 \times 20$)개의 검사 키트가 더 필요하므로 총 45개의 검사 키트가 필요하다.
+		</p>
+		<p>
+			여러분은 한 번에 한 명씩 검사하는 방법과 그룹으로 묶어서 검사하는 방법 중 무엇이 더 최선인지 계산해야 한다.
+		</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>
+			그룹의 개수 $G$($2$ &le; $G$ &le; $50$), 그룹 당 인원 수 $P$($2$ &le; P &le; $50$), 
+			코로나 검사 결과 양성이 나온 그룹의 수 $T$($0$ &le; $T$ &le; $G$)가 공백을 사이에 두고 주어진다.
+		</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>
+			한 번에 한 명씩 검사하는 것이 최선이면 $1$, 그룹으로 묶어서 검사하는 것이 최선이면 $2$, 두 방법이 같은 양의 키트를 사용한다면 $0$을 출력한다.
+		</p>
+
+	</div>
+</section>
