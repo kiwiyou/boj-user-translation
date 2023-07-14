@@ -1,0 +1,194 @@
+<section id="title">고양이 훈련</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      $1$부터 $N$까지 번호가 매겨진 $N$개의 캣타워가 있다. 캣타워 $i$의 높이는
+      $P_i(1\le i\le N)$이다. 각 타워의 높이는 $1$ 이상 $N$ 이하의 정수이다.
+      $N-1$개의 인접한 타워 쌍이 있다. 각 $j(1\le j\le N-1)$에 대해 타워 $A_j$와
+      타워 $B_j$는 서로 인접하다. 최초에 모든 타워에서 어떤 타워로든 인접한
+      타워로 이동을 반복하여 도달할 수 있다.
+    </p>
+
+    <p>최초에 고양이는 높이 $N$의 타워에 있다.</p>
+
+    <p>
+      우리는 고양이를 훈련시킬 것이다. 고양이 훈련에서 우리는 타워를 선택해
+      장애물을 설치하는 것을 반복한다. 단, 이미 장애물이 있는 타워에는 장애물을
+      더 설치할 수 없다. 장애물을 설치한 뒤에는 다음과 같은 일이 일어난다.
+    </p>
+
+    <ul>
+      <li>고양이가 선택한 타워에 있지 않았다면 아무 일도 일어나지 않는다.</li>
+      <li>
+        고양이가 선택한 타워에 있고, 인접한 모든 타워에 장애물이 있다면 훈련을
+        종료한다.
+      </li>
+      <li>
+        그렇지 않으면, 고양이는 장애물이 없는 인접한 타워로 이동을 반복하여
+        도달할 수 있는 타워들 중 가장 높이가 높은 타워로 이동한다. 이때 고양이는
+        인접한 타워로 이동하는 횟수가 최소가 되는 경로를 택한다.
+      </li>
+    </ul>
+
+    <p>
+      타워들의 높이와 인접한 타워 쌍들이 주어질 때 고양이 훈련에서 고양이가
+      인접한 타워로 이동하는 횟수의 총합의 최댓값을 계산하는 프로그램을
+      작성하여라.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>표준 입력에 다음 형식으로 정보가 주어진다.</p>
+
+    <blockquote>
+      <p>$N$</p>
+
+      <p>$P_1$ $P_2$ $\cdots$ $P_N$</p>
+
+      <p>$A_1$ $B_1$</p>
+
+      <p>$A_2$ $B_2$</p>
+
+      <p>$\vdots$</p>
+
+      <p>$A_{N-1}$ $B_{N-1}$</p>
+    </blockquote>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      표준 출력에 고양이 훈련에서 고양이가 인접한 타워로 이동하는 횟수의 총합의
+      최댓값을 출력한다.
+    </p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>$2 &le; N &le; 200\,000$.</li>
+      <li>$1 &le; P_i &le; N$ ($1 &le; i &le; N$).</li>
+      <li>$P_i \ne P_j$ ($1 &le; i &lt; j &le; N$).</li>
+      <li>$1 &le; A_j &lt; B_j &le; N$ ($1 &le; j &le; N - 1$).</li>
+      <li>
+        최초에 모든 타워에서 어떤 타워로든 인접한 타워로 이동을 반복하여 도달할
+        수 있음이 보장된다.
+      </li>
+      <li>모든 값은 정수이다.</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>7</td>
+            <td class="subtask-body">
+              <p>
+                $A_i = i$, $B_i = i + 1$ ($1 &le; i &le; N - 1$), $N &le; 16$.
+              </p>
+            </td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>7</td>
+            <td class="subtask-body">
+              <p>
+                $A_i = i$, $B_i = i + 1$ ($1 &le; i &le; N - 1$), $N &le; 300$.
+              </p>
+            </td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>7</td>
+            <td class="subtask-body">
+              <p>
+                $A_i = i$, $B_i = i + 1$ ($1 &le; i &le; N - 1$), $N &le;
+                5\,000$.
+              </p>
+            </td>
+          </tr>
+          <tr data-subtask-id="4">
+            <td>4</td>
+            <td>10</td>
+            <td class="subtask-body"><p>$N &le; 5\,000$.</p></td>
+          </tr>
+          <tr data-subtask-id="5">
+            <td>5</td>
+            <td>20</td>
+            <td class="subtask-body">
+              <p>$A_i = i$, $B_i = i + 1$ ($1 &le; i &le; N - 1$).</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="6">
+            <td>6</td>
+            <td>23</td>
+            <td class="subtask-body">
+              <p>
+                $A_i = \left\lfloor\frac{i+1}{2}\right\rfloor$, $B_i = i + 1$
+                ($1 &le; i &le; N - 1$).
+              </p>
+            </td>
+          </tr>
+          <tr data-subtask-id="7">
+            <td>7</td>
+            <td>26</td>
+            <td class="subtask-body"><p>추가 제약 조건 없음.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>다음과 같이 고양이 훈련을 하면 고양이는 총 $3$번 움직인다.</p>
+
+    <ul>
+      <li>타워 $1$에 장애물을 설치한다. 고양이는 움직이지 않는다.</li>
+      <li>
+        타워 $2$에 장애물을 설치한다. 고양이는 타워 $2$에서 타워 $3$으로 이동한
+        뒤 타워 $4$로 이동한다.
+      </li>
+      <li>
+        타워 $4$에 장애물을 설치한다. 고양이는 타워 $4$에서 타워 $3$으로
+        이동한다.
+      </li>
+      <li>타워 $3$에 장애물을 설치한다. 고양이 훈련이 끝난다.</li>
+    </ul>
+
+    <p>고양이가 $4$번 이상 움직일 수 있는 경우는 없기 때문에 을 출력한다.</p>
+
+    <p>이 예제 입력은 서브태스크 1, 2, 3, 4, 5, 7의 제약 조건을 만족한다.</p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>이 예제 입력은 서브태스크 4, 6, 7의 제약 조건을 만족한다.</p>
+  </div>
+</section>

@@ -1,0 +1,113 @@
+<section id="title">Radioactive Islands (Large)</section>
+
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      루미는 (-10, <b>A</b>)에서 (10, <b>B</b>)까지 가는 배를 몰고 있다. 좌표는
+      킬로미터(km) 단위이며, 배는 시간당 1 km의 속도로 일정하게 움직인다. 이
+      배를 좌표평면 상의 한 점으로 나타내자.
+    </p>
+    <p>
+      이 지역에는 <b>N</b> 개의 섬이 있고, 이 섬들 또한 하나의 점으로 나타내자.
+      i번째 섬은 (0, <b>C<sub>i</sub></b
+      >)에 위치해있다.
+    </p>
+    <p>
+      이 지역 전체는 방사능을 띄며, 시간당 1 microsievert(mSv)의 방사선을 받게
+      된다. 이 방사선은 루미가 어디에 있던지 항상 받게 된다.
+    </p>
+    <p>
+      또한, 섬 자체도 방사능을 띄어서, i번째 섬과 루미와의 거리를
+      (D<sub>i</sub>) km라 할 때, 시간당 (D<sub>i</sub>)<sup>-2</sup> mSv의
+      방사선을 i번째 섬에서 받게 된다.
+    </p>
+    <p>
+      수학적으로 말하면, D<sub>i</sub>(t)를 i번째 섬과 루미와의 거리를 시간에
+      따라 나타낸 함수라 하고, 항해에 걸리는 총 시간을 X 시간이라 하면, i번째
+      섬에서 받은 총 방사선량은 (D<sub>i</sub>(t))<sup>-2</sup>를 0에서 X까지
+      t에 대해 정적분 한 것이다.
+    </p>
+    <p>
+      루미는 섬과 완전히 좌표가 같아지지 않는 한, 원하는 만큼 가까이 다가갈 수
+      있다.
+    </p>
+    <p>
+      이 때, 루미가 방사선량을 최소화하게 항로를 짜서 항해할 때, 받는 총
+      방사선량을 구하라.
+    </p>
+  </div>
+</section>
+
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      입력의 첫 번째 줄에는 테스트 케이스의 수 <b>T</b>가 주어지고, 그 이후로
+      <b>T</b> 줄에 걸쳐 테스트 케이스들이 한 줄당 하나씩 주어진다.
+    </p>
+    <p>
+      각각의 테스트 케이스는 두 줄로 주어지는데, 테스트 케이스의 첫번째 줄에는
+      정수 <b>N</b>과 두 개의 부동소수점 수 <b>A</b>, <b>B</b>가 주어진다.
+      <b>N</b>, <b>A</b>, <b>B</b>는 문제에서 설명한 <b>N</b>, <b>A</b>,
+      <b>B</b>와 동일하다.
+    </p>
+    <p>
+      두 번째 줄에는 <b>N</b>개의 부동소수점 수 <b>C<sub>i</sub></b
+      >가 주어지는데, <b>C<sub>i</sub></b
+      >는 i번째 섬의 y좌표를 나타낸다.
+    </p>
+    <p></p>
+    <h2>제한</h2>
+    <ul>
+      <li>-10.00 &le; <b>A</b> &le; 10.00</li>
+      <li>-10.00 &le; <b>B</b> &le; 10.00</li>
+      <li>
+        모든 i에 대하여, -10.00 &le; <b>C<sub>i</sub></b> &le; 10.00
+      </li>
+      <li>
+        모든 i &ne; j에 대하여, <b>C<sub>i</sub></b> &ne; <b>C<sub>i</sub></b>
+      </li>
+      <li>1 &le; <b>T</b> &le; 50</li>
+      <li>1 &le; <b>N</b> &le; 2</li>
+    </ul>
+  </div>
+</section>
+
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      매 테스트 케이스에 대하여, 답을 한 줄로 다음과 같은 형식으로 출력하라.
+    </p>
+    <pre>Case #x: y</pre>
+    <p>
+      이 때, <code>x</code>는 테스트 케이스의 순서 (첫번째 테스트 케이스는
+      1이다.)이고, <code>y</code>는 항해를 끝마친 뒤 루미가 받는 방사선 총량을
+      mSv 단위로 나타낸 것이다.
+    </p>
+    <p>
+      <code>y</code>는 정답과 절대오차가 10<sup>-3</sup>보다 작거나 상대오차가
+      10<sup>-3</sup>보다 작을 경우 정답으로 인정된다.
+    </p>
+  </div>
+</section>
+
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      아래의 그림은 예제 1의 예시 테스트 케이스 #1에 대해, 최적의 항로를
+      그래프로 나타낸 그림이다. 섬이 잘 보일 수 있게 점의 크기를 크게 하였지만,
+      실제로는 하나의 점으로 취급됨에 유의하라.
+    </p>
+  </div>
+</section>

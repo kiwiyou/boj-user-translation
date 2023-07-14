@@ -1,0 +1,157 @@
+<section id="title">스탬프 모으기 3</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      JOI 군이 사는 IOI 나라는 커다란 호수가 유명하다. 오늘 이 호수를 따라
+      스탬프 행사가 열린다.
+    </p>
+
+    <p>
+      호수를 따라 N가지의 스탬프가 놓여 있다. 스탬프는 시계 방향으로 1부터
+      N까지의 번호가 붙어 있다. 호수의 둘레는 L이고, i번 스탬프는 스탬프 행사의
+      시작점으로부터 시계방향으로 X<sub>i</sub>미터 떨어진 곳에 놓여 있다. (1
+      &le; i &le; N)
+    </p>
+
+    <p>
+      참가자들은 행사의 시작점에 서 있다. 행사가 시작되면 참가자들은 호수를
+      시계방향 혹은 반시계방향으로 돌아다닐 수 있다. i번 스탬프를 얻기 위해서는
+      행사가 시작된 이후 T<sub>i</sub>초 이하가 지난 시점에 i번 스탬프의 위치에
+      도착해야 한다.
+    </p>
+
+    <p>
+      JOI 군은 스탬프 행사에 참가했다. JOI 군이 1미터를 이동하는 데는 1초가
+      걸린다. 그 외의 이유로 걸리는 시간은 무시해도 좋다.
+    </p>
+
+    <p>
+      스탬프의 개수, 호수의 둘레 길이, 스탬프의 위치, 스탬프를 얻을 수 있는
+      제한시간이 주어졌을 때 JOI 군이 모을 수 있는 스탬프의 최대 종류 수를
+      구하자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>표준 입력에서 아래 데이터를 읽는다. 주어지는 수는 모두 정수이다.</p>
+
+    <pre>
+N L
+X<sub>1</sub> &mldr; X<sub>N</sub>
+T<sub>1</sub> &mldr; T<sub>N</sub></pre>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>표준 출력에 답을 한 줄 출력한다.</p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>1 &le; N &le; 200.</li>
+      <li>2 &le; L &le; 1 000 000 000.</li>
+      <li>1 &le; X<sub>i</sub> &lt; L (1 &le; i &le; N).</li>
+      <li>X<sub>i</sub> &lt; X<sub>i+1</sub> (1 &le; i &le; N &minus; 1).</li>
+      <li>0 &le; T<sub>i</sub> &le; 1 000 000 000 (1 &le; i &le; N).</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>5</td>
+            <td class="subtask-body">
+              <p>
+                N &le; 12, L &le; 200, T<sub>i</sub> &le; 200 (1 &le; i &le; N).
+              </p>
+            </td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>10</td>
+            <td class="subtask-body"><p>N &le; 15.</p></td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>10</td>
+            <td class="subtask-body">
+              <p>L &le; 200, T<sub>i</sub> &le; 200 (1 &le; i &le; N).</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="4">
+            <td>4</td>
+            <td>75</td>
+            <td class="subtask-body"><p>추가 제약 조건 없음.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>JOI 군은 아래 방법으로 4종류의 스탬프를 모을 수 있다.</p>
+
+    <ol>
+      <li>
+        2미터 반시계 방향으로 돈다. 행사가 시작된 지 2분 지났으므로 6번 스탬프를
+        얻을 수 있다.
+      </li>
+      <li>
+        2미터 반시계 방향으로 돈다. 행사가 시작된 지 4분 지났으므로 5번 스탬프를
+        얻을 수 있다.
+      </li>
+      <li>
+        2미터 시계 방향으로 돈다. 행사가 시작된 지 11분 지났으므로 1번 스탬프를
+        얻을 수 있다.
+      </li>
+      <li>
+        1미터 시계 방향으로 돈다. 행사가 시작된 지 12분 지났으므로 2번 스탬프를
+        얻을 수 <strong>없다</strong>.
+      </li>
+      <li>
+        3미터 시계 방향으로 돈다. 행사가 시작된 지 15분 지났으므로 3번 스탬프를
+        얻을 수 있다.
+      </li>
+    </ol>
+
+    <p>5개 이상의 스탬프를 얻을 수 없으므로 답은 4이다.</p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>호수를 반시계 방향으로 돌면서 모든 스탬프를 얻을 수 있다.</p>
+  </div>
+</section>
+<section id="sample_explain_3">
+  <div id="problem_sample_explain_3" class="problem-text">
+    <p>어떻게 움직이더라도 스탬프를 모을 수 없다.</p>
+  </div>
+</section>
