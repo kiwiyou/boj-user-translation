@@ -1,6 +1,7 @@
 from http.client import HTTPSConnection
 from argparse import ArgumentParser
 from json import dump, load
+from ssl import SSLContext, PROTOCOL_TLS_CLIENT, VerifyMode
 import re
 import os
 parser = ArgumentParser(description="Generates a new translation document.")
@@ -30,7 +31,10 @@ def find_tag_end(s):
 regex = re.compile(r'<section\s+id="(\w+)"\s+class="problem-section">')
 try:
     headers = {'User-Agent': 'Mozilla/5.0'}
-    req = HTTPSConnection('www.acmicpc.net')
+    context = SSLContext(PROTOCOL_TLS_CLIENT)
+    context.check_hostname = False
+    context.verify_mode = VerifyMode.CERT_NONE
+    req = HTTPSConnection('www.acmicpc.net', context=context)
     req.request('GET', f'/problem/{args.id}', headers=headers)
     res = req.getresponse()
     text = res.read().decode()
