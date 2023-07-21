@@ -1,0 +1,54 @@
+<section id="title">점화식과 주기</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>Given a prime number $p$, a recurrence relation $x_n = ax_{n-1} + bx_{n-2} (n \ge 2)$, and initial terms $x_0$, $x_1$, the existence of integers $S \ge 0, T &gt; 0$ which satisfy the following condition is guaranteed by the pigeonhole principle.</p>
+
+
+
+<p>Condition: For every integer $n$ greater than or equal to $S$, $x_{n+T} - x_{n}$is a multiple $p$</p>
+
+
+
+<p>The problem is to find the smallest of $(S,T)$ in alphabetical order that satisfies the above condition.</p>
+
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>In the first line, the integers $p, a, b, x_0, x_1$ are given. $p$ is guaranteed to be prime.</p>
+
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>In the first line, output the smallest in alphabetical order among the $(S, T)$ that satisfy the condition.</p>
+
+
+					</div>
+					</section>
+<section id="limit">
+			<div class="headline">
+			<h2>제한</h2>
+			</div>
+			<div id="problem_limit" class="problem-text">
+			<ul>
+
+	<li>$0 &lt; p \le 2147483647$</li>
+
+	<li>$0 \le a, b, x_0, x_1 &lt; p$</li>
+
+</ul>
+
+			</div>
+			</section>
