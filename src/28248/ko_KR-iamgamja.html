@@ -1,0 +1,68 @@
+<section id="title">Deliv-e-droid</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      로봇 Deliv-e-droid는 장애물을 피하면서 패키지를 배달하는 게임을 한다. 게임
+      종료 시 최종 점수는 다음과 같이 계산된다.
+    </p>
+
+    <ul>
+      <li>배달한 패키지마다 $50$점을 얻는다.</li>
+      <li>장애물과의 충돌마다 $10$점을 잃는다.</li>
+      <li>
+        배달한 패키지의 수가 장애물과의 충돌 수보다 많다면, 추가로 $500$점을
+        얻는다.
+      </li>
+    </ul>
+
+    <p>게임 종료시 최종 점수를 계산하는 프로그램을 작성하라.</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫 번째 줄에는 음이 아닌 정수 $P$가 주어진다. 이는 배달한 패키지의 수를
+      나타낸다.
+    </p>
+    <p>
+      두 번째 줄에는 음이 아닌 정수 $C$가 주어진다. 이는 장애물과의 충돌 수를
+      나타낸다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>게임 종료시 최종 점수를 출력한다.</p>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      $5$개의 패키지를 배달해서 $5 \times 50 = 250$점을 얻는다. $2$번 장애물과
+      충돌해서 $2 \times 10 = 20$점을 잃는다. $5 \gt 2$이기 때문에 보너스
+      $500$점을 얻는다. 따라서 최종 점수는 $250 - 20 + 500 = 730$점이다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>
+      There are $0$ packages delivered, so $0 \times 50 = 0$ points are gained.
+      There are $10$ collisions, so $10 \times 10 = 100$ points are lost. Since
+      $0 \le 10$, no bonus points are earned. Therefore, the final score is $0 -
+      100 + 0 = -100$. $5$개의 패키지를 배달해서 $5 \times 50 = 250$점을 얻는다.
+      $2$번 장애물과 충돌해서 $2 \times 10 = 20$점을 잃는다. $0 \le 10$이기
+      때문에 보너스 점수를 얻지 못한다. 따라서 최종 점수는 $0 - 100 + 0 =
+      -100$점이다.
+    </p>
+  </div>
+</section>
