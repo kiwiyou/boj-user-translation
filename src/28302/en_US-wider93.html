@@ -1,0 +1,51 @@
+<section id="title">팔찌</section>
+<section id="description">
+	<div class="headline">
+	<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+	<p>There is a magic bracelet with three colored beads - red, blue, and green - arranged in a circular manner. The beads on the bracelet can be manipulated using the following operations:</p>
+	<ul>
+		<li>Two neighboring beads of different colors can be merged into one bead with the remaining color.</li>
+		<li>One bead can be split into two beads with different colors, each having one of the other two colors.</li>
+	</ul>
+	<p>Throughout these operations, the relative positions of the merged or split beads and the other surrounding beads remain unchanged. Two bracelets are considered identical if one can be transformed into the other by rotating or/and flipping the beads' arrangement. You are asked to judge whether it is possible to transform one bracelet into another through a series of these operations.</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline"><h2>입력</h2></div>
+	<div id="problem_input" class="problem-text">
+		<p>The first line contains the number of beads $N$ in the first bracelet, followed by a string of length $N$ representing the colors of the beads.</p>
+		<p>The next line contains the number of beads $M$ in the second bracelet, followed by a string of length $M$ representing the colors of the beads.($1\le N,M\le 1000$)</p>
+		<p>Each string consists of the characters <span style="color:#e74c3c;"><code>R</code></span>, <span style="color:#e74c3c;"><code>B</code></span> or <span style="color:#e74c3c;"><code>G</code></span>, representing red, blue, and green, respectively.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">	<h2>출력</h2></div>
+	<div id="problem_output" class="problem-text">
+		<p>If it is possible to transform the first bracelet into the second bracelet, print the number of operations $k$ required on the first line. The value of $k$ does not need to be the minimum, but it should be less than or equal to $10000$ (it has been proven that for any inputs, the minimum number of operations will always be less than or equal to $10000$ if such transformation is possible).</p>
+		<p>Then, on the following $k$ lines, print the $i$-th operation for $i$ in range $1$ to $k$. Given that the colors of beads in the first bracelet are denoted as $c_1, \cdots, c_N$, the possible operations are as follows:</p>
+		<ul>
+			<li>$1$ $a$ $b$: Merge the $a$th bead with the $b$th bead. $a$ and $b$ must satisfy $1 \le a, b \le N$, and $b = a + 1$, or $a = N$ and $b = 1$. The colors $c_a$ and $c_b$ must be different.
+			<ul>
+				<li>If $b = a + 1$, after the operation, the colors of beads in the bracelet will be in the order of $c_1, \cdots, c_{a-1}, c', c_{a+2}, \cdots, c_N$.</li>
+				<li>If $a = N$ and $b = 1$, after the operation, the colors of beads in the bracelet will be in the order of $c', c_2, \cdots, c_{N-1}$.</li>
+			</ul>
+			Here $c'$ is the color of the merged bead. After operation, $N$ will decrease by $1$.
+			</li>
+
+			<li>$2$ $a$ $x$ $y$: Split the $a$-th bead into two beads of colors $x$ and $y$. The value of $a$ should satisfy $0 \le a \le N+1$, and $x$ and $y$ should be either <span style="color:#e74c3c;"><code>R</code></span>, <span style="color:#e74c3c;"><code>B</code></span>, <span style="color:#e74c3c;"><code>G</code></span>. The colors $x$, $y$, and $c_a$ must be different. ($a=0$ and $a=N+1$ exist for convenience, representing the operation of placing the two newly created beads in the first and $N+1$-th positions, respectively, rather than splitting the $a$-th bead.)
+
+			<ul>
+
+				<li>If $1 \le a \le N$, after the operation, the colors of beads in the bracelet will be in the order of $c_1, \cdots, c_{a-1}, x, y, c_{a+1}, \cdots, c_N$.</li>
+				<li>If $a = 0$, the operation splits the first bead, and after the operation, the colors of beads in the bracelet will be in the order of $y, c_2, \cdots, c_N, x$.</li>
+				<li>If $a = N+1$, the operation splits the $N$-th bead, and after the operation, the colors of beads in the bracelet will be in the order of $y, c_1, \cdots, c_{N-1}, x$.</li>
+			</ul>
+			After the operation, $N$ will increase by $1$.</li>
+		</ul>
+		<p>The remaining arrangement of the beads in the first bracelet after all operations should be a valid arrangement that can be obtained by rotating and flipping the second bracelet.</p>
+		<p>If it is not possible to transform the first bracelet into the second bracelet, only print $-1$ on the first line.</p>
+	</div>
+</section>
