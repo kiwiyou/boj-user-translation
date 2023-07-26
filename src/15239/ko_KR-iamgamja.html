@@ -1,0 +1,65 @@
+<section id="title">비밀번호 체크</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p dir="ltr">
+      Dublin City University는 학생과 교직원이 취약한 비밀번호를 사용하지 못하게
+      한다. 보안 부서는 주어진 비밀번호가 다음 조건을 만족하는지 판별하는
+      프로그램을 작성할 것을 요청했다.
+    </p>
+
+    <ul dir="ltr">
+      <li>하나 이상의 소문자를 포함한다.</li>
+      <li>하나 이상의 대문자를 포함한다.</li>
+      <li>하나 이상의 숫자를 포함한다.</li>
+      <li>
+        다음 기호 중 하나 이상을 포함한다: <code>+_)(*&amp;^%$#@!./,;{}</code>
+      </li>
+      <li>길이가 12 이상이다.</li>
+    </ul>
+
+    <p>예시:</p>
+
+    <ul dir="ltr">
+      <li>
+        비밀번호 &ldquo;Aa1_&rdquo; (따옴표 제외)는 처음 4개의 조건을 만족하지만
+        길이가 12 미만이다.
+      </li>
+      <li>비밀번호 &ldquo;Aa1234567890_&rdquo;는 위 조건을 만족한다.</li>
+    </ul>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p dir="ltr">첫 번째 줄에 테스트 케이스의 수 N이 주어진다.</p>
+
+    <p dir="ltr">
+      각 테스트 케이스는 두 줄에 걸쳐 주어진다. 첫 번째 줄에 비밀번호의 길이 S가
+      주어진다. 두 번째 줄에 비밀번호가 주어진다.
+    </p>
+
+    <p dir="ltr">
+      비밀번호는 a부터 z까지의 대소문자, 0부터 9까지의 숫자, 그리고 다음
+      기호로만 이루어져 있다: &ldquo;<code>+_)(*&amp;^%$#@!./,;{}</code>&rdquo;
+      (따옴표 제외)
+    </p>
+
+    <p>비밀번호는 최대 30자이며, 테스트 케이스의 수는 최대 100이다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p dir="ltr">
+      각 비밀번호에 대해 조건을 만족하면 &ldquo;<code>valid</code>&rdquo;를,
+      만족하지 않으면 &ldquo;<code>invalid</code>&rdquo;를 한 줄에 출력한다.
+    </p>
+  </div>
+</section>
