@@ -59,7 +59,7 @@ git push
 
 언어 코드 자리에는 IETF language tag가 아닌 BOJ 내부 언어명을 입력해야 합니다.
 
-- 다국어 태그가 붙지 않은 경우: `Original`
+- 언어가 하나뿐인 경우 (언어 선택 버튼이 존재하지 않음): `Original`
 - 한국어: `Korean`
 - 영어: `English`
 - 이외의 언어 이름이 필요하신 경우 이슈를 남겨 주세요.

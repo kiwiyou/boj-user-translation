@@ -59,7 +59,7 @@ Follow the section [How to Contribute,](#how-to-contribute) except for:
 
 You should enter BOJ's internal language name instead of an IETF language tag.
 
-- Problems without `multilingual` tag: `Original`
+- Problems providing a single language (no language button): `Original`
 - Korean: `Korean`
 - English: `English`
 - For other languages, please leave an issue.
