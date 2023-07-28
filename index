@@ -62,6 +62,9 @@
   "11131": [
     "ko_KR-ez_code"
   ],
+  "11218": [
+    "English-typo"
+  ],
   "11257": [
     "ko_KR-bubbler"
   ],
@@ -248,11 +251,17 @@
   "15557": [
     "ko_KR-kiwiyou"
   ],
+  "1558": [
+    "Korean-typo"
+  ],
   "15610": [
     "ko_KR-ez_code"
   ],
   "15764": [
     "ko_KR-yup0927"
+  ],
+  "15828": [
+    "Korean-typo"
   ],
   "15858": [
     "ko_KR-ez_code"
@@ -284,6 +293,9 @@
   "16693": [
     "ko_KR-kiwiyou"
   ],
+  "16719": [
+    "Korean-typo"
+  ],
   "16727": [
     "ko_KR-ez_code"
   ],
@@ -292,6 +304,9 @@
   ],
   "17042": [
     "ko_KR-ez_code"
+  ],
+  "17071": [
+    "Korean-typo"
   ],
   "17678": [
     "Korean-typo"
@@ -539,6 +554,9 @@
   "23235": [
     "ko_KR-kiwiyou"
   ],
+  "23313": [
+    "Korean-typo"
+  ],
   "23397": [
     "ko_KR-ez_code"
   ],
@@ -620,6 +638,9 @@
   "24365": [
     "ko_KR-ez_code"
   ],
+  "24413": [
+    "English-typo"
+  ],
   "24488": [
     "ko_KR-dohoon"
   ],
@@ -660,7 +681,11 @@
     "ko_KR-ez_code"
   ],
   "2557": [
-    "en_US-kiwiyou"
+    "en_US-kiwiyou",
+    "Korean-typo"
+  ],
+  "2577": [
+    "Korean-typo"
   ],
   "25801": [
     "ko_KR-w8385"
@@ -676,6 +701,9 @@
   ],
   "2588": [
     "en_US-kiwiyou"
+  ],
+  "25907": [
+    "Korean-typo"
   ],
   "26026": [
     "ko_KR-w8385"
@@ -908,6 +936,9 @@
   "27591": [
     "ko_KR-index"
   ],
+  "27831": [
+    "English-typo"
+  ],
   "27855": [
     "ko_KR-kiwiyou"
   ],
@@ -941,6 +972,9 @@
   "27866": [
     "en_US-kiwiyou"
   ],
+  "27880": [
+    "English-typo"
+  ],
   "27908": [
     "ko_KR-kiwiyou"
   ],
@@ -955,6 +989,9 @@
   ],
   "27912": [
     "ko_KR-kiwiyou"
+  ],
+  "28153": [
+    "English-typo"
   ],
   "28202": [
     "ko_KR-Lumi"
@@ -991,6 +1028,9 @@
   ],
   "3733": [
     "ko_KR-ez_code"
+  ],
+  "3734": [
+    "Korean-typo"
   ],
   "3765": [
     "ko_KR-kiwiyou"
@@ -1163,8 +1203,15 @@
   "9161": [
     "ko_KR-ez_code"
   ],
+  "9206": [
+    "Korean-typo"
+  ],
   "9317": [
     "ko_KR-ez_code"
+  ],
+  "9329": [
+    "English-typo",
+    "Korean-typo"
   ],
   "9443": [
     "ko_KR-ez_code"
