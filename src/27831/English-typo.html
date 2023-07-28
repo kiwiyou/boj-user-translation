@@ -1,0 +1,118 @@
+<section id="title">K Equal Digits</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>Every once in a while, Mishka Jabereen sends an interesting mathematical puzzle to his friends. This week&rsquo;s puzzle will be about so-called &ldquo;repetitive&rdquo; numbers &ndash; the ones whose decimal expansion has just one kind of digit in it. (Examples of such numbers include 7, 11, and 5555.) The puzzle is about finding the largest repetitive number subject to two additional restrictions:</p>
+
+
+
+<ul>
+
+	<li>It must be divisible by at least one number from a given set.</li>
+
+	<li>It can not have more than a given number of digits.</li>
+
+</ul>
+
+
+
+<p>A concrete example of such a problem statement would be: Find the largest repetitive number with at most 47 digits, which is divisible by 42 or 47! Mishka is currently playing around with a few such problem statements and he&rsquo;d like to know all the answers, so that he can choose the nicest one.</p>
+
+
+
+<p>A puzzle is described by a number K, the maximal number of digits allowed in the repetitive number, and a set of numbers d<sub>1</sub>, d<sub>2</sub>, &hellip;, d<sub>R</sub>. Your task is to find the greatest repetitive number X that has at most K digits when written in decimal notation, and it is divisible by at least one of the d<sub>i</sub>.</p>
+
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>The first line of the input file contains an integer T specifying the number of test cases. Each test case is preceded by a blank line.</p>
+
+
+
+<p>Each test case starts with a line containing the numbers K and R. The next R lines contain the numbers d<sub>i</sub>.</p>
+
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>We can describe a repetitive number by specifying its number of digits N and the digit D it contains.</p>
+
+
+
+<p>For each test case, the output shall contain one line containing two integers N and D that describe the largest repetitive number that satisfies the conditions from the problem statement.</p>
+
+
+					</div>
+					</section>
+<section id="limit">
+			<div class="headline">
+			<h2>제한</h2>
+			</div>
+			<div id="problem_limit" class="problem-text">
+			<ul>
+
+	<li>1 &le; T &le; 40</li>
+
+</ul>
+
+			</div>
+			</section>
+<section id="subtask1">
+							<div class="headline">
+							<h2>Easy (1점)</h2>
+							</div>
+							<div id="problem_subtask1" class="problem-text">
+															<ul>
+
+	<li>1 &le; K &lt; 100,000</li>
+
+	<li>1 &le; R &lt; 10</li>
+	<!-- https://www.acmicpc.net/board/view/119033 -->
+
+	<li>1 &le; d<sub>i</sub> &lt; 1,000,000</li>
+
+</ul>
+
+
+							</div>
+							</section>
+<section id="subtask2">
+							<div class="headline">
+							<h2>Hard (2점)</h2>
+							</div>
+							<div id="problem_subtask2" class="problem-text">
+															<ul>
+
+	<li>1 &le; K &lt; 1,000,000,000</li>
+
+	<li>1 &le; R &lt; 10</li>
+	<!-- https://www.acmicpc.net/board/view/119033 -->
+
+	<li>1 &le; d<sub>i</sub> &lt; 1,000,000,000,000,000</li>
+
+</ul>
+
+
+							</div>
+							</section>
+<section id="hint">
+				<div class="headline">
+				<h2>힌트</h2>
+				</div>
+				<div id="problem_hint" class="problem-text">
+				<p>Note that in the third test case &ldquo;3 0&rdquo; would not be a correct answer, as &ldquo;000&rdquo; is not a valid integer.</p>
+
+
+				</div>
+				</section>
