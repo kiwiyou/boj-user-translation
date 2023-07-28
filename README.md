@@ -6,6 +6,8 @@
 User translation repository for Baekjoon Online Judge.
 To view translations on the problem page, see [o-ey.](https://github.com/kiwiyou/o-ey)
 
+**If you don't want to translate but to fix typos, please refer to the section [Fixing Typos.](#fixing-typos)**
+
 ## How to Contribute
 
 Requires git and python 3.
@@ -48,6 +50,22 @@ Uploaded change will be applied in a few minutes, which you can view on BOJ.
 
 Create a Pull Request from your forked repository into the base repository.
 The maintainer will soon review your request and merge it.
+
+## Fixing Typos
+
+Follow the section [How to Contribute,](#how-to-contribute) except for:
+
+### On running the `new-tr` command
+
+You should enter BOJ's internal language name instead of an IETF language tag.
+
+- Problems without `multilingual` tag: `Original`
+- Korean: `Korean`
+- English: `English`
+- For other languages, please leave an issue.
+
+You should enter `typo` instead of your username.
+**Mind that there is no dedicated space for your contribution credit.**
 
 ## Translation Rules
 
