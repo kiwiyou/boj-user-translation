@@ -1,0 +1,58 @@
+<section id="title">돌 가지고 싶어!</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      $N$ 명의 아이들이 일렬로 줄을 서 있다. 모든 아이들은 돌을 가지고 있으며,
+      앞에서 $i$ 번째로 줄을 서고 있는 아이가 가진 돌의 개수는 $A_i$ 개이다.
+    </p>
+    <p>
+      아이들은 질투심이 강해, 자신보다 앞에 서 있는 아이 중 한 명이라도 자신보다
+      같거나 많은 돌을 가지고 있을 경우 울게 된다.
+    </p>
+    <p>
+      다행히도 당신은 아이들이 줄을 서고 있는 순서를 자유롭게 바꿀 수 있다.
+      최적의 방법으로 아이들이 줄을 서고 있는 순서를 바꿨을 때 울게 되는
+      아이들의 수의 최솟값은 몇일까?
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫 번째 줄에 $N$ ($1 \le N \le 10^5) 이 주어진다.</p>
+    <p>
+      두 번째 줄에 $A_1, A_2, A_3, ..., A_N$ ($1 \le A_i \le 10^9$) 이 주어진다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>문제의 정답을 출력한다.</p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      예제 1번에서는 아이들이 가지고 있는 돌의 개수가 $[1, 1, 1, 2, 2, 2]$ 가
+      되도록 줄을 세울 수 있다. 이 경우 $2$, $3$, $5$, $6$ 번째 아이가 울게 되어
+      우는 아이의 수는 $4$ 명이 된다. 우는 아이의 수가 $4$ 명 미만이 되도록 줄을
+      세울 수 있는 방법은 없으므로, 정답은 $4$ 가 된다.
+    </p>
+
+    <p>
+      예제 2번에서는 모든 아이가 같은 수의 돌을 가지고 있게 되어, $2$, $3$ 번째
+      아이가 울게 된다. 따라서 정답은 $2$ 가 된다.
+    </p>
+  </div>
+</section>
