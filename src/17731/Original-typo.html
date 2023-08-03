@@ -1,0 +1,167 @@
+<section id="title">Historical Research</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>IOI 国の歴史の研究の第一人者であるジョイ教授のもとに，古代の IOI 国の住民が書いたとされる日記が 届いた．ジョイ教授はこの日記から古代の IOI 国における生活を研究するため，日記に書かれている出来 事を調査することにした．</p>
+
+
+
+<p>この日記では N 日間に起きた出来事がそれぞれ 1 日あたり 1 つずつ書かれている．出来事は何種類かに 分類されている．i 日目 (1 &le; i &le; N) の出来事の種類は整数 X<sub>i</sub> で表される．X<sub>i</sub> の値が大きいほど規模が大き い出来事であると考えられている．</p>
+
+
+
+<p>ジョイ教授は次のような方法で日記を分析することにした．</p>
+
+
+
+<ol>
+
+	<li>日記の N 日間中で連続する何日間かを，分析する期間として選ぶ．</li>
+
+	<li>出来事の種類 t の重要度を，t &times; (その期間における種類 t の出来事の個数) とする．</li>
+
+	<li>すべての出来事の種類に対して重要度を計算し，その最大値を算出する．</li>
+
+</ol>
+
+
+
+<p>あなたは，ジョイ教授から分析のためのプログラムを作ることを命じられた．このプログラムでは，分 析する期間が与えられたときに重要度の最大値を求められるようにしたい．</p>
+
+
+
+<p>日記の N 日間の出来事の種類と，日記の中での期間を表すクエリが Q 個与えられたとき，それぞれのク エリについて出来事の重要度の最大値を求めるプログラムを作成せよ．</p>
+
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>標準入力から以下のデータを読み込め．</p>
+
+
+
+<ul>
+
+	<li>1 行目には，整数 N, Q が空白を区切りとして書かれている．これは，日記が N 日間分あり，クエリ が Q 個与えられることを表す．</li>
+
+	<li>次の行には，N 個の整数 X<sub>1</sub>, . . . , X<sub>N</sub> が空白を区切りとして書かれており，X<sub>i</sub> (1 &le; i &le; N) は i 日目の 出来事の種類を表す．</li>
+	<!-- 이상한 기호를 부등호로 수정 -->
+
+	<li>続く Q 行のうちの j 行目 (1 &le; j &le; Q) には，整数 A<sub>j</sub> , B<sub>j</sub> (1 &le; A<sub>j</sub> &le; B<sub>j</sub> &le; N) が空白を区切りとして書か れており，j 番目のクエリが A<sub>j</sub> 日目から B<sub>j</sub> 日目までの期間に対するものであることを表す．</li>
+
+</ul>
+
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>標準出力に Q 行出力せよ．j 行目 (1 &le; j &le; Q) に，j 番目のクエリに対する重要度の最大値を表す整数を 出力せよ．</p>
+	<!-- 이상한 기호를 부등호로 수정 -->
+
+
+					</div>
+					</section>
+<section id="limit">
+			<div class="headline">
+			<h2>제한</h2>
+			</div>
+			<div id="problem_limit" class="problem-text">
+			<ul>
+
+	<li>1 &le; N &le; 100 000．</li>
+
+	<li>1 &le; Q &le; 100 000．</li>
+
+	<li>1 &le; X<sub>i</sub> &le; 1 000 000 000 (1 &le; i &le; N)．</li>
+
+</ul>
+
+			</div>
+			</section>
+<section id="subtask1">
+							<div class="headline">
+							<h2>서브태스크 1 (5점)</h2>
+							</div>
+							<div id="problem_subtask1" class="problem-text">
+															<ul>
+
+	<li>N &le; 100．</li>
+
+	<li>Q &le; 100．</li>
+
+</ul>
+
+
+							</div>
+							</section>
+<section id="subtask2">
+							<div class="headline">
+							<h2>서브태스크 2 (10점)</h2>
+							</div>
+							<div id="problem_subtask2" class="problem-text">
+															<ul>
+
+	<li>N &le; 5 000．</li>
+
+	<li>Q &le; 5 000．</li>
+
+</ul>
+
+
+							</div>
+							</section>
+<section id="subtask3">
+							<div class="headline">
+							<h2>서브태스크 3 (25점)</h2>
+							</div>
+							<div id="problem_subtask3" class="problem-text">
+															<ul>
+
+	<li>A<sub>i</sub> &le; A<sub>j</sub> &le; B<sub>j</sub> &le; B<sub>i</sub> なる i, j (1 &le; i &le; Q, 1 &le; j &le; Q, i , j) は存在しない．</li>
+
+</ul>
+
+
+							</div>
+							</section>
+<section id="subtask4">
+							<div class="headline">
+							<h2>서브태스크 4 (60점)</h2>
+							</div>
+							<div id="problem_subtask4" class="problem-text">
+															<p>追加の制限はない．</p>
+
+
+							</div>
+							</section>
+<section id="sample_explain_1">
+								<div id="problem_sample_explain_1" class="problem-text">
+								<ul>
+
+	<li>この日記は 5 日間からなり，日記に書かれている出来事の種類は 7, 8, 9 のいずれかである．</li>
+
+	<li>1 日目から 2 日目において，出来事の種類 7 の重要度は 7&times;0 = 0，出来事の種類 8 の重要度は 8&times;1 = 8， 出来事の種類 9 の重要度は 9 &times; 1 = 9 であるから，これらのうちの最大値は 9 である．</li>
+
+	<li>3 日目から 4 日目において，出来事の種類 7 の重要度は 7&times;1 = 7，出来事の種類 8 の重要度は 8&times;1 = 8， 出来事の種類 9 の重要度は 9 &times; 0 = 0 であるから，これらのうちの最大値は 8 である．</li>
+
+	<li>4 日目において，出来事の種類 7 の重要度は 7 &times; 0 = 0，出来事の種類 8 の重要度は 8 &times; 1 = 8，出来 事の種類 9 の重要度は 9 &times; 0 = 0 であるから，これらのうちの最大値は 8 である．</li>
+
+	<li>1日目から4日目において，出来事の種類7の重要度は7&times;1 = 7，出来事の種類8の重要度は8&times;2 = 16， 出来事の種類 9 の重要度は 9 &times; 1 = 9 であるから，これらのうちの最大値は 16 である．</li>
+
+	<li>2日目から4日目において，出来事の種類7の重要度は7&times;1 = 7，出来事の種類8の重要度は8&times;2 = 16， 出来事の種類 9 の重要度は 9 &times; 0 = 0 であるから，これらのうちの最大値は 16 である．</li>
+
+</ul>
+
+
+								</div>
+							</section>
