@@ -731,6 +731,9 @@
   "26026": [
     "ko_KR-w8385"
   ],
+  "26042": [
+    "Original-typo"
+  ],
   "26171": [
     "ko_KR-wizardrabbit"
   ],
@@ -1051,6 +1054,13 @@
   ],
   "28370": [
     "ko_KR-wider93"
+  ],
+  "2993": [
+    "Korean-typo",
+    "English-typo"
+  ],
+  "3098": [
+    "Korean-typo"
   ],
   "3224": [
     "ko_KR-yup0927"
