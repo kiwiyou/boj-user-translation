@@ -12,10 +12,10 @@
     </p>
 
     <p>
-      눚은 베시를 따라가 보려고 하지만 알고 있는 정보는 베시가 $x=0.5, 1.5,
-      2.5, \cdots, (N-1).5$를 가로지는 횟수를 나타내는 배열 $A_0, A_1, \cdots,
-      A_{N-1}$뿐이다. ($1 \leq N \leq 10^5, $1 \leq A_i \leq 10^6$, $\sum A_i
-      \leq 10^6$) 베시는 $x &gt; N$과 $x &lt; 0$에 있던 적이 없다.
+      눚은 베시를 따라가 보려고 하지만 알고 있는 정보는 베시가 $x=0.5, 1.5, 2.5,
+      \cdots, (N-1).5$를 가로지는 횟수를 나타내는 배열 $A_0, A_1, \cdots,
+      A_{N-1}$뿐이다. ($1 \leq N \leq 10^5, $1 \leq A_i \leq 10^6$) 베시는 $x
+      &gt; N$과 $x &lt; 0$에 있던 적이 없다.
     </p>
 
     <p>
@@ -29,7 +29,8 @@
 
     <p>
       배열 $A$에 따르면서 방향을 바꾼 횟수가 최소가 되도록 하는 베시의 이동
-      경로를 찾아주자. 조건을 만족하는 경로가 적어도 하나 존재함이 보장된다.
+      경로가 몇 가지인지 계산하자. 조건을 만족하는 경로가 적어도 하나 존재함이
+      보장된다.
     </p>
   </div>
 </section>
@@ -49,35 +50,23 @@
     <h2>출력</h2>
   </div>
   <div id="problem_output" class="problem-text">
-    <p>
-      길이 $T = \sum_{i=0}^{N-1} A_i$의 <code>L</code>과 <code>R</code>로 구성된
-      문자열 $S$를 출력한다. $i$번째 문자는 $t=i-1$부터 $t=i$까지 베시가 움직인
-      방향을 나타낸다. 조건을 만족하는 경로가 여럿 존재한다면 아무거나 출력한다.
-    </p>
+    <p>베시의 가능한 이동 경로의 수를 $10^9+7$로 나눈 나머지를 출력한다.</p>
   </div>
 </section>
-<section id="sample_explain_1">
-  <div id="problem_sample_explain_1" class="problem-text">
-    <p>
-      $A$에 맞는 경로는 $0\to 1 \to 2 \to 1\to 2 \to 1\to 0$가 유일하다. 경로가
-      유일하기 때문에 방향을 바꾼 횟수가 최소이다.
-    </p>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
   </div>
-</section>
-<section id="sample_explain_2">
-  <div id="problem_sample_explain_2" class="problem-text">
-    <p>$A$에 맞는 경로는 다음 3가지가 있다.</p>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      베시는 5회 이상 방향을 바꾼다. 방향을 정확히 5번 바꾸는 이동 경로는 다음
+      2가지가 있다.
+    </p>
 
     <pre>
-RRLRRLRLLL
-RRRLRLLRLL
-RRRLLRRLLL
+RRLRLLRRLL
+RRLLRRLRLL
 </pre
     >
-
-    <p>
-      앞 두 경로는 5번 방향을 바꾸고, 마지막 경로는 3번 방향을 바꾼다. 따라서
-      답으로는 마지막 경로를 출력해야 한다.
-    </p>
   </div>
 </section>

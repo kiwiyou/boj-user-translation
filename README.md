@@ -41,6 +41,14 @@ git commit -m "작업 내용"
 git push
 ```
 
+### Removing a Translation
+
+Move to the your repository directory, and type the following command.
+
+```bash
+python3 del-tr.py <problem-id> <language-code> <username>
+```
+
 ### Testing Your Translation
 
 Click the button of `o-ey` extension, and enter the URL of your translation repository.
