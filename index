@@ -23,6 +23,9 @@
   "10277": [
     "ko_KR-kiwiyou"
   ],
+  "1035": [
+    "Original-typo"
+  ],
   "10350": [
     "ko_KR-kiwiyou"
   ],
@@ -61,6 +64,9 @@
   ],
   "11047": [
     "Original-typo"
+  ],
+  "11094": [
+    "Korean-typo"
   ],
   "11111": [
     "Original-typo"
@@ -107,6 +113,9 @@
   "11991": [
     "ko_KR-dohoon"
   ],
+  "1205": [
+    "Original-typo"
+  ],
   "12198": [
     "Original-typo"
   ],
@@ -118,6 +127,9 @@
   ],
   "12352": [
     "ko_KR-ez_code"
+  ],
+  "1242": [
+    "Original-typo"
   ],
   "12589": [
     "ko_KR-ez_code"
@@ -146,6 +158,9 @@
   "13363": [
     "ko_KR-ez_code"
   ],
+  "1345": [
+    "Original-typo"
+  ],
   "13496": [
     "ko_KR-ez_code"
   ],
@@ -166,6 +181,9 @@
   ],
   "13623": [
     "ko_KR-ez_code"
+  ],
+  "13706": [
+    "Original-typo"
   ],
   "13742": [
     "ko_KR-leeunchong"
@@ -197,6 +215,9 @@
   "14210": [
     "ko_KR-ez_code"
   ],
+  "14235": [
+    "Original-typo"
+  ],
   "14337": [
     "ko_KR-kiwiyou"
   ],
@@ -210,6 +231,9 @@
   "1436": [
     "Original-typo"
   ],
+  "14395": [
+    "Original-typo"
+  ],
   "14402": [
     "Original-typo"
   ],
@@ -220,6 +244,12 @@
     "Original-typo"
   ],
   "14564": [
+    "Original-typo"
+  ],
+  "14600": [
+    "Original-typo"
+  ],
+  "14601": [
     "Original-typo"
   ],
   "14683": [
@@ -300,6 +330,9 @@
   "15610": [
     "ko_KR-ez_code"
   ],
+  "15709": [
+    "Original-typo"
+  ],
   "15764": [
     "ko_KR-yup0927"
   ],
@@ -317,6 +350,9 @@
   ],
   "16099": [
     "ko_KR-kiwiyou"
+  ],
+  "16236": [
+    "Original-typo"
   ],
   "16239": [
     "ko_KR-ez_code"
@@ -363,6 +399,9 @@
   "17144": [
     "Original-typo"
   ],
+  "1719": [
+    "Original-typo"
+  ],
   "17247": [
     "Original-typo"
   ],
@@ -380,6 +419,9 @@
   ],
   "17783": [
     "ko_KR-ez_code"
+  ],
+  "1780": [
+    "Original-typo"
   ],
   "1784": [
     "Original-typo"
@@ -413,6 +455,9 @@
   ],
   "18108": [
     "en_US-kiwiyou"
+  ],
+  "1814": [
+    "Original-typo"
   ],
   "18198": [
     "ko_KR-ez_code"
@@ -474,6 +519,9 @@
   "1886": [
     "Korean-typo"
   ],
+  "1915": [
+    "Original-typo"
+  ],
   "19303": [
     "ko_KR-yup0927"
   ],
@@ -502,6 +550,9 @@
     "Original-typo"
   ],
   "20004": [
+    "Original-typo"
+  ],
+  "20120": [
     "Original-typo"
   ],
   "20214": [
@@ -561,14 +612,23 @@
   "21167": [
     "ko_KR-ez_code"
   ],
+  "2119": [
+    "Korean-typo"
+  ],
   "21200": [
     "ko_KR-ez_code"
+  ],
+  "2128": [
+    "Korean-typo"
   ],
   "21300": [
     "ko_KR-kiwiyou"
   ],
   "21324": [
     "ko_KR-ez_code"
+  ],
+  "2133": [
+    "English-typo"
   ],
   "21335": [
     "ko_KR-kiwiyou"
@@ -627,6 +687,9 @@
   "22155": [
     "ko_KR-kiwiyou"
   ],
+  "2219": [
+    "Original-typo"
+  ],
   "22193": [
     "ko_KR-kiwiyou"
   ],
@@ -666,6 +729,9 @@
   "23235": [
     "ko_KR-kiwiyou"
   ],
+  "23288": [
+    "Original-typo"
+  ],
   "23313": [
     "Original-typo"
   ],
@@ -689,6 +755,9 @@
   ],
   "2377": [
     "ko_KR-kiwiyou"
+  ],
+  "23796": [
+    "Original-typo"
   ],
   "2393": [
     "ko_KR-kiwiyou"
@@ -854,6 +923,9 @@
   ],
   "26209": [
     "ko_KR-kiwiyou"
+  ],
+  "2625": [
+    "Original-typo"
   ],
   "26307": [
     "ko_KR-kiwiyou"
@@ -1204,6 +1276,9 @@
     "Korean-typo",
     "English-typo"
   ],
+  "3060": [
+    "Original-typo"
+  ],
   "3098": [
     "Korean-typo"
   ],
@@ -1211,6 +1286,9 @@
     "ko_KR-yup0927"
   ],
   "3418": [
+    "Original-typo"
+  ],
+  "3420": [
     "Original-typo"
   ],
   "3507": [
@@ -1370,8 +1448,18 @@
   "7070": [
     "ko_KR-kiwiyou"
   ],
+  "7558": [
+    "Korean-typo",
+    "English-typo"
+  ],
+  "7577": [
+    "Original-typo"
+  ],
   "7595": [
     "ko_KR-kiwiyou"
+  ],
+  "7616": [
+    "Korean-typo"
   ],
   "7891": [
     "ko_KR-kiwiyou"
@@ -1435,6 +1523,10 @@
   ],
   "9161": [
     "ko_KR-ez_code"
+  ],
+  "9167": [
+    "Korean-typo",
+    "English-typo"
   ],
   "9206": [
     "Korean-typo"
