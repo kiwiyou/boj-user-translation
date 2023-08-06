@@ -1,0 +1,50 @@
+<section id="title">Unique Encryption Keys</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>The security of many ciphers strongly depends on the fact that the keys are unique and never re-used. This may be vitally important, since a relatively strong cipher may be broken if the same key is used to encrypt several different messages.</p>
+
+
+
+<p>In this problem, we will try to detect repeating (duplicate) usage of keys. Given a sequence of keys used to encrypt messages, your task is to determine what keys have been used repeatedly in some specified period.</p>
+
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>The input contains several cipher descriptions. Each description starts with one line containing two integer numbers M and Q separated by a space. M (1 &le; M &le; 1 000 000) is the number of encrypted messages, Q is the number of queries (0 &le; Q &le; 1 000 000).</p>
+
+
+
+<p>Each of the following M lines contains one number K<sub>i</sub> (0 &le; K<sub>i</sub> &le; 2<sup>30</sup>) specifying the identifier of a key used to encrypt the i-th message. The next Q lines then contain one query each. Each query is specified by two integer numbers B<sub>j</sub> and E<sub>j</sub> , 1 &le; B<sub>j</sub> &le; E<sub>j</sub> &le; M, giving the interval of messages we want to check.</p>
+
+
+
+<p>There is one empty line after each description. The input is terminated by a line containing two zeros in place of the numbers M and Q.</p>
+
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>For each query, print one line of output. The line should contain the string &ldquo;OK&rdquo; if all keys used to encrypt messages between B<sub>j</sub> and E<sub>j</sub> (inclusive) are mutually different (that means, they have different identifiers). If some of the keys have been used repeatedly, print one identifier of any such key.</p>
+
+
+
+<p>Print one empty line after each cipher description.</p>
+
+<p><b>Note:</b> The example output shown below is incorrect. As per the output specification, you must print an empty line after <code>1</code>. o-ey does not support fixing the samples, so leaving the note here.</p>
+<!-- https://www.acmicpc.net/board/view/76939 -->
+
+
+					</div>
+					</section>

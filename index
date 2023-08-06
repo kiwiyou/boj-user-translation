@@ -32,6 +32,9 @@
   "10480": [
     "ko_KR-ez_code"
   ],
+  "10610": [
+    "Korean-typo"
+  ],
   "10671": [
     "ko_KR-biximo"
   ],
@@ -128,6 +131,9 @@
   "12805": [
     "ko_KR-iamgamja"
   ],
+  "12978": [
+    "Original-typo"
+  ],
   "13063": [
     "ko_KR-ez_code"
   ],
@@ -209,6 +215,12 @@
   ],
   "14475": [
     "ko_KR-jk410"
+  ],
+  "14476": [
+    "Original-typo"
+  ],
+  "14564": [
+    "Original-typo"
   ],
   "14683": [
     "ko_KR-ez_code"
@@ -336,6 +348,9 @@
   "16727": [
     "ko_KR-ez_code"
   ],
+  "16935": [
+    "Original-typo"
+  ],
   "17009": [
     "ko_KR-kiwiyou"
   ],
@@ -444,6 +459,9 @@
   "18435": [
     "ko_KR-kiwiyou"
   ],
+  "1858": [
+    "Original-typo"
+  ],
   "18691": [
     "ko_KR-ldhhello"
   ],
@@ -452,6 +470,9 @@
   ],
   "18813": [
     "ko_KR-ez_code"
+  ],
+  "1886": [
+    "Korean-typo"
   ],
   "19303": [
     "ko_KR-yup0927"
@@ -478,6 +499,9 @@
     "Korean-typo"
   ],
   "20001": [
+    "Original-typo"
+  ],
+  "20004": [
     "Original-typo"
   ],
   "20214": [
@@ -606,6 +630,9 @@
   "22193": [
     "ko_KR-kiwiyou"
   ],
+  "2237": [
+    "Original-typo"
+  ],
   "22380": [
     "ko_KR-w8385"
   ],
@@ -623,6 +650,12 @@
   ],
   "22542": [
     "ko_KR-kiwiyou"
+  ],
+  "2313": [
+    "Original-typo"
+  ],
+  "23147": [
+    "Original-typo"
   ],
   "23207": [
     "Original-typo"
@@ -765,6 +798,9 @@
   "25278": [
     "ko_KR-ez_code"
   ],
+  "2541": [
+    "Original-typo"
+  ],
   "25497": [
     "Original-typo"
   ],
@@ -785,6 +821,9 @@
   ],
   "25801": [
     "ko_KR-w8385"
+  ],
+  "2582": [
+    "Original-typo"
   ],
   "25828": [
     "ko_KR-ldhhello"
@@ -1161,11 +1200,18 @@
   "28421": [
     "Original-typo"
   ],
+  "2993": [
+    "Korean-typo",
+    "English-typo"
+  ],
   "3098": [
     "Korean-typo"
   ],
   "3224": [
     "ko_KR-yup0927"
+  ],
+  "3418": [
+    "Original-typo"
   ],
   "3507": [
     "ko_KR-ldhhello"
@@ -1197,6 +1243,9 @@
   "4171": [
     "Original-typo"
   ],
+  "4384": [
+    "Korean-typo"
+  ],
   "4422": [
     "ko_KR-w8385"
   ],
@@ -1214,6 +1263,9 @@
   ],
   "4758": [
     "ko_KR-w8385"
+  ],
+  "4797": [
+    "Korean-typo"
   ],
   "4850": [
     "ko_KR-ez_code"
@@ -1262,6 +1314,13 @@
   ],
   "6159": [
     "ko_KR-kiwiyou"
+  ],
+  "6335": [
+    "Original-typo"
+  ],
+  "6439": [
+    "Korean-typo",
+    "English-typo"
   ],
   "6749": [
     "ko_KR-kiwiyou"
@@ -1382,6 +1441,9 @@
   ],
   "9317": [
     "ko_KR-ez_code"
+  ],
+  "9324": [
+    "Korean-typo"
   ],
   "9329": [
     "Korean-typo"
