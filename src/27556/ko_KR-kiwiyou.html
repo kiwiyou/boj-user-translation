@@ -1,0 +1,98 @@
+<section id="title">불 끄기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      베시는 자고 싶지만 농장에 불이 환해 단잠을 방해한다. 어떻게 하면 불을 끌
+      수 있을까?
+    </p>
+
+    <p>
+      베시는 길이 $N$의 이진 문자열을 가지고 있다. ($2\le N\le 20$) 하나는 불의
+      상태를 나타내고, 다른 하나는 스위치의 상태를 나타낸다. 각 불은 켜져 (1)
+      있거나 꺼져 (0) 있다. 각 스위치는 닫혀 (1) 있거나 열려 (0) 있다.
+    </p>
+
+    <p>한 번의 동작을 할 때, 다음 행동들을 수행한다.</p>
+
+    <ol>
+      <li>
+        정확히 하나의 스위치 상태를 바꾼다. (스위치가 닫혀 있다면 열고, 열려
+        있다면 닫는다.)
+      </li>
+      <li>
+        모든 닫힌 스위치와 연결된 불의 상태를 바꾼다. (불이 켜져 있다면 끄고,
+        불이 꺼져 있다면 켠다.)
+      </li>
+      <li>
+        스위치의 상태를 오른쪽으로 1만큼 회전한다. 구체적으로, 스위치의 상태를
+        나타내는 이진 문자열이 $s_0s_1\dots s_{N-1}$였다면 $s_{N-1}s_0s_1\dots
+        s_{N-2}$가 된다.
+      </li>
+    </ol>
+
+    <p>
+      위 문제가 $T$개 주어질 때, 모든 불을 끄기 위해 필요한 동작의 최소 횟수를
+      구하여라. ($1\le T\le 2\cdot 10^5$)
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $T$와 $N$이 주어진다.</p>
+
+    <p>
+      다음 $T$줄 각각에는 불의 상태와 스위치의 상태를 나타내는 길이 $N$의 이진
+      문자열 쌍이 주어진다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 이진 문자열 쌍마다 한 줄에 모든 불을 끄기 위해 필요한 동작의 최소
+      횟수를 출력한다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <ul>
+      <li>첫 번째 테스트 케이스: 모든 불이 이미 꺼져 있다.</li>
+      <li>
+        두 번째 테스트 케이스: 첫 번째 동작에 셋째 스위치의 상태를 바꾼다.
+      </li>
+      <li>
+        세 번째 테스트 케이스: 첫 번째 동작에 첫째 스위치의 상태를 바꾸고, 두
+        번째 동작에 둘째 스위치의 상태를 바꾸고, 세 번째 동작에 둘째 스위치의
+        상태를 바꾼다.
+      </li>
+      <li>
+        네 번째 테스트 케이스: 첫 번째 동작에 첫째 스위치의 상태를 바꾸고 두
+        번째 동작에 셋째 스위치의 상태를 바꾼다.
+      </li>
+    </ul>
+
+    <p>
+      각 테스트 케이스에서 주어진 예시가 최소 횟수로 불을 끄는 방법임을 보일 수
+      있다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>모든 불을 끄기 위해서 두 번의 동작이 최소임을 보일 수 있다.</p>
+
+    <ul>
+      <li>첫 번째와 두 번째 동작에 일곱째 스위치의 상태를 바꾸면 된다.</li>
+    </ul>
+  </div>
+</section>
