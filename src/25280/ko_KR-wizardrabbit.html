@@ -1,0 +1,74 @@
+<section id="title">마라톤</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>내일은 마라톤 대회가 있는 날이야. 난 무조건 1등을 하고 싶어.</p>
+    <p>
+      있지, 나는 사실 초능력을 가지고 있어서, 내 경쟁자들의 완주 시간을 어느
+      정도 예측할 수 있어.
+    </p>
+    <p>
+      내 경쟁자는 총 $N$ 명이고, $i$ 번째 경쟁자의 완주 시간은 무조건 구간
+      $[a_i, b_i]$ 에 속할 거야. 구간 내의 각 값이 결정될 확률은 동일하다고
+      할게.
+    </p>
+    <p>
+      내 경쟁자들의 완주 시간의 구간을 알려줄테니, 적어도 내가 $50\%$ 이상의
+      확률로 승리할 수 있는 완주 시간의 최댓값을 알려 줘, 부탁이야!
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫 번째 줄에는 내 경쟁자의 수 $N$ ($1 \le N \le 10^5$) 이 주어져.</p>
+    <p>
+      이후 $N$ 개의 줄에 걸쳐, $a_i$, $b_i$ ($0 \le a_i, b_i \le 10^5$)가
+      차례대로 주어져. $a_i$ 와 $b_i$ 는 실수이고, 소숫점 첫째자리까지 주어져.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      첫 번째 줄에 내가 $50\%$ 이상의 확률로 승리할 수 있는 완주 시간의 최댓값을
+      출력해 줘! 절대/상대 오차는 $10^{-6}$ 까지 허용해줄게.
+    </p>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>20</td>
+            <td class="subtask-body"><p>모든 구간은 서로 겹치지 않는다.</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>80</td>
+            <td class="subtask-body"><p>추가 제약 조건이 없다.</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
