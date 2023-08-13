@@ -25,15 +25,7 @@
 		<h2>입력</h2>
 	</div>
 	<div id="problem_input" class="problem-text">
-		<p>First line of input contains the number of test cases T. The descriptions of the test cases follow:</p>
-
 		<p>첫 번째 줄에 테스트 케이스의 개수 $T$가 주어진다.</p>
-
-		<p>The description of each test case starts with an empty line. The next two lines begin with the strings Stops:
-			and Lines:, and contain the names (separated by a comma and a space) of all subway stops and lines,
-			respectively. A single line for each subway line follows (in no particular order), beginning with
-			&lt;line-name&gt; route: and listing the names of the stops along this particular line. The final two lines
-			specify the names of the (different) stations nearby Johny&rsquo;s and Michelle&rsquo;s homes.</p>
 
 		<p>각각의 테스트케이스의 첫 번째 줄은 공백으로 주어진다.</p>
 		<p>두 번째 줄은 Stops: 라는 문자열로 시작하며, 모든 지하철역의 이름이 쉼표와 공백 (, ) 으로 구분되어 주어진다. ($1$ &le; $S$ &le; $300,000$)</p>
@@ -49,14 +41,9 @@
 			$L+6$번째 줄에는 종현이의 집과 가까운 지하철역의 이름이 &ldquo;Michelle lives at &lt;지하철역 이름&gt;&rdquo; 형식으로 주어진다.
 		</p>
 
-		<p>In each test case, there are at most 300 000 stations and 100 000 lines, whose total length does not exceed 1
-			000 000. The names of lines and stations are between 1 and 50 characters long and can contain letters,
-			digits, hyphens (-), apostrophes (&lsquo;) and &ldquo;and&rdquo; signs (&amp;). All lines are bidirectional
-			(although changing the direction of travel counts as a line change) and there are no self-crossings.</p>
-
 		<p>
 			각각의 테스트케이스 입력은 $1,000,000$ 글자를 넘지 않으며, 모든 지하철역과 노선 이름은 알파벳 대소문자, &ldquo;-&rdquo; 기호, 
-			&ldquo;&lsquo;&rdquo; 기호와 &ldquo;&amp;&rdquo; 기호만으로 이루어져 있다.
+			&ldquo; &lsquo; &rdquo; 기호와 &ldquo;&amp;&rdquo; 기호만으로 이루어져 있다.
 		</p>
 		<p>
 			또한 모든 노선은 지하철이 양방향으로 다니며, 모든 노선은 자기 자신과 교차하지 않는다.
