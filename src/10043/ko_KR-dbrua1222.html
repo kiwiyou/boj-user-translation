@@ -1,0 +1,103 @@
+<section id="title">택시 (Taxis)</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>IOI 나라에는 1번부터 N번까지 N개의 마을이 있고, 도로가 마을 사이를 이어주고 있다. IOI 나라에는 K개의 도로가 있고, 모든 도로는 서로 다른 두 개의 마을을 연결하고 있다. 차는 도로를 양방향으로 이동할 수 있으나, 도로를 통하는 것 이외의 방법으로 다른 마을에 갈 수 없다.</p>
+
+
+
+<p>IOI 나라 1번 마을에 살고있는 JOI군은, N번 마을에 있는 할머니 댁에 택시를 타고 가기로 했다. IOI 나라에는 1번부터 N번까지의 택시 회사가 있다. IOI 나라의 택시 회사에는 다음과 같은 특수한 규칙이 있다.</p>
+
+
+
+<ul>
+
+	<li>i번째 택시 회사의 택시는 i번째 마을에서만 탈 수 있다.</li>
+
+	<li>i번째 택시 회사의 택시요금은 이동한 거리에 상관없이 Ci이다.</li>
+
+	<li>i번째 택시 회사의 택시를 타면 최대 R<sub>i</sub> 개의 도로밖에 이동할 수 없다.</li>
+
+</ul>
+
+
+
+<p>예를들어 R<sub>1</sub> = 2 인 경우, 1번 마을에서  택시를 타게 되면 최대 2개의 도로밖에 이동할 수 없기 때문에 3개 이상의 도로를 이동하기 위해서는 다른 마을에서 갈아타야 한다.</p>
+
+
+
+<p>JOI군은 마을 이외의 장소에서 택시에 타거나 내릴 수 없다. 그리고, 택시 이외의 이동수단을 사용할 수 없다. JOI군이 N번째 마을에 도달하기 위해서 필요한 택시 요금의 최소값을 구하는 프로그램을 작성하라.</p>
+
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>입력은 1 + N + K 개의 행으로 구성된다.</p>
+
+
+
+<p>1행에서는 두 개의 정수 N, K (2 ≦ N ≦ 5000, N - 1 ≦ K ≦ 10000) 가 공백으로 구분되어 입력된다. 이것은 IOI 나라가 N개의 마을로 이루어져있으며, 도로의 수가 K개 있다는 것을 의미한다.</p>
+
+
+
+<p>이어지는 N행 중 i번째 행 (1 ≦ i ≦ N) 에서는, 두 개의 정수 Ci, Ri (1 ≦ Ci ≦ 10000, 1 ≦ Ri ≦ N) 가 공백으로 구분되어 입력된다. 이것은 i번째 택시회사의 택시요금이 Ci이고, 최대 이동할 수 있는 도로의 개수가 Ri라는 것을 의미한다.</p>
+
+
+
+<p>이어지는 K행 중 j번째 행 (1 ≦ j ≦ K) 에서는, 서로 다른 두 개의 정수 A<sub>j</sub>, B<sub>j</sub> (1 ≦ A<sub>j</sub> ＜ B<sub>j</sub> ≦ N) 가 공백으로 구분되어 입력된다. 이것은 A<sub>j</sub>번째 마을과 B<sub>j</sub>번째 마을을 잇는 도로가 존재함을 나타낸다. 같은 (A<sub>j</sub>, B<sub>j</sub>)의 조합이 두 번 이상 나오는 경우는 없다.</p>
+
+
+
+<p>주어지는 입력에 대해서, 임의의 마을에서 임의의 마을로 택시를 타고 이동할 수 있다는것이 보장된다.</p>
+
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>JOI군이 1번째 마을에서부터 N번째 마을까지 이동하는데 필요한 택시요금의 최솟값을 나타내는 정수하나를 출력하라.</p>
+
+
+					</div>
+					</section>
+<section id="hint">
+				<div class="headline">
+				<h2>힌트</h2>
+				</div>
+				<div id="problem_hint" class="problem-text">
+				<p>위의 예제는 아래 그림에 대응된다. 원은 마을, 선은 도로를 나타낸다.</p>
+
+
+
+<p><img alt="" src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/10043/1.png" style="height:185px; width:373px" /></p>
+
+
+
+<p>이 예제에서 JOI군이 최소 요금으로 6번째 마을에 도달하려면, 아래와 같이 하면 된다.</p>
+
+
+
+<p>1번째 마을에서 택시를 타고 5번째 마을에 간다. (요금 400)</p>
+
+<p>5번째 마을에서 택시를 타고 6번째 마을에 간다. (요금 300)</p>
+
+
+
+<p>JOI군이 이러한 경로를 지나갔을 경우 요금의 합계는 400 + 300 = 700이 되므로, 700을 출력한다.</p>
+
+
+
+<!-- JOI용 문단 <p>※各入出力例のデータは， 右クリック等によりファイルに保存して利用可能です．</p> -->
+
+
+				</div>
+				</section>
