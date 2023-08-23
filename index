@@ -5,6 +5,9 @@
   "1001": [
     "en_US-kiwiyou"
   ],
+  "10043": [
+    "ko_KR-dbrua1222"
+  ],
   "10047": [
     "ko_KR-jk410"
   ],
@@ -34,6 +37,9 @@
   ],
   "10480": [
     "ko_KR-ez_code"
+  ],
+  "10506": [
+    "ko_KR-byeongkeunahn"
   ],
   "10610": [
     "Korean-typo"
@@ -1277,6 +1283,9 @@
   ],
   "28421": [
     "Original-typo"
+  ],
+  "29018": [
+    "ko_KR-dbrua1222"
   ],
   "29163": [
     "ko_KR-ldhhello"
