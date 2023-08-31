@@ -1,0 +1,131 @@
+<section id="title">철도 민영화</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      이탈리아에는 $n$개의 주요 도시가 있고, 도시 사이를 잇는 $m$개의 기찻길이
+      있다. 각 기찻길은 2개의 서로 다른 도시를 양방향으로 잇는다. 기차만을 타고
+      한 도시에서 시작해 어떤 도시로도 이동할 수 있다.
+    </p>
+
+    <p>
+      현재 모든 기찻길은 이탈리아 국영 철도국이 관리하지만 정부는 기찻길의
+      관리를 민영화하려고 한다. 정부는 하나의 회사에 너무 많은 권력을 주고 싶지
+      않으며, 사람들이 너무 많은 회사의 정기권을 사게 하고 싶지도 않다. 모든
+      회사에게 동등한 기회를 주는 것도 한 목표이다. 이 바람들을 한데 모아 다음
+      규칙이 정해졌다.
+    </p>
+
+    <p>
+      $1, 2, \cdots, k$번 회사가 있고, 각 기찻길은 $k$개의 회사 중 정확히 하나가
+      관리한다.
+    </p>
+
+    <ul>
+      <li>
+        어느 회사를 고르더라도 그 회사가 관리하는 기찻길만으로 오갈 수 없는 두
+        도시가 존재한다.
+      </li>
+      <li>
+        한편, 어느 두 회사를 고르더라도 두 회사가 관리하는 기찻길만으로 모든 두
+        도시를 오갈 수 있다.
+      </li>
+    </ul>
+
+    <p>
+      위 조건을 모두 만족하도록 회사의 수와 각 회사가 관리하는 기찻길을 고르는
+      방법을 찾아라. 가능한 방법은 항상 존재함을 증명할 수 있다. $k$는 원하는
+      대로 정할 수 있으며 $k$를 최소화하거나 최대화할 필요는 없다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      입력은 여러 테스트 케이스로 이루어져 있다. 첫째 줄에 테스트 케이스의 수
+      $t$가 주어진다. ($1 &le; t &le; 1000$) 다음 줄부터 각 테스트 케이스가
+      주어진다.
+    </p>
+
+    <p>
+      테스트 케이스의 첫째 줄에는 도시의 수와 기찻길의 수를 나타내는 두 정수
+      $n$과 $m$이 주어진다. ($3 &le; n &le; 50$, $n-1 &le; m &le; n(n-1)/2$)
+    </p>
+
+    <p>
+      다음 $m$줄 중 $i$째 줄에는 $i$번째 기찻길이 잇는 두 도시의 번호 $u_i$와
+      $v_i$가 주어진다. ($1 &le; u_i , v_i &le; n$, $u_i \ne v_i$)
+    </p>
+
+    <p>
+      기찻길이 잇는 두 도시 쌍이 같은 경우는 없다. 기찻길만을 이용해 한 도시에서
+      다른 모든 도시로 이동할 수 있음이 보장된다.
+    </p>
+
+    <p>모든 테스트 케이스에서 $n$의 합은 $5000$ 이하이다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 테스트 케이스마다 두 줄을 출력한다. 첫째 줄에는 회사의 수를 나타내는
+      정수 $k$를 출력한다. ($2 &le; k &le; m$) 둘째 줄에는 $m$개의 정수 $c_1,
+      c_2, \cdots, c_m$을 출력한다. ($1 &le; c_i &le; k$) $i$번째 수 $c_i$는
+      $i$번째 기찻길을 관리하는 회사의 번호이다.
+    </p>
+
+    <p>가능한 방법이 여럿이라면 아무거나 출력한다.</p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      <strong>첫 번째 테스트 케이스에서</strong>, 출력은 아래 그림과 같다. 서로
+      다른 색은 서로 다른 회사를 나타낸다. (1번이 청색, 2번이 적색, 3번이 녹색,
+      4번이 황색)
+    </p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/747301f9-8671-4185-8f9b-bdedeb0cdfc4/-/preview/"
+        style="width: 194px; height: 129px"
+      />
+    </p>
+
+    <p>
+      예를 들어 $2$번과 $3$번 회사만을 본다면, 어느 도시에서 출발해도 다른 모든
+      도시에 도달할 수 있다. (아래 왼쪽 그림) 하지만, $2$번 회사만 두고 보면
+      $1$번 도시에서 $5$번 도시로 갈 수 없다. (오른쪽 그림)
+    </p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/4fa61bc7-6d36-4512-9310-d3515ecf0b2b/-/preview/"
+        style="width: 425px; height: 129px"
+      />
+    </p>
+
+    <p><strong>두 번째 테스트 케이스에서</strong>, 출력은 아래 그림과 같다.</p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/8e0de716-6309-4716-9dae-d7f145c17f5d/-/preview/"
+        style="width: 89px; height: 92px"
+      />
+    </p>
+  </div>
+</section>

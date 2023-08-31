@@ -1,0 +1,72 @@
+<section id="title">소가 탈진한 이유</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      농부 눚은 베시를 웬 이상한 곳에 두고 가버렸다! 시각 $t=0$에 베시는 수직선
+      위 $x=0$에 위치해 있다. 베시는 매 초마다 $1$만큼 왼쪽 혹은 오른쪽으로
+      움직이며 출구를 찾는다. 하지만 출구는 사실 없었고, $T$초 후에 베시는 기가
+      다 빠진 채 $x=0$으로 돌아왔다.
+    </p>
+
+    <p>
+      눚은 베시를 따라가 보려고 하지만 알고 있는 정보는 베시가 $x=0.5, 1.5, 2.5,
+      \cdots, (N-1).5$를 가로지는 횟수를 나타내는 배열 $A_0, A_1, \cdots,
+      A_{N-1}$뿐이다. ($1 \leq N \leq 10^5$, $1 \leq A_i \leq 10^6$) 베시는 $x
+      &gt; N$과 $x &lt; 0$에 있던 적이 없다.
+    </p>
+
+    <p>
+      베시가 움직인 경로는 길이 $T = \sum_{i=0}^{N-1} A_i$의 <code>L</code>과
+      <code>R</code>로 이루어진 문자열로 나타낼 수 있다. $i$번째 문자는
+      $t=i-1$부터 $t=i$까지 베시가 움직인 방향을 나타내며, <code>L</code>은
+      왼쪽, <code>R</code>은 오른쪽이다. 방향을 바꾼 횟수는 문자열
+      <code>LR</code>이 나타낸 횟수에 <code>RL</code>이 나타난 횟수를 더한
+      값이다.
+    </p>
+
+    <p>
+      배열 $A$에 따르면서 방향을 바꾼 횟수가 최소가 되도록 하는 베시의 이동
+      경로가 몇 가지인지 계산하자. 조건을 만족하는 경로가 적어도 하나 존재함이
+      보장된다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 $N$이 주어진다. 둘째 줄에 $A_0, A_1, \cdots, A_{N-1}$이
+      주어진다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>베시의 가능한 이동 경로의 수를 $10^9+7$로 나눈 나머지를 출력한다.</p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      베시는 5회 이상 방향을 바꾼다. 방향을 정확히 5번 바꾸는 이동 경로는 다음
+      2가지가 있다.
+    </p>
+
+    <pre>
+RRLRLLRRLL
+RRLLRRLRLL
+</pre
+    >
+  </div>
+</section>

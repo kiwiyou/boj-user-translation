@@ -5,6 +5,9 @@
   "1001": [
     "en_US-kiwiyou"
   ],
+  "10043": [
+    "ko_KR-dbrua1222"
+  ],
   "10047": [
     "ko_KR-jk410"
   ],
@@ -31,6 +34,9 @@
   ],
   "10480": [
     "ko_KR-ez_code"
+  ],
+  "10506": [
+    "ko_KR-byeongkeunahn"
   ],
   "10671": [
     "ko_KR-biximo"
@@ -293,6 +299,12 @@
   "17042": [
     "ko_KR-ez_code"
   ],
+  "17598": [
+    "ko_KR-kiwiyou"
+  ],
+  "17678": [
+    "Korean-typo"
+  ],
   "17687": [
     "ko_KR-dohoon"
   ],
@@ -347,6 +359,9 @@
   "18408": [
     "ko_KR-kiwiyou"
   ],
+  "18409": [
+    "ko_KR-kiwiyou"
+  ],
   "18411": [
     "ko_KR-kiwiyou"
   ],
@@ -386,6 +401,9 @@
   "19499": [
     "ko_KR-kiwiyou"
   ],
+  "19554": [
+    "ko_KR-dohoon"
+  ],
   "19602": [
     "ko_KR-ez_code"
   ],
@@ -401,6 +419,9 @@
   "20233": [
     "ko_KR-ez_code"
   ],
+  "20254": [
+    "ko_KR-kiwiyou"
+  ],
   "20268": [
     "ko_KR-ez_code"
   ],
@@ -412,6 +433,9 @@
   ],
   "20360": [
     "ko_KR-ez_code"
+  ],
+  "20568": [
+    "ko_KR-wizardrabbit"
   ],
   "20651": [
     "ko_KR-w8385"
@@ -491,6 +515,9 @@
   "21665": [
     "ko_KR-kiwiyou"
   ],
+  "21666": [
+    "ko_KR-kiwiyou"
+  ],
   "21679": [
     "ko_KR-ez_code"
   ],
@@ -538,6 +565,9 @@
   ],
   "23415": [
     "ko_KR-w8385"
+  ],
+  "23530": [
+    "ko_KR-wizardrabbit"
   ],
   "23663": [
     "ko_KR-ez_code"
@@ -611,6 +641,9 @@
   "24356": [
     "ko_KR-ez_code"
   ],
+  "24363": [
+    "ko_KR-yup0927"
+  ],
   "24365": [
     "ko_KR-ez_code"
   ],
@@ -653,11 +686,23 @@
   "25278": [
     "ko_KR-ez_code"
   ],
+  "25280": [
+    "ko_KR-wizardrabbit"
+  ],
   "2557": [
     "en_US-kiwiyou"
   ],
+  "25773": [
+    "ko_KR-wizardrabbit"
+  ],
+  "25776": [
+    "ko_KR-wizardrabbit"
+  ],
   "25801": [
     "ko_KR-w8385"
+  ],
+  "25828": [
+    "ko_KR-ldhhello"
   ],
   "25840": [
     "ko_KR-w8385"
@@ -725,6 +770,9 @@
   "26711": [
     "ko_KR-kiwiyou"
   ],
+  "26731": [
+    "ko_KR-wizardrabbit"
+  ],
   "26741": [
     "ko_KR-w8385"
   ],
@@ -788,6 +836,9 @@
   "27213": [
     "ko_KR-kiwiyou"
   ],
+  "27215": [
+    "ko_KR-wizardrabbit"
+  ],
   "27219": [
     "ko_KR-ez_code"
   ],
@@ -845,10 +896,22 @@
   "27541": [
     "ko_KR-kiwiyou"
   ],
+  "27555": [
+    "ko_KR-kiwiyou"
+  ],
+  "27556": [
+    "ko_KR-kiwiyou"
+  ],
+  "27557": [
+    "ko_KR-kiwiyou"
+  ],
   "27558": [
     "ko_KR-kiwiyou"
   ],
   "27559": [
+    "ko_KR-kiwiyou"
+  ],
+  "27560": [
     "ko_KR-kiwiyou"
   ],
   "27561": [
@@ -898,6 +961,9 @@
   ],
   "27591": [
     "ko_KR-index"
+  ],
+  "27603": [
+    "ko_KR-kiwiyou"
   ],
   "27855": [
     "ko_KR-kiwiyou"
@@ -974,11 +1040,29 @@
   "28370": [
     "ko_KR-wider93"
   ],
+  "28519": [
+    "ko_KR-wizardrabbit"
+  ],
+  "29018": [
+    "ko_KR-dbrua1222"
+  ],
+  "29163": [
+    "ko_KR-ldhhello"
+  ],
+  "29454": [
+    "ko_KR-wizardrabbit"
+  ],
   "3224": [
     "ko_KR-yup0927"
   ],
+  "3507": [
+    "ko_KR-ldhhello"
+  ],
   "3512": [
     "ko_KR-w8385"
+  ],
+  "3578": [
+    "ko_KR-ldhhello"
   ],
   "3733": [
     "ko_KR-ez_code"
@@ -1043,7 +1127,19 @@
   "5541": [
     "ko_KR-jk410"
   ],
+  "5558": [
+    "ko_KR-yup0927"
+  ],
+  "5786": [
+    "ko_KR-leeunchong"
+  ],
   "5928": [
+    "ko_KR-kiwiyou"
+  ],
+  "5977": [
+    "ko_KR-ldhhello"
+  ],
+  "6159": [
     "ko_KR-kiwiyou"
   ],
   "6749": [
@@ -1061,11 +1157,17 @@
   "6784": [
     "ko_KR-w8385"
   ],
+  "6799": [
+    "ko_KR-ldhhello"
+  ],
   "6810": [
     "ko_KR-ez_code"
   ],
   "6825": [
     "ko_KR-kiwiyou"
+  ],
+  "6830": [
+    "ko_KR-ldhhello"
   ],
   "6840": [
     "ko_KR-kiwiyou"
@@ -1103,6 +1205,9 @@
   "7964": [
     "ko_KR-pasteldream"
   ],
+  "8177": [
+    "ko_KR-dohoon"
+  ],
   "8370": [
     "ko_KR-kiwiyou"
   ],
@@ -1123,6 +1228,9 @@
   ],
   "8661": [
     "ko_KR-ez_code"
+  ],
+  "8671": [
+    "ko_KR-wizardrabbit"
   ],
   "8674": [
     "ko_KR-ez_code"
@@ -1154,6 +1262,9 @@
   "9161": [
     "ko_KR-ez_code"
   ],
+  "9167": [
+    "Korean-typo"
+  ],
   "9317": [
     "ko_KR-ez_code"
   ],
@@ -1166,6 +1277,9 @@
   "9498": [
     "en_US-kiwiyou"
   ],
+  "9538": [
+    "ko_KR-ldhhello"
+  ],
   "9622": [
     "ko_KR-ez_code"
   ],
@@ -1177,6 +1291,9 @@
   ],
   "9698": [
     "ko_KR-ez_code"
+  ],
+  "9713": [
+    "ko_KR-wizardrabbit"
   ],
   "9772": [
     "ko_KR-kiwiyou"

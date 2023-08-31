@@ -1,0 +1,63 @@
+<section id="title">수 알아맞히기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>정수 $X$는 $1,\ldots,N$ 중 하나입니다. $X$를 알아맞혀 봅시다!</p>
+  </div>
+</section>
+<section id="custom_protocol">
+  <div class="headline">
+    <h2>프로토콜</h2>
+  </div>
+  <div id="problem_custom_protocol" class="problem-text">
+    <p>
+      이 문제는 인터랙티브 유형입니다. 프로그램이 시작되면 첫 번째 줄에 정수 $N$
+      $(1\le N\le 10^9)$이 주어집니다. $X$는 알려주지 않습니다.
+    </p>
+
+    <p>
+      그럼 여러분의 프로그램은 정수 $P$ $(1\le P\le N)$에 대해
+      <code>? P</code> 형식으로 출력하여 질문할 수 있습니다. 채점 시스템은 각
+      질문이 들어오면 $P&lt;X$일 경우 <code>-1</code>, $P=X$일 경우 <code>0</code>, $P&gt;X$일 경우
+      <code>1</code>로 매 줄에 답변합니다. 테스트 케이스 당 여러분의 프로그램은
+      <b>최대 50번</b> 질문할 수 있습니다.
+    </p>
+
+    <p>
+      만약 $X$가 무엇인지 알아냈다면, $X$로 추정되는 정수 $Y$ $(1\le Y\le N)$에
+      대해 <code>= Y</code> 형식으로 출력하고 프로그램을 종료하면 됩니다. 채점 시스템은
+      이에 대해 답변하지 않으며, 더 이상 질문을 받지 않는 상태가 됩니다.
+    </p>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>29</td>
+            <td class="subtask-body"><p>1 &le; N &le; 50</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>71</td>
+            <td class="subtask-body"><p>추가 제약 조건 없음</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+<section id="title">찾아 바꾸기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      베시는 혁신적인 최신 텍스트 에디터 miV를 쓴다! miV에서 찾아 바꾸기 연산을
+      하면, 문자열에 등장하는 모든 영어 소문자 $c$를 영어 소문자로만 구성된
+      문자열 $s$로 바꿀 수 있다. 예를 들어, 문자열
+      &ldquo;<code>ball</code>&rdquo;가 주어지고 베시가 $c$를 &lsquo;l&rsquo;로,
+      $s$를 &ldquo;<code>na</code>&rdquo;로 선택한다면 주어진 문자열은
+      &ldquo;<code>banana</code>&rdquo;로 바뀐다.
+    </p>
+
+    <p>
+      베시는 문자열 &ldquo;<code>a</code>&rdquo;에서 시작해서 찾아 바꾸기 연산을
+      몇 번 수행해 최종 문자열 $S$를 만들려고 한다. $S$의 길이가 많이 길 수
+      있으므로 $l$과 $r$이 주어질 때 $S_{l\dots r}$ ($S$의 $l$번째 문자부터
+      $r$번째 문자까지를 포함한 부분 문자열)이 무엇인지 알고 싶다. ($1\le l\le
+      r\le \min(|S|,10^{18})$)
+    </p>
+
+    <p>
+      모든 연산에서 $|s|$의 합은 $2\cdot 10^5$ 이하이고, $r-l+1\le 2\cdot
+      10^5$임이 보장된다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 정수 $l$, $r$, 연산의 수가 주어진다.</p>
+
+    <p>
+      다음 줄부터 각 줄에 각 연산의 정보를 나타내는 문자 $c$와 문자열 $s$가
+      주어진다. 모든 문자는 &lsquo;a&rsquo;부터 &lsquo;z&rsquo;까지의 범위 내에
+      있다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    첫째 줄에 문자열 $s_{l\dots r}$을 출력한다.
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>문자열은 다음과 같이 변화한다.</p>
+
+    <p style="text-align: center">
+      <code>a</code> $\rightarrow$ <code>ab</code> $\rightarrow$
+      <code>bcb</code> $\rightarrow$ <code>bdeb</code> $\rightarrow$
+      <code>bbbdebbb</code>
+    </p>
+  </div>
+</section>

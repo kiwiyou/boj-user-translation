@@ -1,0 +1,75 @@
+<section id="title">최대 삼각형</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      최대는 어릴 때부터 음악과 수공예에 재능이 있었다. 오늘 최대는 삼각형
+      모양의 악기 트라이앵글을 만들었는데, 트라이앵글이 내는 소리의 주파수를
+      알아내려고 한다.
+    </p>
+
+    <p>
+      최대는 원하는 주파수의 음을 내는 전문가용 조율 도구를 가지고 있다. 최대는
+      조율 도구에서 몇 가지 음을 낸 뒤, 트라이앵글이 내는 소리에 가깝거나 먼지
+      판단한다. 최대의 청각은 매우 민감해서 항상 이 결과는 정확하다.
+    </p>
+
+    <p>
+      최대가 건넨 조율 기록에는 조율 도구가 낸 각 음의 주파수가 기록되어 있으며,
+      두 번째 음부터는 각 음이 이전 음에 비해 트라이앵글의 소리에 가깝거나 먼지
+      판단한 결과가 적혀 있다. 삼각형 소리의 주파수는 30Hz 이상 4000Hz 이하이다.
+    </p>
+
+    <p>트라이앵글 소리가 있을 수 있는 구간을 결정하는 프로그램을 작성하자.</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 조율 도구가 낸 음의 수를 나타내는 정수 n이 주어진다. (2 &le; n
+      &le; 1000) 다음 n줄 각각에는 음의 주파수 f<sub>i</sub>와, 이전 음에 비해
+      트라이앵글의 소리와 가까운지 혹은 먼지를 나타내는 문자열
+      <code>closer</code>과 <code>further</code> 중 하나가 주어진다. (30 &le;
+      f<sub>i</sub> &le; 4000) 이 문자열은 두 번째 음부터 주어진다.
+    </p>
+
+    <p>
+      <code>closer</code>는 주어진 음이 이전 음보다 트라이앵글의 소리와 가깝다는
+      것을 의미한다. 주어진 음과 트라이앵글의 소리의 주파수 차이가 이전 음과
+      트라이앵글의 소리의 주파수 차이보다 작을 때 주어진 음이 이전 음보다
+      트라이앵글의 소리와 가깝다. 식으로 표현하면 f<sub>i</sub>가 i번째 음의
+      주파수, f<sub>트라이앵글</sub>이 트라이앵글 소리의 주파수라고 할 때,
+      |f<sub>i</sub> - f<sub>트라이앵글</sub>| &lt; |f<sub>i-1</sub> -
+      f<sub>트라이앵글</sub>|이면 i번째 음이 이전 음보다 트라이앵글의 소리와
+      가까운 것이다.
+    </p>
+
+    <p>
+      <code>further</code>은 주어진 음이 이전 음보다 트라이앵글의 소리와 멀다는
+      것을 의미한다.
+    </p>
+
+    <p>
+      만약 주어진 음이 이전 음과 트라이앵글의 소리와 동일하게 가까운 경우
+      <code>closer</code>과 <code>further</code> 어느 쪽도 주어질 수 있다.
+    </p>
+
+    <p>최대가 제시한 기록은 모순되지 않는다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      최대가 만든 트라이앵글의 소리의 주파수가 될 수 있는 값의 최대와 최소를 한
+      줄에 출력한다.
+    </p>
+  </div>
+</section>
