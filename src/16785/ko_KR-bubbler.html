@@ -1,0 +1,89 @@
+<section id="title">소셜 게임</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>
+					JOI군은 내일부터 새로운 소셜 게임을 시작하기로 했다.
+				</p>
+				<p>
+					이 소셜 게임에서는 하루에 한 번까지 로그인할 수 있으며, 로그인할 때마다 A 코인을 받는다.
+				</p>
+				<p>
+					또한, 월요일부터 일요일까지 7일 연속으로 로그인하면 B 코인을 추가로 받는다.
+				</p>
+				<p>
+					그 외에 코인을 얻을 방법은 없다.
+				</p>
+				<p>
+					내일은 월요일이다. JOI군이 적어도 C 코인을 얻기 위해 로그인해야 하는 최소 횟수를 구하시오.
+				</p>
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>
+						입력은 아래의 형식으로 표준 입력을 통해 주어진다.
+					</p>
+
+<pre>
+A B C</pre>
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>
+						JOI군이 적어도 C 코인을 얻기 위해 로그인해야 하는 최소 횟수를 출력한다.
+					</p>
+					</div>
+					</section>
+<section id="limit">
+			<div class="headline">
+			<h2>제한</h2>
+			</div>
+			<div id="problem_limit" class="problem-text">
+			<ul>
+				<li>1 &le; A &le; 1,000</li>
+				<li>0 &le; B &le; 1,000</li>
+				<li>1 &le; C &le; 1,000,000 = 10<sup>6</sup></li>
+			</ul>
+			</div>
+			</section>
+<section id="subtask"><div class="headline"><h2>서브태스크</h2></div><div id="problem_subtask" class="problem-text"><div class="table-responsive">
+	<table class="table table-bordered td-middle subtask-table" style="width: 100%;">
+		<thead>
+			<th style="width: 5%;">번호</th><th style="width: 5%;">배점</th><th style="width: 90%;">제한</th>
+		</thead>
+		<tbody>
+			<tr data-subtask-id="1"><td>1</td><td>40</td><td class="subtask-body"><p>B = 0</p></td></tr>
+			<tr data-subtask-id="2"><td>2</td><td>60</td><td class="subtask-body"><p>추가적인 제한은 없다.</p></td></tr>
+		</tbody>
+	</table></div></div></section>
+<section id="sample_explain_1">
+								<div id="problem_sample_explain_1" class="problem-text">
+								<ul>
+	<li>한 번 로그인할 때마다 3 코인을 받고, 10 코인을 모으려고 한다.</li>
+	<li>JOI군은 월요일부터 4일 연속으로 로그인하여 12 코인을 받을 수 있다.</li>
+	<li>3회 이하의 로그인으로 10 코인 이상을 받을 방법은 없으므로, JOI군이 로그인해야 하는 최소 횟수는 4회이다.</li>
+</ul>
+
+								</div>
+							</section>
+<section id="sample_explain_2">
+								<div id="problem_sample_explain_2" class="problem-text">
+								<ul>
+	<li>한 번 로그인할 때마다 1 코인을 받고, 일주일 연속 로그인하면 2 코인을 받는다. 총 10 코인을 모으려고 한다.</li>
+	<li>월요일부터 일요일까지 연속으로 로그인하면 일일 코인 7개에 2개를 더하여 총 9 코인을 받는다. 그러고 나서 한 번 더 로그인하여 총 10 코인을 받을 수 있다.</li>
+	<li>7회 이하의 로그인으로 10 코인 이상을 받을 방법은 없으므로, JOI군이 로그인해야 하는 최소 횟수는 8회이다.</li>
+</ul>
+
+								</div>
+							</section>
