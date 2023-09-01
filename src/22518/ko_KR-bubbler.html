@@ -1,0 +1,78 @@
+<section id="title">낙서의 마녀</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			낙서의 마녀 ALBERTINE은 가로 <var><i>W</i></var>칸, 세로 <var><i>H</i></var>칸의 정사각형 칸으로 구성된
+			직사각형의 결계 입구에 낙서를 하고 있다. 이 세계에서 낙서는 정사각형 칸을 흰색이나 검은색으로 칠하는 것을 의미한다. 
+		</p>
+
+		<p>
+			사역마 ANJA가 낙서의 일부를 이미 그려 놓았다. 낙서의 마녀는 나머지 모든 칸을 채워 낙서를 완성하려고 한다. 이 마녀는 다음과 같은 집착을 가지고 있다.
+		</p>
+
+		<ul>
+			<li>
+				2개의 서로 다른 칸이 한 변을 공유하면 두 칸을 인접하다고 한다. 완성된 낙서에서 모든 검은색 칸의 쌍에 대해,
+				인접한 검은색 칸을 통과하여 그 두 칸을 연결하는 경로가 정확히 하나 있어야 한다.
+			</li>
+			<li>어떤 두 흰색 칸도 서로 인접하면 안된다.</li>
+		</ul>
+
+		<p>
+			또한, 낙서의 마녀는 검은색을 좋아하기 때문에, 위의 조건을 만족하면서 검은색 칸이 가장 많도록 낙서를 완성하려고 한다.
+			낙서가 완성되었을 때, 검은색 칸은 최대 몇 개까지 그릴 수 있을까?
+		</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>입력은 아래의 형식으로 주어진다.</p>
+
+		<pre>
+<var><i>H</i>&nbsp;<i>W</i>
+<i>c</i><sub>11</sub><i>c</i><sub>12</sub>&hellip;<i>c</i><sub>1<i>W</i></sub>
+<i>c</i><sub>21</sub><i>c</i><sub>22</sub>&hellip;<i>c</i><sub>2<i>W</i></sub>
+&hellip;
+<i>c</i><sub><i>H</i>1</sub><i>c</i><sub><i>H</i>2</sub>&hellip;<i>c</i><sub><i>HW</i></sub>
+</var></pre>
+
+		<p><var><i>H</i></var>는 결계의 입구의 세로의 길이, <var><i>W</i></var>는 결계의 입구의 가로의 길이이다.</p>
+
+		<p>
+			<var><i>c</i><sub><i>ij</i></sub></var>는 위에서 <var><i>i</i></var>번째 줄，왼쪽에서<var><i>j</i></var>번째 칸의 상태를 나타내는 글자로,
+			그 칸이 검은색이면 <code>&#39;#&#39;</code>, 흰색이면 <code>&#39;.&#39;</code>, 아직 칠해지지 않았으면 <code>&#39;?&#39;</code>이다.
+		</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>마녀의 집착을 만족하면서 낙서를 완성하였을 때 검은색 칸의 최대 개수를 출력한다.</p>
+
+		<p>낙서를 완성할 수 없다면, <code>-1</code>을 출력한다.</p>
+
+	</div>
+</section>
+<section id="limit">
+	<div class="headline">
+		<h2>제한</h2>
+	</div>
+	<div id="problem_limit" class="problem-text">
+		<ul>
+			<li><var>1&le;<i>H</i>&le;11</var></li>
+			<li><var>1&le;<i>W</i>&le;11</var></li>
+			<li><var><i>c</i><sub><i>ij</i></sub></var>는 <code>&#39;#&#39;</code>,&nbsp;<code>&#39;.&#39;</code>,&nbsp;<code>&#39;?&#39;</code> 중 하나이다.
+			</li>
+		</ul>
+	</div>
+</section>
