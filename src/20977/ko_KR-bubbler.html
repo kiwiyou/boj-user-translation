@@ -1,79 +1,78 @@
 <section id="title">JOI 소트</section>
 <section id="description">
-				<div class="headline">
-				<h2>문제</h2>
-				</div>
-				<div id="problem_description" class="problem-text">
-				<p>
-					길이 <var>N</var>의 문자열 <var>S</var>가 주어진다. <var>S</var>의 각 글자는 &lsquo;<code>J</code>&rsquo;, &lsquo;<code>O</code>&rsquo;, &lsquo;<code>I</code>&rsquo; 중 하나이다.
-				</p>
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			길이 <var>N</var>의 문자열 <var>S</var>가 주어진다. <var>S</var>의 각 글자는 &lsquo;<code>J</code>&rsquo;,
+			&lsquo;<code>O</code>&rsquo;, &lsquo;<code>I</code>&rsquo; 중 하나이다.
+		</p>
 
-<p>
-	다음 조건이 충족되도록 <var>S</var>를 정렬하려고 한다.
-</p>
+		<p>
+			다음 조건이 충족되도록 <var>S</var>를 정렬하려고 한다.
+		</p>
 
-<ul>
-	<li>모든 &lsquo;<code>J</code>&rsquo;는 모든 &lsquo;<code>O</code>&rsquo;보다 앞에 있다.</li>
-	<li>모든 &lsquo;<code>O</code>&rsquo;는 모든 &lsquo;<code>I</code>&rsquo;보다 앞에 있다.</li>
-	<li>모든 &lsquo;<code>J</code>&rsquo;는 모든 &lsquo;<code>I</code>&rsquo;보다 앞에 있다.</li>
-</ul>
+		<ul>
+			<li>모든 &lsquo;<code>J</code>&rsquo;는 모든 &lsquo;<code>O</code>&rsquo;보다 앞에 있다.</li>
+			<li>모든 &lsquo;<code>O</code>&rsquo;는 모든 &lsquo;<code>I</code>&rsquo;보다 앞에 있다.</li>
+			<li>모든 &lsquo;<code>J</code>&rsquo;는 모든 &lsquo;<code>I</code>&rsquo;보다 앞에 있다.</li>
+		</ul>
 
-<p>
-	문자열 <var>S</var>가 주어졌을 때, 위 조건을 만족하도록 <var>S</var>의 문자들을 정렬한 문자열을 출력하는 프로그램을 작성하시오.
-</p>
+		<p>
+			문자열 <var>S</var>가 주어졌을 때, 위 조건을 만족하도록 <var>S</var>의 문자들을 정렬한 문자열을 출력하는 프로그램을 작성하시오.
+		</p>
 
-				</div>
-				</section>
+	</div>
+</section>
 <section id="input">
-					<div class="headline">
-					<h2>입력</h2>
-					</div>
-					<div id="problem_input" class="problem-text">
-					<p>
-						입력은 아래의 형식으로 표준 입력을 통해 주어진다.
-					</p>
-
-<p><var>N</var><br />
-<var>S</var></p>
-
-					</div>
-					</section>
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>
+			입력은 아래의 형식으로 표준 입력을 통해 주어진다.
+		</p>
+		<p><var>N</var><br />
+			<var>S</var>
+		</p>
+	</div>
+</section>
 <section id="output">
-					<div class="headline">
-					<h2>출력</h2>
-					</div>
-					<div id="problem_output" class="problem-text">
-					<p>
-						조건을 만족하도록 <var>S</var>의 문자들을 정렬한 문자열을 출력한다.
-					</p>
-
-					</div>
-					</section>
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>
+			조건을 만족하도록 <var>S</var>의 문자들을 정렬한 문자열을 출력한다.
+		</p>
+	</div>
+</section>
 <section id="limit">
-			<div class="headline">
-			<h2>제한</h2>
-			</div>
-			<div id="problem_limit" class="problem-text">
-			<ul>
-	<li><var>1 &le; N &le; 100</var></li>
-	<li><var>S</var>는 길이 <var>N</var>의 문자열이다.</li>
-	<li><var>S</var>의 각 문자는 &lsquo;<code>J</code>&rsquo;, &lsquo;<code>O</code>&rsquo;, &lsquo;<code>I</code>&rsquo; 중 하나이다.</li>
-</ul>
-			</div>
-			</section>
+	<div class="headline">
+		<h2>제한</h2>
+	</div>
+	<div id="problem_limit" class="problem-text">
+		<ul>
+			<li><var>1 &le; N &le; 100</var></li>
+			<li><var>S</var>는 길이 <var>N</var>의 문자열이다.</li>
+			<li><var>S</var>의 각 문자는 &lsquo;<code>J</code>&rsquo;, &lsquo;<code>O</code>&rsquo;,
+				&lsquo;<code>I</code>&rsquo; 중 하나이다.</li>
+		</ul>
+	</div>
+</section>
 <section id="sample_explain_1">
-								<div id="problem_sample_explain_1" class="problem-text">
-								<ul>
-	<li>&lsquo;<code>JIOIJO</code>&rsquo;를 &lsquo;<code>JJOOII</code>&rsquo;로 재배열하면 조건을 만족한다.</li>
-</ul>
-
-								</div>
-							</section>
+	<div id="problem_sample_explain_1" class="problem-text">
+		<ul>
+			<li>&lsquo;<code>JIOIJO</code>&rsquo;를 &lsquo;<code>JJOOII</code>&rsquo;로 재배열하면 조건을 만족한다.</li>
+		</ul>
+	</div>
+</section>
 <section id="sample_explain_2">
-								<div id="problem_sample_explain_2" class="problem-text">
-								<ul>
-	<li>주어진 문자열이 이미 조건을 만족할 수도 있다. &lsquo;<code>J</code>&rsquo;, &lsquo;<code>O</code>&rsquo;, &lsquo;<code>I</code>&rsquo;가 모두 포함되지 않을 수도 있다.</li>
-</ul>
-
-								</div>
-							</section>
+	<div id="problem_sample_explain_2" class="problem-text">
+		<ul>
+			<li>주어진 문자열이 이미 조건을 만족할 수도 있다. &lsquo;<code>J</code>&rsquo;, &lsquo;<code>O</code>&rsquo;,
+				&lsquo;<code>I</code>&rsquo;가 모두 포함되지 않을 수도 있다.</li>
+		</ul>
+	</div>
+</section>
