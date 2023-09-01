@@ -1,0 +1,103 @@
+<section id="title">머지</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			길이 <var>N</var>의 정수 수열 <var>A = (A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>N</sub>)</var>와,
+			길이 <var>M</var>의 정수 수열 <var>B = (B<sub>1</sub>, B<sub>2</sub>, ..., B<sub>M</sub>)</var>가 주어진다.
+			수열 <var>A</var>와 <var>B</var>는 각각 단조 증가 수열이다. 즉
+			<var>A<sub>1</sub>&nbsp;&le; A<sub>2</sub>&nbsp;&le; &hellip; &le; A<sub>N</sub></var>,
+			<var>B<sub>1</sub>&nbsp;&le; B<sub>2</sub>&nbsp;&le; &hellip; &le; B<sub>M</sub></var>를 만족한다.
+		</p>
+		<p>
+			아래의 알고리즘을 사용하여 길이 <var>N + M</var>의 수열 <var>C = (C<sub>1</sub>, C<sub>2</sub>, ..., C<sub>N+M</sub>)</var>를
+			만든다.
+		</p>
+		<ol>
+			<li>처음에 <var>C</var>는 비어 있다.</li>
+			<li><var>A</var>와 <var>B</var>가 둘 다 비어 있으면 이 알고리즘이 종료된다.</li>
+			<li>
+				<var>A</var>와 <var>B</var> 중 한 쪽이 비어 있으면, 비어 있지 않은 쪽의 수열을 <var>t</var>로 둔다.
+				둘 다 비어있지 않으면, 둘 중 첫 번째 값이 작은 쪽의 수열을 <var>t</var>로 둔다.
+				두 값이 같다면, 수열 <var>A</var>를 <var>t</var>로 둔다.
+			</li>
+			<li><var>t</var>의 첫 번째 값을 <var>C</var>의 끝에 추가한다.</li>
+			<li><var>t</var>의 첫 번째 값을 제거한다.</li>
+			<li>2번으로 돌아간다.</li>
+		</ol>
+		<p>
+			수열 <var>A</var>와 <var>B</var>가 주어졌을 때, 이 알고리즘에 의해 만들어지는 수열 <var>C</var>를 출력하는 프로그램을 작성하시오.
+		</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>
+			입력은 아래의 형식으로 표준 입력을 통해 주어진다.
+		</p>
+		<pre>
+<var>N</var> <var>M</var>
+<var>A<sub>1</sub></var> <var>A<sub>2</sub></var> <var>&hellip;</var> <var>A<sub>N</sub></var>
+<var>B<sub>1</sub></var> <var>B<sub>2</sub></var> <var>&hellip;</var> <var>B<sub>M</sub></var></pre>
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>
+			표준 출력을 통해 <var>N + M</var>개의 줄에 걸쳐 답을 출력한다.
+		</p>
+		<p>
+			<var>k</var> (<var>1 &le; k &le; N + M</var>)번째 줄에는 <var>C<sub>k</sub></var>의 값을 출력한다.
+		</p>
+	</div>
+</section>
+<section id="limit">
+	<div class="headline">
+		<h2>제한</h2>
+	</div>
+	<div id="problem_limit" class="problem-text">
+		<ul>
+			<li><var>1 &le; N &le; 500</var></li>
+			<li><var>1 &le; M &le; 500</var></li>
+			<li><var>1 &le; A<sub>1</sub>&nbsp;&le; A<sub>2</sub>&nbsp;&le; &hellip; &le; A<sub>N</sub>&nbsp;&le;
+					2000</var></li>
+			<li><var>1 &le; B<sub>1</sub>&nbsp;&le; B<sub>2</sub>&nbsp;&le; &hellip; &le; B<sub>M</sub>&nbsp;&le;
+					2000</var></li>
+		</ul>
+	</div>
+</section>
+<section id="sample_explain_1">
+	<div id="problem_sample_explain_1" class="problem-text">
+		<p>
+			<var>A = (1, 2), B = (2)</var>이다. 아래의 과정에 의해 수열 <var>C</var>가 만들어진다.
+		</p>
+		<ul>
+			<li>
+				<var>A</var>의 첫 번째 값은 <var>1</var>, <var>B</var>의 첫 번째 값은 <var>2</var>이므로,
+				<var>A</var>의 첫 번째 값을 <var>C</var>에 추가하고 <var>A</var>에서 삭제한다.
+			</li>
+			<li>
+				<var>A</var>의 첫 번째 값은 <var>2</var>, <var>B</var>의 첫 번째 값은 <var>2</var>이므로,
+				<var>A</var>의 첫 번째 값을 <var>C</var>에 추가하고 <var>A</var>에서 삭제한다.
+			</li>
+			<li>
+				<var>A</var>가 비어 있으므로,
+				<var>B</var>의 첫 번째 값을 <var>C</var>에 추가하고 <var>B</var>에서 삭제한다.
+			</li>
+			<li>
+				<var>A</var>와 <var>B</var>가 모두 비어 있으므로, 알고리즘을 종료한다.
+			</li>
+		</ul>
+		<p>
+			알고리즘이 종료되었을 때, <var>C = (1, 2, 2)</var>이다.
+		</p>
+	</div>
+</section>
