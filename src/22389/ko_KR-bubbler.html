@@ -1,0 +1,67 @@
+<section id="title">윤년</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>일반적으로, 연도 <i>x</i>가 윤년인지는 다음과 같이 정의되어 있다.</p>
+
+		<ol>
+			<li><i>x</i>가 400의 배수이면 윤년이다.</li>
+			<li><i>x</i>가 400의 배수가 아닌 100의 배수이면 윤년이 아니다.</li>
+			<li><i>x</i>가 100의 배수가 아닌 4의 배수이면 윤년이다.</li>
+			<li>그 외의 경우에는 윤년이 아니다.</li>
+		</ol>
+
+		<p>
+			이것을 다음과 같이 일반화할 수 있다. 수열 <i>A<sub>1</sub>, ..., A<sub>n</sub></i>가 주어질 때,
+			<i>x</i>년이 &quot;일반화된 윤년&quot;인지 여부를 다음과 같이 정의한다.
+		</p>
+
+		<ol>
+			<li><i>x</i>가 <i>A<sub>i</sub></i>의 배수인 가장 작은 <i>i</i> (<i>1 &le; i &le; n</i>)가 있을 때,
+				<i>i</i>가 홀수이면 윤년이고, 짝수이면 윤년이 아니다.</li>
+			<li>이러한 <i>i</i>가 없는 경우에는, <i>n</i>이 홀수이면 윤년이 아니고, 짝수이면 윤년이다.</li>
+		</ol>
+
+		<p>예를 들어, <i>A = [400, 100, 4]</i>에 의해 정의되는 일반화된 윤년은 보통의 윤년과 같다.</p>
+
+		<p>
+			수열 <i>A<sub>1</sub>, ..., A<sub>n</sub></i>과 양의 정수 <i>l, r</i>이 주어진다.
+			<i>l &le; x &le; r</i>을 만족하는 양의 정수 <i>x</i>에 대해, <i>x</i>년이 <i>A</i>에 대한 일반화된 윤년이 되는 <i>x</i>의 개수를 구하시오.
+		</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>입력은 최대 50개의 테스트 케이스로 구성되어 있다. 각 테스트 케이스는 다음과 같은 형식으로 주어진다.</p>
+
+		<pre>
+<i>n</i> <i>l</i> <i>r</i>
+<i>A<sub>1</sub></i>
+<i>A<sub>2</sub></i>
+<i>&hellip;</i>
+<i>A<sub>n</sub></i></pre>
+
+		<p>
+			정수 <i>n</i>은 <i>1 &le; n &le; 50</i>을 만족한다. <i>l, r</i>은 <i>1 &le; l &le; r &le; 4000</i>을 만족한다.
+			각각의 <i>i</i>에 대해 정수 <i>A<sub>i</sub></i>는 <i>1 &le; A<sub>i</sub> &le; 4000</i>을 만족한다.
+		</p>
+
+		<p>입력의 끝에는 3개의 0이 주어진다.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>각 테스트 케이스에 대해, 정답을 한 줄에 출력한다.</p>
+
+	</div>
+</section>
