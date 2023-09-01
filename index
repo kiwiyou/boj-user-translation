@@ -26,9 +26,6 @@
   "10277": [
     "ko_KR-kiwiyou"
   ],
-  "1035": [
-    "Original-typo"
-  ],
   "10350": [
     "ko_KR-kiwiyou"
   ],
@@ -38,8 +35,8 @@
   "10480": [
     "ko_KR-ez_code"
   ],
-  "10610": [
-    "Korean-typo"
+  "10506": [
+    "ko_KR-byeongkeunahn"
   ],
   "10671": [
     "ko_KR-biximo"
@@ -65,23 +62,11 @@
   "10998": [
     "en_US-kiwiyou"
   ],
-  "11047": [
-    "Original-typo"
-  ],
-  "11094": [
-    "Korean-typo"
-  ],
-  "11111": [
-    "Original-typo"
-  ],
   "11121": [
     "ko_KR-ez_code"
   ],
   "11131": [
     "ko_KR-ez_code"
-  ],
-  "11218": [
-    "Original-typo"
   ],
   "11257": [
     "ko_KR-bubbler"
@@ -91,9 +76,6 @@
   ],
   "11260": [
     "ko_KR-bubbler"
-  ],
-  "11279": [
-    "Original-typo"
   ],
   "11368": [
     "ko_KR-ez_code"
@@ -110,20 +92,8 @@
   "11549": [
     "ko_KR-ez_code"
   ],
-  "1189": [
-    "Korean-typo"
-  ],
   "11991": [
     "ko_KR-dohoon"
-  ],
-  "1205": [
-    "Original-typo"
-  ],
-  "12198": [
-    "Original-typo"
-  ],
-  "1232": [
-    "Original-typo"
   ],
   "12351": [
     "ko_KR-ez_code"
@@ -131,8 +101,11 @@
   "12352": [
     "ko_KR-ez_code"
   ],
-  "1242": [
-    "Original-typo"
+  "12445": [
+    "ko_KR-bubbler"
+  ],
+  "12446": [
+    "ko_KR-bubbler"
   ],
   "12589": [
     "ko_KR-ez_code"
@@ -146,14 +119,8 @@
   "12805": [
     "ko_KR-iamgamja"
   ],
-  "12978": [
-    "Original-typo"
-  ],
   "13063": [
     "ko_KR-ez_code"
-  ],
-  "13217": [
-    "Original-typo"
   ],
   "1330": [
     "en_US-kiwiyou"
@@ -161,17 +128,11 @@
   "13363": [
     "ko_KR-ez_code"
   ],
-  "1345": [
-    "Original-typo"
-  ],
   "13496": [
     "ko_KR-ez_code"
   ],
   "13580": [
     "ko_KR-ez_code"
-  ],
-  "1359": [
-    "Original-typo"
   ],
   "13597": [
     "ko_KR-ez_code"
@@ -184,9 +145,6 @@
   ],
   "13623": [
     "ko_KR-ez_code"
-  ],
-  "13706": [
-    "Original-typo"
   ],
   "13742": [
     "ko_KR-leeunchong"
@@ -218,42 +176,17 @@
   "14210": [
     "ko_KR-ez_code"
   ],
-  "14235": [
-    "Original-typo"
-  ],
   "14337": [
     "ko_KR-kiwiyou"
   ],
   "14346": [
-    "ko_KR-Lumi",
-    "Original-typo"
+    "ko_KR-Lumi"
   ],
   "14347": [
     "ko_KR-Lumi"
   ],
-  "1436": [
-    "Original-typo"
-  ],
-  "14395": [
-    "Original-typo"
-  ],
-  "14402": [
-    "Original-typo"
-  ],
   "14475": [
     "ko_KR-jk410"
-  ],
-  "14476": [
-    "Original-typo"
-  ],
-  "14564": [
-    "Original-typo"
-  ],
-  "14600": [
-    "Original-typo"
-  ],
-  "14601": [
-    "Original-typo"
   ],
   "14683": [
     "ko_KR-ez_code"
@@ -327,20 +260,11 @@
   "15557": [
     "ko_KR-kiwiyou"
   ],
-  "1558": [
-    "Original-typo"
-  ],
   "15610": [
     "ko_KR-ez_code"
   ],
-  "15709": [
-    "Original-typo"
-  ],
   "15764": [
     "ko_KR-yup0927"
-  ],
-  "15828": [
-    "Original-typo"
   ],
   "15858": [
     "ko_KR-ez_code"
@@ -354,14 +278,8 @@
   "16099": [
     "ko_KR-kiwiyou"
   ],
-  "16236": [
-    "Original-typo"
-  ],
   "16239": [
     "ko_KR-ez_code"
-  ],
-  "16363": [
-    "Original-typo"
   ],
   "16367": [
     "ko_KR-kiwiyou"
@@ -375,38 +293,20 @@
   "16670": [
     "ko_KR-dohoon"
   ],
-  "1669": [
-    "Original-typo"
-  ],
   "16693": [
     "ko_KR-kiwiyou"
-  ],
-  "16719": [
-    "Original-typo"
   ],
   "16727": [
     "ko_KR-ez_code"
   ],
-  "16935": [
-    "Original-typo"
+  "16785": [
+    "ko_KR-bubbler"
   ],
   "17009": [
     "ko_KR-kiwiyou"
   ],
   "17042": [
     "ko_KR-ez_code"
-  ],
-  "17071": [
-    "Original-typo"
-  ],
-  "17144": [
-    "Original-typo"
-  ],
-  "1719": [
-    "Original-typo"
-  ],
-  "17247": [
-    "Original-typo"
   ],
   "17598": [
     "ko_KR-kiwiyou"
@@ -417,17 +317,8 @@
   "17687": [
     "ko_KR-dohoon"
   ],
-  "17731": [
-    "Original-typo"
-  ],
   "17783": [
     "ko_KR-ez_code"
-  ],
-  "1780": [
-    "Original-typo"
-  ],
-  "1784": [
-    "Original-typo"
   ],
   "17863": [
     "ko_KR-kiwiyou"
@@ -459,9 +350,6 @@
   "18108": [
     "en_US-kiwiyou"
   ],
-  "1814": [
-    "Original-typo"
-  ],
   "18198": [
     "ko_KR-ez_code"
   ],
@@ -482,6 +370,9 @@
   ],
   "18409": [
     "ko_KR-kiwiyou"
+  ],
+  "18410": [
+    "ko_KR-bubbler"
   ],
   "18411": [
     "ko_KR-kiwiyou"
@@ -507,9 +398,6 @@
   "18435": [
     "ko_KR-kiwiyou"
   ],
-  "1858": [
-    "Original-typo"
-  ],
   "18691": [
     "ko_KR-ldhhello"
   ],
@@ -519,17 +407,8 @@
   "18813": [
     "ko_KR-ez_code"
   ],
-  "1886": [
-    "Korean-typo"
-  ],
-  "1915": [
-    "Original-typo"
-  ],
   "19303": [
     "ko_KR-yup0927"
-  ],
-  "1935": [
-    "Original-typo"
   ],
   "19499": [
     "ko_KR-kiwiyou"
@@ -539,24 +418,6 @@
   ],
   "19602": [
     "ko_KR-ez_code"
-  ],
-  "1965": [
-    "Original-typo"
-  ],
-  "19882": [
-    "Original-typo"
-  ],
-  "1997": [
-    "Korean-typo"
-  ],
-  "20001": [
-    "Original-typo"
-  ],
-  "20004": [
-    "Original-typo"
-  ],
-  "20120": [
-    "Original-typo"
   ],
   "20214": [
     "ko_KR-w8385"
@@ -609,6 +470,9 @@
   "20976": [
     "ko_KR-kiwiyou"
   ],
+  "20977": [
+    "ko_KR-bubbler"
+  ],
   "21105": [
     "ko_KR-ez_code"
   ],
@@ -618,23 +482,14 @@
   "21167": [
     "ko_KR-ez_code"
   ],
-  "2119": [
-    "Korean-typo"
-  ],
   "21200": [
     "ko_KR-ez_code"
-  ],
-  "2128": [
-    "Korean-typo"
   ],
   "21300": [
     "ko_KR-kiwiyou"
   ],
   "21324": [
     "ko_KR-ez_code"
-  ],
-  "2133": [
-    "English-typo"
   ],
   "21335": [
     "ko_KR-kiwiyou"
@@ -693,14 +548,8 @@
   "22155": [
     "ko_KR-kiwiyou"
   ],
-  "2219": [
-    "Original-typo"
-  ],
   "22193": [
     "ko_KR-kiwiyou"
-  ],
-  "2237": [
-    "Original-typo"
   ],
   "22380": [
     "ko_KR-w8385"
@@ -720,29 +569,11 @@
   "22542": [
     "ko_KR-kiwiyou"
   ],
-  "2313": [
-    "Original-typo"
-  ],
-  "23147": [
-    "Original-typo"
-  ],
-  "23207": [
-    "Original-typo"
-  ],
   "23234": [
     "ko_KR-kiwiyou"
   ],
   "23235": [
     "ko_KR-kiwiyou"
-  ],
-  "23288": [
-    "Original-typo"
-  ],
-  "23313": [
-    "Original-typo"
-  ],
-  "23362": [
-    "Original-typo"
   ],
   "23397": [
     "ko_KR-ez_code"
@@ -761,9 +592,6 @@
   ],
   "2377": [
     "ko_KR-kiwiyou"
-  ],
-  "23796": [
-    "Original-typo"
   ],
   "2393": [
     "ko_KR-kiwiyou"
@@ -828,11 +656,11 @@
   "24356": [
     "ko_KR-ez_code"
   ],
+  "24363": [
+    "ko_KR-yup0927"
+  ],
   "24365": [
     "ko_KR-ez_code"
-  ],
-  "24413": [
-    "Original-typo"
   ],
   "24488": [
     "ko_KR-dohoon"
@@ -876,20 +704,8 @@
   "25280": [
     "ko_KR-wizardrabbit"
   ],
-  "2541": [
-    "Original-typo"
-  ],
-  "25497": [
-    "Original-typo"
-  ],
   "2557": [
     "en_US-kiwiyou"
-  ],
-  "25605": [
-    "Original-typo"
-  ],
-  "2577": [
-    "Original-typo"
   ],
   "25773": [
     "ko_KR-wizardrabbit"
@@ -899,9 +715,6 @@
   ],
   "25801": [
     "ko_KR-w8385"
-  ],
-  "2582": [
-    "Original-typo"
   ],
   "25828": [
     "ko_KR-ldhhello"
@@ -918,23 +731,14 @@
   "2588": [
     "en_US-kiwiyou"
   ],
-  "25907": [
-    "Original-typo"
-  ],
   "26026": [
     "ko_KR-w8385"
-  ],
-  "26042": [
-    "Original-typo"
   ],
   "26171": [
     "ko_KR-wizardrabbit"
   ],
   "26209": [
     "ko_KR-kiwiyou"
-  ],
-  "2625": [
-    "Original-typo"
   ],
   "26307": [
     "ko_KR-kiwiyou"
@@ -977,9 +781,6 @@
   ],
   "26665": [
     "ko_KR-pasteldream"
-  ],
-  "2667": [
-    "Original-typo"
   ],
   "26711": [
     "ko_KR-kiwiyou"
@@ -1076,9 +877,6 @@
   ],
   "27267": [
     "ko_KR-ez_code"
-  ],
-  "27294": [
-    "Original-typo"
   ],
   "27324": [
     "ko_KR-kiwiyou"
@@ -1182,9 +980,6 @@
   "27603": [
     "ko_KR-kiwiyou"
   ],
-  "27831": [
-    "Original-typo"
-  ],
   "27855": [
     "ko_KR-kiwiyou"
   ],
@@ -1218,9 +1013,6 @@
   "27866": [
     "en_US-kiwiyou"
   ],
-  "27880": [
-    "Original-typo"
-  ],
   "27908": [
     "ko_KR-kiwiyou"
   ],
@@ -1235,12 +1027,6 @@
   ],
   "27912": [
     "ko_KR-kiwiyou"
-  ],
-  "28058": [
-    "Original-typo"
-  ],
-  "28153": [
-    "Original-typo"
   ],
   "28202": [
     "ko_KR-Lumi"
@@ -1257,20 +1043,11 @@
   "28249": [
     "ko_KR-iamgamja"
   ],
-  "28288": [
-    "Original-typo"
-  ],
   "28302": [
     "en_US-wider93"
   ],
   "28346": [
     "ko_KR-wider93"
-  ],
-  "28352": [
-    "Original-typo"
-  ],
-  "28360": [
-    "Original-typo"
   ],
   "28365": [
     "en_US-wider93"
@@ -1278,33 +1055,20 @@
   "28370": [
     "ko_KR-wider93"
   ],
-  "28421": [
-    "Original-typo"
+  "28519": [
+    "ko_KR-wizardrabbit"
   ],
   "29018": [
     "ko_KR-dbrua1222"
   ],
-  "29019": [
-    "ko_KR-dbrua1222"
+  "29163": [
+    "ko_KR-ldhhello"
   ],
-  "2993": [
-    "Korean-typo",
-    "English-typo"
-  ],
-  "3060": [
-    "Original-typo"
-  ],
-  "3098": [
-    "Korean-typo"
+  "29454": [
+    "ko_KR-wizardrabbit"
   ],
   "3224": [
     "ko_KR-yup0927"
-  ],
-  "3418": [
-    "Original-typo"
-  ],
-  "3420": [
-    "Original-typo"
   ],
   "3507": [
     "ko_KR-ldhhello"
@@ -1312,32 +1076,17 @@
   "3512": [
     "ko_KR-w8385"
   ],
-  "3622": [
-    "Korean-typo"
+  "3578": [
+    "ko_KR-ldhhello"
   ],
   "3733": [
     "ko_KR-ez_code"
   ],
-  "3734": [
-    "Korean-typo"
-  ],
   "3765": [
     "ko_KR-kiwiyou"
   ],
-  "4002": [
-    "Original-typo"
-  ],
-  "4055": [
-    "Korean-typo"
-  ],
   "4141": [
     "ko_KR-w8385"
-  ],
-  "4171": [
-    "Original-typo"
-  ],
-  "4384": [
-    "Korean-typo"
   ],
   "4422": [
     "ko_KR-w8385"
@@ -1356,9 +1105,6 @@
   ],
   "4758": [
     "ko_KR-w8385"
-  ],
-  "4797": [
-    "Korean-typo"
   ],
   "4850": [
     "ko_KR-ez_code"
@@ -1396,6 +1142,24 @@
   "5541": [
     "ko_KR-jk410"
   ],
+  "5558": [
+    "ko_KR-yup0927"
+  ],
+  "5602": [
+    "ko_KR-bubbler"
+  ],
+  "5603": [
+    "ko_KR-bubbler"
+  ],
+  "5607": [
+    "ko_KR-bubbler"
+  ],
+  "5608": [
+    "ko_KR-bubbler"
+  ],
+  "5617": [
+    "ko_KR-bubbler"
+  ],
   "5786": [
     "ko_KR-leeunchong"
   ],
@@ -1407,13 +1171,6 @@
   ],
   "6159": [
     "ko_KR-kiwiyou"
-  ],
-  "6335": [
-    "Original-typo"
-  ],
-  "6439": [
-    "Korean-typo",
-    "English-typo"
   ],
   "6749": [
     "ko_KR-kiwiyou"
@@ -1439,8 +1196,8 @@
   "6825": [
     "ko_KR-kiwiyou"
   ],
-  "6829": [
-    "Original-typo"
+  "6830": [
+    "ko_KR-ldhhello"
   ],
   "6840": [
     "ko_KR-kiwiyou"
@@ -1466,18 +1223,8 @@
   "7070": [
     "ko_KR-kiwiyou"
   ],
-  "7558": [
-    "Korean-typo",
-    "English-typo"
-  ],
-  "7577": [
-    "Original-typo"
-  ],
   "7595": [
     "ko_KR-kiwiyou"
-  ],
-  "7616": [
-    "Korean-typo"
   ],
   "7891": [
     "ko_KR-kiwiyou"
@@ -1487,6 +1234,9 @@
   ],
   "7964": [
     "ko_KR-pasteldream"
+  ],
+  "8177": [
+    "ko_KR-dohoon"
   ],
   "8370": [
     "ko_KR-kiwiyou"
@@ -1508,6 +1258,9 @@
   ],
   "8661": [
     "ko_KR-ez_code"
+  ],
+  "8671": [
+    "ko_KR-wizardrabbit"
   ],
   "8674": [
     "ko_KR-ez_code"
@@ -1536,27 +1289,14 @@
   "8871": [
     "ko_KR-ez_code"
   ],
-  "8933": [
-    "Korean-typo"
-  ],
   "9161": [
     "ko_KR-ez_code"
   ],
   "9167": [
-    "Korean-typo",
-    "English-typo"
-  ],
-  "9206": [
     "Korean-typo"
   ],
   "9317": [
     "ko_KR-ez_code"
-  ],
-  "9324": [
-    "Korean-typo"
-  ],
-  "9329": [
-    "Korean-typo"
   ],
   "9443": [
     "ko_KR-ez_code"
@@ -1581,10 +1321,6 @@
   ],
   "9698": [
     "ko_KR-ez_code"
-  ],
-  "9711": [
-    "Korean-typo",
-    "English-typo"
   ],
   "9713": [
     "ko_KR-wizardrabbit"
