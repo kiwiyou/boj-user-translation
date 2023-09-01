@@ -1,0 +1,57 @@
+<section id="title">Princess' Gamble</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			어느 나라의 말괄량이 공주가 성에서 탈출하여 경마와 다른 도박이 열리는 도박장에 들어갔다.
+			그러나 도박을 한 번도 해본 적 없는 공주는 계속 돈을 잃기만 했다.
+			이 상황이 맘에 들지 않은 공주는 도박이 어떻게 진행되는지 조사하였고, 도박의 배당금이 패리뮤추얼 방식이라고 하는 방법으로 결정된다는 것을 알게 되었다.
+		</p>
+
+		<p>패리뮤추얼 방식에서는 모든 베팅의 총액에서 일정 비율이 차감된 후 베팅에 비례하는 금액이 승자에게 분배된다.</p>
+
+		<p>
+			지금 공주가 하고 있는 도박에서는, 참가자들이 100골드의 투표권을 구입하여 대회 전에 어떤 경쟁자가 이길지 예측하고,
+			대회 결과가 예측과 일치하면 승리하여 배당금을 받게 된다. 대회의 정보가 입력으로 주어지면 투표 당 배당금을 계산하는 프로그램을 작성하시오. 
+		</p>
+
+		<p>위 방법으로 계산된 배당금이 정수가 아닐 경우에는 정수로 내림하여야 한다.</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>입력은 여러 개의 테스트 케이스로 이루어져 있다. 테스트 케이스의 개수는 100개 이하이다. 입력의 마지막에는 세 개의 0이 주어진다.</p>
+
+		<p>각 테스트 케이스는 다음과 같은 형식으로 주어진다.</p>
+
+		<pre>
+<i>N</i>&nbsp;<i>M</i>&nbsp;<i>P</i>
+<i>X<sub>1</sub></i>
+&hellip;
+<i>X<sub>N</sub></i>
+</pre>
+
+		<p>
+			첫 줄의 <i>N</i>은 투표의 대상이 되는 경쟁자의 수, <i>M</i>은 우승한 경갱자의 번호, <i>P</i>는 차감하는 비율(퍼센트)을 나타내는 정수이다.
+			<i>X<sub>i</sub></i>는 <i>i</i>번째 경쟁자가 받은 표의 수이다.
+			(1 &le; <i>N</i> &le; 100, 1 &le; <i>M</i> &le; <i>N</i>, 0 &le; <i>P</i> &le; 100,
+			0 &le; <i>X<sub>i</sub></i> &le; 1000)
+		</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>각 테스트 케이스에 대해, 승리한 투표권 한 장당 배당금을 한 줄에 출력한다. 승리한 투표권이 없으면 0을 출력한다.</p>
+
+	</div>
+</section>
