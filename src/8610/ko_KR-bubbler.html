@@ -1,0 +1,64 @@
+<section id="title">암호</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			한별이는 알파벳 대문자로 이루어져 있는 비밀 메시지를 받았다. 한별이는 이 메시지가 카이사르 암호로 암호화되었다는 것을 알고 있다.
+			카이사르 암호는 어떤 키 값 $K$에 대해 각각의 알파벳 문자를 $K$번 다음 알파벳으로 바꾸는 암호이다. <code>Z</code>의 다음 알파벳은 <code>A</code>이다.
+			예를 들어, 다음의 메시지가 있다고 하자.
+		</p>
+
+		<p align="center"><code>ABCEGIKMOQSUVWXYZ</code></p>
+
+		<p>이 메시지를 $K=4$의 카이사르 암호로 암호화하면 다음과 같다.</p>
+
+		<p align="center"><code>EFGIKMOQSUWYZABCD</code></p>
+
+		<p>
+			한별이는 이 메시지를 해독하고 싶지만, 키 값을 모른다.
+			하지만 언어학을 공부한 한별이는 원래 메시지에서 어떤 문자가 가장 많이 등장하는지 예측할 수 있다.
+			또한 운이 좋게도, 원래 메시지에서 가장 많이 등장하는 문자는 하나밖에 없다.
+		</p>
+
+		<p>한별이를 도와서 메시지를 해독해 보자.</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>
+			입력의 첫 번째 줄에는 메시지의 길이 $n$과 원래 메시지에서 가장 많이 등장하는 문자 $c$가 주어진다. ($1 \le n \le 1\,000\,000$, $c$는 알파벳 대문자)
+		</p>
+		<p>
+			두 번째 줄에는 길이 $n$의 암호화된 메시지가 주어진다. 이 메시지는 알파벳 대문자로만 이루어져 있으며, 띄어쓰기나 다른 문자가 섞여있지 않다.
+		</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>
+			암호를 해독하여 얻은 원래 메시지를 한 줄에 출력한다. 정답이 되는 메시지가 항상 하나임이 보장된다.
+		</p>
+
+	</div>
+</section>
+<section id="hint">
+	<div class="headline">
+		<h2>힌트</h2>
+	</div>
+	<div id="problem_hint" class="problem-text">
+		<p>
+			위 예제의 메시지는 $K=10$의 카이사르 암호로 암호화되었다. 메시지에서 가장 많이 등장하는 문자는 <code>A</code>로, 총 $4$번 등장하였다.
+		</p>
+
+	</div>
+</section>
