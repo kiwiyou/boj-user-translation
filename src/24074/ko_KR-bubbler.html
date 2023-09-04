@@ -1,0 +1,85 @@
+<section id="title">나누기</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			길이 <var>N</var>의 정수 수열 <var>A = (A<sub>1</sub>, A<sub>2</sub>, &hellip;, A<sub>N</sub>)</var>가 주어진다.
+			수열 <var>A</var>의 값들은 모두 다르다.
+		</p>
+
+		<p>수열을 최댓값을 기준으로 나누어서, 최댓값보다 앞에 있는 수들의 합과 최댓값보다 뒤에 있는 수들의 합을 출력하시오.</p>
+
+		<p>다시 말해, 수열 <var>A</var>의 최댓값이 <var>A<sub>x</sub></var>라고 하면, <var>A<sub>1</sub>&nbsp;+
+				A<sub>2</sub>&nbsp;+ &hellip; + A<sub>x-1</sub></var>와 <var>A<sub>x+1</sub>&nbsp;+
+				A<sub>x+2</sub>&nbsp;+ &hellip; +A<sub>N</sub></var>를 출력하시오.</p>
+
+		<p>최댓값 앞에 값이 없으면, 최댓값 앞에 있는 값의 합은 0이다.</p>
+
+		<p>마찬가지로, 최댓값 뒤에 값이 없으면, 최댓값 뒤에 있는 값의 합은 0이다.</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>입력은 다음과 같은 형식으로 표준 입력을 통해 주어진다.</p>
+
+		<pre>
+<var>N</var>
+<var>A<sub>1</sub></var> <var>A<sub>2</sub></var> <var>&hellip;</var> <var>A<sub>N</sub></var></pre>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>첫 번째 줄에는 수열 <var>A</var>의 최댓값보다 앞에 있는 수들의 합을 출력한다.</p>
+
+		<p>두 번째 줄에는 수열 <var>A</var>의 최댓값보다 뒤에 있는 수들의 합을 출력한다.</p>
+
+	</div>
+</section>
+<section id="limit">
+	<div class="headline">
+		<h2>제한</h2>
+	</div>
+	<div id="problem_limit" class="problem-text">
+		<ul>
+			<li><var>1 &le; N &le; 100</var></li>
+			<li><var>1 &le; A<sub>i</sub> &le; 2000</var>&nbsp;(<var>1 &le; i &le; N</var>)</li>
+			<li><var>A<sub>i</sub>&nbsp;&ne; A<sub>j</sub></var>&nbsp;(<var>1 &le; i &lt; j &le; N</var>)</li>
+		</ul>
+	</div>
+</section>
+<section id="sample_explain_1">
+	<div id="problem_sample_explain_1" class="problem-text">
+		<ul>
+			<li>이 수열의 최댓값은 16이다. 16보다 앞에 있는 9와 3의 합은 12, 16보다 뒤에 있는 8과 1의 합은 9이다.
+			</li>
+		</ul>
+
+	</div>
+</section>
+<section id="sample_explain_2">
+	<div id="problem_sample_explain_2" class="problem-text">
+		<ul>
+			<li>이 수열의 최댓값은 121이다. 121 앞에는 수가 없으므로 0을 출력한다. 121의 뒤에 있는 8, 5, 4, 1, 3의 합은 21이다.
+			</li>
+		</ul>
+
+	</div>
+</section>
+<section id="sample_explain_3">
+	<div id="problem_sample_explain_3" class="problem-text">
+		<ul>
+			<li>최댓값의 어느 쪽에도 수가 없다.</li>
+		</ul>
+
+	</div>
+</section>

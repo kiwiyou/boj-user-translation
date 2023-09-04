@@ -554,8 +554,17 @@
   "22380": [
     "ko_KR-w8385"
   ],
+  "22381": [
+    "ko_KR-bubbler"
+  ],
   "22388": [
     "ko_KR-ez_code"
+  ],
+  "22389": [
+    "ko_KR-bubbler"
+  ],
+  "22396": [
+    "ko_KR-bubbler"
   ],
   "22421": [
     "ko_KR-ez_code"
@@ -566,8 +575,14 @@
   "22516": [
     "ko_KR-midori"
   ],
+  "22518": [
+    "ko_KR-bubbler"
+  ],
   "22542": [
     "ko_KR-kiwiyou"
+  ],
+  "22656": [
+    "ko_KR-bubbler"
   ],
   "23234": [
     "ko_KR-kiwiyou"
@@ -598,6 +613,9 @@
   ],
   "24072": [
     "ko_KR-kiwiyou"
+  ],
+  "24074": [
+    "ko_KR-bubbler"
   ],
   "24075": [
     "ko_KR-kiwiyou"

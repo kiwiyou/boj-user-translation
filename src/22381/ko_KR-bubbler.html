@@ -1,0 +1,88 @@
+<section id="title">독의 늪</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			당신은 레트로 롤플레잉 게임을 플레이하고 있다. 이 게임의 필드는 가로 100칸, 세로 100칸의 격자로 이루어져 있다.
+			이 필드의 왼쪽에서 <i>x</i>번째 세로줄, 위에서 <i>y</i>번째 가로줄에 있는 칸을 <i>(x, y)</i>로 쓴다.
+			당신이 조작하는 캐릭터는 이 필드에서 상하좌우로 한 번에 한 칸씩 이동할 수 있다.
+		</p>
+		<p>
+			이 캐릭터는 현재 <i>(X<sub>0</sub>, Y<sub>0</sub>)</i>에 위치해 있다. 당신은 이 캐릭터로 <i>N</i>개의 목적지를 순서대로 방문하려고 한다.
+			그런데 이 필드의 몇몇 칸은 독의 늪이기 때문에 움직일 때 주의가 필요하다. 캐릭터가 독의 늪으로 이동하면 캐릭터가 대미지를 받는다.
+			독의 늪이 아닌 칸은 독이 없는 땅으로, 캐릭터가 그 칸으로 이동하더라도 대미지를 받지 않는다.
+			대미지를 받는 여부는 캐릭터가 이동할 때 도착하는 칸에 의해서 결정된다. 예를 들어, 독의 늪에서 땅으로 이동할 때는 대미지를 받지 않는다.
+		</p>
+		<p>
+			이 필드에서 맨 왼쪽 위 칸이 <i>(A, B)</i>이고 맨 오른쪽 아래 칸이 <i>(C, D)</i>인 직사각형 영역은 땅이고, 나머지는 늪이다.
+			캐릭터가 독의 늪에서 대미지를 받는 횟수를 최소화하여 <i>N</i>개의 목적지를 순서대로 방문할 때, 캐릭터가 대미지를 받는 횟수를 구하시오.
+		</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>입력은 최대 50개의 테스트 케이스로 구성되어 있다. 각 테스트 케이스는 다음과 같은 형식으로 주어진다.</p>
+
+		<pre>
+<i>N</i>
+<i>A</i> <i>B</i> <i>C</i> <i>D</i>
+<i>X<sub>0</sub></i> <i>Y<sub>0</sub></i>
+<i>X<sub>1</sub></i> <i>Y<sub>1</sub></i>
+<i>X<sub>2</sub></i> <i>Y<sub>2</sub></i>
+<i>...</i>
+<i>X<sub>N</sub></i> <i>Y<sub>N</sub></i></pre>
+
+		<p>테스트 케이스의 첫 줄에는 목적지의 개수 <i>N</i>이 주어진다. (1 &le; <i>N</i> &le; 100)</p>
+
+		<p>
+			두 번째 줄에는 독이 없는 땅의 직사각형 범위를 나타내는 정수 <i>A</i>, <i>B</i>, <i>C</i>, <i>D</i>가 주어진다.
+			캐릭터가 이동하는 칸 <i>(x, y)</i>가 <i>A &le; x &le; C</i>, <i>B &le; y &le; D</i>를 만족하면 캐릭터가 대미지를 받지 않고,
+			나머지 경우에는 캐릭터가 대미지를 받는다.
+			(1 &le; <i>A</i> &le; <i>C</i> &le; 100, 1 &le; <i>B</i> &le; <i>D</i> &le; 100)
+		</p>
+
+		<p>
+			세 번째 줄에는 캐릭터의 현재 위치 <i>(X<sub>0</sub>, Y<sub>0</sub>)</i>를 나타내는 두 정수 <i>X<sub>0</sub></i>, <i>Y<sub>0</sub></i>가 주어진다.
+			그 다음 <i>N</i>개의 줄에는 순서대로 방문할 목적지의 위치가 주어진다. <i>3 + i</i>번째 줄에는 <i>i</i>번째 목적지의 위치 <i>(X<sub>i</sub>, Y<sub>i</sub>)</i>
+			를 나타내는 두 정수 <i>X<sub>i</sub></i>와 <i>Y<sub>i</sub></i>가 주어진다.
+			(1 &le; <i>X<sub>i</sub></i>, <i>Y<sub>i</sub></i> &le; 100,
+			모든 0 &le; j &lt; k &le; N에 대해 <i>(X<sub>j</sub>, Y<sub>j</sub>) &ne; (X<sub>k</sub>, Y<sub>k</sub>)</i>)
+		</p>
+
+		<p>입력의 끝에는 0이 하나 주어진다.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>각각의 테스트 케이스에 대해, 캐릭터가 대미지를 받은 횟수를 한 줄에 출력한다.</p>
+
+	</div>
+</section>
+<section id="hint">
+	<div class="headline">
+		<h2>힌트</h2>
+	</div>
+	<div id="problem_hint" class="problem-text">
+		<p>
+			예시 입력의 첫 번째 테스트 케이스의 상황은 아래 그림과 같다. <i>(3, 3)</i>에서 <i>(5, 3)</i>까지는 땅이지만,
+			<i>(6, 3)</i>과 <i>(7, 3)</i>은 독의 늪이므로 첫 번째 목적지에 도착할 때까지 2번의 대미지를 받는다.
+			첫 번째 목적지에서 두 번째 목적지로 갈 때 4번 아래로 이동하는 것이 최단 거리이지만, 모든 칸이 독의 늪이기 때문에 4번 대미지를 받는다.
+			다시 땅으로 우회하여 그림과 같이 이동하면 <i>(6, 3)</i>，<i>(6, 7)</i>，<i>(7, 7)</i>에서 3번 대미지를 받는다.
+			따라서 받는 대미지의 최소 횟수는 5회이다.
+		</p>
+
+		<p style="text-align: center;"><img alt=""
+				src="https://upload.acmicpc.net/6ac71380-d428-4f2b-9faa-648f860e7b84/-/preview/"
+				style="width: 640px; height: 360px;" /></p>
+
+	</div>
+</section>
