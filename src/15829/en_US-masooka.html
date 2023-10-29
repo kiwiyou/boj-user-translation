@@ -1,0 +1,109 @@
+<section id="title">Hashing</section>
+<section id="description">
+	<div class="headline">
+		<h2>Statement</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>Welcome to APC. If you have taken a data structure course at school,
+			you would have learned about hash functions. A hash function is defined
+			as a function that takes an arbitrary length of input and produces a
+			fixed length of output. Hash functions have a myriad of applications,
+			notably in data storage and search.
+		</p>
+
+		<p>In this problem, we aim to teach you a useful hash function. For
+			convenience, let's assume that the incoming string consists only of
+			English lowercase letters (a, b, …, z). Since there are 26 letters in
+			English, we can assign unique numbers such as 1 for &lsquo;a&rsquo;, 2
+			for &lsquo;b&rsquo;, 3 for &lsquo;c&rsquo;, …, and 26 for
+			&lsquo;z&rsquo;. Consequently, we can convert a string into a sequence
+			of numbers. For example, the string <q>abba</q> can be represented as
+			the sequence 1, 2, 2, 1.
+		</p>
+
+		<p>To calculate the hash value, we intend to convert the string or
+			sequence into a single integer. Simply, we can sum the values of the
+			sequence. Since a hash function should have a finite range of output,
+			let's divide it by a suitably large number $M$. Voilà! The hash function
+			is now complete. This can be expressed in the formula:</p>
+
+		<p>\[H = \sum_{i=0}^{L-1}{a_i} \mod M\]</p>
+
+		<p>While there can be an infinite variety of strings as input for the
+			hash function, the output range is fixed. You might have heard of the
+			pigeonhole principle. According to this principle, even if two strings
+			are different, they can have the same hash value. This is called a hash
+			collision. A good hash function should have minimal collisions. The hash
+			function defined above is bad since changing the order of alphabets
+			leads to collisions. Let's improve it.</p>
+
+		<p>How can we ensure that changing the order produces a different
+			output? A potential solution is to assign a unique coefficient to each
+			term in the sequence. A common method is to multiply each term by a
+			specific number raised to the power of its index, and then sum the
+			results. This can be expressed as:</p>
+
+		<p>\[H = \sum_{i=0}^{L-1}{a_ir^i} \mod M\]</p>
+
+		<p>Typically, $r$ and $M$ are chosen as coprime numbers. Choosing them
+			can be tricky, so let's use $r$ as a prime number larger than 26, which
+			is 31, and $M$ as 1234567891 (surprisingly, it's a prime number!).</p>
+
+		<p>Your task now is to compute the hash value of the given string using
+			the formula above. Even if it seems simple, remember this function as it
+			is commonly used.</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>Input</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>The first line contains the length $L$ of the string. The second line
+			contains a string made up of English lowercase letters.</p>
+
+		<p>The given string will consist only of lowercase English letters.</p>
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>Output</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>Compute and output the hash value as an integer using the hash
+			function provided in the problem and the input string.</p>
+	</div>
+</section>
+<section id="subtask1">
+	<div class="headline">
+		<h2>Small (50 points)</h2>
+	</div>
+	<div id="problem_subtask1" class="problem-text">
+		<ul>
+			<li>$1 \leq L \leq 5$</li>
+		</ul>
+	</div>
+</section>
+<section id="subtask2">
+	<div class="headline">
+		<h2>Large (50 points)</h2>
+	</div>
+	<div id="problem_subtask2" class="problem-text">
+		<ul>
+			<li>$1 \leq L \leq 50$</li>
+		</ul>
+	</div>
+</section>
+<section id="hint">
+	<div class="headline">
+		<h2>Hints</h2>
+	</div>
+	<div id="problem_hint" class="problem-text">
+		<p>Input 1: The hash value of <q>abcde</q> is 1 × 31<sup>0</sup> + 2 ×
+			31<sup>1</sup> + 3 × 31<sup>2</sup> + 4 × 31<sup>3</sup> + 5 ×
+			31<sup>4</sup> = 1 + 62 + 2883 + 119164 + 4617605 = 4739715.</p>
+
+		<p>Input 2: The hash value of <q>zzz</q> is 26 × 31<sup>0</sup> + 26 ×
+			31<sup>1</sup> + 26 × 31<sup>2</sup> = 26 + 806 + 24986 = 25818.</p>
+	</div>
+</section>
