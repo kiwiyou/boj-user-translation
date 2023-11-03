@@ -1,0 +1,43 @@
+<section id="title">두 개의 원</section>
+<section id="description">
+        <div class="headline"><h2>문제</h2></div>
+        <div id="problem_description" class="problem-text">
+        <p>$N$개로 나뉘어진 원이 있습니다. 각 조각은 시계방향으로 $1$부터 $N$까지 번호가 붙어 있습니다.</p><p>연속된 조각 일부분을 덮는 $M$개의 원호가 주어집니다. 모든 조각에 대해서 조각을 덮는 원호가 적어도 하나 존재합니다.</p><p>각 그룹만의 원호만으로 원 둘레를 전부 덮을 수 있도록 $M$개의 원호를 두 개의 그룹으로 나누어 주세요!</p><p>&lt;p style="text-align: center"&gt;</p><p>  &lt;img src="&lt;figure&gt;&lt;img src="https://upload.acmicpc.net/1ce88b57-9d67-4423-9193-5bafb6ebf55c/-/preview/" data-image="1ce88b57-9d67-4423-9193-5bafb6ebf55c"&gt;&lt;/figure&gt;" /&gt;</p><p>&lt;/p&gt;</p><p>A solution to the first sample. The curved arrows outside the railway represent the wires that provide electricity. The direction of each arrow represents Fredrik’s choice of direction of the current (with the blue and red colors emphasizing the different directions). Note that all arrows could have been reversed to get the other valid solution: 11010.</p><p><sup>1</sup>This makes sense because the railway is a Swedish one – in Sweden, all train switches (“växlar”) use alternating current (“växelström”).</p>
+        </div>
+        </section>
+<section id="input">
+        <div class="headline"><h2>입력</h2></div>
+        <div id="problem_input" class="problem-text">
+        <p>첫 번째 줄에는 두 정수 $N$과 $M$이 공백으로 구분되어 주어집니다.</p><p>이어서 $M$개의 각 줄에는 두 정수 $a, b$ $(1\le a,b\le N)$이 주어집니다. 이는 원호를 나타내는데, $a$에서 시계방향으로 $b$까지 이어진 상태를 나타냅니다. $a=b$라면 원호는 하나의 조각만 덮습니다.</p>
+        </div>
+        </section>
+<section id="output">
+        <div class="headline"><h2>출력</h2></div>
+        <div id="problem_output" class="problem-text">
+        <p>조건에 맞게 두 개의 그룹으로 나누는 방법이 존재한다면 길이 $M$의 이진 문자열 $S$를 출력합니다. $S_i$가 $0$이면 $i-1$번째 원호를 그룹 $A$에 포함시켰다는 의미이고, $1$이라면 그룹 $B$에 포함시켰다는 의미입니다. 가능한 방법이 여러가지라면 그중 아무것이나 출력합니다.</p><p>조건에 맞게 두 개의 그룹으로 나누는 방법이 존재하지 않는다면 &lt;span style="color:#e74c3c;"&gt;&lt;code&gt;impossible&lt;/code&gt;&lt;/span&gt;을 출력합니다.</p>
+        </div>
+        </section>
+<section id="subtask1">
+        <div class="headline"><h2>서브태스크 1 (13점)</h2></div>
+        <div id="problem_subtask1" class="problem-text">
+        <ul><li><p>2 ≤ N, M ≤ 15</p></li></ul>
+        </div>
+        </section>
+<section id="subtask2">
+        <div class="headline"><h2>서브태스크 2 (20점)</h2></div>
+        <div id="problem_subtask2" class="problem-text">
+        <ul><li><p>2 ≤ N, M ≤ 100</p></li></ul>
+        </div>
+        </section>
+<section id="subtask3">
+        <div class="headline"><h2>서브태스크 3 (22점)</h2></div>
+        <div id="problem_subtask3" class="problem-text">
+        <ul><li><p>2 ≤ N, M ≤ 1000</p></li></ul>
+        </div>
+        </section>
+<section id="subtask4">
+        <div class="headline"><h2>서브태스크 4 (19점)</h2></div>
+        <div id="problem_subtask4" class="problem-text">
+        <ul><li><p>2 ≤ N, M ≤ 100000</p></li><li><p>No wire has b &lt; a.</p></li></ul>
+        </div>
+        </section>
