@@ -62,10 +62,19 @@
   "10869": [
     "en_US-kiwiyou"
   ],
+  "10871": [
+    "en_US-masooka"
+  ],
   "10926": [
     "en_US-kiwiyou"
   ],
   "10950": [
+    "en_US-masooka"
+  ],
+  "10951": [
+    "en_US-masooka"
+  ],
+  "10952": [
     "en_US-masooka"
   ],
   "10998": [
@@ -722,6 +731,9 @@
   "2439": [
     "en_US-masooka"
   ],
+  "2440": [
+    "en_US-masooka"
+  ],
   "24488": [
     "ko_KR-dohoon"
   ],
@@ -739,6 +751,9 @@
   ],
   "24736": [
     "ko_KR-ez_code"
+  ],
+  "2475": [
+    "en_US-masooka"
   ],
   "24758": [
     "ko_KR-w8385"
@@ -968,8 +983,14 @@
   "27332": [
     "ko_KR-kiwiyou"
   ],
+  "27335": [
+    "ko_KR-dbrua1222"
+  ],
   "27389": [
     "ko_KR-kiwiyou"
+  ],
+  "2739": [
+    "en_US-masooka"
   ],
   "2741": [
     "en_US-masooka"
