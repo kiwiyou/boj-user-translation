@@ -1,0 +1,103 @@
+<section id="title">Size Rankings</section>
+<section id="description">
+	<div class="headline">
+		<h2>Statement</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>We want to rank people's sizes by their weight and height. A person's
+			size is represented as $(x, y)$, where $x$ is the weight in kg and $y$
+			is the height in cm. If person A's size is $(x, y)$ and person B's size
+			is $(p, q)$, then A is considered to have a <q>bigger size</q> than B if
+			$x > p$ and $y > q$. For example, if the sizes of A and B are (56, 177)
+			and (45, 165) respectively, A is considered to have a bigger size than
+			B. However, there are cases where it's not possible to determine who has
+			a bigger size. For instance, if C and D have sizes (45, 181) and (55,
+			173), respectively, D is heavier but C is taller, so we cannot say who
+			has a bigger size just based on
+			<q>size</q>.
+		</p>
+
+		<p>In a group of $N$ people, each person's size rank is determined by
+			the number of people with a <q>bigger size</q> than them. If there are
+			$k$ people with a bigger size than someone, that person's size rank is
+			$k+1$. This way, it's possible for multiple people to have the same size
+			rank. Below is a table showing the size and rank of each person in a
+			group of 5 people.</p>
+
+		<table class="table table-bordered" style="width: 35%;">
+			<thead>
+				<tr>
+					<th style="text-align: center;">Name</th>
+					<th style="text-align: center;">(Weight, Height)</th>
+					<th style="text-align: center;">Size Rank</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align: center;">A</td>
+					<td style="text-align: center;">(55, 185)</td>
+					<td style="text-align: center;">2</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">B</td>
+					<td style="text-align: center;">(58, 183)</td>
+					<td style="text-align: center;">2</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">C</td>
+					<td style="text-align: center;">(88, 186)</td>
+					<td style="text-align: center;">1</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">D</td>
+					<td style="text-align: center;">(60, 175)</td>
+					<td style="text-align: center;">2</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">E</td>
+					<td style="text-align: center;">(46, 155)</td>
+					<td style="text-align: center;">5</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>In the table above, since there is no one with a bigger size than C,
+			C is ranked 1st. A, B, and D are all ranked 2nd as the only person with
+			a bigger size than each of them is C. E, being smaller than A, B, C, and
+			D, is ranked 5th. In this case, there are no ranks 3rd and 4th. Your
+			task is to read the weight and height of $N$ students from the input and
+			calculate each person's size rank.</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>Input</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>The first line contains the total number of people, $N$. The
+			following $N$ lines each contain two positive integers $x$ and $y$,
+			separated by a space, representing the weight and height of each person,
+			respectively.</p>
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>Output</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>Your task is to calculate the size rank for each person listed in the
+			input and print them in order on the first line. Each size rank should
+			be separated by a space.</p>
+	</div>
+</section>
+<section id="limit">
+	<div class="headline">
+		<h2>Constraints</h2>
+	</div>
+	<div id="problem_limit" class="problem-text">
+		<ul>
+			<li>\(2 \le N \le 50\)</li>
+			<li>\(10 \le x, y \le 200\)</li>
+		</ul>
+	</div>
+</section>
