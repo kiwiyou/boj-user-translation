@@ -1,0 +1,117 @@
+<section id="title">Gas Station</section>
+<section id="description">
+	<div class="headline">
+		<h2>Statement</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>There are $N$ cities in a certain country, all located along a
+			straight horizontal road for convenience. One plans to travel by car
+			from the city on the far left to the city on the far right. The roads
+			between adjacent cities may have different lengths, with the unit of
+			length being kilometers (km).</p>
+
+		<p>When starting the journey, the car has no fuel, so it is necessary to
+			fill up at a gas station. The fuel tank size is unlimited, allowing one
+			to fill as much fuel as needed. The car uses 1 liter of fuel per
+			kilometer traveled. Each city has only one gas station, and the price
+			per liter of fuel can vary from city to city, with the unit of price
+			being dollars.</p>
+
+		<p>For example, consider a country with four cities arranged as in the
+			following figure. The number inside the circle is the price per liter at
+			the gas station in that city. The numbers on the road represent the
+			length of the road.</p>
+
+		<p style="text-align: center;"><img alt=""
+				src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/13305/1.png"
+				style="height:52px; width:274px" /></p>
+
+		<p>If you fill up with 6 liters of fuel in the far-left city and travel
+			to the far-right city without further refueling, the total cost is 30
+			dollars. However, if you fill up with 2 liters of fuel in the far-left
+			city ($2 \times 5 = 10$ dollars), travel to the next city, fill up with
+			3 liters ($3 \times 2 = 6$ dollars), then fill up with another liter in
+			the next city ($1 \times 4 = 4$ dollars) before traveling to the
+			far-right city, the total cost is 20 dollars. Another method is to fill
+			up with 2 liters in the far-left city ($2 \times 5 = 10$ dollars),
+			travel to the next city, fill up with 4 liters ($4 \times 2 = 8$
+			dollars), and then travel to the far-right city, the total cost is 18
+			dollars.</p>
+
+		<p>Write a program that calculates the minimum cost to travel from the
+			far-left city to the far-right city, given the fuel prices at each
+			city's gas station and the lengths of the roads connecting each
+			city.</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>Input</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>Standard input provides the following information. The first line
+			contains an integer $N$ ($2 \le N \le 100\,000$), which represents the
+			number of cities. The next line contains $N-1$ natural numbers,
+			representing the lengths of the roads connecting two adjacent cities
+			from the leftmost road. The following line contains $N$ natural numbers,
+			representing the per liter fuel prices at the gas stations from the
+			leftmost city in order. The distance from the leftmost to the rightmost
+			city is a natural number between 1 and 1,000,000,000. The price per
+			liter is a natural number between 1 and 1,000,000,000.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>Output</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>Standard output should print the minimum cost of traveling from the
+			leftmost city to the rightmost city.</p>
+
+	</div>
+</section>
+<section id="subtask">
+	<div class="headline">
+		<h2>Subtask</h2>
+	</div>
+	<div id="problem_subtask" class="problem-text">
+		<div class="table-responsive">
+			<table class="table table-bordered td-middle subtask-table" style="width: 100%;">
+				<thead>
+					<th style="width: 5%;">Number</th>
+					<th style="width: 5%;">Score</th>
+					<th style="width: 90%;">Constraints</th>
+				</thead>
+				<tbody>
+					<tr data-subtask-id="1">
+						<td>1</td>
+						<td>17</td>
+						<td class="subtask-body">
+							<p>All gas stations have a price of 1 dollar per
+								liter.</p>
+						</td>
+					</tr>
+					<tr data-subtask-id="2">
+						<td>2</td>
+						<td>41</td>
+						<td class="subtask-body">
+							<p>$2 \le N \le 1\,000$. The total distance from the
+								leftmost to the rightmost city is at most 10,000,
+								and the price per liter is at most 10,000.</p>
+						</td>
+					</tr>
+					<tr data-subtask-id="3">
+						<td>3</td>
+						<td>42</td>
+						<td class="subtask-body">
+							<p>There are no additional constraints beyond the
+								original constraints.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
