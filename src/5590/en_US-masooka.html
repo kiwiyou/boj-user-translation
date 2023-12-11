@@ -1,0 +1,134 @@
+<section id="title">Ship Journey</section>
+<section id="description">
+	<div class="headline">
+		<h2>Statement</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>In JOI country, there are $n$ islands, each numbered from 1 to $n$.
+			Currently, a network of shipping routes connecting the islands is under
+			development.</p>
+
+		<p>You work at a ticket center that deals with ship tickets. In JOI
+			country, there are many people who want to travel between the islands as
+			cheaply as possible using ships. They fill out order forms with their
+			departure and destination islands and send them to you.</p>
+
+		<p>Your job is to calculate the cheapest fare for the requested routes
+			from the order forms using multiple ships and to communicate this to the
+			clients as soon as possible.</p>
+
+		<p>However, there are cases where it is not possible to travel by ship
+			depending on the itinerary. In such cases, you must inform the client
+			that <q>It is not possible to travel by ship</q>. In addition, in JOI
+			country, new ships are being launched one after another, and this
+			information is relayed to you in real-time. You must keep up with the
+			latest information when responding to clients.</p>
+
+		<p>Create a program that, given customer order forms and information on
+			newly launched ships, computes the replies to the customers.</p>
+
+		<p>Note that the running status for input example 1 and output example 1
+			is illustrated in Figure 1.</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>Input</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>The first line of input contains two integers $n$ ($1 \le n \le 100$)
+			and $k$ ($1 \le k \le 5000$). This indicates that there are $n$ islands
+			and the input consists of $k + 1$ lines.</p>
+
+		<p>On the $i + 1$th line ($1 \le i \le k$), 3 or 4 integers are written
+			separated by spaces.</p>
+
+		<ul>
+			<li>When the first number is 0, this line represents a customer's
+				order form.
+				<ul>
+					<li>The line has three integers, $0$, $a$, and $b$ ($1 \le a
+						\le n$, $1 \le b \le n$, and $a \ne b$), written, separated
+						by spaces.
+					</li>
+					<li>This indicates that the client has sent an order form
+						requesting a trip from island $a$ to island $b$.</li>
+				</ul>
+			</li>
+			<li>When the first number is 1, this line represents the operational
+				information of a newly launched ship.
+				<ul>
+					<li>The line has four integers, $1$, $c$, $d$ ($1 \le c \le
+						n$, $1 \le d \le n$, and $c \ne d$), and $e$, ($1 \le e \le
+						1\,000\,000$), written.
+					</li>
+					<li>This indicates that a new ship service has started
+						operating between islands $c$ and $d$, and the fare from
+						island $c$ to island $d$ and vice versa is $e$ each.</li>
+					<li>For the order forms following this line, this new ship
+						must be considered in the response.</li>
+				</ul>
+			</li>
+		</ul>
+
+		<p>In the initial stage, assume that no ships are operating. Note that
+			there may be multiple ships operating between the islands among the
+			lines that represent ship operation information, which are no more than
+			1000 lines.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>Output</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>Let $m$ be the number of lines representing order forms in the
+			input.</p>
+
+		<p>The output you submit should consist of $m$ lines, and the $i$th line
+			($1 \le i \le m$) should contain the integer representing the response
+			to the $i$th order form.</p>
+
+		<p>That is, if it is possible to travel between the departure and
+			destination of the $i$th order form by transferring between several
+			ships, write the minimum total fare. If it is impossible to travel,
+			write <q><code>-1</code></q>.
+		</p>
+
+	</div>
+</section>
+<section id="hint">
+	<div class="headline">
+		<h2>Hints</h2>
+	</div>
+	<div id="problem_hint" class="problem-text">
+		<p>The pattern in which ships start operating for input example 1 and
+			the responses to the order forms from customers are illustrated in
+			Figure 1.</p>
+
+		<p style="text-align: center;"><img alt=""
+				src="https://upload.acmicpc.net/b9e6f73e-f6f1-499a-8a75-2db820652dcf/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6f0e5635-7743-4b66-8b62-8efbec75ee58/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6c518da3-00d6-406a-b26e-fcaa041e2566/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6f0e5635-7743-4b66-8b62-8efbec75ee58/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/e807cd6f-9db4-482e-b3cf-c16d5f8bc2f9/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6f0e5635-7743-4b66-8b62-8efbec75ee58/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6506c599-a0d1-49b8-bbe2-df872780d109/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6f0e5635-7743-4b66-8b62-8efbec75ee58/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/1c55f827-5045-4b10-b97c-8014c52fbbdb/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6f0e5635-7743-4b66-8b62-8efbec75ee58/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/2617a4d2-68a6-44b9-9eaf-cb05e368530a/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6f0e5635-7743-4b66-8b62-8efbec75ee58/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/ed6e3098-fe58-4379-8f16-2ac51eaa3bb8/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6f0e5635-7743-4b66-8b62-8efbec75ee58/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/d8d26759-313a-4a14-95ed-06eca8b6c0f0/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/6f0e5635-7743-4b66-8b62-8efbec75ee58/-/preview/" /> <img alt=""
+				src="https://upload.acmicpc.net/eb03fa6c-d688-4ade-a7b5-36fdf2023d84/-/preview/" /></p>
+
+		<p style="text-align: center;">Figure 1. Illustrations for each time
+			phase of the simulation</p>
+
+	</div>
+</section>
