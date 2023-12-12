@@ -1,0 +1,62 @@
+<section id="title">Tomato</section>
+<section id="description">
+	<div class="headline">
+		<h2>Statement</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>Charlie's tomato farm has a large warehouse for storing tomatoes. The
+			tomatoes are stored in a grid-patterned box, with one tomato per cell,
+			and these boxes are stacked vertically in the warehouse, as shown in the
+			image below.</p>
+
+		<p style="text-align: center;"><img alt=""
+				src="https://u.acmicpc.net/c3f3343d-c291-40a9-9fe3-59f792a8cae9/Screen%20Shot%202021-06-22%20at%202.49.11%20PM.png"
+				style="width: 201px; height: 252px;" /></p>
+
+		<p>In the warehouse, there are both ripe and unripe tomatoes. After a
+			day, unripe tomatoes adjacent to ripe ones become ripe due to their
+			influence. An adjacent position for a tomato refers to the six
+			directions: up, down, left, right, front, and back. Tomatoes in diagonal
+			directions are not affected, and it is assumed that tomatoes do not
+			ripen on their own. Charlie wants to know the minimum number of days it
+			takes for all the tomatoes stored in the warehouse to become ripe.</p>
+
+		<p>Given the size of the grid-patterned boxes used for storing tomatoes
+			and the information about ripe and unripe tomatoes, write a program to
+			calculate the minimum number of days required for all the tomatoes to
+			become ripe. Note that some cells in the box might be empty.</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>Input</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>The first line contains three integers, \(M\), \(N\), and \(H\),
+			representing the size of the boxes and the number of boxes stacked.
+			\(M\) is the number of horizontal cells in a box, \(N\) is the number of
+			vertical cells, and \(H\) is the number of boxes stacked. It is
+			guaranteed that \(2 \le M \le 100\), \(2 \le N \le 100\), and \(1 \le H
+			\le 100\). From the second line onwards, the information about the
+			tomatoes stored in the boxes from the bottommost to the topmost is
+			provided. For each of the \(N\) lines, the state of tomatoes in each row
+			of the box is given by \(M\) integers. The integer 1 represents a ripe
+			tomato, 0 represents an unripe tomato, and &minus;1 represents an empty
+			cell. This information for \(N\) lines is repeated \(H\) times.</p>
+
+		<p>The input is given only when there is at least one tomato.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>Output</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>You need to calculate and output the minimum number of days it takes
+			for all tomatoes to become ripe. If all tomatoes are already ripe at the
+			beginning, output <q><code>0</code></q>. If it is impossible for all
+			tomatoes to become ripe, output <q><code>-1</code></q>.</p>
+
+	</div>
+</section>
