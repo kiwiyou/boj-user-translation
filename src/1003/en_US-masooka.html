@@ -1,0 +1,75 @@
+<section id="title">Fibonacci Function</section>
+<section id="description">
+	<div class="headline">
+		<h2>Statement</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>The following source is a C++ function that computes the $N$th
+			Fibonacci number.</p>
+
+		<pre>int fibonacci(int n) {
+    if (n == 0) {
+        printf("0");
+        return 0;
+    } else if (n == 1) {
+        printf("1");
+        return 1;
+    } else {
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
+</pre>
+
+		<p>When <code>fibonacci(3)</code> is called, the following happens:</p>
+
+		<ul>
+			<li><code>fibonacci(3)</code> calls <code>fibonacci(2)</code> and
+				<code>fibonacci(1)</code> (first call).
+			</li>
+			<li><code>fibonacci(2)</code> calls <code>fibonacci(1)</code>
+				(second call) and <code>fibonacci(0)</code>.
+			</li>
+			<li>The second call to <code>fibonacci(1)</code> prints and returns
+				1.</li>
+			<li><code>fibonacci(0)</code> prints and returns 0.</li>
+			<li><code>fibonacci(2)</code> gets the results of
+				<code>fibonacci(1)</code> and <code>fibonacci(0)</code>, and returns
+				1.
+			</li>
+			<li>The first call to <code>fibonacci(1)</code> prints and returns
+				1.</li>
+			<li><code>fibonacci(3)</code> gets the results of
+				<code>fibonacci(2)</code> and <code>fibonacci(1)</code>, and returns
+				2.
+			</li>
+		</ul>
+
+		<p>1 is printed 2 times and 0 is printed 1 time. Given $N$, write a
+			program to find out how many times 0 and 1 are printed when
+			<code>fibonacci(N)</code> is called.
+		</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>Input</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>The first line contains the number of test cases $T$.</p>
+
+		<p>Each test case consists of a single line containing $N$. $N$ is a
+			natural number or 0, and is less than or equal to 40.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>Output</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>For each test case, output the number of times 0 and 1 are printed,
+			separated by a space.</p>
+
+	</div>
+</section>
