@@ -1,0 +1,97 @@
+<section id="title">귤 최대한 많이 먹기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      린은 $N$개의 귤을 가지고 있으며, 하루에 최대 $K$개의 귤을 먹을 수 있다.
+    </p>
+
+    <p>
+      아쉽게도 각 귤에는 유통기한이 있기 때문에 서둘러 귤을 먹어야 한다. $i$번째
+      귤의 유통기한은 $d_i$이며, 이는 $d_i$일째까지 귤을 먹을 수 있음을
+      의미한다. 유통기한이 지난 귤은 먹을 수 없다.
+    </p>
+
+    <p>
+      린은 귤을 정말정말 좋아하기 때문에 귤을 최대한 많이 먹고 싶어한다. 린이
+      최선의 선택을 했을 때 먹을 수 있는 귤의 개수의 최댓값은 몇일까?
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$, $K$가 공백을 사이에 두고 차례대로 주어진다.</p>
+
+    <p>
+      그 다음 $N$개의 줄에 걸쳐 $N$개의 귤의 유통기한에 대한 정보가 한 줄에
+      하나씩 주어진다. $i$번째 정보에서는 $d_i$가 주어진다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>린이 먹을 수 있는 귤의 개수의 최댓값을 출력한다.</p>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>22</td>
+            <td class="subtask-body">
+              <p>$1 \le N, K \le 1\;000$; $1 \le d_i \le 100$</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>25</td>
+            <td class="subtask-body">
+              <p>$1 \le N \le 100\;000$; $K = 1$; $1 \le d_i \le 1\;000$</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>53</td>
+            <td class="subtask-body">
+              <p>$1 \le N, K \le 100\;000$; $1 \le d_i \le 1\;000$</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      린은 하루에 귤을 하나만 먹을 수 있다. 첫 번째 귤과 세 번째 귤의 경우 모두
+      유통기한이 $1$일차까지이기 때문에, 두 귤 중 하나는 먹지 못하게 된다.
+      따라서 린은 귤을 $3$개 중 $2$개만 먹을 수 있게 된다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>린이 모든 귤을 먹을 수 있다.</p>
+  </div>
+</section>
