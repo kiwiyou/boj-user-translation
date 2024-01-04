@@ -20,6 +20,9 @@
   "10171": [
     "en_US-kiwiyou"
   ],
+  "1018": [
+    "en_US-masooka"
+  ],
   "10189": [
     "ko_KR-kiwiyou"
   ],
@@ -59,6 +62,9 @@
   "10814": [
     "en_US-masooka"
   ],
+  "10816": [
+    "en_US-masooka"
+  ],
   "10818": [
     "en_US-masooka"
   ],
@@ -70,6 +76,9 @@
   ],
   "10854": [
     "ko_KR-midori"
+  ],
+  "10866": [
+    "en_US-masooka"
   ],
   "10869": [
     "en_US-kiwiyou"
@@ -137,10 +146,16 @@
   "11651": [
     "en_US-masooka"
   ],
+  "11650": [
+    "en_US-masooka"
+  ],
   "11654": [
     "en_US-masooka"
   ],
   "11720": [
+    "en_US-masooka"
+  ],
+  "1181": [
     "en_US-masooka"
   ],
   "11866": [
@@ -241,6 +256,9 @@
   ],
   "14347": [
     "ko_KR-Lumi"
+  ],
+  "1436": [
+    "en_US-masooka"
   ],
   "14475": [
     "ko_KR-jk410"
@@ -488,6 +506,9 @@
   "18813": [
     "ko_KR-ez_code"
   ],
+  "1929": [
+    "en_US-masooka"
+  ],
   "19303": [
     "ko_KR-yup0927"
   ],
@@ -616,6 +637,9 @@
   ],
   "21638": [
     "ko_KR-ez_code"
+  ],
+  "2164": [
+    "en_US-masooka"
   ],
   "21645": [
     "ko_KR-ez_code"
