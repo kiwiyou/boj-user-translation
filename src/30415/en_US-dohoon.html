@@ -1,0 +1,84 @@
+<section id="title">Cat League</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+				<p>In the Cat League, teams consisting of cats compete against each other.</p>
+
+<p>The International Cat Sports Federation has specified the conditions that a team must satisfy:</p>
+
+<ul>
+	<li>The team must have $m$ players.</li>
+	<li>Each player's price is an integer ranging from $1$ to $n-1$ (inclusive).</li>
+	<li>The prices of any two different players must be distinct.</li>
+	<li>The least common multiple of the prices of any two players is $n$.</li>
+</ul>
+
+<p>A wealthy cat conglomerate has recently taken an interest in the Cat League and decided to establish a new team.</p>
+
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/01ba2102-8982-4085-b986-58388aa9f2d1/-/preview/" /></p>
+
+<p>They entrusted the team management to Yeongchul, who is in need of quick funds. Yeongchul plans to assemble the team with minimal expenses and pocket the rest.</p>
+
+<p>Help Yeongchul determine a team that meets the approval criteria while minimizing the sum of the players' prices, ensuring the team is approved!</p>
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>Two integers, $n$ and $m$, are given separated by a space. ($2 \leq m \leq n \leq 10^6$)</p>
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>If there exists a team composition that meets the approval criteria, output $m$ distinct integers separated by spaces in any order. These values represent the player prices in any one team that is approved, and the sum of these prices is minimized.</p>
+
+<p>If there is no team composition that meets the approval criteria, output <span style="color:#e74c3c;"><code>-1</code></span>.</p>
+
+					</div>
+					</section>
+<section id="sample_explain_1">
+								<div id="problem_sample_explain_1" class="problem-text">
+								<p>There is no way to form a team that satisfies the approval criteria of the International Cat Sports Federation.</p>
+
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/5b9d79a7-cde9-4c77-8e76-649018a60bca/-/preview/" /></p>
+
+<p style="text-align: center;">Yeongchul is going to be fired... :(</p>
+
+								</div>
+							</section>
+<section id="sample_explain_2">
+								<div id="problem_sample_explain_2" class="problem-text">
+								<p>The team composed of players with player prices $33$, $6$, and $22$ satisfies the following criteria:</p>
+
+<ul>
+	<li>The team has $m (=3)$ players.</li>
+	<li>The player prices $33$, $6$, and $22$ are all less than or equal to $n-1 (=65)$.</li>
+	<li>$33$, $6$, and $22$ are distinct.</li>
+	<li>The least common multiple of any pair of player prices matches $n (=66)$.
+	<ul>
+		<li>The least common multiple of $33$ and $6$ is $66$.</li>
+		<li>The least common multiple of $33$ and $22$ is $66$.</li>
+		<li>The least common multiple of $6$ and $22$ is $66$.</li>
+	</ul>
+	</li>
+</ul>
+
+<p>Therefore, it is possible to obtain approval from the International Cat Sports Federation.</p>
+
+<p>Additionally, there is no other team composition with a lower sum of player prices that satisfies the approval criteria of the International Cat Sports Federation.</p>
+
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/6df20d37-66a7-4cb8-9ad4-177d2c41cf65/-/preview/" /></p>
+
+<p style="text-align: center;">Behold Yeongchul, proudly with the meticulously crafted ultimate dream team.</p>
+
+								</div>
+							</section>
