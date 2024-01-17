@@ -10,8 +10,7 @@
 		</p>
 
 		<p>
-			하지만 이 게임의 콤보 동작 $S$는 개발사에서 공개하지 않고 있다. 개발사에서 문자열 $S$는 공개하지 않지만, 
-			문자열의 길이 $N$은 공개하였다. 
+			이 게임에는 숨겨진 콤보 동작 $S$가 있는데, 개발사에서 문자열 $S$는 공개하지 않지만 문자열의 길이 $N$은 공개하였다.
 		</p>
 
 		<p>
@@ -58,7 +57,7 @@
 			<li><code>p</code>: 당신이 누른 버튼의 문자열.</li>
 			<li><code>p</code>의 길이는 $0$ 이상 $4N$ 이하여야 하며, 모든 문자는 <code>A</code>, <code>B</code>, <code>X</code>, <code>Y</code>로
 			구성되어야 한다.</li>
-			<li>각각의 테스트케이스마다 이 함수를 $8,000$번을 초과해서 호출해서는 안 된다.</li>
+			<li>각각의 테스트케이스마다 이 함수를 $8\,000$번을 초과해서 호출해서는 안 된다.</li>
 			<li>이 함수는 <code>p</code>의 콤보를 넣었을 때 받을 수 있는 코인의 개수를 반환한다.</li>
 		</ul>
 
@@ -126,9 +125,6 @@
 			<code>press</code> 함수의 세 번째 호출에서, &quot;<code>ABXYYABXYY</code>&quot;의 부분문자열로 &quot;<code>ABXYY</code>가
 			등장하므로 5가 반환된다.
 		</p>
-
-		<p>For the sixth call to <code>press</code>, no prefix of &quot;<code>ABXYY</code>&quot; but the empty string
-			appears in &quot;<code>BXYY</code>&quot; as a substring, so 0 is returned.</p>
 		
 		<p>
 			<code>press</code>의 여섯 번째 호출에서, &quot;<code>BXYY</code>&quot;의 부분문자열 중 &quot;<code>ABXYY</code>&quot;의
@@ -147,10 +143,10 @@
 	</div>
 	<div id="problem_limit" class="problem-text">
 		<ul>
-			<li>1 &le; <em>N</em> &le; 2 000</li>
-			<li>Each character of the string <em>S</em> is <code>A</code>, <code>B</code>, <code>X</code>, or
-				<code>Y</code>.</li>
-			<li>The first character of <em>S</em> never reappears in <em>S</em>.</li>
+			<li>$1 \le N \le 2\,000$</li>
+			<li>문자열 $S$의 모든 문자는 <code>A</code>, <code>B</code>, <code>X</code>, <code>Y</code> 중
+				하나여야 한다.</li>
+			<li>문자열 $S$의 첫 글자는 여러 번 등장해서는 안 된다.</li>
 		</ul>
 	</div>
 </section>
