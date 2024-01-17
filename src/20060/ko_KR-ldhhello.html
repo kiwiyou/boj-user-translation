@@ -14,7 +14,7 @@
 		</p>
 
 		<p>
-			<strong>또한 콤보 문자열 $S$의 첫 번째 버튼은 두 번 이상 등장하지 않는다고 한다.</strong>
+			<strong>또한 콤보 문자열 $S$의 첫 번째 글자는 여러 번 등장하지 않는다고 한다.</strong>
 			예를 들어 콤보 문자열이 &quot;<code>ABXYY</code>&quot;이거나 &quot;<code>XYYAA</code>&quot;일 수 있지만, 
 			&quot;<code>AAAAA</code>&quot;나 &quot;<code>BXYBX</code>&quot;가 될 수는 없다고 한다.
 		</p>
@@ -38,7 +38,6 @@
 		<h2>구현</h2>
 	</div>
 	<div id="problem_custom_implementation" class="problem-text">
-		<p>You should implement the following function:</p>
 		<p>당신은 아래 함수를 구현해야 한다.</p>
 
 		<pre>string guess_sequence(int N)</pre>
@@ -155,7 +154,7 @@
 		<h2>서브태스크 1 (5점)</h2>
 	</div>
 	<div id="problem_subtask1" class="problem-text">
-		<p>N = 3</p>
+		<p>$N = 3$</p>
 
 	</div>
 </section>
@@ -166,8 +165,16 @@
 	<div id="problem_subtask2" class="problem-text">
 		<p>No additional constraints. For this subtask, your score for each test case is calculated as follows. Let be
 			the number of calls to <code>press</code>.</p>
+		<p>
+			추가 제약 조건이 없다. 이 서브태스크에서 당신의 점수는 아래 수식으로 계산된다. <code>press</code> 함수를 실행한 횟수를 $q$라고 하자.
+		</p>
 
 		<ul>
+			<li>$q \le N+2$인 경우, $95$점을 받는다.</li>
+			<li>$N+2 \lt q \le N+10$인 경우, $95 - 3(q - N - 2)$점을 받는다.</li>
+			<li>$N+10 \lt q \le 2N+1$인 경우, $25$점을 받는다.</li>
+			<li>$max{N+10, 2N+1} \lt q \le 4N$인 경우, $5$점을 받는다.</li>
+			<li>이외의 경우, $0$점을 받는다.</li>
 			<li>if <em>q</em> &le; <em>N</em> + 2, your score is 95.</li>
 			<li>if <em>N</em> + 2 &lt; <em>q</em> &le; <em>N</em> + 10, your score is 95 - 3(<em>q</em> - <em>N</em> -
 				2).</li>
