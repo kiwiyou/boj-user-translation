@@ -1,0 +1,234 @@
+<section id="title">콤보</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>
+			당신은 액션 게임을 하고 있다. 컨트롤러에는 <code>A</code>, <code>B</code>, <code>X</code>, <code>Y</code>
+			버튼이 있고, 콤보 동작을 사용해 코인을 얻을 수 있다. 버튼을 순서대로 적절히 눌러 콤보 동작을 사용할 수 있다.
+		</p>
+
+		<p>
+			하지만 이 게임의 콤보 동작 $S$는 개발사에서 공개하지 않고 있다. 개발사에서 문자열 $S$는 공개하지 않지만, 
+			문자열의 길이 $N$은 공개하였다. 
+		</p>
+
+		<p>
+			<strong>또한 콤보 문자열 $S$의 첫 번째 버튼은 두 번 이상 등장하지 않는다고 한다.</strong>
+			예를 들어 콤보 문자열이 &quot;<code>ABXYY</code>&quot;이거나 &quot;<code>XYYAA</code>&quot;일 수 있지만, 
+			&quot;<code>AAAAA</code>&quot;나 &quot;<code>BXYBX</code>&quot;가 될 수는 없다고 한다.
+		</p>
+
+		<p>
+			당신은 매번 최대 $4N$개의 버튼을 눌러 볼 수 있다. 또한 당신이 누른 버튼의 문자열을 $p$라고 할 때, 
+			당신은 $p$의 부분문자열 중 $S$의 가장 긴 접두어인 것의 길이만큼 코인을 얻을 수 있다.
+		</p>
+
+		<p>
+			예를 들어 문자열 $S$가 &quot;<code>ABXYY</code>&quot;이고 $p$가 &quot;<code>XXYYABYABXAY</code>&quot;인 경우, 
+			$p$의 부분문자열 중 $S$의 가장 긴 접두어는 &quot;<code>ABX</code>&quot;이기 때문에 당신은 3코인을 얻을 수 있다.
+		</p>
+
+		<p>최소한의 콤보 연산만을 사용해 게임 제작사에서 알려주지 않는 콤보 문자열 $S$를 알아내 보자!</p>
+
+	</div>
+</section>
+<section id="custom_implementation">
+	<div class="headline">
+		<h2>구현</h2>
+	</div>
+	<div id="problem_custom_implementation" class="problem-text">
+		<p>You should implement the following function:</p>
+		<p>당신은 아래 함수를 구현해야 한다.</p>
+
+		<pre>string guess_sequence(int N)</pre>
+
+		<ul>
+			<li><code>N</code>: 문자열 $S$의 길이.</li>
+			<li>이 함수는 각 테스트케이스 당 정확히 한 번씩만 호출된다.</li>
+			<li>이 함수는 콤보 문자열 $S$를 반환해야 한다.</li>
+		</ul>
+
+		<p>위 함수는 다음 함수를 호출할 수 있다.</p>
+
+		<pre>int press(string p)</pre>
+
+		<ul>
+			<li><code>p</code>: 당신이 누른 버튼의 문자열.</li>
+			<li><code>p</code>의 길이는 $0$ 이상 $4N$ 이하여야 하며, 모든 문자는 <code>A</code>, <code>B</code>, <code>X</code>, <code>Y</code>로
+			구성되어야 한다.</li>
+			<li>각각의 테스트케이스마다 이 함수를 $8,000$번을 초과해서 호출해서는 안 된다.</li>
+			<li>이 함수는 <code>p</code>의 콤보를 넣었을 때 받을 수 있는 코인의 개수를 반환한다.</li>
+		</ul>
+
+	</div>
+</section>
+<section id="custom_example">
+	<div class="headline">
+		<h2>예시</h2>
+	</div>
+	<div id="problem_custom_example" class="problem-text">
+		<p>
+			문자열 $S$가 &quot;<code>ABXYY</code>&quot;라고 하자. <br>
+			그레이더는 <code>guess_sequence(5)</code>를 호출하고,
+			아래 예시와 같은 함수 호출이 일어날 수 있다.
+		</p>
+
+		<table class="table table-bordered table-center-30 td-center th-center">
+			<thead>
+				<tr>
+					<th>호출</th>
+					<th>반환</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>press(&quot;XXYYABYABXAY&quot;)</code></td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td><code>press(&quot;ABXYY&quot;)</code></td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td><code>press(&quot;ABXYYABXYY&quot;)</code></td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td><code>press(&quot;&quot;)</code></td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td><code>press(&quot;X&quot;)</code></td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td><code>press(&quot;BXYY&quot;)</code></td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td><code>press(&quot;YYXBA&quot;)</code></td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td><code>press(&quot;AY&quot;)</code></td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			<code>press</code> 함수의 첫 번째 호출에서, &quot;<code>XXYYABYABXAY</code>&quot;의 부분문자열 중
+			&quot;<code>ABX</code>&quot;가 존재하지만, &quot;<code>ABXY</code>&quot;는 존재하지 않으므로 3이 반환된다.
+		</p>
+
+		<p>
+			<code>press</code> 함수의 세 번째 호출에서, &quot;<code>ABXYYABXYY</code>&quot;의 부분문자열로 &quot;<code>ABXYY</code>가
+			등장하므로 5가 반환된다.
+		</p>
+
+		<p>For the sixth call to <code>press</code>, no prefix of &quot;<code>ABXYY</code>&quot; but the empty string
+			appears in &quot;<code>BXYY</code>&quot; as a substring, so 0 is returned.</p>
+		
+		<p>
+			<code>press</code>의 여섯 번째 호출에서, &quot;<code>BXYY</code>&quot;의 부분문자열 중 &quot;<code>ABXYY</code>&quot;의
+			접두어가 존재하지 않으므로 0이 반환된다.
+		</p>
+
+		<p>
+			최종적으로 <code>guess_sequence(5)</code> 함수는 &quot;<code>ABXYY</code>&quot;를 반환해야 한다.
+		</p>
+
+	</div>
+</section>
+<section id="limit">
+	<div class="headline">
+		<h2>제한</h2>
+	</div>
+	<div id="problem_limit" class="problem-text">
+		<ul>
+			<li>1 &le; <em>N</em> &le; 2 000</li>
+			<li>Each character of the string <em>S</em> is <code>A</code>, <code>B</code>, <code>X</code>, or
+				<code>Y</code>.</li>
+			<li>The first character of <em>S</em> never reappears in <em>S</em>.</li>
+		</ul>
+	</div>
+</section>
+<section id="subtask1">
+	<div class="headline">
+		<h2>서브태스크 1 (5점)</h2>
+	</div>
+	<div id="problem_subtask1" class="problem-text">
+		<p>N = 3</p>
+
+	</div>
+</section>
+<section id="subtask2">
+	<div class="headline">
+		<h2>서브태스크 2 (95점)</h2>
+	</div>
+	<div id="problem_subtask2" class="problem-text">
+		<p>No additional constraints. For this subtask, your score for each test case is calculated as follows. Let be
+			the number of calls to <code>press</code>.</p>
+
+		<ul>
+			<li>if <em>q</em> &le; <em>N</em> + 2, your score is 95.</li>
+			<li>if <em>N</em> + 2 &lt; <em>q</em> &le; <em>N</em> + 10, your score is 95 - 3(<em>q</em> - <em>N</em> -
+				2).</li>
+			<li>if <em>N</em> + 10 &lt; <em>q</em> &le; 2<em>N</em> +&nbsp;1, your score is 25.</li>
+			<li>if max{<em>N</em> + 10, 2<em>N</em> + 1} &lt; <em>q</em> &le; 4<em>N</em>, your score is 5.</li>
+			<li>Otherwise, your score is 0.</li>
+		</ul>
+
+	</div>
+</section>
+<section id="hint">
+	<div class="headline">
+		<h2>노트</h2>
+	</div>
+	<div id="problem_hint" class="problem-text">
+		<p>Note that your score for each subtask is the minimum of the scores for the test cases in the subtask.</p>
+
+	</div>
+</section>
+<section id="custom_grader">
+	<div class="headline">
+		<h2>샘플 그레이더</h2>
+	</div>
+	<div id="problem_custom_grader" class="problem-text">
+		<p>The sample grader reads the input in the following format:</p>
+
+		<ul>
+			<li>line 1: <em>S</em></li>
+		</ul>
+
+		<p>If your program is judged as <strong>Accepted</strong>, the sample grader prints <code>Accepted: q</code>
+			with <code>q</code> being the number of calls to the function <code>press</code>.</p>
+
+		<p>If your program is judged as <strong>Wrong Answer</strong>, it prints <code>Wrong Answer: MSG</code>. The
+			meaning of <code>MSG</code> is as follows:</p>
+
+		<ul>
+			<li><code>invalid press</code>: A value of p given to press is invalid. Namely, the length of <code>p</code>
+				is not between 0 and 4<em>N</em>, inclusive, or some character of <code>p</code> is not <code>A</code>,
+				<code>B</code>, <code>X</code>, or <code>Y</code>.</li>
+			<li><code>too many moves</code>: The function press is called more than 8,000 times.</li>
+			<li><code>wrong guess</code>: The return value of <code>guess_sequence</code> is not <em>S</em>.</li>
+		</ul>
+
+	</div>
+</section>
+<section id="custom_attachment">
+	<div class="headline">
+		<h2>첨부</h2>
+	</div>
+	<div id="problem_custom_attachment" class="problem-text">
+		<ul>
+			<li><a href="https://upload.acmicpc.net/c6e1a89d-4dbb-4788-9791-83a9c95c95f9/">combo.h</a></li>
+			<li><a href="https://upload.acmicpc.net/ac560728-0e42-489e-ba7b-68bed3ec5c05/">combo.cpp</a></li>
+			<li><a href="https://upload.acmicpc.net/0f8b054e-5aa8-476c-ad75-5c098100ef30/">grader.cpp</a></li>
+			<li><a href="https://upload.acmicpc.net/43879b96-12b5-4fa9-b7df-40e958a01cea/">sample-01.txt</a></li>
+		</ul>
+
+	</div>
+</section>
