@@ -204,11 +204,11 @@
 			<code>MSG</code>의 의미는 다음과 같다.</p>
 
 		<ul>
-			<li><code>invalid press</code>: <code>press</code> 함수에 주어진 문자열 $p$가 잘못된 경우. Namely, the length of <code>p</code>
-				is not between 0 and 4<em>N</em>, inclusive, or some character of <code>p</code> is not <code>A</code>,
-				<code>B</code>, <code>X</code>, or <code>Y</code>.</li>
-			<li><code>too many moves</code>: The function press is called more than 8,000 times.</li>
-			<li><code>wrong guess</code>: The return value of <code>guess_sequence</code> is not <em>S</em>.</li>
+			<li><code>invalid press</code>: <code>press</code> 함수에 주어진 문자열 $p$가 잘못된 경우. 문자열 $p$의 길이가
+				$0$ 이상 $4N$ 이하가 아니거나, 문자열 $p$의 문자 중 <code>A</code>, <code>B</code>, <code>X</code>, 또는 <code>Y</code>
+				가 아닌 것이 있는 경우이다.</li>
+			<li><code>too many moves</code>: <code>press</code> 함수가 $8,000$번을 초과해서 호출되었을 경우.</li>
+			<li><code>wrong guess</code>: <code>guess_sequence</code> 함수의 반환 값이 문자열 $S$와 다른 경우.</li>
 		</ul>
 
 	</div>
