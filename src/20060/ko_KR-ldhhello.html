@@ -6,7 +6,7 @@
 	<div id="problem_description" class="problem-text">
 		<p>
 			당신은 액션 게임을 하고 있다. 컨트롤러에는 <code>A</code>, <code>B</code>, <code>X</code>, <code>Y</code>
-			버튼이 있고, 콤보 동작을 사용해 코인을 얻을 수 있다. 버튼을 순서대로 적절히 눌러 콤보 동작을 사용할 수 있다.
+			버튼이 있고, 당신은 콤보 동작을 사용해 코인을 얻을 수 있다. 버튼을 순서대로 적절히 눌러 콤보 동작을 사용할 수 있다.
 		</p>
 
 		<p>
@@ -21,7 +21,7 @@
 
 		<p>
 			당신은 매번 최대 $4N$개의 버튼을 눌러 볼 수 있다. 또한 당신이 누른 버튼의 문자열을 $p$라고 할 때, 
-			당신은 $p$의 부분문자열 중 $S$의 가장 긴 접두어인 것의 길이만큼 코인을 얻을 수 있다.
+			당신은 $p$의 부분문자열 중 $S$의 가장 긴 접두어의 길이만큼 코인을 얻을 수 있다.
 		</p>
 
 		<p>
@@ -205,9 +205,9 @@
 
 		<ul>
 			<li><code>invalid press</code>: <code>press</code> 함수에 주어진 문자열 $p$가 잘못된 경우. 문자열 $p$의 길이가
-				$0$ 이상 $4N$ 이하가 아니거나, 문자열 $p$의 문자 중 <code>A</code>, <code>B</code>, <code>X</code>, 또는 <code>Y</code>
+				$4N$ 초과이거나, 문자열 $p$의 문자 중 <code>A</code>, <code>B</code>, <code>X</code>, 또는 <code>Y</code>
 				가 아닌 것이 있는 경우이다.</li>
-			<li><code>too many moves</code>: <code>press</code> 함수가 $8,000$번을 초과해서 호출되었을 경우.</li>
+			<li><code>too many moves</code>: <code>press</code> 함수가 $8\,000$번을 초과해서 호출되었을 경우.</li>
 			<li><code>wrong guess</code>: <code>guess_sequence</code> 함수의 반환 값이 문자열 $S$와 다른 경우.</li>
 		</ul>
 
