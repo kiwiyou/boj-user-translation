@@ -1,0 +1,94 @@
+<section id="title">AND MEX</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      정수로만 이루어진 길이 $N$의 수열 $A$가 주어진다. 당신은 아래의 연산을 단
+      한 번 수행할 수 있다.
+    </p>
+
+    <ul>
+      <li>
+        정수 $x$를 고르고, $A$의 모든 원소에 대해, 각각의 원소 $A_i$를 $A_i
+        \wedge x$로 변경한다. $\wedge$는 <strong>Bitwise AND</strong>를
+        의미한다.
+      </li>
+    </ul>
+
+    <p>
+      연산 이후 $A$의 <strong>MEX</strong>${}^{\dagger}$을 최대화할 수 있는 정수
+      $x$를 구하여라.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 테스트 케이스의 수 $T$가 주어진다.</p>
+
+    <p>각 테스트 케이스의 첫째 줄에는 $N$이 주어진다.</p>
+
+    <p>
+      각 테스트 케이스의 둘째 줄에는 $A_1$, $A_2$, ..., $A_N$이 공백을 사이에
+      두고 차례대로 주어진다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 테스트 케이스마다 연산 이후 $A$의 <strong>MEX</strong>를 최대화할 수
+      있는 정수 $x$를 한 줄에 하나씩 출력한다. 만약 조건을 만족하는 답이 여러 개
+      존재할 경우, 그 중 아무거나 출력한다.
+    </p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>$1\le T\le 100\,000$</li>
+
+      <li>$1\le N\le 100\,000$</li>
+
+      <li>$0\le A_i&lt;2^{30}$ ($1 \le i \le N$)</li>
+
+      <li>모든 테스트 케이스에서 $N$의 총합은 $100\;000$을 넘지 않는다.</li>
+
+      <li>입력으로 주어지는 모든 수는 정수이다.</li>
+
+      <li>$0\le x&lt;2^{30}$</li>
+
+      <li>조건을 만족하는 $x$가 입력 제한 내에 존재함을 증명할 수 있다.</li>
+    </ul>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>노트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      예제 1번에서, $x = 23$을 고르면, 새로운 수열은 \[[13\wedge 23,\, 11\wedge
+      23,\, 40\wedge 23,10\wedge 23,\, 33\wedge 23,\, 19\wedge 23] =
+      [5,3,0,2,1,19]\] 가 되며, <strong>MEX</strong> 값은 $4$가 된다. $x = 19$인
+      경우도 답이 될 수 있다.
+    </p>
+
+    <p>
+      ${}^{\dagger}$ <strong>MEX</strong>란 수열에 존재하지 않는 가장 작은 음이
+      아닌 정수이다. 예를 들어, $[2,2,1]$의 <strong>MEX</strong> 값은 $0$이고,
+      $[3,1,0,1]$의 <strong>MEX</strong> 값은 $2$이며, $[0,3,1,2]$의
+      <strong>MEX</strong> 값은 $4$이다.
+    </p>
+  </div>
+</section>
