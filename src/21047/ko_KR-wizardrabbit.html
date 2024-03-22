@@ -1,0 +1,57 @@
+<section id="title">다 된 배열에 재 뿌리기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      길이 $N$의 비내림차순으로 정렬되어 있는 정수 수열 $A_1, A_2, \cdots,
+      A_N$가 주어진다. 당신은 아래의 연산을 정확히 한 번만 수행할 수 있다.
+    </p>
+
+    <ul>
+      <li>
+        $A$에서 원소를 하나 고른 후, 그 원소의 자릿수 하나를 골라 원하는 한
+        자리의 숫자로 바꾼다. 단, 연산 이후 원소에 불필요한 $0$이 생겨서는 안
+        된다.
+      </li>
+    </ul>
+
+    <p>
+      연산을 수행했을 때, $A$가 더 이상 비내림차순으로 정렬되어 있지 않도록 만들
+      수 있을까?
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다. ($1 \le N \le 100$)</p>
+
+    <p>
+      둘째 줄에 $A_1, A_2, \cdots, A_N$이 공백으로 구분되어 주어진다. ($0 \le
+      A_1 \le A_2 \le \cdots \le A_N \le 10^{15}$)
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      위에서 설명한 연산을 수행했을 때 $A$를 비내림차순으로 정렬되어 있지 않도록
+      만드는 것이 가능하다면, 첫째 줄에 연산을 수행한 이후의 $A_1, A_2, \cdots,
+      A_N$을 공백으로 구분하여 출력한다. 가능한 방법이 여러 가지라면, 그 중
+      아무거나 출력한다.
+    </p>
+
+    <p>
+      만약 어떻게 연산을 해도 $A$를 비내림차순으로 정렬되어 있지 않도록 만드는
+      것이 불가능하다면, 첫째 줄에
+      <code style="color: #e74c3c">impossible</code>을 출력한다.
+    </p>
+  </div>
+</section>
