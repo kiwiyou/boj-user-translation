@@ -1,0 +1,59 @@
+<section id="title">빛의 삼원색</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+					<p>당신은 정보 올림피아드 결승전 폐막식 조명 쇼의 기획자입니다. 폐막식이 열릴 무대는 $R$행 $C$열의 격자로 나타낼 수 있으며, 네 변을 따라 빨간색, 파란색, 녹색 중 하나의 조명이 설치되어 있습니다.</p>
+
+
+
+<p style="text-align: center;"><img alt="" src="https://upload.acmicpc.net/a43c546a-dee6-41e0-9ad5-18ef5766aad3/-/preview/" style="width: 400px; height: 347px;" /></p>
+
+
+
+<p>각 조명은 자신이 설치된 행 또는 열에 있는 모든 사각형을 비추며, 특정 사각형에 세 가지 색의 조명이 모두 비춰질 때 사각형이 흰색으로 빛나게 됩니다.</p>
+<p>당신은 모든 조명을 켰을 때 흰색으로 빛나는 사각형의 개수를 구하고자 합니다.</p>
+
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+						<p>첫 번째 줄에는 공백으로 구분된 두 개의 정수 $R(1\le R\le 10^6)$과 $C(1\le C\le 10^6)$가 주어집니다. 각각 무대를 이루는 격자의 행의 수, 열의 수를 나타냅니다.</p>
+						<p>두 번째 줄부터 다섯 번째 줄까지는 각 변에 있는 조명을 나타내는 문자열이 포함됩니다.</p>
+						<p>두 번째 줄의 문자열은 윗변에서 아래를 향해 빛을 비추는 $C$개의 조명의 색을 왼쪽부터 오른쪽의 순서로 나타냅니다.</p>
+						<p>세 번째 줄의 문자열은 오른쪽 변에서 왼쪽을 향해 빛을 비추는 $R$개의 조명의 색을 위쪽부터 아래쪽의 순서로 나타냅니다.</p>
+						<p>네 번째 줄의 문자열은 아랫변에서 위를 향해 빛을 비추는 $C$개의 조명의 색을 왼쪽부터 오른쪽의 순서로 나타냅니다.</p>
+						<p>다섯 번째 줄의 문자열은 왼쪽 변에서 오른쪽을 향해 빛을 비추는 $R$개의 조명의 색을 위쪽부터 아래쪽의 순서로 나타냅니다.</p>
+						<p>각 조명은 빨간색, 녹색, 파란색을 RGB 기호를 통해 표시됩니다.</p>
+
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+						<p>흰색으로 빛나는 사각형의 수를 정수 하나로 출력합니다. 32비트 정수 범위를 초과할 수 있음에 유의하십시오.</p>
+
+					</div>
+					</section>
+<section id="hint">
+				<div class="headline">
+				<h2>힌트</h2>
+				</div>
+				<div id="problem_hint" class="problem-text">
+					<p>예제 1 : 가로 방향으로는 빨간색 조명만 있고, 세로 방향을 살펴보면 1열은 녹색, 2열은 녹색과 파란색, 3열은 파란색, 4열은 녹색과 파란색입니다. 따라서 2열과 4열만 흰색으로 빛납니다.</p>
+
+
+
+					<p>예제 3 : 파란색이 없으므로 어느 사각형도 흰색으로 빛날 수 없습니다.</p>
+
+
+				</div>
+				</section>

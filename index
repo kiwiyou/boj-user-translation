@@ -536,6 +536,9 @@
   "20215": [
     "ko_KR-ez_code"
   ],
+  "20222": [
+    "ko_KR-iktk"
+  ],
   "20232": [
     "ko_KR-ez_code"
   ],
@@ -695,6 +698,9 @@
   "22396": [
     "ko_KR-bubbler"
   ],
+  "22411": [
+    "ko_KR-iktk"
+  ],
   "22421": [
     "ko_KR-ez_code"
   ],
@@ -778,6 +784,9 @@
   ],
   "24184": [
     "ko_KR-wizardrabbit"
+  ],
+  "24190": [
+    "ko_KR-iktk"
   ],
   "24196": [
     "ko_KR-ez_code"
@@ -863,6 +872,9 @@
   "25083": [
     "en_US-masooka"
   ],
+  "25150": [
+    "ko_KR-iktk"
+  ],
   "25268": [
     "ko_KR-jshyun912"
   ],
@@ -907,6 +919,9 @@
   ],
   "26026": [
     "ko_KR-w8385"
+  ],
+  "26061": [
+    "ko_KR-iktk"
   ],
   "2609": [
     "en_US-masooka"
@@ -1274,6 +1289,9 @@
   "28940": [
     "ko_KR-wizardrabbit"
   ],
+  "28946": [
+    "ko_KR-iktk"
+  ],
   "28967": [
     "ko_KR-wizardrabbit"
   ],
@@ -1336,6 +1354,9 @@
   ],
   "30658": [
     "ko_KR-wizardrabbit"
+  ],
+  "31214": [
+    "ko_KR-iktk"
   ],
   "31262": [
     "ko_KR-halin"
@@ -1556,6 +1577,9 @@
   "8574": [
     "ko_KR-ez_code"
   ],
+  "8586": [
+    "ko_KR-iktk"
+  ],
   "8610": [
     "ko_KR-bubbler"
   ],
@@ -1618,6 +1642,9 @@
   ],
   "8723": [
     "ko_KR-ez_code"
+  ],
+  "8738": [
+    "ko_KR-iktk"
   ],
   "8760": [
     "ko_KR-ez_code"
