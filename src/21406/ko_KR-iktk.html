@@ -1,0 +1,42 @@
+<section id="title">라인</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>수학에서는 소위 반복 관계가 자주 발생합니다. 일반적으로 숫자 시퀀스를 설정하는 데 사용됩니다. 시퀀스의 다음 숫자는 이전 숫자를 통해 어떤 식으로든 표현됩니다. 이러한 시퀀스의 예는 피보나치
+			수(다음 수는 이전 두 수의 합과 같음)입니다.</p>
+		<p>이 유형의 관계를 사용하면 숫자 시퀀스뿐만 아니라 문자열 시퀀스도 지정할 수 있습니다. 이 문제는 일련의 문자열을 고려합니다.</p>
+		<p>$s_i$를 $i$번째 행 문자열이라 하면,</p>
+		<ul>
+			<li>$s_0$은 빈 문자열입니다.</li>
+			<li>$s_i (i \ge&nbsp;1)$은 $s_{i-1}$로부터 다음과 같이 정의됩니다.<ul>
+					<li>숫자 $i$의 십진수 표현이&nbsp; $s_{i-1}$의 부분 문자열인 경우에는 $s_i = s_{i-1}$ 이고,&nbsp;그렇지 않으면
+						$s_{i-1}$에 숫자 $i$의 십진법 표기를 추가하여 $s_i$를 얻습니다.</li>
+				</ul>
+			</li>
+		</ul>
+		<p>숫자 $n$이 주어지면 $n$번째 행을 찾아야 합니다.</p>
+
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>정수 $n$이 입력됩니다 $(1 \le&nbsp;n \le&nbsp;500)$</p>
+
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>$s_n$을 출력합니다.</p>
+
+	</div>
+</section>
