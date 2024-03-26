@@ -1,0 +1,69 @@
+<section id="title">팰린드롬으로 만들기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      길이 $N$의 알파벳 대문자로만 이루어진 문자열 $S$가 주어진다. 당신은 아래의
+      연산을 $0$회 이상 사용할 수 있다.
+    </p>
+
+    <ul>
+      <li>$S$의 문자 하나를 고르고, 다른 알파벳 대문자로 바꾼다.</li>
+    </ul>
+
+    <p>
+      $S$를 팰린드롬으로 만들기 위해 사용해야 하는 연산의 최소 횟수, 그리고
+      연산을 사용한 이후의 문자열을 알고 싶다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다. ($1 \le N \le 300$)</p>
+
+    <p>둘째 줄에 $S$가 주어진다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      첫째 줄에 $S$를 팰린드롬으로 바꾸기 위해 사용해야 하는 연산의 최소 횟수를
+      출력한다.
+    </p>
+
+    <p>
+      둘째 줄에 해당하는 연산 횟수를 사용한 이후 팰린드롬이 된 문자열을
+      출력하되, 가능한 답이 여럿인 경우 사전순으로 가장 앞서는 문자열을
+      출력한다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      <code style="color: #e74c3c">ABBA</code>는 이미 팰린드롬이므로, 연산을
+      사용할 필요가 없다.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>
+      <code style="color: #e74c3c">ABCC</code>에서 $3$번째 문자를
+      <code style="color: #e74c3c">C</code> →
+      <code style="color: #e74c3c">B</code>로 바꾸고, $4$번째 문자를
+      <code style="color: #e74c3c">C</code> →
+      <code style="color: #e74c3c">A</code>로 바꾸면, 팰린드롬 문자열인
+      <code style="color: #e74c3c">ABBA</code>가 된다. $2$회보다 더 적은 연산을
+      사용하여 팰린드롬을 만들 수 있는 방법은 없다.
+    </p>
+  </div>
+</section>
