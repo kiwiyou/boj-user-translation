@@ -1,0 +1,82 @@
+<section id="title">A를 B로</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      정수 $A$, $B$가 주어진다. $A$를 단 두 종류의 연산만을 사용하여 $B$로
+      만들고자 한다.
+    </p>
+
+    <ol>
+      <li>
+        <code style="color: #e74c3c">+</code> $X$: $A$에 $9X$를 더한다. ($X >
+        0$; $X$는 정수)
+      </li>
+      <li>
+        <code style="color: #e74c3c">-</code> $X$: $A$의 앞 $X$자리의 수를 모두
+        지운다. 단, 지워지는 $X$자리의 수는 모두 $1$이어야 한다. 만약 수를 지운
+        이후 아무것도 남지 않았을 경우에는 $0$이 된다. 예를 들어 $A = 111\,213$
+        일 경우 최대 $3$자리까지 수를 지울 수 있으며, $2$자리를 지웠을 경우 $A =
+        1\,213$이 된다. ($X > 0$; $X$는 정수)
+      </li>
+    </ol>
+
+    <p>
+      어떻게 연산을 해야 $A$를 $B$로 만들 수 있는지를 알려주는 프로그램을
+      작성하시오.
+    </p>
+
+    <p>
+      위에서 제시된 두 종류의 연산을 자유롭게 사용할 수 있으나, 연산의 사용
+      횟수는 총 $1\,000$회 이하여야 하며, 각 연산의 진행 이후 $A$의 값은
+      $10^{18}$ 이하여야 한다. 연산의 사용 횟수를 최소화할 필요는 없으며, 연산의
+      사용 횟수가 $0$회여도 상관 없다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 정수 $A$, $B$가 공백으로 구분되어 주어진다. ($0 \le A, B \le
+      10^9$)
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>주어진 조건을 지키면서 $A$를 $B$로 바꾸는 것이 불가능하다면,</p>
+
+    <ul>
+      <li>첫째 줄에 <code style="color: #e74c3c">Broken</code>을 출력한다.</li>
+    </ul>
+
+    <p>그렇지 않다면,</p>
+
+    <ul>
+      <li>첫째 줄에 <code style="color: #e74c3c">Stable</code>을 출력한다.</li>
+
+      <li>둘째 줄에 $A$를 $B$로 바꾸기 위한 연산 횟수 $K$를 출력한다.</li>
+
+      <li>
+        이후 $K$줄에 걸쳐, 문제에서 주어진 형식대로 어떻게 연산을 해야 하는지를
+        순서대로 출력한다. 한 줄에 하나의 연산만을 출력하며, 만약 가능한 답이
+        여러 개 존재한다면 그 중 아무거나 출력한다.
+      </li>
+    </ul>
+
+    <p>
+      <strong
+        >번역자 코멘트: $A$를 $B$로 바꾸는 것이 가능하다면, $1\,000$회 이하의
+        연산을 사용하여 $A$를 $B$로 바꿀 수 있음을 증명할 수 있습니다.</strong
+      >
+    </p>
+  </div>
+</section>
