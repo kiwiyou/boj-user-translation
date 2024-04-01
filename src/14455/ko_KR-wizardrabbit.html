@@ -1,0 +1,116 @@
+<section id="title">꼴찌는 안 돼</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      농부 존은 $7$마리의 소를 소유하고 있다. 각 소의 이름은
+      <code style="color: #e74c3c">Bessie</code>,
+      <code style="color: #e74c3c">Elsie</code>,
+      <code style="color: #e74c3c">Daisy</code>,
+      <code style="color: #e74c3c">Gertie</code>,
+      <code style="color: #e74c3c">Annabelle</code>,
+      <code style="color: #e74c3c">Maggie</code>,
+      <code style="color: #e74c3c">Henrietta</code>이다.
+    </p>
+
+    <p>
+      $7$마리의 소들은 모두 게으르기 때문에 가능한 한 우유를 적게 생산하고 싶어
+      한다. 하지만 너무 우유를 적게 생산하면 존의 눈에 띌 수 있으므로 소들은
+      우유를 적당히 적게 생산하려고 한다. 우유를 적게 생산하면서 눈에 띄지 않는
+      가장 좋은 방법은 단언컨대 우유를 $7$마리의 소 중 두 번째로 적게 생산하는
+      것이다.
+    </p>
+
+    <p>
+      농부 존은 총 $N$개의 우유 생산 기록을 가지고 있으며, $i$번째 생산 기록에는
+      우유를 생산한 소의 이름 $C_i$와 그 소의 우유 생산량 $M_i$이 적혀 있다.
+      만약 생산 기록에 한 번도 등장하지 않은 소가 있다면, 그 소의 우유 생산량은
+      $0$이다.
+    </p>
+
+    <p>
+      우유 생산 기록이 주어지면, 어느 소가 우유를 두 번째로 적게 생산했는지를
+      구해 보자.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 아래와 같이 주어진다.</p>
+
+    <blockquote>
+      <p>$N$</p>
+
+      <p>$C_1 \; M_1$</p>
+
+      <p>$C_2 \; M_2$</p>
+
+      <p>$\vdots$</p>
+
+      <p>$C_N \; M_N$</p>
+    </blockquote>
+
+    <ul>
+      <li>$1 \le N \le 100$</li>
+
+      <li>
+        $C_i \in \{$<code style="color: #e74c3c">Bessie</code>$,$<code
+          style="color: #e74c3c"
+          >Elsie</code
+        >$,$<code style="color: #e74c3c">Daisy</code>$,$<code
+          style="color: #e74c3c"
+          >Gertie</code
+        >$,$<code style="color: #e74c3c">Annabelle</code>$,$<code
+          style="color: #e74c3c"
+          >Maggie</code
+        >$,$<code style="color: #e74c3c">Henrietta</code>$\}$ ($1 \le i \le N$)
+      </li>
+
+      <li>$1 \le M_i \le 100$ ($1 \le i \le N$)</li>
+
+      <li>입력으로 주어지는 모든 수는 정수</li>
+    </ul>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      우유를 두 번째로 적게 생산한 소가 없거나, 두 마리 이상인 경우에는
+      <code style="color: #e74c3c">Tie</code>를 출력한다.
+    </p>
+
+    <p>그렇지 않다면, 우유를 두 번째로 적게 생산한 소의 이름을 출력한다.</p>
+
+    <p>
+      <strong
+        >생산 기록에 등장하지 않은 소가 한 마리라도 있는 경우, 자동적으로 가장
+        우유를 적게 생산한 소의 우유 생산량은 $0$이 됨에 유의한다.</strong
+      >
+    </p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      예제 1번의 경우, 우유 생산량이 가장 적은 소는
+      <code style="color: #e74c3c">Bessie</code>,
+      <code style="color: #e74c3c">Elsie</code>,
+      <code style="color: #e74c3c">Daisy</code>이고, 우유 생산량은 $7$이다.
+      그리고, 우유 생산량이 두 번째로 적은 소는
+      <code style="color: #e74c3c">Henrietta</code>이고, 우유 생산량은 $9$이다.
+      우유를 두 번째로 적게 생산한 소가 유일하므로
+      <code style="color: #e74c3c">Henrietta</code>가 올바른 출력이다.
+    </p>
+  </div>
+</section>
