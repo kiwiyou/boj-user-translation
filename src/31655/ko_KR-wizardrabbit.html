@@ -1,0 +1,57 @@
+<section id="title">골때리는 날짜 포맷</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      날짜 포맷을 처리하는 방식은 꽤나 다루는 것이 골치아프다. 왜냐하면 국가마다
+      이러한 포맷이 다르기 때문이다.
+    </p>
+
+    <p>
+      예를 들어, 미국에서는 <code style="color: #e74c3c">MM/DD/YYYY</code>과
+      같은 포맷을 사용하지만, 유럽에서는
+      <code style="color: #e74c3c">DD/MM/YYYY</code>과 같은 포맷을 사용한다.
+    </p>
+
+    <p>
+      미국, 유럽 중 하나에서 사용하는 날짜 포맷이 주어지면, 해당 포맷이 어느
+      종류의 포맷인지를 판별해 보자.
+      <strong>단, 한 달은 항상 $31$일이다.</strong>
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 $AA$<code style="color: #e74c3c">/</code>$BB$<code
+        style="color: #e74c3c"
+        >/</code
+      >$CCCC$와 같은 형식으로 입력이 주어진다. ($1 \le AA \le 31$; $1 \le BB \le
+      31$; $0 \le CCCC \le 9\,999$)
+    </p>
+
+    <p>미국, 유럽 두 포맷 모두가 아닌 입력은 주어지지 않는다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      만약 입력으로 주어진 포맷이 두 포맷 모두가 가능한 경우라면
+      <code style="color: #e74c3c">either</code>를 출력한다.
+    </p>
+
+    <p>
+      그렇지 않다면, 입력으로 들어온 포맷이 미국에서 사용되는 포맷일 경우
+      <code style="color: #e74c3c">US</code>, 아니라면
+      <code style="color: #e74c3c">EU</code>를 출력한다.
+    </p>
+  </div>
+</section>
