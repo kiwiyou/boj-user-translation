@@ -107,6 +107,9 @@
   "11050": [
     "en_US-masooka"
   ],
+  "11107": [
+    "ko_KR-iktk"
+  ],
   "11121": [
     "ko_KR-ez_code"
   ],
@@ -530,11 +533,11 @@
   "1978": [
     "en_US-masooka"
   ],
-  "19884": [
-    "ko_KR-iktk"
-  ],
   "19812": [
     "ko_KR-wizardrabbit"
+  ],
+  "19884": [
+    "ko_KR-iktk"
   ],
   "20060": [
     "ko_KR-ldhhello"
