@@ -527,6 +527,9 @@
   "1978": [
     "en_US-masooka"
   ],
+  "19884": [
+    "ko_KR-iktk"
+  ],
   "19812": [
     "ko_KR-wizardrabbit"
   ],
@@ -538,6 +541,9 @@
   ],
   "20215": [
     "ko_KR-ez_code"
+  ],
+  "20222": [
+    "ko_KR-iktk"
   ],
   "20232": [
     "ko_KR-ez_code"
@@ -559,6 +565,9 @@
   ],
   "20360": [
     "ko_KR-ez_code"
+  ],
+  "20470": [
+    "ko_KR-wizardrabbit"
   ],
   "20568": [
     "ko_KR-wizardrabbit"
@@ -626,6 +635,9 @@
   "21354": [
     "ko_KR-kiwiyou"
   ],
+  "21406": [
+    "ko_KR-iktk"
+  ],
   "21420": [
     "ko_KR-ez_code"
   ],
@@ -671,6 +683,9 @@
   "22015": [
     "ko_KR-kiwiyou"
   ],
+  "22097": [
+    "ko_KR-iktk"
+  ],
   "22150": [
     "ko_KR-ez_code"
   ],
@@ -694,6 +709,9 @@
   ],
   "22396": [
     "ko_KR-bubbler"
+  ],
+  "22411": [
+    "ko_KR-iktk"
   ],
   "22421": [
     "ko_KR-ez_code"
@@ -779,6 +797,9 @@
   "24184": [
     "ko_KR-wizardrabbit"
   ],
+  "24190": [
+    "ko_KR-iktk"
+  ],
   "24196": [
     "ko_KR-ez_code"
   ],
@@ -854,11 +875,17 @@
   "24830": [
     "ko_KR-ez_code"
   ],
+  "24852": [
+    "ko_KR-wizardrabbit"
+  ],
   "24860": [
     "ko_KR-DoubleDeltas"
   ],
   "25083": [
     "en_US-masooka"
+  ],
+  "25150": [
+    "ko_KR-iktk"
   ],
   "25268": [
     "ko_KR-jshyun912"
@@ -904,6 +931,9 @@
   ],
   "26026": [
     "ko_KR-w8385"
+  ],
+  "26061": [
+    "ko_KR-iktk"
   ],
   "2609": [
     "en_US-masooka"
@@ -964,6 +994,9 @@
   ],
   "26711": [
     "ko_KR-kiwiyou"
+  ],
+  "26714": [
+    "ko_KR-iktk"
   ],
   "26731": [
     "ko_KR-wizardrabbit"
@@ -1271,6 +1304,9 @@
   "28940": [
     "ko_KR-wizardrabbit"
   ],
+  "28946": [
+    "ko_KR-iktk"
+  ],
   "28967": [
     "ko_KR-wizardrabbit"
   ],
@@ -1286,10 +1322,13 @@
   "29163": [
     "ko_KR-ldhhello"
   ],
-  "29507": [
-    "ko_KR-wizardrabbit"
+  "29411": [
+    "ko_KR-iktk"
   ],
   "29454": [
+    "ko_KR-wizardrabbit"
+  ],
+  "29507": [
     "ko_KR-wizardrabbit"
   ],
   "29517": [
@@ -1297,6 +1336,9 @@
   ],
   "29667": [
     "ko_KR-wizardrabbit"
+  ],
+  "29678": [
+    "ko_KR-iktk"
   ],
   "29679": [
     "ko_KR-wizardrabbit"
@@ -1336,6 +1378,9 @@
   ],
   "30658": [
     "ko_KR-wizardrabbit"
+  ],
+  "31214": [
+    "ko_KR-iktk"
   ],
   "31262": [
     "ko_KR-halin"
@@ -1520,6 +1565,9 @@
   "7070": [
     "ko_KR-kiwiyou"
   ],
+  "7174": [
+    "ko_KR-iktk"
+  ],
   "7568": [
     "en_US-masooka"
   ],
@@ -1564,6 +1612,9 @@
   ],
   "8574": [
     "ko_KR-ez_code"
+  ],
+  "8586": [
+    "ko_KR-iktk"
   ],
   "8610": [
     "ko_KR-bubbler"
@@ -1631,6 +1682,9 @@
   "8723": [
     "ko_KR-ez_code"
   ],
+  "8738": [
+    "ko_KR-iktk"
+  ],
   "8760": [
     "ko_KR-ez_code"
   ],
@@ -1693,5 +1747,8 @@
   ],
   "9945": [
     "ko_KR-ez_code"
+  ],
+  "9978": [
+    "ko_KR-iktk"
   ]
 }

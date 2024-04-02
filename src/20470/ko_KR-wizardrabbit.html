@@ -1,0 +1,57 @@
+<section id="title">최대공약수 만들기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      양의 정수로만 구성된 길이 $N$의 수열 $A$가 주어진다. 아래의 조건을
+      만족하는 수열 $B$를 아무거나 하나 만들어서 출력해 보자.
+    </p>
+
+    <ul>
+      <li>$B$는 $A$의 원소들 중 $1$개 이상을 골라서 만들어야 한다.</li>
+      <li>
+        $B$의 길이를 $K$라 했을 때, $B_1, B_2, \cdots, B_K$의 최대공약수가
+        정확히 $D$여야 한다.
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 $N$, $D$가 공백으로 구분되어 주어진다. ($1 \le N \le 1\,000$; $1
+      \le D \le 10^9$)
+    </p>
+
+    <p>
+      둘째 줄에 $A_1, A_2, \cdots, A_N$가 공백으로 구분되어 주어진다. ($1 \le
+      A_i \le 10^9$; $1 \le i \le N$)
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      만약 조건을 만족하는 $B$가 없다면 첫째 줄에
+      <code style="color: #e74c3c">-1</code>을 출력한다.
+    </p>
+
+    <p>
+      그렇지 않다면, 첫째 줄에 만든 $B$의 길이를 출력하고, 둘째 줄에 $B_1, B_2,
+      \cdots, B_N$을 공백으로 구분하여 출력한다.
+    </p>
+
+    <p>
+      정답이 여러 개 존재할 경우 그 중 아무거나 출력하면 되며, 원소들을 어떠한
+      순서로 출력해도 상관없다.
+    </p>
+  </div>
+</section>
