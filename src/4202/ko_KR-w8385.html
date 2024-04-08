@@ -1,0 +1,62 @@
+<section id="title">균형</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div class="problem-text" id="problem_description">
+        <p>범선에는 수많은 힘들이 작용합니다. 이것은 바람이 원하는 방향으로 불지 않더라도 다양한 방향으로 항해할 수 있게 해줍니다. 범선을 쉽게 조정하기 위해서는, 힘들이 균형을 이루어야 합니다.</p>
+
+
+        <p>북풍이 불고, 배가 서쪽을 향하고 있다고 해봅시다. 수면 위에서는 바람이 불고, 돛의 각도 때문에 배를 남서쪽으로 밀어냅니다. 수면 아래 뻗은 용골은 배를 북쪽으로 미는 저항을 발생시킵니다.
+            용골에 작용하는 북쪽 방향의 저항과 돛에 작용하는 남쪽 방향의 힘이 상쇄되고, 배는 서쪽으로 향하게 됩니다.</p>
+
+
+        <p>돛의 중심(Center of Effort,CE)이 용골의 중심(Center of Lateral Resistance, CLR)과 일치하지 않으면 문제가 생길 수 있습니다. 일반적으로 범선은 용골을
+            중심으로 회전할 수 있습니다. 돛이 용골보다 너무 앞에 있으면, 바람이 배의 앞머리를 밀어 배가 남쪽으로 향할 것입니다. 돛이 용골보다 너무 뒤에 있으면, 바람이 배의 선미를 밀어 배가 북쪽으로
+            향할 것입니다. 이상적인 상황은 돛과 용골이 균형을 이루어 범선이 직선으로 항해하는 것입니다.</p>
+
+
+        <p>이 문제에서는 돛의 중심(CE)이 용골의 중심(CLR) 위에 있는지 확인하기 위해 보트의 측면도를 검사할 것입니다. CE는 범선의 수면 위 부분의 무게중심으로 정의됩니다. CLR은 범선의 수면
+            아래 부분의 무게중심으로 정의됩니다. 다각형의 중심은 이를 통과하는 모든 선이 다각형을 동일한 면적의 두 부분으로 나누는 고유한 점입니다.</p>
+
+
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div class="problem-text" id="problem_input">
+        <p>첫 번째 줄에는 범선 측면도의 윤곽을 나타내는 점의 개수인 정수 n이 주어집니다.</p>
+
+        <p>다음 n개의 줄에는 범선 측면도의 각 점의 x, y 좌표를 나타내는 두 개의 정수가 주어집니다. 점들은 윤곽선을 따라 순서대로 주어집니다.</p>
+
+        <p>x축(y = 0)은 수면을 나타내고, 범선은 x 좌표가 증가하는 방향을 바라보고 있다고 가정합니다.</p>
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div class="problem-text" id="problem_output">
+        <p>CE가 CLR보다 앞에 있으면 다음과 같이 출력합니다.</p>
+
+
+        <pre>CE is forward of CLR by N units.</pre>
+
+
+        <p>CE가 CLR보다 뒤에 있으면 다음과 같이 출력합니다.</p>
+
+
+        <pre>CE is aft of CLR by N units.</pre>
+
+
+        <p>위의 두 경우, N 대신 CE와 CLR의 x 좌표 차이를 소수점 아래 두 자리까지 반올림하여 출력합니다.</p>
+
+        <p>CE와 CLR의 x 좌표가 같다면, 다음과 같이 출력합니다.</p>
+
+        <pre>Balanced.</pre>
+
+
+    </div>
+</section>
