@@ -1,0 +1,191 @@
+<section id="title">자릿수의 개수의 합</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      길이 $N$의 정수 수열 $A_1, A_2, \cdots, A_N$와 $B_1, B_2, \cdots, B_N$가
+      주어진다. $\mathrm{digit}(x)$를 $x$의 자릿수의 개수라 할 때, 아래의 값을
+      구하여라.
+    </p>
+
+    <p>$$\sum_{i = 1}^{N} \sum_{j = 1}^{N} \mathrm{digit}(A_i + B_j)$$</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 아래와 같이 주어진다.</p>
+
+    <blockquote>
+      <p>$N$</p>
+
+      <p>$A_1 \; A_2 \; \cdots A_N$</p>
+
+      <p>$B_1 \; B_2 \; \cdots B_N$</p>
+    </blockquote>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>문제의 정답을 출력한다.</p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>$1 \le N \le 150\,000$</li>
+
+      <li>$1 \le A_i \le 999\,999\,999$ ($1 \le i \le N$)</li>
+
+      <li>$1 \le B_j \le 999\,999\,999$ ($1 \le j \le N$)</li>
+
+      <li>입력으로 주어지는 모든 수들은 정수</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>5</td>
+            <td class="subtask-body">
+              <p>$N = 1$</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>11</td>
+            <td class="subtask-body">
+              <p>$N \le 2\,000$</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="3">
+            <td>3</td>
+            <td>15</td>
+            <td class="subtask-body">
+              <p>$A_i \le 2\,000$; $B_j \le 2\,000$ ($1 \le i, j \le N$)</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="4">
+            <td>4</td>
+            <td>8</td>
+            <td class="subtask-body">
+              <p>
+                $100\,000\,000 \le A_i \le 500\,000\,000$; $100\,000\,000 \le
+                B_j \le 500\,000\,000$ ($1 \le i, j \le N$)
+              </p>
+            </td>
+          </tr>
+          <tr data-subtask-id="5">
+            <td>5</td>
+            <td>22</td>
+            <td class="subtask-body">
+              <p>
+                $100\,000\,000 \le A_i$; $100\,000\,000 \le B_j$ ($1 \le i, j
+                \le N$)
+              </p>
+            </td>
+          </tr>
+          <tr data-subtask-id="6">
+            <td>6</td>
+            <td>12</td>
+            <td class="subtask-body">
+              <p>$A_i \le 150\,000$; $B_j = j$ ($1 \le i, j \le N$)</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="7">
+            <td>7</td>
+            <td>13</td>
+            <td class="subtask-body">
+              <p>$B_j = j$ ($1 \le j \le N$)</p>
+            </td>
+          </tr>
+          <tr data-subtask-id="8">
+            <td>8</td>
+            <td>14</td>
+            <td class="subtask-body"><p>추가 제약 조건 없음</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      보다 명확한 설명을 위해 $A$와 $B$를 이용하여 만들 수 있는 수들을 행렬에
+      모두 적어보자. 행렬의 $i$행 $j$열에 적힌 수는 $A_i + B_j$이다.
+    </p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/c31a88f4-f031-487f-89f0-bbdd3b242cb0/-/preview/"
+        style="width: 200px; height: 212px"
+      />
+    </p>
+
+    <p>
+      만들 수 있는 $9$개의 수들은 $117$, $99$, $118$, $99$, $81$, $100$, $27$,
+      $9$, $28$이 되며, 각각의 자릿수는 $3$, $2$, $3$, $2$, $2$, $3$, $2$, $1$,
+      $2$이다. 자릿수를 모두 더하면 $20$이 되므로, 답은 $20$이다.
+    </p>
+
+    <p>이 예제는 서브태스크 $2$, $3$, $8$의 조건을 만족한다.</p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>예제 $1$번과 같은 방법으로 $16$개의 수들을 행렬에 적은 모습이다.</p>
+
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/4a4405cf-9960-4191-b060-b4ca44a78501/-/preview/"
+        style="width: 200px; height: 207px"
+      />
+    </p>
+
+    <p>$16$개의 정수의 자릿수의 합은 $46$이므로, 답은 $46$이다.</p>
+
+    <p>이 예제는 서브태스크 $2$, $6$, $7$, $8$의 조건을 만족한다.</p>
+  </div>
+</section>
+<section id="sample_explain_3">
+  <div id="problem_sample_explain_3" class="problem-text">
+    <p>
+      이 예제에서는 만들 수 있는 수가 $500\,000\,000 + 500\,000\,000 =
+      1\,000\,000\,000$으로 단 하나이다. 해당 수의 자릿수의 개수는 $10$이므로
+      정답은 $10$이다.
+    </p>
+
+    <p>이 예제는 서브태스크 $1$, $2$, $4$, $5$, $8$의 조건을 만족한다.</p>
+  </div>
+</section>
+<section id="sample_explain_4">
+  <div id="problem_sample_explain_4" class="problem-text">
+    <p>이 예제는 서브태스크 $2$, $5$, $8$의 조건을 만족한다.</p>
+  </div>
+</section>

@@ -107,6 +107,9 @@
   "11050": [
     "en_US-masooka"
   ],
+  "11107": [
+    "ko_KR-iktk"
+  ],
   "11121": [
     "ko_KR-ez_code"
   ],
@@ -386,6 +389,9 @@
   "16445": [
     "ko_KR-ez_code"
   ],
+  "16514": [
+    "ko_KR-iktk"
+  ],
   "16600": [
     "ko_KR-kiwiyou"
   ],
@@ -533,6 +539,12 @@
   "1978": [
     "en_US-masooka"
   ],
+  "19812": [
+    "ko_KR-wizardrabbit"
+  ],
+  "19884": [
+    "ko_KR-iktk"
+  ],
   "20060": [
     "ko_KR-ldhhello"
   ],
@@ -611,6 +623,9 @@
   "21105": [
     "ko_KR-ez_code"
   ],
+  "21127": [
+    "ko_KR-iktk"
+  ],
   "21146": [
     "ko_KR-w8385"
   ],
@@ -634,6 +649,9 @@
   ],
   "21354": [
     "ko_KR-kiwiyou"
+  ],
+  "21406": [
+    "ko_KR-iktk"
   ],
   "21420": [
     "ko_KR-ez_code"
@@ -679,6 +697,9 @@
   ],
   "22015": [
     "ko_KR-kiwiyou"
+  ],
+  "22097": [
+    "ko_KR-iktk"
   ],
   "22150": [
     "ko_KR-ez_code"
@@ -991,6 +1012,9 @@
   ],
   "26711": [
     "ko_KR-kiwiyou"
+  ],
+  "26714": [
+    "ko_KR-iktk"
   ],
   "26731": [
     "ko_KR-wizardrabbit"
@@ -1316,14 +1340,26 @@
   "29163": [
     "ko_KR-ldhhello"
   ],
+  "29411": [
+    "ko_KR-iktk"
+  ],
   "29454": [
+    "ko_KR-wizardrabbit"
+  ],
+  "29507": [
     "ko_KR-wizardrabbit"
   ],
   "29517": [
     "ko_KR-wizardrabbit"
   ],
+  "29628": [
+    "ko_KR-iktk"
+  ],
   "29667": [
     "ko_KR-wizardrabbit"
+  ],
+  "29678": [
+    "ko_KR-iktk"
   ],
   "29679": [
     "ko_KR-wizardrabbit"
@@ -1373,7 +1409,16 @@
   "31275": [
     "ko_KR-wizardrabbit"
   ],
+  "31615": [
+    "ko_KR-wizardrabbit"
+  ],
+  "31639": [
+    "ko_KR-wizardrabbit"
+  ],
   "31654": [
+    "ko_KR-wizardrabbit"
+  ],
+  "31655": [
     "ko_KR-wizardrabbit"
   ],
   "31688": [
@@ -1398,6 +1443,9 @@
     "ko_KR-kiwiyou"
   ],
   "4141": [
+    "ko_KR-w8385"
+  ],
+  "4202": [
     "ko_KR-w8385"
   ],
   "4422": [
@@ -1544,6 +1592,9 @@
   "7070": [
     "ko_KR-kiwiyou"
   ],
+  "7174": [
+    "ko_KR-iktk"
+  ],
   "7568": [
     "en_US-masooka"
   ],
@@ -1595,6 +1646,9 @@
   "8610": [
     "ko_KR-bubbler"
   ],
+  "8637": [
+    "ko_KR-iktk"
+  ],
   "8658": [
     "ko_KR-bubbler"
   ],
@@ -1621,6 +1675,9 @@
   ],
   "8678": [
     "ko_KR-bubbler"
+  ],
+  "8692": [
+    "ko_KR-wizardrabbit"
   ],
   "8693": [
     "ko_KR-wizardrabbit"
@@ -1720,5 +1777,8 @@
   ],
   "9945": [
     "ko_KR-ez_code"
+  ],
+  "9978": [
+    "ko_KR-iktk"
   ]
 }
