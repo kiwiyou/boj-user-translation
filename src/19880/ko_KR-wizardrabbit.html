@@ -1,0 +1,75 @@
+<section id="title">페이지 번호</section>
+
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p align="center">
+      <img
+        src="https://upload.acmicpc.net/81d11e85-bc7e-46f8-bebc-de5014d321ad/-/preview/"
+        width="150px"
+        style="max-width: 100%"
+      />
+    </p>
+    <p>
+      여러분은 문서를 읽다가 문서의 하단에 있는 페이지 번호를 지겹도록 많이
+      보았을 것이다. 이번 문제는 페이지 번호에 대한 문제이다.
+    </p>
+    <p>
+      <strong>올바른 페이지 번호</strong>란 임의의 양의 정수 $a$와 $b$ 사이에
+      <code style="color: #e74c3c">/</code> 기호를 합쳐 $a$<code
+        style="color: #e74c3c"
+        >/</code
+      >$b$ 형태로 만든 문자열을 의미한다. 이 때 $a \le b$여야 하며, $a$와 $b$
+      모두 $0$으로 시작해서는 안 된다.
+    </p>
+    <p>
+      앨리스는 길을 지나가다 우연히 숫자로만 이루어진 문자열 $S$를 발견했고,
+      뜬금없지만 $S$에서 원하는 위치에
+      <code style="color: #e74c3c">/</code> 기호를 추가하여 만든 문자열이 올바른
+      페이지 번호가 될 수 있는 경우의 수가 궁금해졌다. 이 경우의 수를 출력하는
+      프로그램을 작성하시오.
+    </p>
+  </div>
+</section>
+
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 숫자만으로 구성된 문자열 $S$가 주어진다.
+      <strong
+        >$S$는 <code style="color: #e74c3c">0</code>으로 시작할 수 있다.</strong
+      >
+      ($1 \le |S| \le 200\,000$)
+    </p>
+  </div>
+</section>
+
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>문제의 정답을 출력한다.</p>
+  </div>
+</section>
+
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      예제 $1$번의 경우, $2$<code style="color: #e74c3c">/</code>$3507645$,
+      $23$<code style="color: #e74c3c">/</code>$507645$, $2350$<code
+        style="color: #e74c3c"
+        >/</code
+      >$7645$가 만들 수 있는 올바른 페이지 번호이다. 올바른 페이지 번호를 만들
+      수 있는 경우의 수는 $3$이므로, $3$을 출력해야 한다.
+    </p>
+  </div>
+</section>
