@@ -1,0 +1,103 @@
+<section id="title">생일 기억하기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      앨리스는 친구들의 생일을 챙겨주는 것을 중요하게 생각하기 때문에, 친구
+      $N$($1 \le N \le 2\,000$)명의 생일들을 기억하려고 한다.
+    </p>
+
+    <p>
+      하지만 앨리스의 친구들 중에서는 우연히 생일이 겹치는 친구들이 있을 수
+      있다. 이 경우 앨리스는 같은 생일자인 친구들 중 가장 친한 한 명의 생일만을
+      기억하려고 한다.
+    </p>
+
+    <p>
+      앨리스의 친구들에 대한 정보가 주어지면, 앨리스가 과연 누구의 생일을
+      기억하게 될 지를 맞추어 보자!
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 아래와 같이 주어진다.</p>
+
+    <blockquote>
+      <p>$N$</p>
+
+      <p>$S_1\;C_1\;D_1$</p>
+
+      <p>$S_2\;C_2\;D_2$</p>
+
+      <p>$\vdots$</p>
+
+      <p>$S_N\;C_N\;D_N$</p>
+    </blockquote>
+
+    <p>
+      $S_i$($1 \le |S_i| \le 10$)는 $i$번째 친구의 이름을 의미한다. 친구의
+      이름은 항상 첫 글자는 영어 대문자, 나머지 글자는 영어 소문자이다.
+    </p>
+
+    <p>
+      $C_i$($0 \le C_i \le 100\,000$)는 $i$번째 친구와의 친밀도를 정수로 나타낸
+      수치이다. $C_i$의 값이 클 수록 앨리스와 친한 친구이다. 모든 친구들의 친밀도는 서로 다르다.
+    </p>
+
+    <p>
+      $D_i$($1 \le$ <code style="color: #e74c3c">MM</code style="color: #e74c3c"> $\le 12 $; $1 \le$ <code style="color: #e74c3c">DD</code style="color: #e74c3c"> $\le 31$) 는 $i$번째 친구의 생일을 의미한다. 생일의 정보는
+      <code style="color: #e74c3c">DD/MM</code style="color: #e74c3c"> 형식의 문자열로 주어지며, 이는 친구의 생일이
+      <code style="color: #e74c3c">MM</code style="color: #e74c3c">월 <code style="color: #e74c3c">DD</code style="color: #e74c3c">일임을 의미한다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>출력은 아래의 형식을 지켜야 한다.</p>
+
+    <blockquote>
+      <p>$K$</p>
+
+      <p>$name_1$</p>
+
+      <p>$name_2$</p>
+
+      <p>$\vdots$</p>
+
+      <p>$name_K$</p>
+    </blockquote>
+
+    <p>$K$는 앨리스가 생일을 기억하게 될 친구의 수를 의미한다.</p>
+
+    <p>
+      $name_i$는 앨리스가 생일을 기억하게 될 $i$번째 친구의 이름을 의미한다.
+      친구들의 이름들을 출력할 때에는 사전순으로 출력해야 한다.
+    </p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      첫 번째 예시의 경우 Sanna와 Simon의 생일이 겹치고, Sanna와의 친밀도는 $1$,
+      Simon과의 친밀도는 $2$이므로, 앨리스는 Sanna의 생일은 기억하지 못하게
+      된다.
+    </p>
+
+    <p>
+      두 번째 예시의 경우 각 생일마다 생일이 겹치는 친구가 $2$명씩 있기 때문에,
+      앨리스는 절반의 친구들의 생일만을 기억하게 된다.
+    </p>
+  </div>
+</section>

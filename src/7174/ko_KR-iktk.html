@@ -1,0 +1,49 @@
+<section id="title">동료평가</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>당신은 학생이며, 오늘은 당신이 수강하는 강의의 기말 발표날이다.</p>
+		<p>이 강의의 수강생은 당신을 포함하여 $N+1$명이다.</p>
+		<p>어떤 학생의 발표 점수는 나머지 $N$명이 준 점수의 합이며, 점수는 다음과 같이 주어진다.</p>
+		<p>
+		<ul>
+			<li>$i$번째 학생의 발표 퀄리티 $V_i(1\le V_i\le 1000)$ 는 정해져 있다.</li>
+			<li>먼저 발표를 마친 학생은, 지금 발표한 학생이 자신에게 주었던 점수와 같은 점수를 준다.</li>
+			<li>아직 발표를 하지 않은 학생은 $V_i$점을 준다.</li>
+		</ul>
+		</p>
+		<p>교수님은 당신을 제외한 $N$명의 발표 순서를 이미 정하였으며, 당신은 원하는 순서에 발표할 수 있다. 가장 높은 발표 점수를 받기 위한 순서를 구하는 프로그램을 작성하라.</p>
+
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>첫 번째 줄에 당신의 발표 퀄리티를 나타내는 정수 $V (1\le V\le 1000)$ 이 주어진다.</p>
+<p>두 번째 줄에 문제에 언급된 정수 $N (1\le N\le 1\;000\;000)$이 주어진다.</p>
+<p>세 번째 줄부터 $N$개의 줄에는, $2+i$번째 줄에 문제에 언급된 정수 $V_i$가 주어진다.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>한 줄에 당신이 받을 수 있는 발표 점수의 최댓값과 발표 순서를 공백으로 구분하여 정수로 출력한다.</p>
+<p>정답이 여러 가지인 경우에는 발표 순서가 가장 빠른 것을 출력하며, 발표 순서는 가장 먼저 발표하는 것을 $1$, $\cdots$, 가장 마지막에 발표하는 것은 $N+1$로 한다.</p>
+
+	</div>
+</section>
+<section id="sample_explain_1">
+	<div id="problem_sample_explain_1" class="problem-text">
+		<p>당신의 발표 퀄리티는 $7$이며, 이 수업에는 당신 외에 $6$의 학생이 있다. 가능한 최고 총점은 $2$번째 또는 $4$번째로 발표했을 때 $43$이며, $2$와 $4$ 중 더 빠른 순서인 $2$를 출력한다.</p>
+
+
+	</div>
+</section>

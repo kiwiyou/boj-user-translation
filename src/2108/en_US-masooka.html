@@ -1,0 +1,59 @@
+<section id="title">Statistics</section>
+<section id="description">
+	<div class="headline">
+		<h2>Statement</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>Handling numbers is a significantly important task in statistics. In
+			statistics, the basic statistical values that represent $N$ numbers
+			include the following, assuming that $N$ is an odd number:</p>
+
+		<ol>
+			<li>Arithmetic Mean: The sum of $N$ numbers divided by $N$</li>
+			<li>Median: The middle value when $N$ numbers are arranged in
+				increasing order</li>
+			<li>Mode: The most frequently occurring number among the $N$
+				numbers</li>
+			<li>Range: The difference between the maximum and minimum values
+				among the $N$ numbers</li>
+		</ol>
+
+		<p>Given $N$ numbers, write a program to calculate these four basic
+			statistical values.</p>
+
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>Input</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>The first line contains the number of values $N$ ($1 \le N \le
+			500\,000$), which is an odd number. The next $N$ lines contain integers.
+			The absolute value of these integers does not exceed 4,000.</p>
+
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>Output</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>On the first line, output the arithmetic mean. Round to the nearest
+			integer.</p>
+
+		<p>On the second line, output the median value.</p>
+
+		<p>On the third line, output the mode. If there are multiple modes,
+			output the second smallest value.</p>
+
+		<p>On the fourth line, output the range.</p>
+	</div>
+</section>
+<section id="sample_explain_4">
+	<div id="problem_sample_explain_4" class="problem-text">
+		<p>The arithmetic mean is $(0 + 0 + (-1)) / 3 = -0.333333\cdots$, which
+			rounds to $0$. It should not be output as <code>-0</code>.
+		</p>
+	</div>
+</section>

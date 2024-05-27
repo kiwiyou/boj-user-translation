@@ -1,0 +1,66 @@
+<section id="title">사탕 합성하기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      앨리스는 $N$종류의 사탕을 가지고 있으며, 각 사탕은 $N$가지 맛 중 하나를
+      지닌다. 앨리스가 가진 사탕의 맛은 $1$ 이상 $N$ 이하의 정수로 나타낼 수
+      있으며, 앨리스는 맛이 $i$인 사탕을 $A_i$개 가지고 있다.
+    </p>
+
+    <p>
+      앨리스는 아래의 작업을 더 이상 작업이 불가능할 때까지 계속해서 수행해야
+      한다.
+    </p>
+
+    <ul>
+      <li>
+        정수 $i$를 고르고, 맛이 $2i$인 사탕 $1$개와 맛이 $2i + 1$인 사탕 $1$개를
+        합성하여 맛이 $i$인 사탕 $1$개로 만든다. ($1 \le i \le \lfloor \frac N 2
+        \rfloor$)
+      </li>
+    </ul>
+
+    <p>앨리스가 작업을 모두 완료한 후, 남은 사탕의 개수는 몇 개일까?</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      입력은 여러 개의 테스트 케이스로 이루어져 있다. 첫째 줄에는 테스트
+      케이스의 수 $T$가 주어진다. ($1 \le T \le 3$)
+    </p>
+
+    <p>
+      각 테스트 케이스의 첫째 줄에는 $N$이 주어진다. ($1 \le N \le 1\,001$;
+      $N$은 홀수)
+    </p>
+
+    <p>
+      각 테스트 케이스의 둘째 줄에는 $A_{\lfloor \frac N 2 \rfloor + 1}, \cdots,
+      A_N$가 공백으로 구분되어 주어진다. ($4 \le A_i \le 1\,000$; $\lfloor \frac
+      N 2 \rfloor + 1 \le i \le N$)
+    </p>
+
+    <p>
+      <strong
+        >$T$와 $A_i$의 제한은 번역자가 검증 이후 작성한 것입니다. 본 문제에
+        공식적으로 명시된 정보가 아니며, 이후 데이터가 추가될 경우 제한이 변경될
+        수 있음에 유의하십시오.</strong
+      >
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>문제의 정답을 출력한다.</p>
+  </div>
+</section>

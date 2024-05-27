@@ -1,0 +1,65 @@
+<section id="title">일기장</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p style="text-align: center">
+      <img
+        src="https://upload.acmicpc.net/113e9905-9d22-4a8e-bc92-16b5a89659cb/-/preview/"
+        style="width: 480px; max-width: 100%"
+      />
+    </p>
+    <p>일기 쓰기를 좋아하는 앨리스는 오늘도 일기장에 일기를 쓰려고 한다.</p>
+
+    <p>
+      앨리스가 사용하는 일기장의 종이의 가로 길이는 $w$, 세로 길이는 $h$이며,
+      앨리스가 일기장에 쓰는 글자의 가로 길이는 $a$, 세로 길이는 $b$이다.
+      앨리스가 일기장에 쓸 글자의 크기는 모두 같다. 여러분은 앨리스가 쓰는
+      글자를 $a \times b$ 크기의 직사각형이라고 생각하여도 무방하다.
+    </p>
+
+    <p>
+      앨리스가 일기장에 글을 작성할 때에는 종이의 가장 윗줄부터, 왼쪽에서
+      오른쪽으로 글자를 적어나간다. 이 때 다른 글자들과의 틈이 없도록 글자를
+      적어나가며, 다른 글자와 겹치지 않도록 글자를 적는다. 또한, 글자를 회전하여
+      적지 않는다. 만약 해당 줄에서 더 이상 글을 쓸 공간이 부족할 경우에는 바로
+      아랫줄에 글을 적기 시작하며, 공간이 부족하여 다음 줄로 넘어갈 수 없는
+      경우, 앨리스는 새로운 종이를 사용하여 같은 방법으로 일기를 적는다.
+    </p>
+
+    <p>
+      앨리스는 일기장에 총 $n$개의 글자를 적으려고 한다. 이 때 필요한 일기장의
+      종이의 매수를 구하여라.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 정수 $w$, $h$가 공백을 사이에 두고 차례대로 주어진다. ($1 \le w,
+      h \le 100$)
+    </p>
+
+    <p>
+      둘째 줄에 정수 $n$, $a$, $b$가 공백을 사이에 두고 차례대로 주어진다. ($1
+      \le n, a, b \le 100$)
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      앨리스가 $n$개의 글자를 적기 위해 필요한 일기장의 종이의 매수를 출력한다.
+      단, 앨리스가 적고자 하는 글자의 크기가 너무 커 종이에 적을 수 없는
+      경우에는 필요한 종이의 매수 대신
+      <code style="color: #e74c3c">-1</code>을 출력한다.
+    </p>
+  </div>
+</section>
