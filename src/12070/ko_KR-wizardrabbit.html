@@ -1,0 +1,107 @@
+<section id="title">G-넘버 (Small)</section>
+
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      <strong>G-넘버</strong>란 자릿수의 합이 $1$과 자기 자신 외에 어떤 양의
+      정수로도 나누어떨어지지 않는 수를 의미한다. 특히 $1$은
+      <strong>G-넘버</strong>임에 유의하자.
+    </p>
+    <p>
+      두 플레이어, Laurence와 Seymour는 <strong>G-넘버</strong>의 특징을
+      이용하는 재밌는 게임을 하려고 한다. 이 게임은 두 명의 플레이어가 즐길 수
+      있는 게임이며, 게임이 시작할 때 양의 정수 $N$이 주어진 채로 시작된다. 두
+      플레이어는 서로 돌아가면서 자신의 턴을 진행해야 한다.
+    </p>
+    <p>각 턴마다, 플레이어는 아래의 행동을 순서대로 진행한다.</p>
+    <ol>
+      <li>
+        $N$이 <strong>G-넘버</strong>인지 확인한다. <strong>G-넘버</strong>라면,
+        해당 턴을 진행중인 플레이어가 패배하여, 상대 플레이어가 승리하게 된다.
+        이 시점에서 게임은 종료된다.
+      </li>
+      <li>
+        $N$이 <strong>G-넘버</strong>가 아니라면, 원하는 양의 정수 $X$를 고른다.
+        이 때, $X$는 $N$의 약수이면서 소수여야 한다.
+      </li>
+      <li>
+        $N$이 $X$로 나누어떨어지지 않을 때까지 계속해서 $N$을 $X$로 나누는
+        동작을 반복한다.
+      </li>
+    </ol>
+    <p>
+      두 플레이어가 모두 최적의 전략대로 게임에 임하고, Laurence가 항상 먼저
+      턴을 진행한다면, 누가 승리하게 될 지를 판별하는 프로그램을 작성해 보자.
+    </p>
+  </div>
+</section>
+
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 테스트 케이스의 수 $T$가 주어진다. 이후 $T$개의 줄에 걸쳐 테스트
+      케이스가 주어진다.
+    </p>
+    <p>각 테스트 케이스에서는 $N$이 주어진다.</p>
+    <p>
+      <strong
+        >(번역자 코멘트) 예제 입력 $1$의 $8$번째, $9$번째 케이스는 Small 버전의
+        입력 조건을 지키지 않음에 유의하십시오.</strong
+      >
+    </p>
+  </div>
+</section>
+
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 테스트 케이스마다 한 줄에 하나씩 누가 이기게 될 지를 출력하되,
+      <code style="color: #e74c3c">Case #x: y</code>의 형식대로 출력한다.
+      여기에서 $x$는 $1$부터 시작하는 테스트 케이스의 번호, $y$는 승리한
+      플레이어의 이름이다.
+    </p>
+  </div>
+</section>
+
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>$ 1 \le T \le 100$</li>
+      <li>$ 1 \le N \le 1\,000$; $N$은 정수</li>
+    </ul>
+  </div>
+</section>
+
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      예제 $1$번의 $1$번 테스트 케이스의 경우, $N = 2$이며, $2$는 자릿수의 합이
+      $2$이고, $2$는 $1$과 자기 자신인 $2$ 외의 그 어떤 양의 정수로도
+      나누어떨어지지 않으므로, <strong>G-넘버</strong>이다. 따라서 먼저 턴을
+      진행하는 Laurence가 패배하므로, Seymour가 승리하게 된다.
+    </p>
+    <p>
+      예제 $1$번의 $3$번 테스트 케이스의 경우, $N = 4$이며, $4$는
+      <strong>G-넘버</strong>가 아니므로 Laurence가 진행하는 첫째 턴에서 게임이
+      끝나지 않는다. Laurence가 $X$의 값으로 $2$를 고르고, $4$가 $2$로
+      나누어떨어질 때까지 계속해서 나누면 $N$의 값은 $1$이 된다. 이후 Seymour는
+      $N = 1$인채로 턴을 시작하게 되고, $1$은 <strong>G-넘버</strong>이므로,
+      Seymour가 패배해 Laurence가 승리하게 된다.
+    </p>
+  </div>
+</section>

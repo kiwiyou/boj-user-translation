@@ -1,0 +1,54 @@
+<section id="title">고대 영어로 변환하기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      $N$개의 영어 단어가 주어지면, 주어진 단어들을 각각 고대 영어로 변환하는 프로그램을 작성해
+      보자. 고대 영어로 변환하기 위해서는 아래의 지시를 순서대로 따르면 된다.
+    </p>
+    <ol>
+      <li>
+        단어의 첫 문자가 아니면서, 바로 뒤의 문자가 <code style="color: #e74c3c">h</code>가 아닌
+        <code style="color: #e74c3c">s</code style="color: #e74c3c">를 <code style="color: #e74c3c">th</code>로 변환한다.
+      </li>
+      <li>
+        단어의 첫 문자가 <code style="color: #e74c3c">e</code>라면, 이를
+        <code style="color: #e74c3c">ae</code>로 변환한다.
+      </li>
+      <li>
+        <code style="color: #e74c3c">oo</code>를
+        <code style="color: #e74c3c">ou</code>로 변환한다.
+        단, <code style="color: #e74c3c">o</code>가 $3$회 이상 연속으로 등장하는 경우 앞 두 문자에만 해당 지시를 적용한다.
+      </li>
+      <ul>
+        <li>ex) <code style="color: #e74c3c">a<span style="color: #3c56e7">oo</span>b<span style="color: #3c56e7">oo</span>oo</code> $\to$ <code style="color: #e74c3c">a<span style="color: #3c56e7">ou</span>b<span style="color: #3c56e7">ou</span>oo</code></li>
+      </ul>
+    </ol>
+    <p>지시를 따를 때에는 대소문자를 구별하지 않는다. 즉, 문자열의 일부 또는 전부가 대문자여도 동일하게 변환의 대상이 된다. 단, 입력으로 주어진 단어의 첫 문자가 대문자였다면, 모든 변환 이후 단어의 첫 문자는 대문자, 나머지 문자는 소문자여야 하며, 입력으로 주어진 단어가 모두 소문자였다면 모든 변환 이후 모든 문자는 소문자여야 한다.</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 $N$이 주어진다. ($1 \le N \le 100$)
+    </p>
+    <p>
+      이후 $N$개의 줄에 걸쳐, $N$개의 단어가 한 줄에 하나씩 주어진다. 각 단어의 첫 문자는 알파벳 대문자이거나 소문자이며, 나머지 문자들은 모두 알파벳 소문자이다. 또한, 각 단어의 길이는 항상 $1$ 이상 $30$ 이하이다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      총 $N$개 줄에 걸쳐, 주어진 영어 단어를 고대 영어로 변환한 결과를 한 줄에 하나씩 출력한다.
+    </p>
+  </div>
+</section>

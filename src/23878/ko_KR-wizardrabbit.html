@@ -1,0 +1,76 @@
+<section id="title">외로운 구간</section>
+
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      농부 존은 $N$마리의 소들을 키우고 있으며, 각 소의 종류는 항상 얼룩소 또는
+      누렁소이다.
+    </p>
+
+    <p>
+      존은 단체사진을 찍기 위해 $N$마리의 소들을 가로로 줄 세웠다. 이제 존은
+      구간 $[L, R]$을 정하고, $L$번째 소부터 $R$번째 소까지 사진에 보이도록
+      사진을 찍을 것이다.
+    </p>
+
+    <p>
+      존이 사진을 찍기 전 항상 조심하는 것이 있는데, 바로 사진을 찍기 위해 정한
+      구간이 <strong>외로운 구간</strong>이 되는지이다. 외로운 구간이란 아래의
+      조건을 모두 만족하는 구간 $[L, R]$을 의미한다.
+    </p>
+
+    <ul>
+      <li>$1 \le L \le R \le N$이다.</li>
+
+      <li>
+        구간을 고르고 찍은 소들의 수가 $3$ 이상이다. 즉, $R - L \ge 2$이다.
+      </li>
+
+      <li>
+        구간을 고르고 찍은 소들 중, 얼룩소가 단 한 마리이거나 누렁소가 단 한
+        마리이다.
+      </li>
+    </ul>
+
+    <p>
+      존은 사진을 찍기 위해 구성할 수 있는 모든 구간들 중 외로운 구간의 개수가
+      궁금해졌다. 여러분이 외로운 구간의 개수를 구해보자!
+    </p>
+  </div>
+</section>
+
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다. ($3 \le N \le 500\,000$)</p>
+
+    <p>
+      둘째 줄에 길이 $N$의 문자열 $S$가 주어지며, $S$는 문자
+      <code style="color: #e74c3c">G</code>와
+      <code style="color: #e74c3c">H</code>로만 이루어져 있다. $S$의 $i$번째
+      문자는 $i$번째 소의 종류를 의미하며,
+      <code style="color: #e74c3c">G</code>일 경우 누렁소,
+      <code style="color: #e74c3c">H</code>일 경우 얼룩소임을 의미한다.
+    </p>
+  </div>
+</section>
+
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>외로운 구간의 개수를 출력한다.</p>
+  </div>
+</section>
+
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>$[1, 3]$, $[2, 4]$, $[3, 5]$가 외로운 구간이다.</p>
+  </div>
+</section>

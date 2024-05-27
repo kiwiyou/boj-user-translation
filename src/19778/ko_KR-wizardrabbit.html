@@ -1,0 +1,126 @@
+<section id="title">고리 던지기 게임</section>
+
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      Petya와 Vasya는 체육관에서 <strong>고리 던지기 게임</strong>을 하려고
+      한다. 체육관에는 게임에 활용할 수 있는 기둥 $N$개와 고리 $M$개가 있다. 각
+      기둥은 높이를 지니고 있으며, $i$번째 기둥의 높이는 $H_i$이다. ($ 1 \le i
+      \le N$)
+    </p>
+    <p>게임의 규칙은 아래와 같다.</p>
+    <ul>
+      <li>두 플레이어는 각각 $0$점인 상태에서 게임을 시작한다.</li>
+      <li>
+        두 플레이어가 번갈아가면서 고리를 하나 집어 원하는 기둥에 던진다.
+        <strong
+          >해당 플레이어가 고리를 거는 데 성공시킬 수 있는 기둥이 없더라도
+          고리는 던져야 한다.</strong
+        >
+      </li>
+      <li>
+        고리를 기둥에 거는 데 성공한 경우, 해당 플레이어는 $1$점을 얻는다.
+      </li>
+      <li>하나의 기둥에는 고리를 하나만 걸 수 있다.</li>
+      <li>
+        한 번 던진 고리는 회수할 수 없으며, 더 이상 던질 고리가 없을 경우 게임은
+        종료된다.
+      </li>
+      <li>
+        게임이 종료되는 시점, 더 많은 점수를 득점한 플레이어가 승리하며, 두
+        플레이어의 점수가 같다면 비기게 된다.
+      </li>
+    </ul>
+    <p>
+      Petya와 Vasya는 기둥의 높이에 따라 제대로 고리를 걸 수 있는 범위가 정해져
+      있다.
+    </p>
+    <ul>
+      <li>
+        Petya의 경우 목표로 삼은 기둥의 높이가 $P_{min}$ 이상 $P_{max}$ 이하일
+        경우 해당 기둥에 고리를 거는 데 반드시 성공하며, 그렇지 않다면 반드시
+        실패한다.
+      </li>
+      <li>
+        Vasya의 경우 목표로 삼은 기둥의 높이가 $V_{min}$ 이상 $V_{max}$ 이하일
+        경우 해당 기둥에 고리를 거는 데 반드시 성공하며, 그렇지 않다면 반드시
+        실패한다.
+      </li>
+    </ul>
+    <p>
+      두 플레이어가 모두 최적의 전략으로 게임에 임하고, Petya가 먼저 고리를
+      던지기 시작할 때, 누가 승리하는 지를 알려주는 프로그램을 작성해 보자.
+    </p>
+  </div>
+</section>
+
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 아래와 같이 주어진다.</p>
+    <blockquote>
+      <p>$N \quad M$</p>
+
+      <p>$P_{min} \quad P_{max}$</p>
+
+      <p>$V_{min} \quad V_{max}$</p>
+
+      <p>$H_1 \quad H_2 \quad \cdots \quad H_N$</p>
+    </blockquote>
+    <p>제한조건은 아래와 같다.</p>
+    <ul>
+      <li>$1 \le M \le N \le 10^5$</li>
+      <li>$1 \le P_{min} \le P_{max} \le 10^9$</li>
+      <li>$1 \le V_{min} \le V_{max} \le 10^9$</li>
+      <li>$1 \le H_i \le 10^9$ ($1 \le i \le N$)</li>
+      <li>입력으로 주어지는 모든 수는 정수</li>
+    </ul>
+  </div>
+</section>
+
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      두 플레이어가 모두 최적의 전략으로 게임에 임했을 때, Petya가 승리한다면
+      <code style="color: #e74c3c">Petya</code>, Vasya가 승리한다면
+      <code style="color: #e74c3c">Vasya</code>, 비길 경우에는
+      <code style="color: #e74c3c">Draw</code>를 출력한다.
+    </p>
+  </div>
+</section>
+
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>
+      예제 $1$번의 경우, Petya가 먼저 높이가 $2$인 기둥에 고리를 던지면 고리를
+      거는 데 성공한다. 그 다음 Vasya는 높이가 $3$이나 $4$인 기둥에 고리를 던져
+      성공시킬 수 있지만, 어느 쪽을 선택하든 Petya가 높이가 $1$인 기둥에 고리를
+      던져 고리를 거는 데 성공하면서 고리가 모두 소진되어 게임이 끝나고, Petya는
+      총 $2$점, Vasya는 $1$점을 얻게 되어 Petya가 승리한다.
+    </p>
+    <p>
+      예제 $2$번의 경우 각 플레이어는 어느 기둥에 고리를 던져도 고리를 거는 데
+      성공하므로, 두 플레이어가 번갈아가며 각각 두 개의 고리를 던지면 고리가
+      모두 소진되며, 두 플레이어의 점수는 모두 $2$점으로 비기게 된다.
+    </p>
+    <p>
+      예제 $3$번의 경우 Petya는 높이가 $1$이거나 $2$인 기둥에 고리를 던져야만
+      고리를 거는 데 성공할 수 있다. 둘 중 어느 기둥에 고리를 던지든 Vasya가
+      나머지 기둥 하나에 고리를 던지면, Petya는 남은 기둥 중 어느 하나를 골라
+      던져도 고리를 거는 데 실패하며, 이후 Vasya가 남은 기둥 중 아무 기둥을 골라
+      던지면 고리를 거는 데 성공하게 된다. 이 시점에서 고리가 모두 소진되며,
+      Petya는 $1$점, Vasya는 $2$점을 획득하게 되어 Vasya가 승리하게 된다.
+    </p>
+  </div>
+</section>

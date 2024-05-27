@@ -1,0 +1,69 @@
+<section id="title">기간제 버스 카드</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      앨리스와 밥은 기간제 버스 카드를 가지고 있다. 오늘을 기준으로, 앨리스의
+      기간제 버스 카드는 이용 가능 기간이 $A$일 남았고, 밥은 $B$일이 남았다.
+      하루가 지날 때마다 이 남은 일 수는 $1$일씩 감소한다.
+    </p>
+    <p>
+      기간제 버스 카드를 리더기에 긁으면 남은 일 수를 조회할 수 있는데, 리더기에
+      표시되는 일 수는 남은 기간이 $98$일 이하이면 남은 기간이 일 단위로 그대로
+      표시되지만, $99$일 이상일 경우에는 항상 $99$가 표시된다.
+    </p>
+    <p>
+      앨리스와 밥은 오늘을 포함해, 어느 한쪽의 남은 일 수가 $0$이 될 때까지 매일
+      각자의 버스 카드를 리더기에 긁어 리더기에 표시되는 수를 확인할 것이다. 이
+      때 오늘로부터 며칠이 지났을 때 처음으로 버스 카드를 긁었을 때 나오는
+      한쪽의 수가 다른 쪽의 수의 $K$배가 될까?
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      입력은 총 $T$개의 테스트 케이스로 구성되어 있으며, 아래와 같이 테스트
+      케이스들이 주어진다.
+    </p>
+    <blockquote>
+      <p>
+        $\begin{array}{l} T \\ \matrix{ testcase_1 \cr testcase_2 \cr \vdots \cr
+        testcase_T} \end{array} $
+      </p>
+    </blockquote>
+
+    <p>각 테스트 케이스는 아래와 같은 형식으로 주어진다.</p>
+    <blockquote>
+      <p>$A \quad B \quad K$</p>
+    </blockquote>
+
+    <p>제한조건은 아래와 같다.</p>
+
+    <ul>
+      <li>$1 \le T \le 100\,000$</li>
+      <li>$1 \le A \le 2 \times 10^9$</li>
+      <li>$1 \le B \le 2 \times 10^9$</li>
+      <li>$1 \le K \le 100$</li>
+      <li>입력으로 주어지는 모든 수는 정수</li>
+    </ul>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 테스트 케이스마다, 오늘로부터 며칠이 지났을 때 처음으로 버스 카드를
+      긁었을 때 나오는 한쪽의 수가 다른 쪽의 수의 $K$배가 되는지의 일 수를 정수
+      형태로 출력하되, 그러한 상황이 발생하지 않는 경우에는 $-1$을 대신
+      출력한다.
+    </p>
+  </div>
+</section>
