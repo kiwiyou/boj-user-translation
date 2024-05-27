@@ -31,7 +31,7 @@ def find_tag_end(s):
 is_multilingual_typo = args.author == "typo" and args.language != "Original"
 regex = re.compile(r'<section\s+id="(\w+)"\s+class="problem-section">')
 try:
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0'}
     context = SSLContext(PROTOCOL_TLS_CLIENT)
     context.check_hostname = False
     context.verify_mode = VerifyMode.CERT_NONE
