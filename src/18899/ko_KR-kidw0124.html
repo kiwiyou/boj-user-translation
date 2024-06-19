@@ -1,0 +1,55 @@
+<section id="title">복호화</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      동우는 자신만의 암호화 함수를 만들었다. 이 함수는 양의 정수 $x$를 하나
+      입력받아 다음 과정을 통해 정의된 $f(x)$를 출력한다.
+    </p>
+    <p>
+      입력으로 주어진 $x$를 $0$으로 시작하지 않는 10진수로 나타내었을 때 $d$자리
+      수라고 하자. 이 수를 각 자리의 숫자로 이루어진 길이 $d$의 수열로 생각한다.
+      이 수열의 길이 $1$ 이상 $d$ 이하인 모든 부분수열을 10진수로 해석한다. 이때
+      나온 부분 수열의 경우 $0$으로 시작할 수 있다. 이렇게 구한 $2^{d-1}$개의
+      수의 합을 $f(x)$로 정의한다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫 줄에 양의 정수 $n$ ($1 \le n \le 10^{18}$)이 주어진다. 이는 동우가
+      암호화 함수 통해 얻은 값이다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      만약 $f(m) = n$을 만족하는 양의 정수 $m$이 존재한다면, $m$을 출력한다.
+      그렇지 않다면 <code>NIE</code>를 출력한다.
+    </p>
+
+    <p>민액 가능한 정답이 여러 개라면 그 중 아무거나 출력해도 된다.</p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>힌트</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>첫 번째 예제에서 $f(123) = 1 + 2 + 3 + 12 + 13 + 23 + 123 = 177$이다.</p>
+
+    <p>
+      두 번째 예제에서는 $f(m)=42$를 만족하는 양의 정수 $m$이 존재하지 않는다.
+    </p>
+  </div>
+</section>
