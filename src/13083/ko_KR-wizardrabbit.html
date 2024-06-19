@@ -1,0 +1,65 @@
+<section id="title">비밀번호 변경하기</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      타로는 JAG 회사의 보안팀 직원이다. 타로의 회사는 길이 $N$의 숫자로만
+      이루어진 비밀번호를 사용하고 있다.
+    </p>
+    <p>
+      타로는 이번에 회사를 위해 새로운 비밀번호를 만들고자 한다. 이 때, 아래의
+      규칙을 준수하며 만들어야 한다.
+    </p>
+    <ol>
+      <li>
+        새로운 비밀번호는 기존 비밀번호와 자릿수가 같아야 하며, 숫자로만
+        이루어져야 한다.
+      </li>
+      <li>
+        기존 비밀번호, 새로운 비밀번호 모두 불필요한 $0$을 포함할 수 있다. 즉,
+        비밀번호는 $0$으로 시작할 수 있다.
+      </li>
+      <li>
+        새로운 비밀번호에는 같은 숫자가 두 번 이상 등장해서는 안 된다. 단,
+        <strong>기존 비밀번호에는 같은 숫자가 두 번 이상 등장할 수 있다</strong
+        >.
+      </li>
+      <li>
+        새로운 비밀번호는 기존 비밀번호와의 <strong>거리</strong>가 최대한으로
+        멀어야 한다. 기존 비밀번호를 $A$라 하고, 새로운 비밀번호를 $B$라 할 때,
+        $A$와 $B$의 <strong>거리</strong>는 $\min(|A - B|, 10^N - |A - B|)$로
+        정의한다. 예를 들어, 비밀번호 $11$과 $42$의 거리는 $31$, $987$과 $012$의
+        거리는 $25$이다.
+      </li>
+      <li>
+        조건을 만족하는 <strong>거리</strong>가 같은 비밀번호가 여럿 존재한다면,
+        그 중 가장 작은 수를 새로운 비밀번호로 채택한다.
+      </li>
+    </ol>
+    <p>
+      매일 과로하는 타로는 규칙의 내용조차 머릿속에 들어오지 않는다. 여러분이
+      타로를 대신하여 새로운 비밀번호를 만드는 프로그램을 작성해 보자!
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 타로의 회사에서 사용하던 기존 비밀번호가 주어진다. 비밀번호의
+      길이는 $N$이며, 숫자로만 이루어져 있다. ($1 \le N \le 10$)
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>첫째 줄에 위의 규칙을 준수하는 새로운 비밀번호를 출력한다.</p>
+  </div>
+</section>

@@ -1,0 +1,75 @@
+<section id="title">거리가 R 이하인 1의 개수</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      $N \times N$ 크기의 격자 $A$가 주어진다. $A$의 각 칸의 값은 $0$, $1$ 중
+      하나이다.
+    </p>
+    <p><strong>거리</strong>를 아래와 같이 정의해 보자.</p>
+    <ul>
+      <li>
+        $a$행 $b$열에 위치한 칸과 $c$행 $d$열에 위치한 칸의 거리는 $|a - b| + |c
+        - d|$이다.
+      </li>
+    </ul>
+    <p>
+      이 때, 모든 정수 $r$, $c$ ($1 \le r, c \le N$)에 대해, 아래의 물음에
+      답하여라.
+    </p>
+    <ul>
+      <li>
+        $A$의 $r$행 $c$열을 기준으로, 거리가 $R$ 이하이면서, 값이 $1$인 칸의
+        개수는 몇 개일까?
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 아래와 같이 주어진다.</p>
+    <blockquote>
+      <p>
+        $\begin{array}{l} N \qquad R \\ \matrix{ A_{1, 1} & A_{1, 2} & \ldots &
+        A_{1, N} \cr A_{2, 1} & A_{2, 2} & \ldots & A_{2,N} \cr \vdots & \vdots
+        & \ddots & \vdots \cr A_{N, 1} & A_{N, 2} & \ldots & A_{N, N} \cr }
+        \end{array}$
+      </p>
+    </blockquote>
+    <ul>
+      <li>$A_{r, c}$는 $A$의 $r$행 $c$열의 값을 의미한다.</li>
+    </ul>
+    <p>제한조건은 아래와 같다.</p>
+    <ul>
+      <li>$0 \le R \lt N \le 250$</li>
+      <li>$A_{r,c} \in \{0, 1\}$ ($1 \le r, c \le N$; $r$, $c$는 정수)</li>
+      <li>입력으로 주어지는 모든 수는 정수</li>
+    </ul>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>아래의 형식대로 정답을 출력한다.</p>
+    <blockquote>
+      <p>
+        $\begin{array}{l} \matrix{ B_{1, 1} & B_{1, 2} & \ldots & B_{1, N} \cr
+        B_{2, 1} & B_{2, 2} & \ldots & B_{2,N} \cr \vdots & \vdots & \ddots &
+        \vdots \cr B_{N, 1} & B_{N, 2} & \ldots & B_{N, N} \cr } \end{array}$
+      </p>
+    </blockquote>
+    <ul>
+      <li>
+        $B_{r, c}$는 $A$의 $r$행 $c$열을 기준으로, 거리가 $R$ 이하이면서, 값이
+        $1$인 칸의 개수를 의미한다.
+      </li>
+    </ul>
+  </div>
+</section>

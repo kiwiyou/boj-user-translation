@@ -1,0 +1,112 @@
+<section id="title">절댓값 수열</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      길이 $N$의 수열 $A_1, A_2, \cdots, A_N$가 주어진다. $A$에 아래의 연산을 $N
+      - 1$회 적용한 후, $A_1$의 값을 출력하여라.
+    </p>
+    <ul>
+      <li>
+        연산 전 $A$의 크기를 $X$라 했을 때, $A_1, A_2, \cdots, A_X$를 $|A_1 -
+        A_2|, |A_2 - A_3|, \cdots, |A_{X - 1} - A_X|$으로 변경한다. 즉, 연산
+        이후 수열의 크기는 $1$ 감소한다.
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다.</p>
+    <p>둘째 줄에 $A_1, A_2, \cdots, A_N$가 주어진다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>문제의 정답을 출력한다.</p>
+  </div>
+</section>
+<section id="limit">
+  <div class="headline">
+    <h2>제한</h2>
+  </div>
+  <div id="problem_limit" class="problem-text">
+    <ul>
+      <li>$2 \le N \le 2\,000$</li>
+      <li>$0 \le A_i \le 10^9$ ($1 \le i \le N$)</li>
+      <li>입력으로 주어지는 모든 수는 정수</li>
+    </ul>
+  </div>
+</section>
+<section id="subtask">
+  <div class="headline"><h2>서브태스크</h2></div>
+  <div id="problem_subtask" class="problem-text">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered td-middle subtask-table"
+        style="width: 100%"
+      >
+        <thead>
+          <th style="width: 5%">번호</th>
+          <th style="width: 5%">배점</th>
+          <th style="width: 90%">제한</th>
+        </thead>
+        <tbody>
+          <tr data-subtask-id="1">
+            <td>1</td>
+            <td>25</td>
+            <td class="subtask-body"><p>$N = 2$</p></td>
+          </tr>
+          <tr data-subtask-id="2">
+            <td>2</td>
+            <td>75</td>
+            <td class="subtask-body"><p>추가 제한 조건 없음</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      처음에는 $A = [3, 1, 4, 1]$인 상태이다. $A$의 길이는 $4$이므로 총 $3$회의
+      연산을 적용해야 한다.
+    </p>
+    <ul>
+      <li>첫 번째 연산을 진행하면 $[3, 1, 4, 1]$은 $[2, 3, 3]$이 된다.</li>
+      <li>두 번째 연산을 진행하면 $[2, 3, 3]$은 $[1, 0]$이 된다.</li>
+      <li>세 번째 연산을 진행하면 $[1, 0]$은 $[1]$이 된다.</li>
+    </ul>
+    <p>연산을 $3$회 진행한 후 $A_1 = 1$이므로, $1$을 출력하면 정답이다.</p>
+    <p>이 입력은 서브태스크 $2$의 제한 조건만을 충족한다.</p>
+  </div>
+</section>
+<section id="sample_explain_2">
+  <div id="problem_sample_explain_2" class="problem-text">
+    <p>이 입력은 모든 서브태스크의 제한 조건을 충족한다.</p>
+  </div>
+</section>
+<section id="sample_explain_3">
+  <div id="problem_sample_explain_3" class="problem-text">
+    <p>이 입력은 서브태스크 $2$의 제한 조건만을 충족한다.</p>
+  </div>
+</section>
+<section id="sample_explain_4">
+  <div id="problem_sample_explain_4" class="problem-text">
+    <p>이 입력은 서브태스크 $2$의 제한 조건만을 충족한다.</p>
+  </div>
+</section>
+<section id="sample_explain_5">
+  <div id="problem_sample_explain_5" class="problem-text">
+    <p>이 입력은 모든 서브태스크의 제한 조건을 충족한다.</p>
+  </div>
+</section>
