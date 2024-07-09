@@ -1,0 +1,50 @@
+<section id="title">뱀 게임</section>
+<section id="description">
+				<div class="headline">
+				<h2>문제</h2>
+				</div>
+				<div id="problem_description" class="problem-text">
+
+				<p>앨리스와 밥은 뱀 게임을 하려 한다. $N \times E$ 크기의 격자 위 한 점에 똬리를 튼 뱀을 놓는다. 두 사람은 앨리스부터 번갈아 가면서 뱀의 머리를 격자를 따라 인접한 점으로 옮겨야 한다.</p>
+
+				<p>뱀의 머리를 옮기면 똬리가 풀리면서 뱀의 길이가 늘어난다. 뱀의 머리가 한번 지나간 자리에는 뱀의 몸통이 뒤따라 오기 때문에 그 위치로 다시 머리를 옮길 수 없다. 또 몇몇 점에는 장애물이 있어, 그 위치로도 머리를 옮길 수 없다.</p>
+
+
+
+
+
+<p><img alt="" src="/upload/images2/racing.png" style="height:172px; width:265px" /></p>
+
+
+
+<p>둘 중 먼저 뱀의 머리를 움직일 수 없게 된 쪽이 패배한다. 앨리스와 밥이 이기기 위한 최선의 수를 둔다고 했을 때, 뱀의 처음 위치에 따라 둘 중 누가 이기게 될 지를 구하는 프로그램을 작성하시오.</p>
+
+
+				</div>
+				</section>
+<section id="input">
+					<div class="headline">
+					<h2>입력</h2>
+					</div>
+					<div id="problem_input" class="problem-text">
+					<p>입력은 여러 개의 테스트 케이스로 이루어져 있다. 각 테스트 케이스의 첫 줄에는 격자판의 세로 길이와 가로 길이를 나타내는 두 정수 $N$, $E$가 공백으로 구분되어 주어진다. ($1 \le N,E \le 100$)</p>
+					<p>그다음 $N$개의 줄에 걸쳐 게임판의 정보를 나타내는 길이 $E$의 문자열이 주어진다. 그중 $i$번째 문자열의 $j$번째 문자는 격자의 위에서 $i$번째, 왼쪽에서 $j$번째 점의 정보를 나타낸다. 각 점에 장애물이 있다면 <code>X</code>, 비어 있다면 <code>.</code>이 주어진다.</p>
+
+
+
+<p>입력의 마지막 줄에는 <code>0 0</code>이 주어진다.</p>
+
+
+					</div>
+					</section>
+<section id="output">
+					<div class="headline">
+					<h2>출력</h2>
+					</div>
+					<div id="problem_output" class="problem-text">
+					<p>각 테스트 케이스마다 $N$줄의 길이 $E$인 문자열을 출력한다. 그중 $i$번째 문자열의 $j$번째 문자는 격자의 위에서 $i$번째, 왼쪽에서 $j$번째 점에 똬리를 튼 뱀을 놓고 게임을 진행했을 때의 승자에 대한 정보를 나타낸다. 만약 그 점에 장애물이 있다면 <code>X</code>를, 장애물이 없는 경우 그 점에 똬리를 튼 뱀을 놓고 게임을 진행했을 때 앨리스가 이긴다면 <code>A</code>, 밥이 이긴다면 <code>B</code>를 출력한다.</p>
+					<p>각 테스트 케이스에 대한 답을 출력한 뒤 빈 줄 하나를 출력한다.</p>
+
+
+					</div>
+					</section>
