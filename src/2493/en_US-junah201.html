@@ -1,0 +1,62 @@
+<section id="title">Towers</section>
+<section id="description">
+  <div class="headline">
+    <h2>Description</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      KOI Telecommunications Research Institute is conducting experiments to
+      develop a new secret communication system using lasers. For the
+      experiment, they set up N towers with different heights along a straight
+      line in order, from left to right. A laser transmitter is installed on the
+      top of each tower, and every tower's transmitter sends a laser signal
+      horizontally to the left, parallel to the ground. Additionally, each tower
+      has a receiver installed on its structure to capture any incoming laser
+      signals. The laser signal sent from one tower can only be received by the
+      first tower it encounters to its left.
+    </p>
+    <p>
+      For example, suppose there are five towers with heights of 6, 9, 5, 7, and
+      4, arranged in a straight line from left to right. Each tower
+      simultaneously emits a laser signal in the opposite direction of their
+      order (to the left). The laser signal emitted from the fifth tower with
+      height 4 will be received by the fourth tower with height 7, the signal
+      from the fourth tower with height 7 will be received by the second tower
+      with height 9, and the signal from the third tower with height 5 will also
+      be received by the second tower with height 9. The laser signals from the
+      first and second towers, with heights 6 and 9 respectively, will not be
+      received by any other towers.
+    </p>
+    <p>
+      Given the number of towers N and their heights, write a program to
+      determine which tower receives the laser signal from each tower.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>Input</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      The first line of input contains an integer N (1 ≤ N ≤ 500,000), the
+      number of towers. he second line contains N integers representing the
+      heights of the towers in order from left to right, separated by a single
+      space. Each tower's height is an integer between 1 and 100,000,000,
+      inclusive.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>Output</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      For each tower, in the order given, output the number of the tower that
+      receives its laser signal. If no tower receives the signal, output 0. The
+      results should be printed in a single line, with each value separated by a
+      space.
+    </p>
+  </div>
+</section>
