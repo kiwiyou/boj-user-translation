@@ -1,0 +1,52 @@
+<section id="title">NGF</section>
+<section id="description">
+  <div class="headline">
+    <h2>Description</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      There is a sequence of size N, denoted as A = A<sub>1</sub>,
+      A<sub>2</sub>, ..., A<sub>N</sub>. For each element A<sub>i</sub> in the
+      sequence, we want to find its Next Greater Frequency (NGF(i)).
+    </p>
+    <p>
+      Let F(A<sub>i</sub>) denote the number of times A<sub>i</sub> appears in
+      the sequence A. The Next Greater Frequency (NGF) of A<sub>i</sub> is
+      defined as the leftmost number to the right of A<sub>i</sub> that appears
+      in the sequence A more times than F(A<sub>i</sub>). If no such number
+      exists, the NGF is -1.
+    </p>
+    <p>
+      For example, if A = [1, 1, 2, 3, 4, 2, 1], then F(1) = 3, F(2) = 2, F(3) =
+      1, and F(4) = 1. Since there is no number to the right of A<sub>1</sub>
+      that appears more than 3 times, NGF(1) = -1. In the case of A<sub>3</sub>,
+      A<sub>7</sub> is to the right and satisfies F(A<sub>3</sub>) = 2 <
+      F(A<sub>7</sub>) = 1, so NGF(3) = 1. NGF(4) = 2, NGF(5) = 2, and NGF(6) =
+      1.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>Input</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      The first line of input contains an integer N (1 ≤ N ≤ 1,000,000), the
+      size of the sequence A. The second line of input contains the elements of
+      the sequence A, A<sub>1</sub>, A<sub>2</sub>, ..., A<sub>N</sub> (1 ≤
+      A<sub>i</sub> ≤ 1,000,000).
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>Output</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      The first and only line of output must contain N integers, NGF(1), NGF(2),
+      ..., NGF(N), separated by a space.
+    </p>
+  </div>
+</section>
