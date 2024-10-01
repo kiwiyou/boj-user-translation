@@ -1,0 +1,93 @@
+<section id="title">Skyline (Easy)</section>
+<section id="description">
+  <div class="headline">
+    <h2>Description</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      The outline of buildings visible as the sun sets in a city is called a
+      skyline. Can we determine how many buildings are in the city just by
+      looking at the skyline? Assume that all buildings are simple rectangular
+      shapes.
+    </p>
+    <p>
+      It is impossible to determine exactly how many buildings there are in most
+      cases, but it seems possible to figure out the minimum number of
+      buildings. Let's write a program to find out the minimum number of
+      buildings.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>Input</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      The first line of input contains an integer n (1 &le; n &le; 50,000). The
+      next n lines each contain the coordinates x and y of the points where the
+      height of the skyline changes as viewed from the left. (1 ≤ x ≤ 1,000,000,
+      0 ≤ y ≤ 500,000) The x-coordinate of the first point is always 1.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>Output</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      The first and only line of output must contain the minimum number of
+      buildings
+    </p>
+  </div>
+</section>
+<section id="hint">
+  <div class="headline">
+    <h2>Hints</h2>
+  </div>
+  <div id="problem_hint" class="problem-text">
+    <p>The sample input 1 represents the following skyline.</p>
+    <pre>
+..........................
+
+.....XX.........XXX.......
+
+.XXX.XX.......XXXXXXX.....
+
+XXXXXXXXXX....XXXXXXXXXXXX
+</pre
+    >
+    <p>
+      The situation with six buildings as shown below represents the case with
+      the minimum number of buildings.
+    </p>
+    <pre>
+..........................
+
+.....22.........333.......
+
+.111.22.......XX333XX.....
+
+X111X22XXX....XX333XXXXXXX</pre
+    >
+    <pre>
+..........................
+
+.....XX.........XXX.......
+
+.XXX.XX.......5555555.....
+
+4444444444....5555555XXXXX</pre
+    >
+    <pre>
+..........................
+
+.....XX.........XXX.......
+
+.XXX.XX.......XXXXXXX.....
+
+XXXXXXXXXX....666666666666</pre
+    >
+  </div>
+</section>
