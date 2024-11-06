@@ -1,0 +1,54 @@
+<section id="title">가장 긴 증가하지 않는 부분 수열</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      길이 $N$의 수열 $A_1, A_2, \cdots, A_N$가 주어진다. 아래의 조건을 모두
+      만족하는 수열 $B$를
+      <b>증가하지 않는 부분 수열</b>이라고 정의한다.
+    </p>
+
+    <ul>
+      <li>
+        $A$에서 원소를 $0$개 이상 $N - 1$개 이하로 제거하되 남은 원소들의 순서를
+        유지하여 만들 수 있는 수열이어야 한다.
+      </li>
+      <li>
+        위의 방법대로 만든 수열을 $B$라 하고, $B$의 원소의 개수를 $K$이라 했을
+        때, $B_1 \lt B_2 \lt \cdots \lt B_K$을 만족하지
+        <b>않아야</b> 한다.
+      </li>
+    </ul>
+
+    <p>가장 긴 증가하지 않는 부분 수열을 아무거나 하나 찾아보자.</p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>첫째 줄에 $N$이 주어진다. ($1 \le N \le 100$)</p>
+    <p>
+      둘째 줄에 $A_1, A_2, \cdots, A_N$이 주어진다. ($0 \le A_i \le 1\,000$; $1
+      \le i \le N$)
+    </p>
+    <p>입력으로 주어지는 모든 수는 정수이다.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>증가하지 않는 부분 수열이 존재하지 않는다면 첫째 줄에 $0$을 출력한다.</p>
+    <p>
+      그렇지 않다면, 첫째 줄에 가장 긴 증가하지 않는 부분 수열의 길이 $K$을
+      출력하고, 둘째 줄에 $B_1, B_2, \cdots, B_K$에 대해 각 원소가 $A$의 몇 번째
+      원소였는지를 공백으로 구분하여 차례대로 출력한다. $A$의 원소는 $1$번째,
+      $2$번째, $3$번째, $\cdots$와 같이 센다고 가정한다.
+    </p>
+  </div>
+</section>
