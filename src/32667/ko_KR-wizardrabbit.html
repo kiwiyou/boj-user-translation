@@ -1,0 +1,152 @@
+<section id="title">마법의 미로</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      쌍둥이 밀라와 리암은 사악한 마녀에 의해 갇혔다. 마녀는 쌍둥이를 자신이
+      관리하는 미로의 서로 다른 위치로 이동시켰다. 마녀가 애완 용을 데려오기
+      전에 얼른 이 미로를 탈출해야 한다! 쌍둥이는 미로를 탈출하기 위해 걸리는
+      최단 시간이 궁금해졌다.
+    </p>
+
+    <p>
+      쌍둥이의 탈출을 더 어렵게 하기 위해, 마녀는 쌍둥이에게 저주를 내렸다.
+      쌍둥이는 상하좌우로 인접한 칸으로 이동을 시도해볼 수 있지만, 동시에 같은
+      방향으로만 이동할 수 있다. 즉, 밀라가 위쪽으로 한 칸 이동하려고 할 경우
+      리암 역시 위쪽으로 한 칸을 이동하려고 시도해야 한다. 쌍둥이는 이동 성공
+      여부와 상관없이 이러한 이동을 시도하는 데 $1$의 시간을 소모한다.
+    </p>
+
+    <p>
+      마녀의 미로는 $R \times C$ 크기의 격자로 나타낼 수 있으며, 각 칸은 아래와
+      같이 구성되어 있다.
+    </p>
+
+    <ul>
+      <li>
+        <b>시작점</b>(<code style="color: #e74c3c">S</code>): 쌍둥이의 시작
+        지점이다. 두 사람은 서로 다른 시작점에서 출발한다. 미로에는 시작점이
+        항상 $2$회 등장한다.
+      </li>
+      <li>
+        <b>도착점</b>(<code style="color: #e74c3c">E</code>): 쌍둥이가 목표로
+        하는 도착 지점이다. 두 사람이 각각 다른 도착점에 동시에 위치하면 미로를
+        탈출하게 된다. 미로에는 도착점이 항상 $2$회 등장한다.
+      </li>
+      <li>
+        <b>빈 칸</b>(<code style="color: #e74c3c">.</code>): 쌍둥이는 이 칸에
+        자유롭게 드나들 수 있다.
+      </li>
+      <li>
+        <b>고정된 장애물</b>(<code style="color: #e74c3c">#</code>): 쌍둥이는 이
+        칸으로 이동할 수 없다.
+      </li>
+      <li>
+        <b>까마득히 깊은 구덩이</b>(<code style="color: #e74c3c">*</code>): 이
+        칸에 이동하면 사망하게 되며, 미로 탈출은 실패로 끝난다.
+      </li>
+      <li>
+        <b>활성화된 장애물</b>(<code style="color: #e74c3c">A</code>,
+        <code style="color: #e74c3c">B</code>,
+        <code style="color: #e74c3c">C</code>,
+        <code style="color: #e74c3c">D</code>): 쌍둥이는 이 칸으로 이동할 수
+        없지만, 이 장애물에 대응되는 스위치를 누르면 비활성화된 장애물로
+        변경된다.
+      </li>
+      <li>
+        <b>비활성화된 장애물</b>(<code style="color: #e74c3c">a</code>,
+        <code style="color: #e74c3c">b</code>,
+        <code style="color: #e74c3c">c</code>,
+        <code style="color: #e74c3c">d</code>): 이 칸은 쌍둥이가 자유롭게 드나들
+        수 있으나, 이 장애물에 대응되는 스위치를 누르면 활성화된 장애물로
+        변경된다.
+      </li>
+      <li>
+        <b>스위치</b>(<code style="color: #e74c3c">1</code>,
+        <code style="color: #e74c3c">2</code>,
+        <code style="color: #e74c3c">3</code>,
+        <code style="color: #e74c3c">4</code>): 비활성화된 장애물과 활성화된
+        장애물을 작동시켜 다른 상태로 변경시킨다. 스위치가 작동될 경우 이에
+        대응되는 비활성화된 장애물은 모두 활성화된 장애물이 되며, 활성화된
+        장애물은 모두 비활성화된 장애물이 된다. 스위치는 네 종류가 있으며, $1$번
+        스위치는 <code style="color: #e74c3c">A</code>,
+        <code style="color: #e74c3c">a</code>에 대응되고, $2$번 스위치는
+        <code style="color: #e74c3c">B</code>,
+        <code style="color: #e74c3c">b</code>에 대응되고, $3$번 스위치는
+        <code style="color: #e74c3c">C</code>,
+        <code style="color: #e74c3c">c</code>에 대응되고, $4$번 스위치는
+        <code style="color: #e74c3c">D</code>,
+        <code style="color: #e74c3c">d</code>에 대응된다. 스위치는 미로에서 종류
+        당 최대 $1$회까지만 등장한다.
+      </li>
+    </ul>
+
+    <p>
+      쌍둥이는 서로 같은 칸에 위치할 수 없다. 만약 이동하고자 하는 칸이 고정된
+      장애물이나 활성화된 장애물인 경우, 그 칸으로 이동하지 못하고 기존 칸에
+      머무르게 된다. 미로 밖으로 벗어나게 될 경우 사망하게 되며 미로 탈출은
+      실패로 끝난다. 쌍둥이는 시작점과 도착점을 자유롭게 드나들 수 있다.
+    </p>
+    <p>
+      스위치가 있는 칸으로 이동하게 되면 스위치가 작동한다. 작동될 경우 이에
+      대응되는 비활성화된 장애물은 모두 활성화된 장애물이 되며, 활성화된
+      장애물은 모두 비활성화된 장애물이 된다. 하지만 이미 스위치가 있는 칸에
+      있는 상태에서 이동하지 못해 머무르고 있는 경우에는 스위치가 작동하지
+      않는다.
+    </p>
+    <p>
+      만약 쌍둥이 중 한 명이 활성화된 장애물로 이동하려고 하고, 다른 한 명이 그
+      장애물에 대응되는 스위치로 이동하려 할 경우에는, 해당하는 활성화된
+      장애물은 이동할 때에는 <b>여전히 활성화된 장애물로 간주</b>하며 쌍둥이의
+      이동 시도가 끝난 후에야 비활성화된 장애물로 변경된다. 쌍둥이 중 한 명이
+      비활성화된 장애물로 이동하려 하거나, 이동 시도 후에도 비활성화된 장애물에
+      머무르게 되는 상황인 경우 다른 한 명은 <b>다른 칸에서</b> 그 비활성화된
+      장애물에 대응되는 스위치가 있는 칸으로 이동할 수 없다. 여기서 이동할 수
+      없다는 것은 고정된 장애물처럼 스위치가 있는 칸으로 이동을 시도한 후 그
+      자리에 머무르게 된다는 것을 의미하는 것이 아니라 아예 이동 시도조차
+      불가능하다는 것을 의미한다.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫째 줄에 $R$, $C$가 공백으로 구분되어 주어진다. ($2 \le R, C \le 10$)
+    </p>
+    <p>
+      이후 $R$줄에 걸쳐, 미로의 정보를 의미하는 $R \times C$개의 문자가 한 줄에
+      $C$개씩 공백 없이 붙어서 주어지며, 각 문자는 항상
+      <code style="color: #e74c3c">S</code>,
+      <code style="color: #e74c3c">E</code>,
+      <code style="color: #e74c3c">.</code>,
+      <code style="color: #e74c3c">#</code>,
+      <code style="color: #e74c3c">*</code>,
+      <code style="color: #e74c3c">A</code>,
+      <code style="color: #e74c3c">B</code>,
+      <code style="color: #e74c3c">C</code>,
+      <code style="color: #e74c3c">D</code>,
+      <code style="color: #e74c3c">a</code>,
+      <code style="color: #e74c3c">b</code>,
+      <code style="color: #e74c3c">c</code>,
+      <code style="color: #e74c3c">d</code>,
+      <code style="color: #e74c3c">1</code>,
+      <code style="color: #e74c3c">2</code>,
+      <code style="color: #e74c3c">3</code>,
+      <code style="color: #e74c3c">4</code> 중 하나이다. 탈출 가능한 미로만이
+      입력으로 주어진다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>첫째 줄에 쌍둥이가 미로를 탈출하는 데 걸리는 최단 시간을 출력한다.</p>
+  </div>
+</section>
