@@ -1,0 +1,50 @@
+<section id="title">미니언즈 퀴즈</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      미니언들은 마침내 그들의 새로운 주인을 찾았다.
+      그들의 새로운 주인은 수학 교수로, 미니언들에게 수학을 가르치느라 고군분투하고 있다.
+      그는 일 년도 넘게 비트 연산자를 가르쳐왔다!
+      미니언들은 AND 연산자(&amp;)와 OR 연산자(|)를 배웠고, 이제는 퀴즈를 풀 시간이다.
+    </p>
+    <p>
+      퀴즈는 매우 간단하다.
+      그들에게는 AND 연산자(&amp;)의 개수 $A$, OR 연산자(|)의 개수 $B$와 함께 $A + B + 1$개의 정수가 주어질 것이다.
+      미니언들은 주어진 음이 아닌 정수들 사이에 '&amp;'와 '|'를 집어넣어 얻을 수 있는 가장 큰 연산 결괏값을 알아내야 한다.
+      단, 주어진 정수들의 순서는 바꿀 수 없다.
+    </p>
+    <p>
+      마지막으로, 이 퀴즈에는 연산자 평가를 왼쪽에서부터 오른쪽으로 해야 한다는 특별한 요구사항이 있다.
+    </p>
+  </div>
+</section>
+
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      첫 번째 줄에는 테스트 케이스 개수 $T$ ($1 \le T \le 100$)가 주어진다.
+      그다음 줄부터 $T$개의 테스트 케이스가 주어진다.
+    </p>
+    <p>
+      각각의 테스트 케이스는 두 줄로 이루어져 있다.
+      첫 번째 줄에는 각각 AND(&amp;) 연산자의 개수와 OR 연산자(|)의 개수를 나타내는 정수 $A$와 $B$ ($0 \le A, B \le 10,000$)가 주어진다.
+      두 번째 줄에는 공백으로 구분된 음이 아닌 64비트 정수 $A + B + 1$개가 주어진다.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      각 테스트 케이스마다 주어진 정수들 사이에 연산자를 집어넣어 구할 수 있는 최댓값을 한 줄로 출력한다.
+    </p>
+  </div>
+</section>
