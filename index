@@ -83,6 +83,9 @@
   "10869": [
     "en_US-kiwiyou"
   ],
+  "10870": [
+    "en_US-junah201"
+  ],
   "10871": [
     "en_US-masooka"
   ],
@@ -160,6 +163,9 @@
   ],
   "11720": [
     "en_US-masooka"
+  ],
+  "11729": [
+    "en_US-junah201"
   ],
   "1181": [
     "en_US-masooka"
@@ -377,6 +383,33 @@
   "15610": [
     "ko_KR-ez_code"
   ],
+  "15649": [
+    "en_US-junah201"
+  ],
+  "15650": [
+    "en_US-junah201"
+  ],
+  "15651": [
+    "en_US-junah201"
+  ],
+  "15652": [
+    "en_US-junah201"
+  ],
+  "15654": [
+    "en_US-junah201"
+  ],
+  "15655": [
+    "en_US-junah201"
+  ],
+  "15656": [
+    "en_US-junah201"
+  ],
+  "15657": [
+    "en_US-junah201"
+  ],
+  "15663": [
+    "en_US-junah201"
+  ],
   "15764": [
     "ko_KR-yup0927"
   ],
@@ -445,6 +478,9 @@
   ],
   "17598": [
     "ko_KR-kiwiyou"
+  ],
+  "17608": [
+    "en_US-junah201"
   ],
   "17678": [
     "Korean-typo"
@@ -911,6 +947,12 @@
   "2440": [
     "en_US-masooka"
   ],
+  "2447": [
+    "en_US-junah201"
+  ],
+  "2448": [
+    "en_US-junah201"
+  ],
   "24488": [
     "ko_KR-dohoon"
   ],
@@ -1204,6 +1246,9 @@
   ],
   "2741": [
     "en_US-masooka"
+  ],
+  "27433": [
+    "en_US-junah201"
   ],
   "27487": [
     "ko_KR-wizardrabbit"
