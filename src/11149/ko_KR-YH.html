@@ -1,0 +1,41 @@
+<section id="title">메시지 해독</section>
+<section id="description">
+	<div class="headline">
+		<h2>문제</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p>친구인 알렉스와 아담이 서로에게 메시지를 보낼 수 있는 비밀 기능을 개발했습니다. 
+			유일한 문제는 이 방법은 손으로 하기에는 너무 어렵다는 것입니다. 
+			그래서 알렉스는 비밀 메시지를 해독하는 프로그램을 작성하기 위해 여러분의 도움을 요청했습니다. 
+			알렉스는 시스템을 절대 공개하지 않겠다고 여러분에게 맹세하게 한 후 시스템에 대해 설명합니다.
+			암호화된 메시지는 한 글자 또는 그 이상 길이의 단어가 공백으로 구분되며, 
+			각 단어는 복호화를 통해 소문자 a&ndash;z또는 공백으로 치환됩니다.
+			복호화의 방법은 각 단어를 구성하는 문자의 값을 더하고 27로 나눈 나머지가 하나의 문자가 됩니다.
+			계산된 나머지를 기준으로 0&ndash;25의 값은 이전과 같이 a&ndash;z에 해당하며 26의 값은 공백에 해당합니다.</p>
+
+		<p>암호화된 메시지를 받아 해독된 메시지를 출력하는 프로그램을 작성하여 친구를 도와주세요.</p>
+	</div>
+</section>
+<section id="input">
+	<div class="headline">
+		<h2>입력</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>입력의 첫 번째 줄은 테스트 케이스의 수 정수 T로 구성됩니다. 
+			각 테스트 케이스는 비밀 메시지가 한 줄로 구성됩니다. 
+			비밀 메시지에는 소문자와 공백만 포함됩니다, 
+			단어 사이에는 공백만 있고 두 개 이상의 연속된 공백은 없습니다.</p>
+		<ul>
+			<li>0 &lt; T &le; 100</li>
+			<li>각 비밀 메시지는 1000자를 넘지 않습니다.</li>
+		</ul>
+	</div>
+</section>
+<section id="output">
+	<div class="headline">
+		<h2>출력</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>각 테스트 케이스에 대해 복호화된 메시지를 출력합니다.</p>
+	</div>
+</section>
