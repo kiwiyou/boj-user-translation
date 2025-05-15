@@ -1,0 +1,86 @@
+<section id="title">solved.ac</section>
+
+<section id="description">
+	<div class="headline">
+		<h2>Statement</h2>
+	</div>
+	<div id="problem_description" class="problem-text">
+		<p><a href="http://solved.ac">solved.ac</a> is a service created by the
+			Sogang ICPC Team to help members practice algorithms. It has grown
+			beyond Sogang University, now supporting thousands of users in their
+			algorithm studies.</p>
+
+		<p style="text-align: center;"><img alt=""
+				src="https://upload.acmicpc.net/93ca0eb8-56a3-4b34-bb15-281f633a0856/-/preview/"
+				style="width: 319px; height: 64px;" /></p>
+
+		<p>The ICPC Team practices problem-solving on the Baekjoon Online Judge,
+			which lacks difficulty ratings for its problems. Without these ratings,
+			it was challenging for users to find appropriately difficult problems.
+			This led to the creation of solved.ac, which now includes difficulty
+			ratings for approximately 7,000 problems, thanks to contributions from
+			over 200 users nationwide.</p>
+
+		<p>The difficulty of a problem on solved.ac is determined based on the
+			<strong>difficulty ratings</strong>
+			submitted by users who have solved it. Each difficulty rating is a
+			single integer representing the user's assessment of the problem's
+			difficulty. The difficulty rating is calculated as follows:
+		</p>
+
+		<ul>
+			<li>If no ratings have been submitted, the difficulty is set to
+				0.</li>
+			<li>If one or more ratings are available, the difficulty is
+				determined using a 30% trimmed mean of all ratings.</li>
+		</ul>
+
+		<p>A trimmed mean excludes the extreme values at both ends to prevent
+			them from distorting the average. For a 30% trimmed mean, the top 15%
+			and bottom 15% of ratings are excluded before calculating the average.
+			For example, if 20 users have submitted ratings, the 3 highest and 3
+			lowest ratings are excluded.</p>
+
+		<p>The number of excluded ratings at each end is rounded. For instance,
+			if 25 users have voted, 15% of 25 is 3.75, which rounds to 4, meaning 4
+			ratings from the top and 4 from the bottom are excluded.</p>
+
+		<p>Finally, the computed mean is also rounded to the nearest integer.
+			For example, if the trimmed mean is 16.7, the final difficulty is
+			17.</p>
+
+		<p>Given a list of user-submitted difficulty ratings for a problem,
+			write a program that calculates the difficulty as determined by
+			solved.ac.</p>
+	</div>
+</section>
+
+<section id="input">
+	<div class="headline">
+		<h2>Input</h2>
+	</div>
+	<div id="problem_input" class="problem-text">
+		<p>The first line contains the number of difficulty ratings, $n$ $(0 \le
+			n \le 300\,000)$. </p>
+
+		<p>The following $n$ lines each contain a single integer, representing a
+			difficulty rating, ranging from 1 to 30.</p>
+	</div>
+</section>
+
+<section id="output">
+	<div class="headline">
+		<h2>Output</h2>
+	</div>
+	<div id="problem_output" class="problem-text">
+		<p>Print the difficulty of the problem as calculated by solved.ac.</p>
+	</div>
+</section>
+
+<section id="sample_explain_1">
+	<div id="problem_sample_explain_1" class="problem-text">
+		<p>For 5 ratings, 15% is 0.75, which rounds to 1. Thus, solved.ac
+			excludes the 1 highest and 1 lowest rating, calculating the difficulty
+			from the remaining {5, 5, 7}, resulting in an average.</p>
+	</div>
+</section>
