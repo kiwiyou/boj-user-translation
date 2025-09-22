@@ -1,0 +1,63 @@
+<section id="title">일반화된 독일어 따옴표</section>
+<section id="description">
+    <div class="headline">
+        <h2>문제</h2>
+    </div>
+    <div id="problem_description" class="problem-text">
+        <p>독일어에서는 전통적으로 각괄호 모양의 따옴표(&lsquo;&laquo;&rsquo; and &lsquo;&raquo;&rsquo;)를 사용한다.
+            그래서 우리는 어떤 텍스트를 &laquo;이런 식으로&raquo; 인용할 수 있다.
+            하지만 독일어의 독특한 점은, 텍스트를 &raquo;거꾸로&laquo; 인용할 수도 있다는 것이다.
+            실제 생활에서는 이 두 가지 방식이 섞이지 않는데, 독일어권 국가마다 따로 쓰이기 때문이다.
+            하지만 여기서는 재미삼아 이 두 가지 전통을 합쳐 보자!
+            따옴표의 중첩 규칙은 무시하고(즉, 무한 중첩을 허용하고), 두 방식을 동시에 허용한다면, 우리는 다음과 같이 간단한 인용문을 쓸 수 있다:</p>
+
+        <p style="text-align: center;">&laquo;&raquo;Anf&uml;uhrungszeichen&laquo; 는 독일어로 &laquo;따옴표&raquo;를 의미합니다&raquo;</p>
+
+        <p>쉽게 말해, 어떤 문자열이 올바른 인용문이라는 것은 올바른 일반화된 독일어 텍스트에서 따옴표 외에 모든 문자를 제거하여 얻을 수 있다는 뜻이다.
+            공식적으로는 다음과 같이 정의된다:</p>
+
+        <p style="text-align: center;">&lang;G&rang; ::= &epsilon; | &lang;G&rang;&lang;G&rang; | &lsquo;&laquo;&rsquo;&lang;G&rang;&lsquo;&raquo;&rsquo;
+            | &lsquo;&raquo;&rsquo;&lang;G&rang;&lsquo;&laquo;&rsquo;</p>
+
+        <p>즉, 올바른 인용문이란</p>
+
+        <ul>
+            <li>빈 문자열이거나,</li>
+            <li>두 올바른 인용문을 이어 붙인 것이거나,</li>
+            <li>올바른 인용문을 전통적인 방식(&laquo;...&raquo;) 또는 거꾸로 된 방식(&raquo;...&laquo;)으로 감싼 것이다.</li>
+        </ul>
+
+        <p>
+            이 경우, &lang;G&rang; 왼쪽의 따옴표를 시작 따옴표, 오른쪽의 따옴표를 끝 따옴표라고 부른다.
+            예를 들어, 인용문 문자열 &lsquo;&laquo;&raquo;&rsquo;에서는 &lsquo;&laquo;&rsquo;가 시작 따옴표이고, 문자열 &lsquo;&raquo;&laquo;&rsquo;에서는 같은 기호 &lsquo;&laquo;&rsquo;가 끝 따옴표이다.
+        </p>
+
+        <p>주어진 문자열이 올바른 인용문인지 판별하라.
+            만약 올바르다면, 모든 시작 따옴표를 &lsquo;<code>[</code>&rsquo;로, 모든 끝 따옴표를 &lsquo;<code>]</code>&rsquo;로 바꿔서 구조를 복원하라.
+        </p>
+
+    </div>
+</section>
+<section id="input">
+    <div class="headline">
+        <h2>입력</h2>
+    </div>
+    <div id="problem_input" class="problem-text">
+        <p>입력은 따옴표 기호들로만 이루어진 문자열 하나이다.
+            ASCII만 사용하기 위해, &lsquo;&laquo;&rsquo;는 &lsquo;<code>&lt;&lt;</code>&rsquo;, &lsquo;&raquo;&rsquo;는 &lsquo;<code>&gt;&gt;</code>&rsquo;로 인코딩된다.
+            문자열에는 다른 문자가 포함되지 않는다. 문자열은 비어 있지 않고 길이는 최대 254인 ASCII 문자들이다.</p>
+
+    </div>
+</section>
+<section id="output">
+    <div class="headline">
+        <h2>출력</h2>
+    </div>
+    <div id="problem_output" class="problem-text">
+        <p>입력 문자열이 올바른 인용문이라면, 시작 따옴표를 &lsquo;<code>[</code>&rsquo;로, 끝 따옴표를 &lsquo;<code>]</code>&rsquo;로 치환하여 출력한다.
+            가능한 해가 여러 개라면, 그 중 아무거나 출력해도 된다.</p>
+
+        <p>올바른 인용문이 아니라면, &ldquo;Keine Loesung&rdquo;을 출력한다.</p>
+
+    </div>
+</section>
