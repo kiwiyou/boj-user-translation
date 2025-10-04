@@ -1,0 +1,45 @@
+<section id="title">가계도</section>
+<section id="description">
+  <div class="headline">
+    <h2>문제</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>한 인류학 교수는 외딴 섬에 사는 사람들과 그들의 역사에 관심이 있었다. 그는 실험을 위해 사람들의 가계도를 수집하여 컴퓨터로 처리할 수 있도록 텍스트 파일로 변환하였다. 아래는 가계도를 나타낸 텍스트 파일의 예이다.
+<code> John Robert Frank Andrew Nancy David </code>
+사람의 이름이 한 줄에 하나씩 주어진다. 첫 번째 줄의 이름은 가계도의 가장 오래된 조상을 의미한다. 가계도는 이 조상의 후손들만 포함하며, 남편이나 아내는 포함하지 않는다. 한 사람의 자식들은 그 사람보다 한 칸 더 들여쓰기 되어 있다. </p>
+    <p>예를 들어</p>
+    <ul>
+<li><code>Robert</code>와 <code>Nancy</code>는 <code>John</code>의 자식이다.</li>
+<li><code>Frank</code>와 <code>Andrew</code>는 <code>Robert</code>의 자식이다.</li>
+<li><code>David</code>는 <code>Robert</code>보다 들여쓰기가 한 칸 더 되어 있지만, <code>Robert</code>의 자식이 아니라 <code>Nancy</code>의 자식이다.</li>
+</ul>
+    <p>이렇게 표현하기 위해 교수는 한 사람의 양쪽 부모가 모두 나오는 경우는 생략하였다. 교수는 가족들의 문서에서 두 사람 간의 관계에 대한 진술도 추출하였다 다음은 위의 가계도를 기준으로 한 예시이다.</p>
+    <ul>
+<li><code>John is the parent of Robert.</code> - <code>John</code>은 <code>Robert</code>의 부모이다. → 사실</li>
+<li><code>Robert is a sibling of Nancy.</code> - <code>Robert</code>는 <code>Nancy</code>의 형제자매이다. → 사실</li>
+<li><code>David is a descendant of Robert.</code> - <code>David</code>는 <code>Robert</code>의 후손이다. → 거짓</li>
+</ul>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>입력</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>입력은 여러 개의 데이터 셋으로 구성된다. 각 데이터 셋은 하나의 가계도와 여러 개의 진술로 이루어져 있다.</p>
+    <p>각 데이터 세트의 첫 줄에는 가계도에 다오는 사람의 수 <span class="mathjax"><mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"> <mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$n$</span> </mjx-container></span>, 진술의 수 <span class="mathjax"><mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"> <mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$m$</span> </mjx-container></span>(<span class="mathjax"><mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"> <mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>&lt;</mo><mi>n</mi><mo>&lt;</mo><mn>1000</mn></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$0&lt;n&lt;1000$</span> </mjx-container></span>, <span class="mathjax"><mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"> <mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>&lt;</mo><mi>m</mi><mo>&lt;</mo><mn>1000</mn></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$0&lt;m&lt;1000$</span> </mjx-container></span>, <span class="mathjax"><mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"> <mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$n$</span> </mjx-container></span>, <span class="mathjax"><mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"> <mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$m$</span> </mjx-container></span>은 정수)이 주어진다.</p>
+    <p>이후 <span class="mathjax"><mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"> <mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$n$</span> </mjx-container></span>줄에 들여쓰기가 포함된 가계도의 이름이 주어진다. 이름은 알파벳 대소문자로 이루어진 20자 미만의 문자열이다. 첫 번째 줄의 이름은 들여쓰기 없이 입력되는 가장 오래된 조상이다. 그 외의 줄에는 한 칸 이상의 들여쓰기가 있다. 한 줄 뒤에 오는 이름의 윗줄보다 두 칸 이상 들여쓰기 될 수 없다. 동일한 이름은 가계도 내에 중복되지 않으며, 진술에 사용된 이름은 반드시 가계도에 포함된다.</p>
+    <p>이후의 <span class="mathjax"><mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"> <mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">$m$</span> </mjx-container></span>줄에 진술이 주어진다.</p>
+    <p>각 줄의 길이는 70자 미만의 문자열로 구성되어 있다.</p>
+    
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>출력</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>각 진술의 진위 여부(<code>True</code> 또는 <code>False</code>)를 한 줄에 하나씩 출력한다. 진위 여부는 첫 글자만 대문자이어야 한다.</p>
+    <p>각 데이터 셋이 끝난 후에는 빈 줄을 출력한다.</p>
+  </div>
+</section>
